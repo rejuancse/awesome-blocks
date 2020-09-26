@@ -53,22 +53,11 @@ class Edit extends Component {
                 </InspectorControls>
 
 
-                <section className={`skillate-home-countdown`}>
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className={`skillate-home-countdown-content`}>
-                                
-                                <footer className="skillate-home-countdown-footer">
-                                    <div className="row">
-
-                                        <div className="col-md-12 col-sm-12">
-                                            <Timer deadline={endDate} />
-                                        </div>
-                                     
-                                    </div> 
-                                </footer>   
-                            </div>
-                        </div>
+                <section className={`awesome-blocks-countdown`}>
+                    <div className={`awesome-blocks-countdown-content`}>
+                        <div className="awesome-blocks-countdown">
+                            <Timer deadline={endDate} /> 
+                        </div>   
                     </div>
                 </section> 
 
