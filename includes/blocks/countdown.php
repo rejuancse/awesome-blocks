@@ -68,33 +68,26 @@ class Awesome_Countdown{
         $days       = (int)(($timeLeft - $hours / 3600 / $minute * 60 - $seconds) / 86400 );
         
         
-        $html .= '<footer class="skillate-home-countdown-footer">';
-            $html .= '<div class="row">';
-                    
-                    $html .= '<div class="col-md-12 col-sm-12">';
-                        $html .= '<div class="skillate-home-countdown-wrapper" data-enddate='.$endDate.'>';
-                            $html .= '<div class="skillate-home-countdown-item">';
-                                $html .= '<div class="number"><h4>'.$days.'</h4></div>';
-                                $html .= '<div class="text"><h5>days</h5></div>';
-                            $html .= '</div>';
-                            $html .= '<div class="skillate-home-countdown-item">';
-                                $html .= '<div class="number"><h4 class="hours">'.$hours.'</h4></div>';
-                                $html .= '<div class="text"><h5>Hours</h5></div>';
-                            $html .= '</div>';
-                            $html .= '<div class="skillate-home-countdown-item">';
-                                $html .= '<div class="number"><h4 class="minutes">'.$minutes.'</h4></div>';
-                                $html .= '<div class="text"><h5>Minutes</h5></div>';
-                            $html .= '</div>';
-                            $html .= '<div class="skillate-home-countdown-item">';
-                                $html .= '<div class="number"><h4 class="second">'.$seconds.'</h4></div>';
-                                $html .= '<div class="text"><h5>Seconds</h5></div>';
-                            $html .= '</div>';
-                        $html .= '</div>';
-                    $html .= '</div>';
-                    
-                
-            $html .= '</div>';
-        $html .= '</footer>';
+        $html .= '<div class="awesome-blocks-countdown">';
+            $html .= '<div class="awesome-blocks-countdown-wrapper" data-enddate='.$endDate.'>';
+                $html .= '<div class="awesome-blocks-countdown-item">';
+                    $html .= '<div class="number"><h4>'.$days.'</h4></div>';
+                    $html .= '<div class="text"><h5>days</h5></div>';
+                $html .= '</div>';
+                $html .= '<div class="awesome-blocks-countdown-item">';
+                    $html .= '<div class="number"><h4 class="hours">'.$hours.'</h4></div>';
+                    $html .= '<div class="text"><h5>Hours</h5></div>';
+                $html .= '</div>';
+                $html .= '<div class="awesome-blocks-countdown-item">';
+                    $html .= '<div class="number"><h4 class="minutes">'.$minutes.'</h4></div>';
+                    $html .= '<div class="text"><h5>Minutes</h5></div>';
+                $html .= '</div>';
+                $html .= '<div class="awesome-blocks-countdown-item">';
+                    $html .= '<div class="number"><h4 class="second">'.$seconds.'</h4></div>';
+                    $html .= '<div class="text"><h5>Seconds</h5></div>';
+                $html .= '</div>';
+            $html .= '</div>';     
+        $html .= '</div>';
 
         return $html;
     }
