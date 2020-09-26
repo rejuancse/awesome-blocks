@@ -53,13 +53,11 @@ class Edit extends Component {
                 </InspectorControls>
 
 
-                <section className={`awesome-blocks-countdown`}>
-                    <div className={`awesome-blocks-countdown-content`}>
-                        <div className="awesome-blocks-countdown">
-                            <Timer deadline={endDate} /> 
-                        </div>   
-                    </div>
-                </section> 
+                
+                <div className="awesome-blocks-countdown">
+                    <Timer deadline={endDate} /> 
+                </div>   
+                     
 
             </Fragment>
         );

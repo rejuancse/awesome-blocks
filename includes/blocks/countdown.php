@@ -69,20 +69,20 @@ class Awesome_Countdown{
         
         
         $html .= '<div class="awesome-blocks-countdown">';
-            $html .= '<div class="awesome-blocks-countdown-wrapper" data-enddate='.$endDate.'>';
-                $html .= '<div class="awesome-blocks-countdown-item">';
+            $html .= '<div class="awesome-blocks-wrapper" data-enddate='.$endDate.'>';
+                $html .= '<div class="countdown-item">';
                     $html .= '<div class="number"><h4>'.$days.'</h4></div>';
                     $html .= '<div class="text"><h5>days</h5></div>';
                 $html .= '</div>';
-                $html .= '<div class="awesome-blocks-countdown-item">';
+                $html .= '<div class="countdown-item">';
                     $html .= '<div class="number"><h4 class="hours">'.$hours.'</h4></div>';
                     $html .= '<div class="text"><h5>Hours</h5></div>';
                 $html .= '</div>';
-                $html .= '<div class="awesome-blocks-countdown-item">';
+                $html .= '<div class="countdown-item">';
                     $html .= '<div class="number"><h4 class="minutes">'.$minutes.'</h4></div>';
                     $html .= '<div class="text"><h5>Minutes</h5></div>';
                 $html .= '</div>';
-                $html .= '<div class="awesome-blocks-countdown-item">';
+                $html .= '<div class="countdown-item">';
                     $html .= '<div class="number"><h4 class="second">'.$seconds.'</h4></div>';
                     $html .= '<div class="text"><h5>Seconds</h5></div>';
                 $html .= '</div>';

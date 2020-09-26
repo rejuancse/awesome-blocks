@@ -47,20 +47,20 @@ class Timer extends Component {
 		const days 			= parseInt((timeLeft - hours / 3600 / minutes * 60 - seconds) / 86400 );
 	
 		const defaultFormat = (
-			<div className="awesome-blocks-countdown-wrapper">
-				<div className="awesome-blocks-countdown-item">
+			<div className="awesome-blocks-wrapper">
+				<div className="countdown-item">
 					<div className="number"><h4>{` ${days} `}</h4></div>
 					<div className="text"><h5>{` ${__('days', ' awesome-gutenberg-blocks')} `}</h5></div>
 				</div>
-				<div className="awesome-blocks-countdown-item">
+				<div className="countdown-item">
 					<div className="number"><h4>{` ${hours} `}</h4></div>
 					<div className="text"><h5>{` ${__('Hours', ' awesome-gutenberg-blocks')} `}</h5></div>
 				</div>
-				<div className="awesome-blocks-countdown-item">
+				<div className="countdown-item">
 					<div className="number"><h4>{` ${minutes} `}</h4></div>
 					<div className="text"><h5>{` ${__('Minutes', ' awesome-gutenberg-blocks')} `}</h5></div>
 				</div>
-				<div className="awesome-blocks-countdown-item">
+				<div className="countdown-item">
 					<div className="number"><h4>{` ${seconds} `}</h4></div>
 					<div className="text"><h5>{` ${__('Seconds', ' awesome-gutenberg-blocks')} `}</h5></div>
 				</div>
