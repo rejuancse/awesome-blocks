@@ -30,8 +30,8 @@ class Admin_Menu {
             __( 'Settings', 'awesome-gutenberg-blocks' ),
             __( 'Settings', 'awesome-gutenberg-blocks' ),
             'manage_options',
-            'wpcf-settings',
-            array( $this, 'wpcf_menu_page' )
+            'awesome-block-settings',
+            array( $this, 'awesome_block_menu_page' )
         );
     }
 
@@ -39,7 +39,7 @@ class Admin_Menu {
     /**
      * Display a custom menu page
      */
-    public function wpcf_menu_page(){
+    public function awesome_block_menu_page(){
         // Settings Tab With slug and Display name
     }
 
