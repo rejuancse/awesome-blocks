@@ -38,7 +38,7 @@ class Gutenberg{
     public function post_block_assets(){
         // Styles.
         wp_enqueue_style(
-            'skillate-core-global-style-css',
+            'awesome-block-global-style-css',
             AWEGB_DIR_URL . 'assets/css/blocks.style.build.css', 
             array( 'wp-editor' ),
             false
@@ -52,23 +52,23 @@ class Gutenberg{
     public function post_editor_assets(){
 
         wp_enqueue_style(
-            'skillate-core-editor-editor-css',
+            'awesome-block-editor-editor-css',
             AWEGB_DIR_URL . 'assets/css/blocks.editor.build.css',
             array( 'wp-edit-blocks' ),
             false
         );
 
-        // Scripts
+        # Scripts
         wp_enqueue_script(
-            'wpcf-block-script-js',
+            'awesome-block-script-js',
             AWEGB_DIR_URL . 'assets/js/blocks.min.js', 
             array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor' ),
             false,
             true
         );
         
-        // Localize Scripts
-        wp_localize_script( 'wpcf-block-script-js', 'plugin_option', array(
+        # Localize Scripts
+        wp_localize_script( 'awesome-block-script-js', 'plugin_option', array(
             'plugin' => AWEGB_DIR_URL,
             'name' => 'awesomeblock'
         ) );
