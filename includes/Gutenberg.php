@@ -17,7 +17,7 @@ class Gutenberg{
     public function __construct(){
         add_action( 'init', array( $this, 'blocks_init' ));
         add_action( 'enqueue_block_editor_assets', array( $this, 'post_editor_assets' ) );
-        add_action( 'enqueue_block_assets', array( $this, 'post_block_assets' ) );
+        add_action( 'enqueue_block_assets', array( $this, 'awesome_block_assets_frontend' ) );
         add_filter( 'block_categories', array( $this, 'block_categorie_callback'), 1 , 2 );
     }
     
@@ -35,13 +35,12 @@ class Gutenberg{
     /**
      * All Block Assets (Frontend & Backend)
      */
-    public function post_block_assets(){
-        // Styles.
+    public function awesome_block_assets_frontend() { # phpcs:ignore
+        # Styles.
         wp_enqueue_style(
-            'awesome-block-global-style-css',
-            AWEGB_DIR_URL . 'assets/css/blocks.style.build.css', 
-            array( 'wp-editor' ),
-            false
+            'awesome-block-style', # Handle.
+            plugins_url( 'assets/css/awesome-block-front.css', dirname( __FILE__ ) ), 
+            array( 'wp-editor' )
         );
     }
 
@@ -52,7 +51,7 @@ class Gutenberg{
     public function post_editor_assets(){
 
         wp_enqueue_style(
-            'awesome-block-editor-editor-css',
+            'awesome-block-editor',
             AWEGB_DIR_URL . 'assets/css/blocks.editor.build.css',
             array( 'wp-edit-blocks' ),
             false
@@ -73,13 +72,7 @@ class Gutenberg{
             'name' => 'awesomeblock'
         ) );
 
-        # Wp Editor Script
-        wp_enqueue_style(
-            'awegb-style-css', // Handle.
-            AWEGB_DIR_URL . 'assets/css/blocks.min.css',
-            false, 
-            'all'
-        ); 
+        
         
     }
 
