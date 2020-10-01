@@ -38,8 +38,8 @@ define('AWEGB_BASENAME', plugin_basename( AWEGB_FILE ));
 /**
 * Load Text Domain Language
 */
-add_action('init', 'wpcf_language_load');
-function wpcf_language_load(){
+add_action('init', 'awesome_block_language_load');
+function awesome_block_language_load(){
     load_plugin_textdomain('awesome-gutenberg-blocks', false, basename(dirname( AWEGB_FILE )).'/languages/');
 }
 

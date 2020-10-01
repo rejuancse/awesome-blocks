@@ -16,8 +16,8 @@ final class AwesomeBlock {
 
 	function __construct() {
 		$this->includes_core();
-		do_action('wpcf_before_load');
-		do_action('wpcf_after_load');
+		do_action('awesome_block_before_load');
+		do_action('awesome_block_after_load');
 	}
 
 	# Include Core
