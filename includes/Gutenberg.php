@@ -19,6 +19,7 @@ class Gutenberg{
         add_action( 'enqueue_block_editor_assets', array( $this, 'post_editor_assets' ) );
         add_action( 'enqueue_block_assets', array( $this, 'awesome_block_assets_frontend' ) );
         add_filter( 'block_categories', array( $this, 'block_categorie_callback'), 1 , 2 );
+        add_filter( 'wp_enqueue_scripts', array( $this, 'awesome_block_script_frontend'), 1 , 2 );
     }
     
     /** 
@@ -44,7 +45,18 @@ class Gutenberg{
         );
     }
 
-    
+
+
+    # Add CSS for Frontend
+    public function awesome_block_script_frontend(){
+        // wp_enqueue_media();
+        wp_enqueue_script(
+            'countdown-script', 
+            AWEGB_DIR_URL . 'assets/js/awesome-block-front.js', 
+            array('jquery')
+        );  
+    }
+
     /**
      * Only for the Gutenberg Editor(Backend Only)
      */
