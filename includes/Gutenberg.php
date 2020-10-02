@@ -44,12 +44,10 @@ class Gutenberg{
             array( 'wp-editor' )
         );
     }
+    
 
-
-
-    # Add CSS for Frontend
+    # Add JS Script for Frontend
     public function awesome_block_script_frontend(){
-        // wp_enqueue_media();
         wp_enqueue_script(
             'countdown-script', 
             AWEGB_DIR_URL . 'assets/js/awesome-block-front.js', 
@@ -80,12 +78,9 @@ class Gutenberg{
         
         # Localize Scripts
         wp_localize_script( 'awesome-block-script-js', 'plugin_option', array(
-            'plugin' => AWEGB_DIR_URL,
-            'name' => 'awesomeblock'
-        ) );
-
-        
-        
+            'plugin'    => AWEGB_DIR_URL,
+            'name'      => 'awesomeblock'
+        ) ); 
     }
 
     /**

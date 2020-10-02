@@ -71,7 +71,7 @@ class Awesome_Countdown{
         $html .= '<div class="awesome-blocks-countdown">';
             $html .= '<div class="awesome-blocks-wrapper" data-enddate='.$endDate.'>';
                 $html .= '<div class="countdown-item">';
-                    $html .= '<div class="number"><h4>'.$days.'</h4></div>';
+                    $html .= '<div class="number"><h4 class="days">'.$days.'</h4></div>';
                     $html .= '<div class="text"><h5>days</h5></div>';
                 $html .= '</div>';
                 $html .= '<div class="countdown-item">';

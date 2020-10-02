@@ -14,9 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
 			const seconds   = timeLeft % 60;
 			const minutes   = ((timeLeft - seconds) % 3600) / 60;
 			const hours     = ((timeLeft - minutes * 60 - seconds) % 86400) / 3600;
-			// const days 		= parseInt((timeLeft - hours / 3600 / minutes * 60 - seconds) / 86400 );
+			const days 		= parseInt((timeLeft - hours / 3600 / minutes * 60 - seconds) / 86400 );
+
+			console.log('Days', days);
             
-            // instance.querySelector( '.days' ).innerHTML = days;
+            instance.querySelector( '.days' ).innerHTML = days;
             instance.querySelector( '.hours' ).innerHTML = hours;
             instance.querySelector( '.minutes' ).innerHTML = minutes;
             instance.querySelector( '.second' ).innerHTML = seconds;
