@@ -35,12 +35,7 @@ class Gutenberg{
     /**
      * All Block Assets (Frontend & Backend)
      */
-    public function awesome_block_assets_frontend() { # phpcs:ignore
-        wp_enqueue_script(
-            'countdown-script', 
-            AWEGB_DIR_URL . 'assets/js/awesome-block-front.js', 
-            array('jquery')
-        );  
+    public function awesome_block_assets_frontend() {
         # Styles.
         wp_enqueue_style(
             'awesome-block-style', # Handle.
@@ -54,6 +49,26 @@ class Gutenberg{
             array( 'wp-edit-blocks' ),
             false
         );
+        # CSS
+        wp_enqueue_style(
+            'magnific-popup',
+            AWEGB_DIR_URL . 'assets/css/magnific-popup.css',
+            array( 'wp-edit-blocks' ),
+            false
+        );
+        
+        # JS
+        wp_enqueue_script(
+            'countdown-script', 
+            AWEGB_DIR_URL . 'assets/js/awesome-block-front.js', 
+            array('jquery')
+        );  
+        wp_enqueue_script(
+            'magnific-popup', 
+            AWEGB_DIR_URL . 'assets/js/jquery.magnific-popup.min.js', 
+            array('jquery')
+        ); 
+
     }
 
     /**
