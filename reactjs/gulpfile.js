@@ -6,7 +6,7 @@ const autoprefixer = require('gulp-autoprefixer');
 
 
 gulp.task('style_build', function() {
-  return gulp.src(['./src/blocks/**/style.scss'])
+    return gulp.src(['./src/blocks/**/style.scss'])
     .pipe(sass())
     .pipe(autoprefixer({
         browsers: ['last 2 versions'],
@@ -19,7 +19,7 @@ gulp.task('style_build', function() {
 
 
 gulp.task('editor_build', function() {
-  return gulp.src(['./src/editor.scss'])
+    return gulp.src(['./src/editor.scss'])
     .pipe(sass())
     .pipe(autoprefixer({
         browsers: ['last 2 versions'],
@@ -32,6 +32,6 @@ gulp.task('editor_build', function() {
 
  
 gulp.task('watch', function(){
-  gulp.watch('src/blocks/**/*.scss', gulp.series('style_build'));
-  gulp.watch('src/editor.scss', gulp.series('editor_build'));
+    gulp.watch('src/blocks/**/*.scss', gulp.series('style_build'));
+    gulp.watch('src/editor.scss', gulp.series('editor_build'));
 })

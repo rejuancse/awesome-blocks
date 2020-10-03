@@ -19,7 +19,6 @@ class Gutenberg{
         add_action( 'enqueue_block_editor_assets', array( $this, 'post_editor_assets' ) );
         add_action( 'enqueue_block_assets', array( $this, 'awesome_block_assets_frontend' ) );
         add_filter( 'block_categories', array( $this, 'block_categorie_callback'), 1 , 2 );
-        add_filter( 'wp_enqueue_scripts', array( $this, 'awesome_block_script_frontend'), 1 , 2 );
     }
     
     /** 
@@ -37,36 +36,30 @@ class Gutenberg{
      * All Block Assets (Frontend & Backend)
      */
     public function awesome_block_assets_frontend() { # phpcs:ignore
+        wp_enqueue_script(
+            'countdown-script', 
+            AWEGB_DIR_URL . 'assets/js/awesome-block-front.js', 
+            array('jquery')
+        );  
         # Styles.
         wp_enqueue_style(
             'awesome-block-style', # Handle.
             plugins_url( 'assets/css/awesome-block-front.css', dirname( __FILE__ ) ), 
             array( 'wp-editor' )
         );
-    }
-    
-
-    # Add JS Script for Frontend
-    public function awesome_block_script_frontend(){
-        wp_enqueue_script(
-            'countdown-script', 
-            AWEGB_DIR_URL . 'assets/js/awesome-block-front.js', 
-            array('jquery')
-        );  
+        # Build style
+        wp_enqueue_style(
+            'awesome-block-front',
+            AWEGB_DIR_URL . 'assets/css/blocks.style.build.css',
+            array( 'wp-edit-blocks' ),
+            false
+        );
     }
 
     /**
      * Only for the Gutenberg Editor(Backend Only)
      */
     public function post_editor_assets(){
-
-        wp_enqueue_style(
-            'awesome-block-editor',
-            AWEGB_DIR_URL . 'assets/css/blocks.editor.build.css',
-            array( 'wp-edit-blocks' ),
-            false
-        );
-
         # Scripts
         wp_enqueue_script(
             'awesome-block-script-js',
@@ -75,7 +68,7 @@ class Gutenberg{
             false,
             true
         );
-        
+
         # Localize Scripts
         wp_localize_script( 'awesome-block-script-js', 'plugin_option', array(
             'plugin'    => AWEGB_DIR_URL,

@@ -10,8 +10,7 @@ const { PanelBody, Button, Spinner, SelectControl, RangeControl, ColorPalette, T
 
 
 //  Import CSS.
-// import './style.scss';
-// import './editor.scss';
+import './editor.scss';
 import './style.scss'
 
 registerBlockType( 'awesome-blocks/awesomeimagegallery', {
