@@ -31,7 +31,7 @@ To use these shortcodes, just place the required shortcode(s) on your desired lo
 == Installation ==
 
 1. Go to Dashboard > Plugins > Add New, then search Awesome Block and click Install Now
-2. Upload 'awesome-gutenberg-blocks' to the '/wp-content/plugins/' directory
+2. Upload 'awesome-blocks' to the '/wp-content/plugins/' directory
 3. Activate the plugin through the 'Plugins' menu in WordPress
 4. Click on the new menu item "CrowdFunding" and Setup your Settings.
 
@@ -59,7 +59,6 @@ A. There are two versions of Awesome Block. One is free and another is paid. The
 
 = 1.0 =
 * Initial version released
-
 
 
 == Upgrade Notice ==

@@ -6,7 +6,7 @@
 * Version:           1.0.0
 * Author:            Rejuan Ahamed
 * Author URI:        https://rejuandev.live
-* Text Domain:       awesome-gutenberg-blocks
+* Text Domain:       awesome-blocks
 * Requires at least: 4.5
 * Tested up to:      5.4
 * License:           GPL-2.0+
@@ -40,7 +40,7 @@ define('AWEGB_BASENAME', plugin_basename( AWEGB_FILE ));
 */
 add_action('init', 'awesome_block_language_load');
 function awesome_block_language_load(){
-    load_plugin_textdomain('awesome-gutenberg-blocks', false, basename(dirname( AWEGB_FILE )).'/languages/');
+    load_plugin_textdomain('awesome-blocks', false, basename(dirname( AWEGB_FILE )).'/languages/');
 }
 
 if (!class_exists( 'AwesomeBlock' )) {

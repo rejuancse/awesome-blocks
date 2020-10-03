@@ -92,7 +92,7 @@ class Gutenberg{
             array(
                 array(
                     'slug' 	=> 'awesome-blocks',
-                    'title' => __( 'Awesome Blocks', 'awesome-gutenberg-blocks' ),
+                    'title' => __( 'Awesome Blocks', 'awesome-blocks' ),
                 )
             )
         );

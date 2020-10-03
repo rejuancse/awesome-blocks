@@ -15,10 +15,10 @@ class Admin_Menu {
      */
     public function register_menu_page(){
         add_menu_page( 
-            'AwesomeBlock',
-            'AwesomeBlock',
+            'awesomeblock',
+            'Awesome Block',
             'manage_options',
-            'awesome-gutenberg-blocks',
+            'wp-awesome-blocks',
             'dashicons-admin-multisite', 
             null 
         );
@@ -26,9 +26,9 @@ class Admin_Menu {
         
         
         add_submenu_page(
-            'awesome-gutenberg-blocks',
-            __( 'Settings', 'awesome-gutenberg-blocks' ),
-            __( 'Settings', 'awesome-gutenberg-blocks' ),
+            'wp-awesome-blocks',
+            __( 'Settings', 'awesome-blocks' ),
+            __( 'Settings', 'awesome-blocks' ),
             'manage_options',
             'awesome-block-settings',
             array( $this, 'awesome_block_menu_page' )
