@@ -4,7 +4,7 @@ const { registerBlockType } = wp.blocks;
 
 registerBlockType('awesome-blocks/awesomepostblock', {
 	title: __('Awesome Post Block'),
-	icon: 'search',
+	icon: 'analytics',
     category: 'awesome-blocks',
     keywords: [__('Latest Post'), __('Post Block')],
 	
