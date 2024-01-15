@@ -1,29 +1,24 @@
-# README #
+Below you will find some information on how to run scripts.
 
-This README would normally document whatever steps are necessary to get your application up and running.
+> You can find the most recent version of this guide [here](https://github.com/rejuancse/awesome-blocks).
 
-### What is this repository for? ###
+## 👉 `npm start`
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+- Use to compile and run the block in development mode.
+- Watches for any changes and reports back any errors in your code.
 
-### How do I get set up? ###
+## 👉 `npm run build`
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+- Use to build production code for your block inside `dist` folder.
+- Runs once and reports back the gzip file sizes of the produced code.
 
-### Contribution guidelines ###
+## 👉 `npm run eject`
 
-* Writing tests
-* Code review
-* Other guidelines
+- Use to eject your plugin out of `awesome-blocks`.
+- Provides all the configurations so you can customize the project as you want.
+- It's a one-way street, `eject` and you have to maintain everything yourself.
+- You don't normally have to `eject` a project because by ejecting you lose the connection with `awesome-blocks` and from there onwards you have to update and maintain all the dependencies on your own.
 
-### Who do I talk to? ###
+---
 
-* Repo owner or admin
-* Other community or team contact
+###### Feel free to Email and say 👋 at me [rejuan.17bd@gmail.com]

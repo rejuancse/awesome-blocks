@@ -1,7 +1,5 @@
-assets/js/blocks.min.js
-assets/js/blocks.min.js.map
-reactjs/node_modules/
-reactjs/package-lock.json
-.idea/
-.vscode/
+/node_modules/
+/vendor/
 .DS_Store
+.phpcs.cache
+composer.lock

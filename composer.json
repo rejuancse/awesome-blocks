@@ -1,0 +1,27 @@
+{
+  "name": "rejuan/awesome-blocks",
+  "description": "Custom Gutenberg blocks.",
+  "license": "GPL-2.0+",
+  "type": "wordpress-plugin",
+  "authors": [
+    {
+      "name": "Rejuan",
+      "email": "rejuan.17bd@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "ABlocks\\Inc\\": "./inc"
+    }
+  },
+  "scripts": {
+    "cstd": "./vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs",
+    "cs": "./vendor/bin/phpcs --standard=.phpcs.xml --report=summary .",
+    "cbf": "./vendor/bin/phpcbf --standard=.phpcs.xml ."
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.7",
+    "wp-coding-standards/wpcs": "^2.3",
+    "phpcompatibility/php-compatibility": "^9.3"
+  }
+}
