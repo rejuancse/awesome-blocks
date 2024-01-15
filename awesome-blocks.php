@@ -1,35 +1,37 @@
 <?php
 /**
  * Plugin Name:       Awesome Blocks
- * Description:       The ultimate Gutenberg block plugin you'll ever require.
- * Version:           1.0.1
- * Requires at least: 5.6
- * Requires PHP:      7.4
+ * Description:       Example block scaffolded with Create Block tool.
+ * Requires at least: 6.1
+ * Requires PHP:      7.0
+ * Version:           0.1.0
  * Author:            Rejuan Ahamed
- * License:           GPLv2 or later
- * License URI:       https://www.gnu.org/licenses/gpl.html
+ * License:           GPL-2.0-or-later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       awesome-blocks
- * Domain Path:       /languages
  *
- * @package awesomeblocks
+ * @package           create-block
  */
 
-defined( 'ABSPATH' ) || exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
 
 /**
- * Include and instantiate Block classes
+ * Registers the block using the metadata loaded from the `block.json` file.
+ * Behind the scenes, it registers also all assets so they can be enqueued
+ * through the block editor in the corresponding context.
+ *
+ * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-require_once __DIR__ . '/inc/class-block-x.php';
-require_once __DIR__ . '/inc/class-block-y.php';
-require_once __DIR__ . '/inc/class-block-w.php';
-require_once __DIR__ . '/inc/class-block-z.php';
+function awesome_blocks_awesome_blocks_block_init() {
+	$blocks = array(
+		'photo-gallery',
+		'countdown'
+	);
 
-use ABlocks\Inc\BlockX;
-use ABlocks\Inc\BlockY;
-use ABlocks\Inc\BlockW;
-use ABlocks\Inc\BlockZ;
-
-new BlockX();
-new BlockY();
-new BlockW();
-new BlockZ();
+	foreach ($blocks as $block) {
+		register_block_type( __DIR__ . "/build/{$block}" );
+	}
+}
+add_action( 'init', 'awesome_blocks_awesome_blocks_block_init' );

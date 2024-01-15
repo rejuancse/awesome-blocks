@@ -1,24 +1,20 @@
 {
-  "name": "awesome-blocks",
-  "description": "Structure to work with multiple blocks in a single plugin.",
-  "version": "1.0.0-beta",
-  "author": "Rejuan Ahamed",
-  "license": "MIT",
-  "main": "",
-  "scripts": {
-    "start": "wp-scripts start",
-    "build": "wp-scripts build",
-    "start:block-w": "wp-scripts start ./blocks/block-w/src/index.js --output-path=./blocks/block-w/build",
-    "build:block-w": "wp-scripts build ./blocks/block-w/src/index.js --output-path=./blocks/block-w/build",
-    "start:block-x": "wp-scripts start ./blocks/block-x/src/index.js --output-path=./blocks/block-x/build",
-    "build:block-x": "wp-scripts build ./blocks/block-x/src/index.js --output-path=./blocks/block-x/build",
-    "start:block-y": "wp-scripts start ./blocks/block-y/src/index.js --output-path=./blocks/block-y/build",
-    "build:block-y": "wp-scripts build ./blocks/block-y/src/index.js --output-path=./blocks/block-y/build",
-    "start:block-z": "wp-scripts start ./blocks/block-z/src/index.js --output-path=./blocks/block-z/build",
-    "build:block-z": "wp-scripts build ./blocks/block-z/src/index.js --output-path=./blocks/block-z/build"
-  },
-  "devDependencies": {
-    "@wordpress/i18n": "^4.48.0",
-    "@wordpress/scripts": "^26.19.0"
-  }
+	"name": "awesome-blocks",
+	"version": "0.1.0",
+	"description": "Example block scaffolded with Create Block tool.",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^26.19.0"
+	}
 }
