@@ -200,7 +200,7 @@ function Edit({
     render: ({
       open
     }) => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(Button, {
-      className: "select-images-button is-button is-default is-large",
+      className: "select-images-button is-button is-default is-large primary-btn",
       onClick: open
     }, "Add images")
   }));
@@ -276,9 +276,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/photo-gallery/style.scss");
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
 
 /**
  * React hook that is used to mark the block wrapper element.
@@ -286,7 +283,6 @@ __webpack_require__.r(__webpack_exports__);
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-
 
 const {
   __
@@ -299,6 +295,7 @@ const {
   PanelBody
 } = wp.components;
 // const { MediaUpload, InspectorControls } = wp.editor;
+// import { MediaUpload, InspectorControls } from '@wordpress/block-editor';
 
 function save({
   attributes
@@ -321,7 +318,7 @@ function save({
       };
       if (gallery_style == 'style1') {
         return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-          className: `col-${columns} gallery-item`,
+          className: `col-${columns} gallery-item A`,
           style: paddingStyle
         }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
           href: image.url,
@@ -368,6 +365,7 @@ function save({
 
   //JSX to return
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "gallery-row",
     "data-total-slides": images.length
   }, displayImages(images));
 }
@@ -464,7 +462,7 @@ module.exports = window["wp"]["i18n"];
   \**************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/photo-gallery","version":"0.1.0","title":"Photo Gallery","category":"widgets","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"supports":{"html":false},"textdomain":"awesome-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = JSON.parse('{"apiVersion":3,"name":"create-block/photo-gallery","version":"0.1.0","title":"Photo Gallery","category":"widgets","icon":"images-alt","description":"Example block scaffolded with Create Block tool.","example":{},"supports":{"html":false},"textdomain":"awesome-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 

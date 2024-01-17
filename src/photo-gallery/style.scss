@@ -4,9 +4,27 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
+ .col-3.gallery-item {
+    width: 33.33% !important;
+    float: left;
+}
 
-.wp-block-create-block-photo-gallery {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+.col-2.gallery-item {
+    width: 45.1% !important;
+    float: left;
+}
+
+.gallery-item a {
+    display: inline-block
+}
+
+.gallery-item {
+    position: relative;
+	width: 100%;
+}
+
+.remove-item {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }

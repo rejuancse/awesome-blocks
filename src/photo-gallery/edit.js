@@ -7,7 +7,6 @@ import { withState } from '@wordpress/compose';
 
 import './editor.scss';
 
-
 export default function Edit({ attributes, setAttributes }) {
 
     //Destructuring the images array attribute
@@ -137,7 +136,7 @@ export default function Edit({ attributes, setAttributes }) {
                 multiple={true}
                 value={images}
                 render={({open}) => (
-                    <Button className="select-images-button is-button is-default is-large" onClick={open}>
+                    <Button className="select-images-button is-button is-default is-large primary-btn" onClick={open}>
                         Add images
                     </Button>
                 )}

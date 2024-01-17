@@ -5,13 +5,11 @@
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
 
-import './style.scss';
-
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
 const { Button, PanelBody } = wp.components;
 // const { MediaUpload, InspectorControls } = wp.editor;
-import { MediaUpload, InspectorControls } from '@wordpress/block-editor';
+// import { MediaUpload, InspectorControls } from '@wordpress/block-editor';
 
 
 export default function save( {attributes} ) {
@@ -31,7 +29,7 @@ export default function save( {attributes} ) {
 
                 if(gallery_style == 'style1') {
                     return (
-                        <div className={`col-${columns} gallery-item`} style={paddingStyle}>
+                        <div className={`col-${columns} gallery-item A`} style={paddingStyle}>
                             <a href={image.url} className="cloud-zoom">
                                 <img
                                     className='gallery-item'
@@ -72,6 +70,6 @@ export default function save( {attributes} ) {
 
     //JSX to return
     return (
-        <div  data-total-slides={images.length}>{ displayImages(images) }</div>
+        <div className="gallery-row"  data-total-slides={images.length}>{ displayImages(images) }</div>
     );
 }
