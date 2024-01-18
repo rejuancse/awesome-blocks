@@ -1,8 +1,8 @@
 {
 	"name": "awesome-blocks",
 	"version": "0.1.0",
-	"description": "Example block scaffolded with Create Block tool.",
-	"author": "The WordPress Contributors",
+	"description": "Awesome block scaffolded with Create Block tool.",
+	"author": "Rejuan Ahamed",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",
 	"scripts": {
