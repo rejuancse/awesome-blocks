@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 function awesome_blocks_awesome_blocks_block_init() {
 	$blocks = array(
 		'photo-gallery',
-		'countdown'
+		'card-block'
 	);
 
 	foreach ($blocks as $block) {

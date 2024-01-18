@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/card-block",
+  "version": "0.1.0",
+  "title": "Card Block",
+  "category": "widgets",
+  "icon": "slides",
+  "description": "Example block scaffolded with Create Block tool.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "awesome-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "imgSrc": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "src",
+      "selector": "img"
+    },
+    "imgId": {
+      "type": "number"
+    },
+    "imgAlt": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "alt",
+      "selector": "img"
+    },
+    "headline": {
+      "type": "string",
+      "source": "text",
+      "selector": ".card__title"
+    },
+    "body": {
+      "type": "array",
+      "source": "children",
+      "selector": ".card__body"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "string"
+    }
+  }
+}
