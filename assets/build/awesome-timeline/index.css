@@ -1,0 +1,221 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/awesome-timeline/editor.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************/
+/**
+ * Awesome Timeline - Editor Styles
+ */
+.at-preview {
+  /**
+   * Awesome Timeline - Frontend Styles
+   */
+}
+.at-preview .timeline-row:before,
+.at-preview .timeline-row:after {
+  content: "";
+  display: table;
+}
+.at-preview .timeline-row:after {
+  clear: both;
+}
+.at-preview .timeline-col-6 {
+  width: 50%;
+}
+.at-preview .timeline-col-11 {
+  width: 91.66666667%;
+}
+.at-preview .timeline-col-6 {
+  float: left;
+  position: relative;
+  min-height: 1px;
+}
+.at-preview .text-right {
+  text-align: right;
+}
+.at-preview .timeline-col-offset {
+  margin-left: 8.33333333%;
+}
+.at-preview #timeline .timeline-movement .timeline-item .timeline-panel .title {
+  color: #ed1c24;
+}
+.at-preview #timeline {
+  list-style: none;
+  position: relative;
+}
+.at-preview #timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #c4c4c4;
+  left: 50%;
+  margin-left: -1.5px;
+}
+.at-preview #timeline:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 20px;
+  background-color: #c4c4c4;
+}
+.at-preview #timeline .timeline-badge {
+  width: 50px;
+  height: 50px;
+  font-size: 1.2em;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin-left: -25px;
+  z-index: 10;
+  border-radius: 100%;
+}
+.at-preview #timeline .timeline-badge:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  width: 22px;
+  height: 22px;
+  border: 6px solid #c4c4c4;
+  background-color: #eeeeee;
+  transition: 0.3s;
+}
+.at-preview #timeline .timeline-badge .timeline-date {
+  font-size: 1.4em;
+}
+.at-preview #timeline .timeline-movement {
+  position: relative;
+  padding-bottom: 10px;
+}
+.at-preview #timeline .timeline-movement:hover {
+  cursor: pointer;
+}
+.at-preview #timeline .timeline-movement:hover .timeline-badge:before {
+  box-shadow: 0 0 0 3px rgba(196, 196, 196, 0.3);
+}
+.at-preview #timeline .timeline-movement .timeline-item {
+  padding: 20px 0;
+}
+.at-preview #timeline .timeline-movement .timeline-item .timeline-panel {
+  margin-left: 20px;
+}
+.at-preview #timeline .timeline-movement .timeline-item .timeline-panel .title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 5px;
+  position: relative;
+}
+.at-preview #timeline .timeline-movement .timeline-item .timeline-panel .title:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -80px;
+  width: 50px;
+  height: 4px;
+  background: #c4c4c4;
+  border-radius: 20px;
+}
+.at-preview #timeline .timeline-movement .timeline-item .timeline-panel .title:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: -35px;
+  width: 8px;
+  height: 8px;
+  background: #c4c4c4;
+  border-radius: 20px;
+}
+.at-preview #timeline .timeline-movement .timeline-item .timeline-panel.left-part {
+  text-align: right;
+  margin-right: 20px;
+  margin-left: 0;
+}
+.at-preview #timeline .timeline-movement .timeline-item .timeline-panel .details {
+  margin: 0;
+}
+.at-preview #timeline .timeline-movement .timeline-item .timeline-panel.left-part .title:after {
+  right: -80px;
+  left: inherit;
+}
+.at-preview #timeline .timeline-movement .timeline-item .timeline-panel.left-part .title:before {
+  right: -35px;
+  left: inherit;
+}
+.at-preview #timeline .timeline-movement .timeline-item .left-timeline-date {
+  padding-right: 50px;
+}
+.at-preview #timeline .timeline-movement .timeline-item .timeline-date {
+  font-size: 18px;
+  color: #000;
+  margin-left: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.at-preview #timeline .timeline-movement.timeline-movement-top {
+  height: 25px;
+}
+.at-preview #timeline .timeline-movement.timeline-movement-top:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  background: #c4c4c4;
+  border-radius: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .at-preview #timeline .timeline-movement .timeline-item .timeline-panel.left-part .title:after {
+    right: -50px;
+    width: 35px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .at-preview #timeline .timeline-movement .timeline-item .timeline-panel.left-part .title:before {
+    right: -20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .at-preview #timeline .timeline-movement .timeline-item .timeline-panel .title:before {
+    left: -12px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .at-preview #timeline .timeline-movement .timeline-item .timeline-panel .title:after {
+    left: -40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .at-preview #timeline .timeline-movement .timeline-item .timeline-panel .title:after {
+    width: 35px;
+  }
+}
+.at-preview #timeline {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.at-placeholder {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  background: #f9f9f9;
+}
+.at-placeholder p {
+  margin: 0;
+  color: #666;
+}
+
+/*# sourceMappingURL=index.css.map*/

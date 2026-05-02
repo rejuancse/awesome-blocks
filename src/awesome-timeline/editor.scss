@@ -1,0 +1,28 @@
+/**
+ * Awesome Timeline - Editor Styles
+ */
+
+.at-preview {
+    // Import all frontend styles for editor preview
+    @import './style.scss';
+
+    // Editor specific adjustments
+    #timeline {
+        pointer-events: none;
+        user-select: none;
+    }
+}
+
+// Placeholder when no events
+.at-placeholder {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+    background: #f9f9f9;
+
+    p {
+        margin: 0;
+        color: #666;
+    }
+}

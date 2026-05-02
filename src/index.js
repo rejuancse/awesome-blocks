@@ -5,6 +5,7 @@
 import './post-block';
 import './card-block';
 import './awesome-slider';
+import './awesome-timeline';
 import './feature-block';
 import './grid-block';
 

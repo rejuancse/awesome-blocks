@@ -61,5 +61,10 @@ function awesome_block_register_blocks() {
     register_block_type_from_metadata(
         AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/awesome-slider'
     );
+
+    // Register Awesome Timeline Block - No render callback needed as it's static
+    register_block_type_from_metadata(
+        AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/awesome-timeline'
+    );
 }
 add_action( 'init', 'awesome_block_register_blocks' );

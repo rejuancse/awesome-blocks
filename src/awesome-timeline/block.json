@@ -1,0 +1,34 @@
+{
+    "apiVersion": 2,
+    "name": "awesome/awesome-timeline",
+    "title": "Awesome Timeline",
+    "category": "awesome-block",
+    "icon": "clock",
+    "description": "A beautiful vertical timeline block with alternating left/right items",
+    "keywords": ["timeline", "history", "events", "schedule"],
+    "attributes": {
+        "timelineItems": {
+            "type": "array",
+            "default": [
+                {
+                    "id": 1,
+                    "title": "Project Started",
+                    "description": "We began our journey with a vision to create something amazing.",
+                    "date": "January 2026"
+                },
+                {
+                    "id": 2,
+                    "title": "First Milestone",
+                    "description": "Successfully completed our first major milestone.",
+                    "date": "March 2026"
+                }
+            ]
+        }
+    },
+    "supports": {
+        "align": ["wide", "full"],
+        "html": false
+    },
+    "editorScript": "file:./index.js",
+    "style": "file:./style-index.css"
+}
