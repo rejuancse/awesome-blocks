@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Awesome Blocks
- * Description:       Example block scaffolded with Create Block tool.
+ * Description:       Collection of custom Gutenberg blocks.
  * Requires at least: 6.1
  * Requires PHP:      7.0
  * Version:           0.1.0
@@ -17,21 +17,71 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-/**
- * Registers the block using the metadata loaded from the `block.json` file.
- * Behind the scenes, it registers also all assets so they can be enqueued
- * through the block editor in the corresponding context.
- *
- * @see https://developer.wordpress.org/reference/functions/register_block_type/
- */
-function awesome_blocks_awesome_blocks_block_init() {
-	$blocks = array(
-		'photo-gallery',
-		'card-block'
-	);
+require_once __DIR__ . '/vendor/autoload.php';
 
-	foreach ($blocks as $block) {
-		register_block_type( __DIR__ . "/build/{$block}" );
-	}
+/**
+ * The main plugin class
+ */
+final class Awesome_Block {
+
+    /**
+     * Plugin version
+     *
+     * @var string
+     */
+    const version = '1.0.0';
+
+    /**
+     * Class constructor
+     */
+    private function __construct() {
+        $this->define_constants();
+        add_action( 'plugins_loaded', array( $this, 'init_plugin' ) );
+    }
+
+    /**
+     * Initialize a singleton instance
+     * @return \Awesome_Block
+     */
+    public static function init() {
+        static $instance = false;
+
+        if ( ! $instance ) {
+            $instance = new self();
+        }
+
+        return $instance;
+    }
+
+    /**
+     * Define the required plugin constants
+     *
+     * @return void
+     */
+    public function define_constants() {
+        define( 'AWESOME_BLOCK_VERSION', self::version );
+        define( 'AB_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
+        define( 'AB_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+        define( 'AB_VERSION', '1.0.0' );
+    }
+
+    /**
+     * Initialize the plugin
+     *
+     * @return void
+     */
+    public function init_plugin() {
+        new Awesome_Block\Awesome_Block_i18n();
+        new Awesome_Block\Assets();
+    }
 }
-add_action( 'init', 'awesome_blocks_awesome_blocks_block_init' );
+
+/**
+ * Initialize the main plugin
+ */
+function awesome_block_list() {
+    return Awesome_Block::init();
+}
+
+// Kick-off the plugin
+awesome_block_list();

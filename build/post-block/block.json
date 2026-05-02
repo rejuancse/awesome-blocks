@@ -1,0 +1,70 @@
+{
+  "apiVersion": 2,
+  "name": "awesome/post-block",
+  "title": "Post Block",
+  "category": "awesome-block",
+  "icon": "admin-post",
+  "description": "Display posts with customizable layout",
+  "keywords": [
+    "post",
+    "blog",
+    "news"
+  ],
+  "attributes": {
+    "postsToShow": {
+      "type": "number",
+      "default": 3
+    },
+    "order": {
+      "type": "string",
+      "default": "desc"
+    },
+    "orderBy": {
+      "type": "string",
+      "default": "date"
+    },
+    "columns": {
+      "type": "number",
+      "default": 3
+    },
+    "displayTitle": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayExcerpt": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayDate": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayAuthor": {
+      "type": "boolean",
+      "default": false
+    },
+    "displayThumbnail": {
+      "type": "boolean",
+      "default": true
+    },
+    "thumbnailSize": {
+      "type": "string",
+      "default": "medium"
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    }
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "html": false
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

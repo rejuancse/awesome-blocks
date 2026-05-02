@@ -1,0 +1,17 @@
+/*!***************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/post-block/editor.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************/
+/**
+ * Editor Styles
+ */
+.wp-block-awesome-post-block {
+  padding: 0;
+}
+.wp-block-awesome-post-block .ab-posts-grid {
+  min-height: 200px;
+}
+.wp-block-awesome-post-block .components-placeholder {
+  margin: 0;
+}
+
+/*# sourceMappingURL=index.css.map*/

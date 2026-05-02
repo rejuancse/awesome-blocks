@@ -1,0 +1,22 @@
+{
+    "name": "thebitcraft/awesome-blocks",
+    "description": "Collection of custom Gutenberg blocks.",
+    "type": "wordpress-plugin",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Rejuan Ahamed"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Awesome_Block\\": "includes/"
+        },
+        "files": [
+            "includes/render-post-block.php",
+            "includes/register-blocks.php"
+        ]
+    }
+}
