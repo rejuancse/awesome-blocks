@@ -33,10 +33,10 @@ add_filter( 'block_categories_all', 'ab_register_block_category', 10, 1 );
 /**
  * Register Blocks server-side with automatic asset loading
  */
-function ab_register_blocks() {
+function awesome_block_register_blocks() {
     // Register Post Block
     register_block_type_from_metadata(
-        AB_PLUGIN_PATH . 'build/post-block',
+        AWESOME_BLOCK_PLUGIN_PATH . 'build/post-block',
         array(
             'render_callback' => 'ab_render_post_block',
         )
@@ -44,17 +44,17 @@ function ab_register_blocks() {
 
     // Register Card Block - No render callback needed as it's static
     register_block_type_from_metadata(
-        AB_PLUGIN_PATH . 'build/card-block'
+        AWESOME_BLOCK_PLUGIN_PATH . 'build/card-block'
     );
 
     // Register Feature Block - No render callback needed as it's static
     register_block_type_from_metadata(
-        AB_PLUGIN_PATH . 'build/feature-block'
+        AWESOME_BLOCK_PLUGIN_PATH . 'build/feature-block'
     );
 
     // Register Grid Block - No render callback needed as it uses InnerBlocks
     register_block_type_from_metadata(
-        AB_PLUGIN_PATH . 'build/grid-block'
+        AWESOME_BLOCK_PLUGIN_PATH . 'build/grid-block'
     );
 }
-add_action( 'init', 'ab_register_blocks' );
+add_action( 'init', 'awesome_block_register_blocks' );

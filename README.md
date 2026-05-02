@@ -2,7 +2,7 @@ Below you will find some information on how to run scripts.
 
 > You can find the most recent version of this guide [here](https://github.com/rejuancse/awesome-blocks).
 
-## 👉 `npm start`
+## 👉 `npm run start`
 
 - Use to compile and run the block in development mode.
 - Watches for any changes and reports back any errors in your code.

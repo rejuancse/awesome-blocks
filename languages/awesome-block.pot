@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-05-02T10:29:24+00:00\n"
+"POT-Creation-Date: 2026-05-02T11:34:03+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: awesome-blocks\n"
@@ -31,8 +31,9 @@ msgid "Rejuan Ahamed"
 msgstr ""
 
 #: includes/render-post-block.php:51
-#: build/post-block/index.js:1
+#: build/post-block/index.js:262
 #: src/post-block/edit.js:221
+#: build/post-block/index.js:221
 msgid "No posts found."
 msgstr ""
 
@@ -44,329 +45,727 @@ msgstr ""
 msgid "Read More"
 msgstr ""
 
-#: build/grid-block/index.js:1
-#: src/grid-block/index.js:25
-msgid "Awesome Grid Block"
+#: build/card-block/index.js:108
+#: src/card-block/edit.js:102
+#: build/card-block/index.js:102
+msgid "Card Content"
 msgstr ""
 
-#: build/grid-block/index.js:1
-#: src/grid-block/index.js:26
-msgid "Create responsive grid layouts with customizable columns and gaps"
+#: build/card-block/index.js:112
+#: src/card-block/edit.js:106
+#: build/card-block/index.js:106
+msgid "Card Image"
 msgstr ""
 
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:54
-msgid "Layout"
+#: build/card-block/index.js:126
+#: src/card-block/edit.js:124
+#: build/card-block/index.js:124
+msgid "Upload Image"
 msgstr ""
 
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:59
-msgid "Style"
+#: build/card-block/index.js:130
+#: src/card-block/edit.js:128
+#: build/card-block/index.js:128
+msgid "Preview"
 msgstr ""
 
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:69
-msgid "Grid Columns"
+#: build/card-block/index.js:148
+#: src/card-block/edit.js:156
+#: build/card-block/index.js:156
+msgid "Image Alt Text"
 msgstr ""
 
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:77
-msgid "Desktop Columns"
+#: build/card-block/index.js:154
+#: src/card-block/edit.js:168
+#: build/card-block/index.js:168
+msgid "Tag"
 msgstr ""
 
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:89
-msgid "Number of columns on desktop screens (1024px and above)"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:97
-msgid "Tablet Columns"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:109
-msgid "Number of columns on tablet screens (768px to 1023px)"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:117
-msgid "Mobile Columns"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:129
-msgid "Number of columns on mobile screens (up to 767px)"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:138
-msgid "Grid Gaps"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:145
-msgid "Column Gap"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:157
-msgid "Space between grid columns (px)"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:163
-msgid "Row Gap"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:175
-msgid "Space between grid rows (px)"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:183
-msgid "Grid Settings"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:190
-msgid "Grid Auto Flow"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:197
-msgid "Row"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:204
-msgid "Column"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:211
-msgid "Row Dense"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:218
-msgid "Column Dense"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:230
-msgid "Controls how auto-placed items get inserted in the grid"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:243
-msgid "Alignment"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:250
-msgid "Horizontal Alignment"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:257
-msgid "Left"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:264
-msgid "Center"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:271
-msgid "Right"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:278
-msgid "Space Between"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:290
-msgid "Vertical Alignment"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:297
-msgid "Top"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:304
-msgid "Middle"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:311
-msgid "Bottom"
-msgstr ""
-
-#: build/grid-block/index.js:1
-#: src/grid-block/edit.js:346
-msgid "Grid Item"
-msgstr ""
-
-#: build/post-block/index.js:1
-#: src/post-block/index.js:25
-msgid "Awesome Post Block"
-msgstr ""
-
-#: build/post-block/index.js:1
-#: src/post-block/index.js:26
-msgid "Display posts with customizable layout"
-msgstr ""
-
-#: build/post-block/index.js:1
-#: src/post-block/edit.js:79
-msgid "All Categories"
-msgstr ""
-
-#: build/post-block/index.js:1
-#: src/post-block/edit.js:89
-msgid "Settings"
-msgstr ""
-
-#: build/post-block/index.js:1
-#: src/post-block/edit.js:91
-msgid "Posts to Show"
-msgstr ""
-
-#: build/post-block/index.js:1
-#: src/post-block/edit.js:109
-msgid "Category"
-msgstr ""
-
-#: build/post-block/index.js:1
-#: src/post-block/edit.js:117
-msgid "Select a category to filter posts"
-msgstr ""
-
-#: build/post-block/index.js:1
-#: src/post-block/edit.js:121
-msgid "Order By"
-msgstr ""
-
-#: build/post-block/index.js:1
+#: build/card-block/index.js:166
+#: build/post-block/index.js:156
+#: src/card-block/edit.js:176
 #: src/post-block/edit.js:124
+#: build/card-block/index.js:176
+#: build/post-block/index.js:124
 msgid "Date"
 msgstr ""
 
-#: build/post-block/index.js:1
+#: build/card-block/index.js:184
+#: src/card-block/edit.js:193
+#: build/card-block/index.js:193
+msgid "Select a date"
+msgstr ""
+
+#: build/card-block/index.js:205
+#: build/feature-block/index.js:70
+#: build/post-block/index.js:159
+#: src/card-block/edit.js:222
+#: src/feature-block/edit.js:66
 #: src/post-block/edit.js:125
+#: build/card-block/index.js:222
+#: build/feature-block/index.js:66
+#: build/post-block/index.js:125
 msgid "Title"
 msgstr ""
 
-#: build/post-block/index.js:1
-#: src/post-block/edit.js:126
-msgid "Modified"
+#: build/card-block/index.js:211
+#: src/card-block/edit.js:229
+#: build/card-block/index.js:229
+msgid "Excerpt"
 msgstr ""
 
-#: build/post-block/index.js:1
-#: src/post-block/edit.js:127
-msgid "Author"
+#: build/card-block/index.js:219
+#: src/card-block/edit.js:241
+#: build/card-block/index.js:241
+msgid "Author Info"
 msgstr ""
 
-#: build/post-block/index.js:1
-#: src/post-block/edit.js:128
-msgid "Random"
+#: build/card-block/index.js:233
+#: src/card-block/edit.js:259
+#: build/card-block/index.js:259
+msgid "Upload Avatar"
 msgstr ""
 
-#: build/post-block/index.js:1
-#: src/post-block/edit.js:134
-msgid "Order"
+#: build/card-block/index.js:237
+#: src/card-block/edit.js:263
+#: build/card-block/index.js:263
+msgid "Avatar"
 msgstr ""
 
-#: build/post-block/index.js:1
-#: src/post-block/edit.js:137
-msgid "Descending"
+#: build/card-block/index.js:255
+#: src/card-block/edit.js:290
+#: build/card-block/index.js:290
+msgid "Author Name"
 msgstr ""
 
-#: build/post-block/index.js:1
-#: src/post-block/edit.js:138
-msgid "Ascending"
+#: build/card-block/index.js:261
+#: src/card-block/edit.js:301
+#: build/card-block/index.js:301
+msgid "Button Text"
 msgstr ""
 
-#: build/post-block/index.js:1
-#: src/post-block/edit.js:144
-msgid "Columns"
+#: build/card-block/index.js:267
+#: src/card-block/edit.js:308
+#: build/card-block/index.js:308
+msgid "Button Link"
 msgstr ""
 
-#: build/post-block/index.js:1
-#: src/post-block/edit.js:152
-msgid "Thumbnail Size"
+#: build/card-block/index.js:273
+#: build/feature-block/index.js:90
+#: src/card-block/edit.js:315
+#: src/feature-block/edit.js:90
+#: build/card-block/index.js:315
+msgid "Open in New Tab"
 msgstr ""
 
-#: build/post-block/index.js:1
-#: src/post-block/edit.js:155
-msgid "Thumbnail"
-msgstr ""
-
-#: build/post-block/index.js:1
-#: src/post-block/edit.js:156
-msgid "Medium"
-msgstr ""
-
-#: build/post-block/index.js:1
-#: src/post-block/edit.js:157
-msgid "Medium Large"
-msgstr ""
-
-#: build/post-block/index.js:1
-#: src/post-block/edit.js:158
-msgid "Large"
-msgstr ""
-
-#: build/post-block/index.js:1
-#: src/post-block/edit.js:159
-msgid "Full"
-msgstr ""
-
-#: build/post-block/index.js:1
+#: build/card-block/index.js:279
+#: build/feature-block/index.js:114
+#: build/post-block/index.js:218
+#: src/card-block/edit.js:322
+#: src/feature-block/edit.js:116
 #: src/post-block/edit.js:168
+#: build/card-block/index.js:322
+#: build/feature-block/index.js:116
+#: build/post-block/index.js:168
 msgid "Display Options"
 msgstr ""
 
-#: build/post-block/index.js:1
+#: build/card-block/index.js:282
+#: src/card-block/edit.js:324
+#: build/card-block/index.js:324
+msgid "Show Tag"
+msgstr ""
+
+#: build/card-block/index.js:288
+#: src/card-block/edit.js:329
+#: build/card-block/index.js:329
+msgid "Show Date"
+msgstr ""
+
+#: build/card-block/index.js:294
+#: src/card-block/edit.js:334
+#: build/card-block/index.js:334
+msgid "Show Excerpt"
+msgstr ""
+
+#: build/card-block/index.js:300
+#: src/card-block/edit.js:339
+#: build/card-block/index.js:339
+msgid "Show Author"
+msgstr ""
+
+#: build/card-block/index.js:306
+#: src/card-block/edit.js:344
+#: build/card-block/index.js:344
+msgid "Show Button"
+msgstr ""
+
+#: build/card-block/index.js:312
+#: src/card-block/edit.js:350
+#: build/card-block/index.js:350
+msgid "Card Alignment"
+msgstr ""
+
+#: build/card-block/index.js:315
+#: build/feature-block/index.js:129
+#: build/grid-block/index.js:155
+#: src/card-block/edit.js:352
+#: src/feature-block/edit.js:130
+#: src/grid-block/edit.js:243
+#: build/card-block/index.js:352
+#: build/feature-block/index.js:130
+#: build/grid-block/index.js:243
+msgid "Alignment"
+msgstr ""
+
+#: build/card-block/index.js:318
+#: build/feature-block/index.js:132
+#: build/grid-block/index.js:161
+#: src/card-block/edit.js:355
+#: src/feature-block/edit.js:133
+#: src/grid-block/edit.js:257
+#: build/card-block/index.js:355
+#: build/feature-block/index.js:133
+#: build/grid-block/index.js:257
+msgid "Left"
+msgstr ""
+
+#: build/card-block/index.js:321
+#: build/feature-block/index.js:135
+#: build/grid-block/index.js:164
+#: src/card-block/edit.js:356
+#: src/feature-block/edit.js:134
+#: src/grid-block/edit.js:264
+#: build/card-block/index.js:356
+#: build/feature-block/index.js:134
+#: build/grid-block/index.js:264
+msgid "Center"
+msgstr ""
+
+#: build/card-block/index.js:324
+#: build/feature-block/index.js:138
+#: build/grid-block/index.js:167
+#: src/card-block/edit.js:357
+#: src/feature-block/edit.js:135
+#: src/grid-block/edit.js:271
+#: build/card-block/index.js:357
+#: build/feature-block/index.js:135
+#: build/grid-block/index.js:271
+msgid "Right"
+msgstr ""
+
+#: build/card-block/index.js:413
+#: src/card-block/index.js:25
+#: build/card-block/index.js:430
+msgid "Awesome Card Block"
+msgstr ""
+
+#: build/card-block/index.js:414
+#: src/card-block/index.js:26
+#: build/card-block/index.js:431
+msgid "Beautiful card layout with image, tag, title, excerpt, author and button"
+msgstr ""
+
+#: build/feature-block/index.js:57
+#: src/feature-block/edit.js:52
+#: build/feature-block/index.js:52
+msgid "Feature Content"
+msgstr ""
+
+#: build/feature-block/index.js:60
+#: src/feature-block/edit.js:55
+#: build/feature-block/index.js:55
+msgid "Icon"
+msgstr ""
+
+#: build/feature-block/index.js:76
+#: src/feature-block/edit.js:73
+#: build/feature-block/index.js:73
+msgid "Description"
+msgstr ""
+
+#: build/feature-block/index.js:83
+#: src/feature-block/edit.js:81
+#: build/feature-block/index.js:81
+msgid "Link (Optional)"
+msgstr ""
+
+#: build/feature-block/index.js:96
+#: src/feature-block/edit.js:98
+#: build/feature-block/index.js:98
+msgid "Icon Style"
+msgstr ""
+
+#: build/feature-block/index.js:99
+#: src/feature-block/edit.js:100
+#: build/feature-block/index.js:100
+msgid "Icon Colors"
+msgstr ""
+
+#: build/feature-block/index.js:105
+#: src/feature-block/edit.js:105
+msgid "Icon Color"
+msgstr ""
+
+#: build/feature-block/index.js:111
+#: src/feature-block/edit.js:110
+#: build/feature-block/index.js:110
+msgid "Icon Background"
+msgstr ""
+
+#: build/feature-block/index.js:117
+#: src/feature-block/edit.js:118
+#: build/feature-block/index.js:118
+msgid "Show Icon"
+msgstr ""
+
+#: build/feature-block/index.js:123
+#: src/feature-block/edit.js:124
+#: build/feature-block/index.js:124
+msgid "Show Link Button"
+msgstr ""
+
+#: build/feature-block/index.js:172
+#: build/feature-block/index.js:304
+#: src/feature-block/edit.js:163
+#: src/feature-block/save.js:58
+#: build/feature-block/index.js:163
+#: build/feature-block/index.js:261
+msgid "Learn More →"
+msgstr ""
+
+#: build/feature-block/index.js:217
+#: src/feature-block/index.js:25
+#: build/feature-block/index.js:198
+msgid "Awesome Feature Block"
+msgstr ""
+
+#: build/feature-block/index.js:218
+#: src/feature-block/index.js:26
+#: build/feature-block/index.js:199
+msgid "Display features/services with icon, title and description"
+msgstr ""
+
+#: build/grid-block/index.js:68
+#: src/grid-block/edit.js:54
+#: build/grid-block/index.js:54
+msgid "Layout"
+msgstr ""
+
+#: build/grid-block/index.js:72
+#: src/grid-block/edit.js:59
+#: build/grid-block/index.js:59
+msgid "Style"
+msgstr ""
+
+#: build/grid-block/index.js:78
+#: src/grid-block/edit.js:69
+#: build/grid-block/index.js:69
+msgid "Grid Columns"
+msgstr ""
+
+#: build/grid-block/index.js:81
+#: src/grid-block/edit.js:77
+#: build/grid-block/index.js:77
+msgid "Desktop Columns"
+msgstr ""
+
+#: build/grid-block/index.js:88
+#: src/grid-block/edit.js:89
+#: build/grid-block/index.js:89
+msgid "Number of columns on desktop screens (1024px and above)"
+msgstr ""
+
+#: build/grid-block/index.js:90
+#: src/grid-block/edit.js:97
+#: build/grid-block/index.js:97
+msgid "Tablet Columns"
+msgstr ""
+
+#: build/grid-block/index.js:97
+#: src/grid-block/edit.js:109
+#: build/grid-block/index.js:109
+msgid "Number of columns on tablet screens (768px to 1023px)"
+msgstr ""
+
+#: build/grid-block/index.js:99
+#: src/grid-block/edit.js:117
+#: build/grid-block/index.js:117
+msgid "Mobile Columns"
+msgstr ""
+
+#: build/grid-block/index.js:106
+#: src/grid-block/edit.js:129
+#: build/grid-block/index.js:129
+msgid "Number of columns on mobile screens (up to 767px)"
+msgstr ""
+
+#: build/grid-block/index.js:108
+#: src/grid-block/edit.js:138
+#: build/grid-block/index.js:138
+msgid "Grid Gaps"
+msgstr ""
+
+#: build/grid-block/index.js:111
+#: src/grid-block/edit.js:145
+#: build/grid-block/index.js:145
+msgid "Column Gap"
+msgstr ""
+
+#: build/grid-block/index.js:118
+#: src/grid-block/edit.js:157
+#: build/grid-block/index.js:157
+msgid "Space between grid columns (px)"
+msgstr ""
+
+#: build/grid-block/index.js:120
+#: src/grid-block/edit.js:163
+#: build/grid-block/index.js:163
+msgid "Row Gap"
+msgstr ""
+
+#: build/grid-block/index.js:127
+#: src/grid-block/edit.js:175
+#: build/grid-block/index.js:175
+msgid "Space between grid rows (px)"
+msgstr ""
+
+#: build/grid-block/index.js:129
+#: src/grid-block/edit.js:183
+#: build/grid-block/index.js:183
+msgid "Grid Settings"
+msgstr ""
+
+#: build/grid-block/index.js:132
+#: src/grid-block/edit.js:190
+#: build/grid-block/index.js:190
+msgid "Grid Auto Flow"
+msgstr ""
+
+#: build/grid-block/index.js:135
+#: src/grid-block/edit.js:197
+#: build/grid-block/index.js:197
+msgid "Row"
+msgstr ""
+
+#: build/grid-block/index.js:138
+#: src/grid-block/edit.js:204
+#: build/grid-block/index.js:204
+msgid "Column"
+msgstr ""
+
+#: build/grid-block/index.js:141
+#: src/grid-block/edit.js:211
+#: build/grid-block/index.js:211
+msgid "Row Dense"
+msgstr ""
+
+#: build/grid-block/index.js:144
+#: src/grid-block/edit.js:218
+#: build/grid-block/index.js:218
+msgid "Column Dense"
+msgstr ""
+
+#: build/grid-block/index.js:150
+#: src/grid-block/edit.js:230
+#: build/grid-block/index.js:230
+msgid "Controls how auto-placed items get inserted in the grid"
+msgstr ""
+
+#: build/grid-block/index.js:158
+#: src/grid-block/edit.js:250
+#: build/grid-block/index.js:250
+msgid "Horizontal Alignment"
+msgstr ""
+
+#: build/grid-block/index.js:170
+#: src/grid-block/edit.js:278
+#: build/grid-block/index.js:278
+msgid "Space Between"
+msgstr ""
+
+#: build/grid-block/index.js:177
+#: src/grid-block/edit.js:290
+#: build/grid-block/index.js:290
+msgid "Vertical Alignment"
+msgstr ""
+
+#: build/grid-block/index.js:180
+#: src/grid-block/edit.js:297
+#: build/grid-block/index.js:297
+msgid "Top"
+msgstr ""
+
+#: build/grid-block/index.js:183
+#: src/grid-block/edit.js:304
+#: build/grid-block/index.js:304
+msgid "Middle"
+msgstr ""
+
+#: build/grid-block/index.js:186
+#: src/grid-block/edit.js:311
+#: build/grid-block/index.js:311
+msgid "Bottom"
+msgstr ""
+
+#: build/grid-block/index.js:209
+#: src/grid-block/edit.js:346
+#: build/grid-block/index.js:346
+msgid "Grid Item"
+msgstr ""
+
+#: build/grid-block/index.js:257
+#: src/grid-block/index.js:25
+#: build/grid-block/index.js:379
+msgid "Awesome Grid Block"
+msgstr ""
+
+#: build/grid-block/index.js:258
+#: src/grid-block/index.js:26
+#: build/grid-block/index.js:380
+msgid "Create responsive grid layouts with customizable columns and gaps"
+msgstr ""
+
+#: build/post-block/index.js:97
+#: src/post-block/edit.js:79
+#: build/post-block/index.js:79
+msgid "All Categories"
+msgstr ""
+
+#: build/post-block/index.js:104
+#: src/post-block/edit.js:89
+#: build/post-block/index.js:89
+msgid "Settings"
+msgstr ""
+
+#: build/post-block/index.js:106
+#: src/post-block/edit.js:91
+#: build/post-block/index.js:91
+msgid "Posts to Show"
+msgstr ""
+
+#: build/post-block/index.js:143
+#: src/post-block/edit.js:109
+#: build/post-block/index.js:109
+msgid "Category"
+msgstr ""
+
+#: build/post-block/index.js:151
+#: src/post-block/edit.js:117
+#: build/post-block/index.js:117
+msgid "Select a category to filter posts"
+msgstr ""
+
+#: build/post-block/index.js:153
+#: src/post-block/edit.js:121
+#: build/post-block/index.js:121
+msgid "Order By"
+msgstr ""
+
+#: build/post-block/index.js:162
+#: src/post-block/edit.js:126
+#: build/post-block/index.js:126
+msgid "Modified"
+msgstr ""
+
+#: build/post-block/index.js:165
+#: src/post-block/edit.js:127
+#: build/post-block/index.js:127
+msgid "Author"
+msgstr ""
+
+#: build/post-block/index.js:168
+#: src/post-block/edit.js:128
+#: build/post-block/index.js:128
+msgid "Random"
+msgstr ""
+
+#: build/post-block/index.js:175
+#: src/post-block/edit.js:134
+#: build/post-block/index.js:134
+msgid "Order"
+msgstr ""
+
+#: build/post-block/index.js:178
+#: src/post-block/edit.js:137
+#: build/post-block/index.js:137
+msgid "Descending"
+msgstr ""
+
+#: build/post-block/index.js:181
+#: src/post-block/edit.js:138
+#: build/post-block/index.js:138
+msgid "Ascending"
+msgstr ""
+
+#: build/post-block/index.js:188
+#: src/post-block/edit.js:144
+#: build/post-block/index.js:144
+msgid "Columns"
+msgstr ""
+
+#: build/post-block/index.js:196
+#: src/post-block/edit.js:152
+#: build/post-block/index.js:152
+msgid "Thumbnail Size"
+msgstr ""
+
+#: build/post-block/index.js:199
+#: src/post-block/edit.js:155
+#: build/post-block/index.js:155
+msgid "Thumbnail"
+msgstr ""
+
+#: build/post-block/index.js:202
+#: src/post-block/edit.js:156
+#: build/post-block/index.js:156
+msgid "Medium"
+msgstr ""
+
+#: build/post-block/index.js:205
+#: src/post-block/edit.js:157
+#: build/post-block/index.js:157
+msgid "Medium Large"
+msgstr ""
+
+#: build/post-block/index.js:208
+#: src/post-block/edit.js:158
+#: build/post-block/index.js:158
+msgid "Large"
+msgstr ""
+
+#: build/post-block/index.js:211
+#: src/post-block/edit.js:159
+#: build/post-block/index.js:159
+msgid "Full"
+msgstr ""
+
+#: build/post-block/index.js:221
 #: src/post-block/edit.js:172
+#: build/post-block/index.js:172
 msgid "Display Title"
 msgstr ""
 
-#: build/post-block/index.js:1
+#: build/post-block/index.js:227
 #: src/post-block/edit.js:180
+#: build/post-block/index.js:180
 msgid "Display Excerpt"
 msgstr ""
 
-#: build/post-block/index.js:1
+#: build/post-block/index.js:233
 #: src/post-block/edit.js:188
+#: build/post-block/index.js:188
 msgid "Display Date"
 msgstr ""
 
-#: build/post-block/index.js:1
+#: build/post-block/index.js:239
 #: src/post-block/edit.js:196
+#: build/post-block/index.js:196
 msgid "Display Author"
 msgstr ""
 
-#: build/post-block/index.js:1
+#: build/post-block/index.js:245
 #: src/post-block/edit.js:204
+#: build/post-block/index.js:204
 msgid "Display Thumbnail"
 msgstr ""
 
-#: build/post-block/index.js:1
+#: build/post-block/index.js:257
+#: src/post-block/edit.js:217
+#: build/post-block/index.js:217
+msgid "Loading posts..."
+msgstr ""
+
+#: build/post-block/index.js:297
 #: src/post-block/edit.js:273
+#: build/post-block/index.js:273
 msgid "Read More →"
 msgstr ""
 
-#: build/post-block/index.js:1
-#: src/post-block/edit.js:217
-msgid "Loading posts..."
+#: build/post-block/index.js:343
+#: src/post-block/index.js:25
+#: build/post-block/index.js:310
+msgid "Awesome Post Block"
+msgstr ""
+
+#: build/post-block/index.js:344
+#: src/post-block/index.js:26
+#: build/post-block/index.js:311
+msgid "Display posts with customizable layout"
+msgstr ""
+
+#: build/card-block/block.json
+#: src/card-block/block.json
+msgctxt "block title"
+msgid "Card Block"
+msgstr ""
+
+#: build/card-block/block.json
+#: src/card-block/block.json
+msgctxt "block description"
+msgid "Beautiful card layout with image, tag, title, excerpt, author and button"
+msgstr ""
+
+#: build/card-block/block.json
+#: src/card-block/block.json
+msgctxt "block keyword"
+msgid "card"
+msgstr ""
+
+#: build/card-block/block.json
+#: build/post-block/block.json
+#: src/card-block/block.json
+#: src/post-block/block.json
+msgctxt "block keyword"
+msgid "post"
+msgstr ""
+
+#: build/card-block/block.json
+#: src/card-block/block.json
+msgctxt "block keyword"
+msgid "content"
+msgstr ""
+
+#: build/card-block/block.json
+#: src/card-block/block.json
+msgctxt "block keyword"
+msgid "featured"
+msgstr ""
+
+#: build/feature-block/block.json
+#: src/feature-block/block.json
+msgctxt "block title"
+msgid "Feature Block"
+msgstr ""
+
+#: build/feature-block/block.json
+#: src/feature-block/block.json
+msgctxt "block description"
+msgid "Display features/services with icon, title and description"
+msgstr ""
+
+#: build/feature-block/block.json
+#: src/feature-block/block.json
+msgctxt "block keyword"
+msgid "feature"
+msgstr ""
+
+#: build/feature-block/block.json
+#: src/feature-block/block.json
+msgctxt "block keyword"
+msgid "service"
+msgstr ""
+
+#: build/feature-block/block.json
+#: src/feature-block/block.json
+msgctxt "block keyword"
+msgid "icon"
+msgstr ""
+
+#: build/feature-block/block.json
+#: src/feature-block/block.json
+msgctxt "block keyword"
+msgid "highlight"
 msgstr ""
 
 #: build/grid-block/block.json
@@ -415,12 +814,6 @@ msgstr ""
 #: src/post-block/block.json
 msgctxt "block description"
 msgid "Display posts with customizable layout"
-msgstr ""
-
-#: build/post-block/block.json
-#: src/post-block/block.json
-msgctxt "block keyword"
-msgid "post"
 msgstr ""
 
 #: build/post-block/block.json
