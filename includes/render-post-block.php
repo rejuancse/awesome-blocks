@@ -54,69 +54,71 @@ function ab_render_post_block($attributes)
     // Start output
     ob_start();
 
-    echo '<ul class="ab-posts-grid columns-' . esc_attr($columns) . '">';
+    echo '<div class="wp-block-awesome-post-block">';
+        echo '<ul class="ab-posts-grid columns-' . esc_attr($columns) . '">';
 
-    while ($query->have_posts()) {
-        $query->the_post();
+        while ($query->have_posts()) {
+            $query->the_post();
 
-        echo '<li class="ab-post-item">';
+            echo '<li class="ab-post-item">';
 
-        // Display thumbnail
-        if ($display_thumbnail && has_post_thumbnail()) {
-            echo '<div class="ab-post-thumbnail">';
-            echo '<a href="' . esc_url(get_permalink()) . '">';
-            the_post_thumbnail($thumbnail_size);
-            echo '</a>';
-            echo '</div>';
-        }
-
-        echo '<div class="ab-post-content">';
-
-        // Display meta
-        if ($display_date || $display_author) {
-            echo '<div class="ab-post-meta">';
-
-            if ($display_date) {
-                echo '<span class="ab-post-date">';
-                echo esc_html(get_the_date());
-                echo '</span>';
+            // Display thumbnail
+            if ($display_thumbnail && has_post_thumbnail()) {
+                echo '<div class="ab-post-thumbnail">';
+                echo '<a href="' . esc_url(get_permalink()) . '">';
+                the_post_thumbnail($thumbnail_size);
+                echo '</a>';
+                echo '</div>';
             }
 
-            if ($display_author) {
-                echo '<span class="ab-post-author">';
-                echo esc_html__('By ', 'awesome-blocks') . esc_html(get_the_author());
-                echo '</span>';
+            echo '<div class="ab-post-content">';
+
+            // Display meta
+            if ($display_date || $display_author) {
+                echo '<div class="ab-post-meta">';
+
+                if ($display_date) {
+                    echo '<span class="ab-post-date">';
+                    echo esc_html(get_the_date());
+                    echo '</span>';
+                }
+
+                if ($display_author) {
+                    echo '<span class="ab-post-author">';
+                    echo esc_html__('By ', 'awesome-blocks') . esc_html(get_the_author());
+                    echo '</span>';
+                }
+
+                echo '</div>';
             }
 
-            echo '</div>';
-        }
+            // Display title
+            if ($display_title) {
+                echo '<h3 class="ab-post-title">';
+                echo '<a href="' . esc_url(get_permalink()) . '">';
+                echo esc_html(get_the_title());
+                echo '</a>';
+                echo '</h3>';
+            }
 
-        // Display title
-        if ($display_title) {
-            echo '<h3 class="ab-post-title">';
-            echo '<a href="' . esc_url(get_permalink()) . '">';
-            echo esc_html(get_the_title());
+            // Display excerpt
+            if ($display_excerpt) {
+                echo '<div class="ab-post-excerpt">';
+                echo wp_kses_post(get_the_excerpt());
+                echo '</div>';
+            }
+
+            // Read more link
+            echo '<a href="' . esc_url(get_permalink()) . '" class="ab-post-read-more">';
+            echo esc_html__('Read More', 'awesome-blocks');
             echo '</a>';
-            echo '</h3>';
+
+            echo '</div>'; // .ab-post-content
+            echo '</li>'; // .ab-post-item
         }
 
-        // Display excerpt
-        if ($display_excerpt) {
-            echo '<div class="ab-post-excerpt">';
-            echo wp_kses_post(get_the_excerpt());
-            echo '</div>';
-        }
-
-        // Read more link
-        echo '<a href="' . esc_url(get_permalink()) . '" class="ab-post-read-more">';
-        echo esc_html__('Read More', 'awesome-blocks');
-        echo '</a>';
-
-        echo '</div>'; // .ab-post-content
-        echo '</li>'; // .ab-post-item
-    }
-
-    echo '</ul>';
+        echo '</ul>';
+    echo '</div>';
 
     wp_reset_postdata();
 
