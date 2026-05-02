@@ -1,0 +1,37 @@
+/*!***************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/grid-block/editor.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************/
+/**
+ * Grid Block - Editor Styles
+ */
+.ab-grid-block .ab-grid-container {
+  min-height: 100px;
+  padding: 20px;
+  background: #f0f0f0;
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+}
+.ab-grid-block .ab-grid-container:empty::before {
+  content: "\f132   Add grid items";
+  font-family: "dashicons";
+  font-size: 16px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+}
+.ab-grid-block .ab-grid-container:hover {
+  border-color: #0073aa;
+  background: #e5f5fa;
+}
+.ab-grid-block .block-list-appender {
+  margin-top: 20px;
+}
+
+.ab-grid-layout-tab .components-panel__row,
+.ab-grid-style-tab .components-panel__row {
+  margin-bottom: 16px;
+}
+
+/*# sourceMappingURL=index.css.map*/
