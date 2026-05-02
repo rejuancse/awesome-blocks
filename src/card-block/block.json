@@ -1,0 +1,89 @@
+{
+    "apiVersion": 2,
+    "name": "awesome/card-block",
+    "title": "Card Block",
+    "category": "awesome-block",
+    "icon": "album",
+    "description": "Beautiful card layout with image, tag, title, excerpt, author and button",
+    "keywords": ["card", "post", "content", "featured"],
+    "attributes": {
+        "imageUrl": {
+            "type": "string",
+            "default": ""
+        },
+        "imageAlt": {
+            "type": "string",
+            "default": ""
+        },
+        "imageId": {
+            "type": "number",
+            "default": 0
+        },
+        "tag": {
+            "type": "string",
+            "default": "Travel"
+        },
+        "date": {
+            "type": "string",
+            "default": "May 2, 2026"
+        },
+        "title": {
+            "type": "string",
+            "default": "An Unforgettable Journey in the Mountains"
+        },
+        "excerpt": {
+            "type": "string",
+            "default": "A story of getting lost in the beauty of nature — where every step brings new discoveries and the call of the unknown."
+        },
+        "authorName": {
+            "type": "string",
+            "default": "Rejuan Ahamed"
+        },
+        "authorAvatar": {
+            "type": "string",
+            "default": ""
+        },
+        "buttonText": {
+            "type": "string",
+            "default": "Read More →"
+        },
+        "buttonLink": {
+            "type": "string",
+            "default": "#"
+        },
+        "openInNewTab": {
+            "type": "boolean",
+            "default": false
+        },
+        "cardAlignment": {
+            "type": "string",
+            "default": "left"
+        },
+        "showTag": {
+            "type": "boolean",
+            "default": true
+        },
+        "showDate": {
+            "type": "boolean",
+            "default": true
+        },
+        "showAuthor": {
+            "type": "boolean",
+            "default": true
+        },
+        "showExcerpt": {
+            "type": "boolean",
+            "default": true
+        },
+        "showButton": {
+            "type": "boolean",
+            "default": true
+        }
+    },
+    "supports": {
+        "align": ["wide", "full"],
+        "html": false
+    },
+    "editorScript": "file:./index.js",
+    "style": "file:./style-index.css"
+}

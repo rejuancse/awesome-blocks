@@ -1,0 +1,66 @@
+{
+  "apiVersion": 2,
+  "name": "awesome/feature-block",
+  "title": "Feature Block",
+  "category": "awesome-block",
+  "icon": "star-filled",
+  "description": "Display features/services with icon, title and description",
+  "keywords": [
+    "feature",
+    "service",
+    "icon",
+    "highlight"
+  ],
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "default": "star-filled"
+    },
+    "iconLibrary": {
+      "type": "string",
+      "default": "dashicons"
+    },
+    "title": {
+      "type": "string",
+      "default": "Feature Title"
+    },
+    "description": {
+      "type": "string",
+      "default": "Add a compelling description for your feature or service here."
+    },
+    "link": {
+      "type": "string",
+      "default": ""
+    },
+    "openInNewTab": {
+      "type": "boolean",
+      "default": false
+    },
+    "iconColor": {
+      "type": "string",
+      "default": "#667eea"
+    },
+    "iconBgColor": {
+      "type": "string",
+      "default": "#f0f4ff"
+    },
+    "alignment": {
+      "type": "string",
+      "default": "left"
+    },
+    "showIcon": {
+      "type": "boolean",
+      "default": true
+    },
+    "showLink": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "align": true,
+    "html": false
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

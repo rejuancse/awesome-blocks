@@ -1,0 +1,45 @@
+/**
+ * Grid Block - Editor Styles
+ */
+
+.ab-grid-block {
+    // Container styling in editor
+    .ab-grid-container {
+        min-height: 100px;
+        padding: 20px;
+        background: #f0f0f0;
+        border: 2px dashed #ccc;
+        border-radius: 4px;
+
+        // Show visual guide when empty
+        &:empty::before {
+            content: '\f132   Add grid items';
+            font-family: 'dashicons';
+            font-size: 16px;
+            color: #666;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100px;
+        }
+
+        // Highlight when hovering
+        &:hover {
+            border-color: #0073aa;
+            background: #e5f5fa;
+        }
+    }
+
+    // Appender button styling
+    .block-list-appender {
+        margin-top: 20px;
+    }
+}
+
+// Tab panel styling
+.ab-grid-layout-tab,
+.ab-grid-style-tab {
+    .components-panel__row {
+        margin-bottom: 16px;
+    }
+}

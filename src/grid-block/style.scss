@@ -1,0 +1,64 @@
+/**
+ * Grid Block - Frontend Styles
+ */
+
+.ab-grid-block {
+    margin-bottom: 20px;
+
+    .ab-grid-container {
+        width: 100%;
+        min-height: 100px;
+
+        // Grid items wrapper
+        > .block-editor-inner-blocks,
+        > .ab-grid-item {
+            width: 100%;
+        }
+
+        // Responsive breakpoints - Tablet
+        @media (max-width: 1023px) {
+            &.ab-grid-columns-tablet-1 {
+                grid-template-columns: repeat(1, 1fr) !important;
+            }
+
+            &.ab-grid-columns-tablet-2 {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+
+            &.ab-grid-columns-tablet-3 {
+                grid-template-columns: repeat(3, 1fr) !important;
+            }
+
+            &.ab-grid-columns-tablet-4 {
+                grid-template-columns: repeat(4, 1fr) !important;
+            }
+        }
+
+        // Responsive breakpoints - Mobile
+        @media (max-width: 767px) {
+            &.ab-grid-columns-mobile-1 {
+                grid-template-columns: repeat(1, 1fr) !important;
+            }
+
+            &.ab-grid-columns-mobile-2 {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+
+            &.ab-grid-columns-mobile-3 {
+                grid-template-columns: repeat(3, 1fr) !important;
+            }
+        }
+    }
+}
+
+// Grid items styling
+.ab-grid-container > .wp-block,
+.ab-grid-container > .ab-grid-item {
+    min-width: 0; // Prevent grid blowout
+    box-sizing: border-box;
+}
+
+// Ensure nested grids work properly
+.ab-grid-container .ab-grid-container {
+    min-height: auto;
+}

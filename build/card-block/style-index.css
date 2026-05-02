@@ -1,0 +1,205 @@
+/*!**************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/card-block/style.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************/
+/**
+ * Card Block - Frontend Styles
+ */
+.cb-wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+.cb-wrap.cb-align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.cb-wrap.cb-align-left {
+  margin-left: 0;
+  margin-right: auto;
+}
+.cb-wrap.cb-align-right {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.cb-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cb-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.cb-img-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+.cb-img-wrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.cb-card:hover .cb-img-wrap img {
+  transform: scale(1.05);
+}
+
+.cb-body {
+  padding: 24px;
+}
+
+.cb-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.cb-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cb-date {
+  font-size: 13px;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.cb-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 0 12px 0;
+  color: #1a1a1a;
+}
+.cb-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.cb-title a:hover {
+  color: #667eea;
+}
+
+.cb-excerpt {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4a4a4a;
+  margin: 0 0 20px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cb-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e9ecef;
+}
+
+.cb-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.cb-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid #e9ecef;
+  flex-shrink: 0;
+}
+
+.cb-author-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2c3e50;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cb-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.cb-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+.cb-btn:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  .cb-body {
+    padding: 20px;
+  }
+  .cb-title {
+    font-size: 20px;
+  }
+  .cb-excerpt {
+    font-size: 14px;
+  }
+  .cb-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cb-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .cb-body {
+    padding: 16px;
+  }
+  .cb-title {
+    font-size: 18px;
+  }
+  .cb-tag {
+    font-size: 11px;
+    padding: 3px 10px;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/
