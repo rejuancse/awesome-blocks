@@ -3,7 +3,7 @@
     "name": "awesome/post-block",
     "title": "Post Block",
     "category": "awesome-block",
-    "icon": "admin-post",
+    "icon": "embed-post",
     "description": "Display posts with customizable layout",
     "keywords": ["post", "blog", "news"],
     "attributes": {

@@ -22,7 +22,7 @@ import './editor.scss';
  */
 registerBlockType( metadata.name, {
     ...metadata,
-    title: __('Post Block', 'awesome-blocks'),
+    title: __('Awesome Post Block', 'awesome-blocks'),
     description: __('Display posts with customizable layout', 'awesome-blocks'),
     edit,
     save,

@@ -91,31 +91,99 @@ function Edit({
       per_page: -1
     });
   }, []);
+
+  // Prepare category options for dropdown
+  const categoryOptions = [{
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('All Categories', 'awesome-blocks'),
+    value: ''
+  }, ...(allCategories || []).map(cat => ({
+    label: cat.name,
+    value: cat.id
+  }))];
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InspectorControls, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelBody, {
     title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Settings', 'awesome-blocks')
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.QueryControls, {
-    numberOfItems: safeAttributes.postsToShow,
-    onNumberOfItemsChange: value => setAttributes({
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.SelectControl, {
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Posts to Show', 'awesome-blocks'),
+    value: safeAttributes.postsToShow,
+    options: [{
+      label: '1',
+      value: 1
+    }, {
+      label: '2',
+      value: 2
+    }, {
+      label: '3',
+      value: 3
+    }, {
+      label: '4',
+      value: 4
+    }, {
+      label: '5',
+      value: 5
+    }, {
+      label: '6',
+      value: 6
+    }, {
+      label: '7',
+      value: 7
+    }, {
+      label: '8',
+      value: 8
+    }, {
+      label: '9',
+      value: 9
+    }, {
+      label: '10',
+      value: 10
+    }],
+    onChange: value => setAttributes({
       postsToShow: value
-    }),
-    order: safeAttributes.order,
-    orderBy: safeAttributes.orderBy,
-    onOrderChange: value => setAttributes({
-      order: value
-    }),
-    onOrderByChange: value => setAttributes({
-      orderBy: value
-    }),
-    categorySuggestions: allCategories?.reduce((acc, category) => ({
-      ...acc,
-      [category.name]: category.id
-    }), {}),
-    selectedCategoryId: safeAttributes.categories?.[0],
-    onCategoryChange: value => {
+    })
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.SelectControl, {
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Category', 'awesome-blocks'),
+    value: safeAttributes.categories[0] || '',
+    options: categoryOptions,
+    onChange: value => {
       setAttributes({
-        categories: value !== undefined ? [value] : []
+        categories: value ? [parseInt(value)] : []
       });
-    }
+    },
+    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Select a category to filter posts', 'awesome-blocks')
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.SelectControl, {
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Order By', 'awesome-blocks'),
+    value: safeAttributes.orderBy,
+    options: [{
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Date', 'awesome-blocks'),
+      value: 'date'
+    }, {
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title', 'awesome-blocks'),
+      value: 'title'
+    }, {
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Modified', 'awesome-blocks'),
+      value: 'modified'
+    }, {
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Author', 'awesome-blocks'),
+      value: 'author'
+    }, {
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Random', 'awesome-blocks'),
+      value: 'rand'
+    }],
+    onChange: value => setAttributes({
+      orderBy: value
+    })
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.SelectControl, {
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Order', 'awesome-blocks'),
+    value: safeAttributes.order,
+    options: [{
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Descending', 'awesome-blocks'),
+      value: 'desc'
+    }, {
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Ascending', 'awesome-blocks'),
+      value: 'asc'
+    }],
+    onChange: value => setAttributes({
+      order: value
+    })
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.RangeControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Columns', 'awesome-blocks'),
     value: safeAttributes.columns,
@@ -272,7 +340,7 @@ __webpack_require__.r(__webpack_exports__);
  */
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_2__.name, {
   ..._block_json__WEBPACK_IMPORTED_MODULE_2__,
-  title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Post Block', 'awesome-blocks'),
+  title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Awesome Post Block', 'awesome-blocks'),
   description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Display posts with customizable layout', 'awesome-blocks'),
   edit: _edit__WEBPACK_IMPORTED_MODULE_3__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_4__["default"]
@@ -389,7 +457,7 @@ module.exports = window["wp"]["i18n"];
   \***********************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":2,"name":"awesome/post-block","title":"Post Block","category":"awesome-block","icon":"admin-post","description":"Display posts with customizable layout","keywords":["post","blog","news"],"attributes":{"postsToShow":{"type":"number","default":3},"order":{"type":"string","default":"desc"},"orderBy":{"type":"string","default":"date"},"columns":{"type":"number","default":3},"displayTitle":{"type":"boolean","default":true},"displayExcerpt":{"type":"boolean","default":true},"displayDate":{"type":"boolean","default":true},"displayAuthor":{"type":"boolean","default":false},"displayThumbnail":{"type":"boolean","default":true},"thumbnailSize":{"type":"string","default":"medium"},"categories":{"type":"array","items":{"type":"number"}}},"supports":{"align":["wide","full"],"html":false},"editorScript":"file:./index.js","style":"file:./style-index.css"}');
+module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":2,"name":"awesome/post-block","title":"Post Block","category":"awesome-block","icon":"embed-post","description":"Display posts with customizable layout","keywords":["post","blog","news"],"attributes":{"postsToShow":{"type":"number","default":3},"order":{"type":"string","default":"desc"},"orderBy":{"type":"string","default":"date"},"columns":{"type":"number","default":3},"displayTitle":{"type":"boolean","default":true},"displayExcerpt":{"type":"boolean","default":true},"displayDate":{"type":"boolean","default":true},"displayAuthor":{"type":"boolean","default":false},"displayThumbnail":{"type":"boolean","default":true},"thumbnailSize":{"type":"string","default":"medium"},"categories":{"type":"array","items":{"type":"number"}}},"supports":{"align":["wide","full"],"html":false},"editorScript":"file:./index.js","style":"file:./style-index.css"}');
 
 /***/ }
 

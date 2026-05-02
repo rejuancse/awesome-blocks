@@ -9,7 +9,6 @@ import {
     RangeControl,
     SelectControl,
     ToggleControl,
-    QueryControls,
     Spinner,
 } from '@wordpress/components';
 
@@ -75,34 +74,70 @@ export default function Edit({ attributes, setAttributes }) {
         });
     }, []);
 
+    // Prepare category options for dropdown
+    const categoryOptions = [
+        { label: __('All Categories', 'awesome-blocks'), value: '' },
+        ...(allCategories || []).map(cat => ({
+            label: cat.name,
+            value: cat.id,
+        }))
+    ];
+
     return (
         <>
             <InspectorControls>
                 <PanelBody title={__('Settings', 'awesome-blocks')}>
-                    <QueryControls
-                        numberOfItems={safeAttributes.postsToShow}
-                        onNumberOfItemsChange={(value) =>
-                            setAttributes({ postsToShow: value })
-                        }
-                        order={safeAttributes.order}
-                        orderBy={safeAttributes.orderBy}
-                        onOrderChange={(value) => setAttributes({ order: value })}
-                        onOrderByChange={(value) =>
-                            setAttributes({ orderBy: value })
-                        }
-                        categorySuggestions={allCategories?.reduce(
-                            (acc, category) => ({
-                                ...acc,
-                                [category.name]: category.id,
-                            }),
-                            {}
-                        )}
-                        selectedCategoryId={safeAttributes.categories?.[0]}
-                        onCategoryChange={(value) => {
+                    <SelectControl
+                        label={__('Posts to Show', 'awesome-blocks')}
+                        value={safeAttributes.postsToShow}
+                        options={[
+                            { label: '1', value: 1 },
+                            { label: '2', value: 2 },
+                            { label: '3', value: 3 },
+                            { label: '4', value: 4 },
+                            { label: '5', value: 5 },
+                            { label: '6', value: 6 },
+                            { label: '7', value: 7 },
+                            { label: '8', value: 8 },
+                            { label: '9', value: 9 },
+                            { label: '10', value: 10 },
+                        ]}
+                        onChange={(value) => setAttributes({ postsToShow: value })}
+                    />
+
+                    <SelectControl
+                        label={__('Category', 'awesome-blocks')}
+                        value={safeAttributes.categories[0] || ''}
+                        options={categoryOptions}
+                        onChange={(value) => {
                             setAttributes({
-                                categories: value !== undefined ? [value] : [],
+                                categories: value ? [parseInt(value)] : []
                             });
                         }}
+                        help={__('Select a category to filter posts', 'awesome-blocks')}
+                    />
+
+                    <SelectControl
+                        label={__('Order By', 'awesome-blocks')}
+                        value={safeAttributes.orderBy}
+                        options={[
+                            { label: __('Date', 'awesome-blocks'), value: 'date' },
+                            { label: __('Title', 'awesome-blocks'), value: 'title' },
+                            { label: __('Modified', 'awesome-blocks'), value: 'modified' },
+                            { label: __('Author', 'awesome-blocks'), value: 'author' },
+                            { label: __('Random', 'awesome-blocks'), value: 'rand' },
+                        ]}
+                        onChange={(value) => setAttributes({ orderBy: value })}
+                    />
+
+                    <SelectControl
+                        label={__('Order', 'awesome-blocks')}
+                        value={safeAttributes.order}
+                        options={[
+                            { label: __('Descending', 'awesome-blocks'), value: 'desc' },
+                            { label: __('Ascending', 'awesome-blocks'), value: 'asc' },
+                        ]}
+                        onChange={(value) => setAttributes({ order: value })}
                     />
 
                     <RangeControl
