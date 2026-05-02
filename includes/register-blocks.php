@@ -56,5 +56,10 @@ function awesome_block_register_blocks() {
     register_block_type_from_metadata(
         AWESOME_BLOCK_PLUGIN_PATH . 'build/grid-block'
     );
+
+    // Register Awesome Slider Block - No render callback needed as it's static
+    register_block_type_from_metadata(
+        AWESOME_BLOCK_PLUGIN_PATH . 'build/awesome-slider'
+    );
 }
 add_action( 'init', 'awesome_block_register_blocks' );

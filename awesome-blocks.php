@@ -60,7 +60,10 @@ final class Awesome_Block {
      */
     public function define_constants() {
         define( 'AWESOME_BLOCK_VERSION', self::version );
+        define( 'AWESOME_BLOCK_FILE', __FILE__ );
         define( 'AWESOME_BLOCK_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
+        define( 'AWESOME_BLOCK_URL', plugins_url( '', AWESOME_BLOCK_FILE ) );
+        define( 'AWESOME_BLOCK_ASSETS', AWESOME_BLOCK_URL . '/assets' );
     }
 
     /**
@@ -69,6 +72,7 @@ final class Awesome_Block {
      * @return void
      */
     public function init_plugin() {
+        new Awesome_Block\Assets();
         new Awesome_Block\Awesome_Block_i18n();
     }
 }

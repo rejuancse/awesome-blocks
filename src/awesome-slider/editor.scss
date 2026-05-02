@@ -1,0 +1,110 @@
+/**
+ * Awesome Slider - Editor Styles
+ */
+
+// Editor preview styles
+.as-editor-preview {
+    // Import all frontend styles for editor preview
+    @import './style.scss';
+
+    // Editor specific adjustments
+    .slider {
+        pointer-events: none; // Disable navigation in editor
+        user-select: none;
+    }
+
+    .slick-nav,
+    .slick-dots {
+        pointer-events: none; // Disable interactions in editor
+    }
+}
+
+// Original editor styles for sidebar
+.as-wrap {
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 8px;
+
+    .as-slides-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .as-slide-item {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        padding: 15px;
+
+        .as-slide-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+
+            .as-slide-number {
+                font-weight: 600;
+                font-size: 14px;
+                color: #333;
+            }
+        }
+
+        .as-slide-content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    .as-media-upload-wrapper {
+        width: 100%;
+
+        .as-media-upload-button {
+            width: 100%;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .as-media-preview {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            max-width: 400px;
+
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 4px;
+            }
+
+            .as-media-actions {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                display: flex;
+                gap: 5px;
+                background: rgba(255, 255, 255, 0.9);
+                padding: 5px;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    .as-add-slide-button {
+        width: 100%;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 10px;
+    }
+}
+
+// Placeholder when no slides
+.as-placeholder {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+}
