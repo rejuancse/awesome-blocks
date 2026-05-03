@@ -73,6 +73,7 @@ final class Awesome_Block {
      */
     public function init_plugin() {
         new Awesome_Block\Assets();
+        new Awesome_Block\Register_Blocks();
         new Awesome_Block\Awesome_Block_i18n();
     }
 }

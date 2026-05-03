@@ -7,5 +7,4 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'abe3903f04fc7ef1c4e54633197d3206' => $baseDir . '/src/post-block/render.php',
-    '775ddbd2e32bd16380e072e7bbff8268' => $baseDir . '/includes/register-blocks.php',
 );
