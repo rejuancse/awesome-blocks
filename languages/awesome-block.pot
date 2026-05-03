@@ -9,14 +9,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-05-02T11:34:03+00:00\n"
+"POT-Creation-Date: 2026-05-03T07:38:28+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: awesome-blocks\n"
 
 #. Plugin Name of the plugin
 #: awesome-blocks.php
-#: includes/register-blocks.php:25
+#: includes/Register_Blocks.php:26
 msgid "Awesome Blocks"
 msgstr ""
 
@@ -30,799 +30,1056 @@ msgstr ""
 msgid "Rejuan Ahamed"
 msgstr ""
 
-#: includes/render-post-block.php:51
-#: build/post-block/index.js:262
+#: assets/build/post-block/render.php:51
+#: src/post-block/render.php:51
+#: assets/build/post-block/index.js:271
 #: src/post-block/edit.js:221
-#: build/post-block/index.js:221
+#: assets/build/post-block/index.js:221
 msgid "No posts found."
 msgstr ""
 
-#: includes/render-post-block.php:88
+#: assets/build/post-block/render.php:88
+#: src/post-block/render.php:88
 msgid "By "
 msgstr ""
 
-#: includes/render-post-block.php:113
+#: assets/build/post-block/render.php:113
+#: src/post-block/render.php:113
 msgid "Read More"
 msgstr ""
 
-#: build/card-block/index.js:108
-#: src/card-block/edit.js:102
-#: build/card-block/index.js:102
-msgid "Card Content"
+#: assets/build/awesome-slider/index.js:141
+#: src/awesome-slider/edit.js:118
+#: assets/build/awesome-slider/index.js:118
+msgid "Slider Settings"
 msgstr ""
 
-#: build/card-block/index.js:112
-#: src/card-block/edit.js:106
-#: build/card-block/index.js:106
-msgid "Card Image"
+#: assets/build/awesome-slider/index.js:145
+#: src/awesome-slider/edit.js:121
+#: assets/build/awesome-slider/index.js:121
+msgid "Autoplay"
 msgstr ""
 
-#: build/card-block/index.js:126
+#: assets/build/awesome-slider/index.js:153
+#: src/awesome-slider/edit.js:129
+#: assets/build/awesome-slider/index.js:129
+msgid "Autoplay Speed (ms)"
+msgstr ""
+
+#: assets/build/awesome-slider/index.js:162
+#: src/awesome-slider/edit.js:138
+#: assets/build/awesome-slider/index.js:138
+msgid "Animation Speed (ms)"
+msgstr ""
+
+#: assets/build/awesome-slider/index.js:171
+#: src/awesome-slider/edit.js:146
+#: assets/build/awesome-slider/index.js:146
+msgid "Show Arrows"
+msgstr ""
+
+#: assets/build/awesome-slider/index.js:179
+#: src/awesome-slider/edit.js:153
+#: assets/build/awesome-slider/index.js:153
+msgid "Show Dots"
+msgstr ""
+
+#: assets/build/awesome-slider/index.js:187
+#: src/awesome-slider/edit.js:160
+#: assets/build/awesome-slider/index.js:160
+msgid "Manage Slides"
+msgstr ""
+
+#: assets/build/awesome-slider/index.js:204
+#: src/awesome-slider/edit.js:164
+#: assets/build/awesome-slider/index.js:164
+msgid "Slide"
+msgstr ""
+
+#: assets/build/awesome-slider/index.js:229
+#: assets/build/card-block/index.js:133
+#: src/awesome-slider/edit.js:188
 #: src/card-block/edit.js:124
-#: build/card-block/index.js:124
+#: assets/build/awesome-slider/index.js:188
+#: assets/build/card-block/index.js:124
 msgid "Upload Image"
 msgstr ""
 
-#: build/card-block/index.js:130
+#: assets/build/awesome-slider/index.js:237
+#: assets/build/card-block/index.js:138
+#: src/awesome-slider/edit.js:194
 #: src/card-block/edit.js:128
-#: build/card-block/index.js:128
+#: assets/build/awesome-slider/index.js:194
+#: assets/build/card-block/index.js:128
 msgid "Preview"
 msgstr ""
 
-#: build/card-block/index.js:148
-#: src/card-block/edit.js:156
-#: build/card-block/index.js:156
-msgid "Image Alt Text"
+#: assets/build/awesome-slider/index.js:268
+#: src/awesome-slider/edit.js:219
+#: assets/build/awesome-slider/index.js:219
+msgid "Top Title"
 msgstr ""
 
-#: build/card-block/index.js:154
-#: src/card-block/edit.js:168
-#: build/card-block/index.js:168
-msgid "Tag"
-msgstr ""
-
-#: build/card-block/index.js:166
-#: build/post-block/index.js:156
-#: src/card-block/edit.js:176
-#: src/post-block/edit.js:124
-#: build/card-block/index.js:176
-#: build/post-block/index.js:124
-msgid "Date"
-msgstr ""
-
-#: build/card-block/index.js:184
-#: src/card-block/edit.js:193
-#: build/card-block/index.js:193
-msgid "Select a date"
-msgstr ""
-
-#: build/card-block/index.js:205
-#: build/feature-block/index.js:70
-#: build/post-block/index.js:159
+#: assets/build/awesome-slider/index.js:272
+#: assets/build/awesome-timeline/index.js:105
+#: assets/build/card-block/index.js:231
+#: assets/build/feature-block/index.js:75
+#: assets/build/post-block/index.js:161
+#: src/awesome-slider/edit.js:224
+#: src/awesome-timeline/edit.js:82
 #: src/card-block/edit.js:222
 #: src/feature-block/edit.js:66
 #: src/post-block/edit.js:125
-#: build/card-block/index.js:222
-#: build/feature-block/index.js:66
-#: build/post-block/index.js:125
+#: assets/build/awesome-slider/index.js:224
+#: assets/build/awesome-timeline/index.js:82
+#: assets/build/card-block/index.js:222
+#: assets/build/feature-block/index.js:66
+#: assets/build/post-block/index.js:125
 msgid "Title"
 msgstr ""
 
-#: build/card-block/index.js:211
-#: src/card-block/edit.js:229
-#: build/card-block/index.js:229
-msgid "Excerpt"
-msgstr ""
-
-#: build/card-block/index.js:219
-#: src/card-block/edit.js:241
-#: build/card-block/index.js:241
-msgid "Author Info"
-msgstr ""
-
-#: build/card-block/index.js:233
-#: src/card-block/edit.js:259
-#: build/card-block/index.js:259
-msgid "Upload Avatar"
-msgstr ""
-
-#: build/card-block/index.js:237
-#: src/card-block/edit.js:263
-#: build/card-block/index.js:263
-msgid "Avatar"
-msgstr ""
-
-#: build/card-block/index.js:255
-#: src/card-block/edit.js:290
-#: build/card-block/index.js:290
-msgid "Author Name"
-msgstr ""
-
-#: build/card-block/index.js:261
+#: assets/build/awesome-slider/index.js:276
+#: assets/build/card-block/index.js:306
+#: src/awesome-slider/edit.js:229
 #: src/card-block/edit.js:301
-#: build/card-block/index.js:301
+#: assets/build/awesome-slider/index.js:229
+#: assets/build/card-block/index.js:301
 msgid "Button Text"
 msgstr ""
 
-#: build/card-block/index.js:267
-#: src/card-block/edit.js:308
-#: build/card-block/index.js:308
-msgid "Button Link"
+#: assets/build/awesome-slider/index.js:280
+#: src/awesome-slider/edit.js:234
+#: assets/build/awesome-slider/index.js:234
+msgid "Button URL"
 msgstr ""
 
-#: build/card-block/index.js:273
-#: build/feature-block/index.js:90
-#: src/card-block/edit.js:315
-#: src/feature-block/edit.js:90
-#: build/card-block/index.js:315
-msgid "Open in New Tab"
+#: assets/build/awesome-slider/index.js:284
+#: src/awesome-slider/edit.js:239
+#: assets/build/awesome-slider/index.js:239
+msgid "Button Style"
 msgstr ""
 
-#: build/card-block/index.js:279
-#: build/feature-block/index.js:114
-#: build/post-block/index.js:218
-#: src/card-block/edit.js:322
-#: src/feature-block/edit.js:116
-#: src/post-block/edit.js:168
-#: build/card-block/index.js:322
-#: build/feature-block/index.js:116
-#: build/post-block/index.js:168
-msgid "Display Options"
+#: assets/build/awesome-slider/index.js:287
+#: src/awesome-slider/edit.js:242
+#: assets/build/awesome-slider/index.js:242
+msgid "Success (Green)"
 msgstr ""
 
-#: build/card-block/index.js:282
-#: src/card-block/edit.js:324
-#: build/card-block/index.js:324
-msgid "Show Tag"
+#: assets/build/awesome-slider/index.js:290
+#: src/awesome-slider/edit.js:243
+#: assets/build/awesome-slider/index.js:243
+msgid "Light (White)"
 msgstr ""
 
-#: build/card-block/index.js:288
-#: src/card-block/edit.js:329
-#: build/card-block/index.js:329
-msgid "Show Date"
+#: assets/build/awesome-slider/index.js:295
+#: src/awesome-slider/edit.js:248
+#: assets/build/awesome-slider/index.js:248
+msgid "Content Position"
 msgstr ""
 
-#: build/card-block/index.js:294
-#: src/card-block/edit.js:334
-#: build/card-block/index.js:334
-msgid "Show Excerpt"
-msgstr ""
-
-#: build/card-block/index.js:300
-#: src/card-block/edit.js:339
-#: build/card-block/index.js:339
-msgid "Show Author"
-msgstr ""
-
-#: build/card-block/index.js:306
-#: src/card-block/edit.js:344
-#: build/card-block/index.js:344
-msgid "Show Button"
-msgstr ""
-
-#: build/card-block/index.js:312
-#: src/card-block/edit.js:350
-#: build/card-block/index.js:350
-msgid "Card Alignment"
-msgstr ""
-
-#: build/card-block/index.js:315
-#: build/feature-block/index.js:129
-#: build/grid-block/index.js:155
-#: src/card-block/edit.js:352
-#: src/feature-block/edit.js:130
-#: src/grid-block/edit.js:243
-#: build/card-block/index.js:352
-#: build/feature-block/index.js:130
-#: build/grid-block/index.js:243
-msgid "Alignment"
-msgstr ""
-
-#: build/card-block/index.js:318
-#: build/feature-block/index.js:132
-#: build/grid-block/index.js:161
+#: assets/build/awesome-slider/index.js:298
+#: assets/build/card-block/index.js:370
+#: assets/build/feature-block/index.js:146
+#: assets/build/grid-block/index.js:175
+#: src/awesome-slider/edit.js:251
 #: src/card-block/edit.js:355
 #: src/feature-block/edit.js:133
 #: src/grid-block/edit.js:257
-#: build/card-block/index.js:355
-#: build/feature-block/index.js:133
-#: build/grid-block/index.js:257
+#: assets/build/awesome-slider/index.js:251
+#: assets/build/card-block/index.js:355
+#: assets/build/feature-block/index.js:133
+#: assets/build/grid-block/index.js:257
 msgid "Left"
 msgstr ""
 
-#: build/card-block/index.js:321
-#: build/feature-block/index.js:135
-#: build/grid-block/index.js:164
+#: assets/build/awesome-slider/index.js:301
+#: assets/build/card-block/index.js:373
+#: assets/build/feature-block/index.js:149
+#: assets/build/grid-block/index.js:178
+#: src/awesome-slider/edit.js:252
 #: src/card-block/edit.js:356
 #: src/feature-block/edit.js:134
 #: src/grid-block/edit.js:264
-#: build/card-block/index.js:356
-#: build/feature-block/index.js:134
-#: build/grid-block/index.js:264
+#: assets/build/awesome-slider/index.js:252
+#: assets/build/card-block/index.js:356
+#: assets/build/feature-block/index.js:134
+#: assets/build/grid-block/index.js:264
 msgid "Center"
 msgstr ""
 
-#: build/card-block/index.js:324
-#: build/feature-block/index.js:138
-#: build/grid-block/index.js:167
+#: assets/build/awesome-slider/index.js:304
+#: assets/build/card-block/index.js:376
+#: assets/build/feature-block/index.js:152
+#: assets/build/grid-block/index.js:181
+#: src/awesome-slider/edit.js:253
 #: src/card-block/edit.js:357
 #: src/feature-block/edit.js:135
 #: src/grid-block/edit.js:271
-#: build/card-block/index.js:357
-#: build/feature-block/index.js:135
-#: build/grid-block/index.js:271
+#: assets/build/awesome-slider/index.js:253
+#: assets/build/card-block/index.js:357
+#: assets/build/feature-block/index.js:135
+#: assets/build/grid-block/index.js:271
 msgid "Right"
 msgstr ""
 
-#: build/card-block/index.js:413
-#: src/card-block/index.js:25
-#: build/card-block/index.js:430
-msgid "Awesome Card Block"
+#: assets/build/awesome-slider/index.js:319
+#: src/awesome-slider/edit.js:266
+#: assets/build/awesome-slider/index.js:266
+msgid "Add Slide"
 msgstr ""
 
-#: build/card-block/index.js:414
-#: src/card-block/index.js:26
-#: build/card-block/index.js:431
-msgid "Beautiful card layout with image, tag, title, excerpt, author and button"
+#: assets/build/awesome-slider/index.js:333
+#: src/awesome-slider/edit.js:275
+#: assets/build/awesome-slider/index.js:275
+msgid "No slides yet. Add slides from the sidebar settings."
 msgstr ""
 
-#: build/feature-block/index.js:57
-#: src/feature-block/edit.js:52
-#: build/feature-block/index.js:52
-msgid "Feature Content"
+#: assets/build/awesome-slider/index.js:366
+#: src/awesome-slider/edit.js:309
+#: assets/build/awesome-slider/index.js:309
+msgid "No Image"
 msgstr ""
 
-#: build/feature-block/index.js:60
-#: src/feature-block/edit.js:55
-#: build/feature-block/index.js:55
-msgid "Icon"
+#: assets/build/awesome-slider/index.js:435
+#: src/awesome-slider/index.js:25
+#: assets/build/awesome-slider/index.js:363
+msgid "Awesome Slider"
 msgstr ""
 
-#: build/feature-block/index.js:76
+#: assets/build/awesome-slider/index.js:436
+#: src/awesome-slider/index.js:26
+#: assets/build/awesome-slider/index.js:364
+msgid "A beautiful slider block with animations and slick slider"
+msgstr ""
+
+#: assets/build/awesome-timeline/index.js:76
+#: src/awesome-timeline/edit.js:53
+#: assets/build/awesome-timeline/index.js:53
+msgid "Timeline Items"
+msgstr ""
+
+#: assets/build/awesome-timeline/index.js:94
+#: src/awesome-timeline/edit.js:68
+#: assets/build/awesome-timeline/index.js:68
+msgid "Event"
+msgstr ""
+
+#: assets/build/awesome-timeline/index.js:109
+#: assets/build/feature-block/index.js:83
+#: src/awesome-timeline/edit.js:87
 #: src/feature-block/edit.js:73
-#: build/feature-block/index.js:73
+#: assets/build/awesome-timeline/index.js:87
+#: assets/build/feature-block/index.js:73
 msgid "Description"
 msgstr ""
 
-#: build/feature-block/index.js:83
+#: assets/build/awesome-timeline/index.js:114
+#: assets/build/card-block/index.js:186
+#: assets/build/post-block/index.js:158
+#: src/awesome-timeline/edit.js:93
+#: src/card-block/edit.js:176
+#: src/post-block/edit.js:124
+#: assets/build/awesome-timeline/index.js:93
+#: assets/build/card-block/index.js:176
+#: assets/build/post-block/index.js:124
+msgid "Date"
+msgstr ""
+
+#: assets/build/awesome-timeline/index.js:128
+#: src/awesome-timeline/edit.js:106
+#: assets/build/awesome-timeline/index.js:106
+msgid "Add Event"
+msgstr ""
+
+#: assets/build/awesome-timeline/index.js:142
+#: src/awesome-timeline/edit.js:120
+#: assets/build/awesome-timeline/index.js:120
+msgid "No events yet. Add events from the sidebar settings."
+msgstr ""
+
+#: assets/build/awesome-timeline/index.js:274
+#: src/awesome-timeline/index.js:25
+#: assets/build/awesome-timeline/index.js:218
+msgid "Awesome Timeline"
+msgstr ""
+
+#: assets/build/awesome-timeline/index.js:275
+#: src/awesome-timeline/index.js:26
+#: assets/build/awesome-timeline/index.js:219
+msgid "A beautiful vertical timeline block with alternating left/right items"
+msgstr ""
+
+#: assets/build/card-block/index.js:110
+#: src/card-block/edit.js:102
+#: assets/build/card-block/index.js:102
+msgid "Card Content"
+msgstr ""
+
+#: assets/build/card-block/index.js:115
+#: src/card-block/edit.js:106
+#: assets/build/card-block/index.js:106
+msgid "Card Image"
+msgstr ""
+
+#: assets/build/card-block/index.js:164
+#: src/card-block/edit.js:156
+#: assets/build/card-block/index.js:156
+msgid "Image Alt Text"
+msgstr ""
+
+#: assets/build/card-block/index.js:172
+#: src/card-block/edit.js:168
+#: assets/build/card-block/index.js:168
+msgid "Tag"
+msgstr ""
+
+#: assets/build/card-block/index.js:205
+#: src/card-block/edit.js:193
+#: assets/build/card-block/index.js:193
+msgid "Select a date"
+msgstr ""
+
+#: assets/build/card-block/index.js:239
+#: src/card-block/edit.js:229
+#: assets/build/card-block/index.js:229
+msgid "Excerpt"
+msgstr ""
+
+#: assets/build/card-block/index.js:249
+#: src/card-block/edit.js:241
+#: assets/build/card-block/index.js:241
+msgid "Author Info"
+msgstr ""
+
+#: assets/build/card-block/index.js:267
+#: src/card-block/edit.js:259
+#: assets/build/card-block/index.js:259
+msgid "Upload Avatar"
+msgstr ""
+
+#: assets/build/card-block/index.js:272
+#: src/card-block/edit.js:263
+#: assets/build/card-block/index.js:263
+msgid "Avatar"
+msgstr ""
+
+#: assets/build/card-block/index.js:298
+#: src/card-block/edit.js:290
+#: assets/build/card-block/index.js:290
+msgid "Author Name"
+msgstr ""
+
+#: assets/build/card-block/index.js:314
+#: src/card-block/edit.js:308
+#: assets/build/card-block/index.js:308
+msgid "Button Link"
+msgstr ""
+
+#: assets/build/card-block/index.js:322
+#: assets/build/feature-block/index.js:101
+#: src/card-block/edit.js:315
+#: src/feature-block/edit.js:90
+#: assets/build/card-block/index.js:315
+#: assets/build/feature-block/index.js:90
+msgid "Open in New Tab"
+msgstr ""
+
+#: assets/build/card-block/index.js:330
+#: assets/build/feature-block/index.js:128
+#: assets/build/post-block/index.js:221
+#: src/card-block/edit.js:322
+#: src/feature-block/edit.js:116
+#: src/post-block/edit.js:168
+#: assets/build/card-block/index.js:322
+#: assets/build/feature-block/index.js:116
+#: assets/build/post-block/index.js:168
+msgid "Display Options"
+msgstr ""
+
+#: assets/build/card-block/index.js:333
+#: src/card-block/edit.js:324
+#: assets/build/card-block/index.js:324
+msgid "Show Tag"
+msgstr ""
+
+#: assets/build/card-block/index.js:339
+#: src/card-block/edit.js:329
+#: assets/build/card-block/index.js:329
+msgid "Show Date"
+msgstr ""
+
+#: assets/build/card-block/index.js:345
+#: src/card-block/edit.js:334
+#: assets/build/card-block/index.js:334
+msgid "Show Excerpt"
+msgstr ""
+
+#: assets/build/card-block/index.js:351
+#: src/card-block/edit.js:339
+#: assets/build/card-block/index.js:339
+msgid "Show Author"
+msgstr ""
+
+#: assets/build/card-block/index.js:357
+#: src/card-block/edit.js:344
+#: assets/build/card-block/index.js:344
+msgid "Show Button"
+msgstr ""
+
+#: assets/build/card-block/index.js:364
+#: src/card-block/edit.js:350
+#: assets/build/card-block/index.js:350
+msgid "Card Alignment"
+msgstr ""
+
+#: assets/build/card-block/index.js:367
+#: assets/build/feature-block/index.js:143
+#: assets/build/grid-block/index.js:169
+#: src/card-block/edit.js:352
+#: src/feature-block/edit.js:130
+#: src/grid-block/edit.js:243
+#: assets/build/card-block/index.js:352
+#: assets/build/feature-block/index.js:130
+#: assets/build/grid-block/index.js:243
+msgid "Alignment"
+msgstr ""
+
+#: assets/build/card-block/index.js:482
+#: src/card-block/index.js:25
+#: assets/build/card-block/index.js:430
+msgid "Awesome Card Block"
+msgstr ""
+
+#: assets/build/card-block/index.js:483
+#: src/card-block/index.js:26
+#: assets/build/card-block/index.js:431
+msgid "Beautiful card layout with image, tag, title, excerpt, author and button"
+msgstr ""
+
+#: assets/build/feature-block/index.js:59
+#: src/feature-block/edit.js:52
+#: assets/build/feature-block/index.js:52
+msgid "Feature Content"
+msgstr ""
+
+#: assets/build/feature-block/index.js:63
+#: src/feature-block/edit.js:55
+#: assets/build/feature-block/index.js:55
+msgid "Icon"
+msgstr ""
+
+#: assets/build/feature-block/index.js:92
 #: src/feature-block/edit.js:81
-#: build/feature-block/index.js:81
+#: assets/build/feature-block/index.js:81
 msgid "Link (Optional)"
 msgstr ""
 
-#: build/feature-block/index.js:96
+#: assets/build/feature-block/index.js:109
 #: src/feature-block/edit.js:98
-#: build/feature-block/index.js:98
+#: assets/build/feature-block/index.js:98
 msgid "Icon Style"
 msgstr ""
 
-#: build/feature-block/index.js:99
+#: assets/build/feature-block/index.js:112
 #: src/feature-block/edit.js:100
-#: build/feature-block/index.js:100
+#: assets/build/feature-block/index.js:100
 msgid "Icon Colors"
 msgstr ""
 
-#: build/feature-block/index.js:105
+#: assets/build/feature-block/index.js:118
 #: src/feature-block/edit.js:105
+#: assets/build/feature-block/index.js:105
 msgid "Icon Color"
 msgstr ""
 
-#: build/feature-block/index.js:111
+#: assets/build/feature-block/index.js:124
 #: src/feature-block/edit.js:110
-#: build/feature-block/index.js:110
+#: assets/build/feature-block/index.js:110
 msgid "Icon Background"
 msgstr ""
 
-#: build/feature-block/index.js:117
+#: assets/build/feature-block/index.js:131
 #: src/feature-block/edit.js:118
-#: build/feature-block/index.js:118
+#: assets/build/feature-block/index.js:118
 msgid "Show Icon"
 msgstr ""
 
-#: build/feature-block/index.js:123
+#: assets/build/feature-block/index.js:137
 #: src/feature-block/edit.js:124
-#: build/feature-block/index.js:124
+#: assets/build/feature-block/index.js:124
 msgid "Show Link Button"
 msgstr ""
 
-#: build/feature-block/index.js:172
-#: build/feature-block/index.js:304
+#: assets/build/feature-block/index.js:191
+#: assets/build/feature-block/index.js:332
 #: src/feature-block/edit.js:163
 #: src/feature-block/save.js:58
-#: build/feature-block/index.js:163
-#: build/feature-block/index.js:261
+#: assets/build/feature-block/index.js:163
+#: assets/build/feature-block/index.js:261
 msgid "Learn More →"
 msgstr ""
 
-#: build/feature-block/index.js:217
+#: assets/build/feature-block/index.js:242
 #: src/feature-block/index.js:25
-#: build/feature-block/index.js:198
+#: assets/build/feature-block/index.js:198
 msgid "Awesome Feature Block"
 msgstr ""
 
-#: build/feature-block/index.js:218
+#: assets/build/feature-block/index.js:243
 #: src/feature-block/index.js:26
-#: build/feature-block/index.js:199
+#: assets/build/feature-block/index.js:199
 msgid "Display features/services with icon, title and description"
 msgstr ""
 
-#: build/grid-block/index.js:68
+#: assets/build/grid-block/index.js:70
 #: src/grid-block/edit.js:54
-#: build/grid-block/index.js:54
+#: assets/build/grid-block/index.js:54
 msgid "Layout"
 msgstr ""
 
-#: build/grid-block/index.js:72
+#: assets/build/grid-block/index.js:74
 #: src/grid-block/edit.js:59
-#: build/grid-block/index.js:59
+#: assets/build/grid-block/index.js:59
 msgid "Style"
 msgstr ""
 
-#: build/grid-block/index.js:78
+#: assets/build/grid-block/index.js:81
 #: src/grid-block/edit.js:69
-#: build/grid-block/index.js:69
+#: assets/build/grid-block/index.js:69
 msgid "Grid Columns"
 msgstr ""
 
-#: build/grid-block/index.js:81
+#: assets/build/grid-block/index.js:85
 #: src/grid-block/edit.js:77
-#: build/grid-block/index.js:77
+#: assets/build/grid-block/index.js:77
 msgid "Desktop Columns"
 msgstr ""
 
-#: build/grid-block/index.js:88
+#: assets/build/grid-block/index.js:92
 #: src/grid-block/edit.js:89
-#: build/grid-block/index.js:89
+#: assets/build/grid-block/index.js:89
 msgid "Number of columns on desktop screens (1024px and above)"
 msgstr ""
 
-#: build/grid-block/index.js:90
+#: assets/build/grid-block/index.js:96
 #: src/grid-block/edit.js:97
-#: build/grid-block/index.js:97
+#: assets/build/grid-block/index.js:97
 msgid "Tablet Columns"
 msgstr ""
 
-#: build/grid-block/index.js:97
+#: assets/build/grid-block/index.js:103
 #: src/grid-block/edit.js:109
-#: build/grid-block/index.js:109
+#: assets/build/grid-block/index.js:109
 msgid "Number of columns on tablet screens (768px to 1023px)"
 msgstr ""
 
-#: build/grid-block/index.js:99
+#: assets/build/grid-block/index.js:107
 #: src/grid-block/edit.js:117
-#: build/grid-block/index.js:117
+#: assets/build/grid-block/index.js:117
 msgid "Mobile Columns"
 msgstr ""
 
-#: build/grid-block/index.js:106
+#: assets/build/grid-block/index.js:114
 #: src/grid-block/edit.js:129
-#: build/grid-block/index.js:129
+#: assets/build/grid-block/index.js:129
 msgid "Number of columns on mobile screens (up to 767px)"
 msgstr ""
 
-#: build/grid-block/index.js:108
+#: assets/build/grid-block/index.js:118
 #: src/grid-block/edit.js:138
-#: build/grid-block/index.js:138
+#: assets/build/grid-block/index.js:138
 msgid "Grid Gaps"
 msgstr ""
 
-#: build/grid-block/index.js:111
+#: assets/build/grid-block/index.js:121
 #: src/grid-block/edit.js:145
-#: build/grid-block/index.js:145
+#: assets/build/grid-block/index.js:145
 msgid "Column Gap"
 msgstr ""
 
-#: build/grid-block/index.js:118
+#: assets/build/grid-block/index.js:128
 #: src/grid-block/edit.js:157
-#: build/grid-block/index.js:157
+#: assets/build/grid-block/index.js:157
 msgid "Space between grid columns (px)"
 msgstr ""
 
-#: build/grid-block/index.js:120
+#: assets/build/grid-block/index.js:130
 #: src/grid-block/edit.js:163
-#: build/grid-block/index.js:163
+#: assets/build/grid-block/index.js:163
 msgid "Row Gap"
 msgstr ""
 
-#: build/grid-block/index.js:127
+#: assets/build/grid-block/index.js:137
 #: src/grid-block/edit.js:175
-#: build/grid-block/index.js:175
+#: assets/build/grid-block/index.js:175
 msgid "Space between grid rows (px)"
 msgstr ""
 
-#: build/grid-block/index.js:129
+#: assets/build/grid-block/index.js:140
 #: src/grid-block/edit.js:183
-#: build/grid-block/index.js:183
+#: assets/build/grid-block/index.js:183
 msgid "Grid Settings"
 msgstr ""
 
-#: build/grid-block/index.js:132
+#: assets/build/grid-block/index.js:143
 #: src/grid-block/edit.js:190
-#: build/grid-block/index.js:190
+#: assets/build/grid-block/index.js:190
 msgid "Grid Auto Flow"
 msgstr ""
 
-#: build/grid-block/index.js:135
+#: assets/build/grid-block/index.js:146
 #: src/grid-block/edit.js:197
-#: build/grid-block/index.js:197
+#: assets/build/grid-block/index.js:197
 msgid "Row"
 msgstr ""
 
-#: build/grid-block/index.js:138
+#: assets/build/grid-block/index.js:149
 #: src/grid-block/edit.js:204
-#: build/grid-block/index.js:204
+#: assets/build/grid-block/index.js:204
 msgid "Column"
 msgstr ""
 
-#: build/grid-block/index.js:141
+#: assets/build/grid-block/index.js:152
 #: src/grid-block/edit.js:211
-#: build/grid-block/index.js:211
+#: assets/build/grid-block/index.js:211
 msgid "Row Dense"
 msgstr ""
 
-#: build/grid-block/index.js:144
+#: assets/build/grid-block/index.js:155
 #: src/grid-block/edit.js:218
-#: build/grid-block/index.js:218
+#: assets/build/grid-block/index.js:218
 msgid "Column Dense"
 msgstr ""
 
-#: build/grid-block/index.js:150
+#: assets/build/grid-block/index.js:161
 #: src/grid-block/edit.js:230
-#: build/grid-block/index.js:230
+#: assets/build/grid-block/index.js:230
 msgid "Controls how auto-placed items get inserted in the grid"
 msgstr ""
 
-#: build/grid-block/index.js:158
+#: assets/build/grid-block/index.js:172
 #: src/grid-block/edit.js:250
-#: build/grid-block/index.js:250
+#: assets/build/grid-block/index.js:250
 msgid "Horizontal Alignment"
 msgstr ""
 
-#: build/grid-block/index.js:170
+#: assets/build/grid-block/index.js:184
 #: src/grid-block/edit.js:278
-#: build/grid-block/index.js:278
+#: assets/build/grid-block/index.js:278
 msgid "Space Between"
 msgstr ""
 
-#: build/grid-block/index.js:177
+#: assets/build/grid-block/index.js:191
 #: src/grid-block/edit.js:290
-#: build/grid-block/index.js:290
+#: assets/build/grid-block/index.js:290
 msgid "Vertical Alignment"
 msgstr ""
 
-#: build/grid-block/index.js:180
+#: assets/build/grid-block/index.js:194
 #: src/grid-block/edit.js:297
-#: build/grid-block/index.js:297
+#: assets/build/grid-block/index.js:297
 msgid "Top"
 msgstr ""
 
-#: build/grid-block/index.js:183
+#: assets/build/grid-block/index.js:197
 #: src/grid-block/edit.js:304
-#: build/grid-block/index.js:304
+#: assets/build/grid-block/index.js:304
 msgid "Middle"
 msgstr ""
 
-#: build/grid-block/index.js:186
+#: assets/build/grid-block/index.js:200
 #: src/grid-block/edit.js:311
-#: build/grid-block/index.js:311
+#: assets/build/grid-block/index.js:311
 msgid "Bottom"
 msgstr ""
 
-#: build/grid-block/index.js:209
+#: assets/build/grid-block/index.js:227
 #: src/grid-block/edit.js:346
-#: build/grid-block/index.js:346
+#: assets/build/grid-block/index.js:346
 msgid "Grid Item"
 msgstr ""
 
-#: build/grid-block/index.js:257
+#: assets/build/grid-block/index.js:278
 #: src/grid-block/index.js:25
-#: build/grid-block/index.js:379
+#: assets/build/grid-block/index.js:379
 msgid "Awesome Grid Block"
 msgstr ""
 
-#: build/grid-block/index.js:258
+#: assets/build/grid-block/index.js:279
 #: src/grid-block/index.js:26
-#: build/grid-block/index.js:380
+#: assets/build/grid-block/index.js:380
 msgid "Create responsive grid layouts with customizable columns and gaps"
 msgstr ""
 
-#: build/post-block/index.js:97
+#: assets/build/post-block/index.js:97
 #: src/post-block/edit.js:79
-#: build/post-block/index.js:79
+#: assets/build/post-block/index.js:79
 msgid "All Categories"
 msgstr ""
 
-#: build/post-block/index.js:104
+#: assets/build/post-block/index.js:106
 #: src/post-block/edit.js:89
-#: build/post-block/index.js:89
+#: assets/build/post-block/index.js:89
 msgid "Settings"
 msgstr ""
 
-#: build/post-block/index.js:106
+#: assets/build/post-block/index.js:108
 #: src/post-block/edit.js:91
-#: build/post-block/index.js:91
+#: assets/build/post-block/index.js:91
 msgid "Posts to Show"
 msgstr ""
 
-#: build/post-block/index.js:143
+#: assets/build/post-block/index.js:145
 #: src/post-block/edit.js:109
-#: build/post-block/index.js:109
+#: assets/build/post-block/index.js:109
 msgid "Category"
 msgstr ""
 
-#: build/post-block/index.js:151
+#: assets/build/post-block/index.js:153
 #: src/post-block/edit.js:117
-#: build/post-block/index.js:117
+#: assets/build/post-block/index.js:117
 msgid "Select a category to filter posts"
 msgstr ""
 
-#: build/post-block/index.js:153
+#: assets/build/post-block/index.js:155
 #: src/post-block/edit.js:121
-#: build/post-block/index.js:121
+#: assets/build/post-block/index.js:121
 msgid "Order By"
 msgstr ""
 
-#: build/post-block/index.js:162
+#: assets/build/post-block/index.js:164
 #: src/post-block/edit.js:126
-#: build/post-block/index.js:126
+#: assets/build/post-block/index.js:126
 msgid "Modified"
 msgstr ""
 
-#: build/post-block/index.js:165
+#: assets/build/post-block/index.js:167
 #: src/post-block/edit.js:127
-#: build/post-block/index.js:127
+#: assets/build/post-block/index.js:127
 msgid "Author"
 msgstr ""
 
-#: build/post-block/index.js:168
+#: assets/build/post-block/index.js:170
 #: src/post-block/edit.js:128
-#: build/post-block/index.js:128
+#: assets/build/post-block/index.js:128
 msgid "Random"
 msgstr ""
 
-#: build/post-block/index.js:175
+#: assets/build/post-block/index.js:177
 #: src/post-block/edit.js:134
-#: build/post-block/index.js:134
+#: assets/build/post-block/index.js:134
 msgid "Order"
 msgstr ""
 
-#: build/post-block/index.js:178
+#: assets/build/post-block/index.js:180
 #: src/post-block/edit.js:137
-#: build/post-block/index.js:137
+#: assets/build/post-block/index.js:137
 msgid "Descending"
 msgstr ""
 
-#: build/post-block/index.js:181
+#: assets/build/post-block/index.js:183
 #: src/post-block/edit.js:138
-#: build/post-block/index.js:138
+#: assets/build/post-block/index.js:138
 msgid "Ascending"
 msgstr ""
 
-#: build/post-block/index.js:188
+#: assets/build/post-block/index.js:190
 #: src/post-block/edit.js:144
-#: build/post-block/index.js:144
+#: assets/build/post-block/index.js:144
 msgid "Columns"
 msgstr ""
 
-#: build/post-block/index.js:196
+#: assets/build/post-block/index.js:198
 #: src/post-block/edit.js:152
-#: build/post-block/index.js:152
+#: assets/build/post-block/index.js:152
 msgid "Thumbnail Size"
 msgstr ""
 
-#: build/post-block/index.js:199
+#: assets/build/post-block/index.js:201
 #: src/post-block/edit.js:155
-#: build/post-block/index.js:155
+#: assets/build/post-block/index.js:155
 msgid "Thumbnail"
 msgstr ""
 
-#: build/post-block/index.js:202
+#: assets/build/post-block/index.js:204
 #: src/post-block/edit.js:156
-#: build/post-block/index.js:156
+#: assets/build/post-block/index.js:156
 msgid "Medium"
 msgstr ""
 
-#: build/post-block/index.js:205
+#: assets/build/post-block/index.js:207
 #: src/post-block/edit.js:157
-#: build/post-block/index.js:157
+#: assets/build/post-block/index.js:157
 msgid "Medium Large"
 msgstr ""
 
-#: build/post-block/index.js:208
+#: assets/build/post-block/index.js:210
 #: src/post-block/edit.js:158
-#: build/post-block/index.js:158
+#: assets/build/post-block/index.js:158
 msgid "Large"
 msgstr ""
 
-#: build/post-block/index.js:211
+#: assets/build/post-block/index.js:213
 #: src/post-block/edit.js:159
-#: build/post-block/index.js:159
+#: assets/build/post-block/index.js:159
 msgid "Full"
 msgstr ""
 
-#: build/post-block/index.js:221
+#: assets/build/post-block/index.js:224
 #: src/post-block/edit.js:172
-#: build/post-block/index.js:172
+#: assets/build/post-block/index.js:172
 msgid "Display Title"
 msgstr ""
 
-#: build/post-block/index.js:227
+#: assets/build/post-block/index.js:230
 #: src/post-block/edit.js:180
-#: build/post-block/index.js:180
+#: assets/build/post-block/index.js:180
 msgid "Display Excerpt"
 msgstr ""
 
-#: build/post-block/index.js:233
+#: assets/build/post-block/index.js:236
 #: src/post-block/edit.js:188
-#: build/post-block/index.js:188
+#: assets/build/post-block/index.js:188
 msgid "Display Date"
 msgstr ""
 
-#: build/post-block/index.js:239
+#: assets/build/post-block/index.js:242
 #: src/post-block/edit.js:196
-#: build/post-block/index.js:196
+#: assets/build/post-block/index.js:196
 msgid "Display Author"
 msgstr ""
 
-#: build/post-block/index.js:245
+#: assets/build/post-block/index.js:248
 #: src/post-block/edit.js:204
-#: build/post-block/index.js:204
+#: assets/build/post-block/index.js:204
 msgid "Display Thumbnail"
 msgstr ""
 
-#: build/post-block/index.js:257
+#: assets/build/post-block/index.js:263
 #: src/post-block/edit.js:217
-#: build/post-block/index.js:217
+#: assets/build/post-block/index.js:217
 msgid "Loading posts..."
 msgstr ""
 
-#: build/post-block/index.js:297
+#: assets/build/post-block/index.js:312
 #: src/post-block/edit.js:273
-#: build/post-block/index.js:273
+#: assets/build/post-block/index.js:273
 msgid "Read More →"
 msgstr ""
 
-#: build/post-block/index.js:343
+#: assets/build/post-block/index.js:364
 #: src/post-block/index.js:25
-#: build/post-block/index.js:310
+#: assets/build/post-block/index.js:310
 msgid "Awesome Post Block"
 msgstr ""
 
-#: build/post-block/index.js:344
+#: assets/build/post-block/index.js:365
 #: src/post-block/index.js:26
-#: build/post-block/index.js:311
+#: assets/build/post-block/index.js:311
 msgid "Display posts with customizable layout"
 msgstr ""
 
-#: build/card-block/block.json
+#: assets/build/awesome-slider/block.json
+#: src/awesome-slider/block.json
+msgctxt "block title"
+msgid "Awesome Slider"
+msgstr ""
+
+#: assets/build/awesome-slider/block.json
+#: src/awesome-slider/block.json
+msgctxt "block description"
+msgid "A beautiful slider block with animations and slick slider"
+msgstr ""
+
+#: assets/build/awesome-slider/block.json
+#: src/awesome-slider/block.json
+msgctxt "block keyword"
+msgid "slider"
+msgstr ""
+
+#: assets/build/awesome-slider/block.json
+#: src/awesome-slider/block.json
+msgctxt "block keyword"
+msgid "carousel"
+msgstr ""
+
+#: assets/build/awesome-slider/block.json
+#: src/awesome-slider/block.json
+msgctxt "block keyword"
+msgid "slick"
+msgstr ""
+
+#: assets/build/awesome-slider/block.json
+#: src/awesome-slider/block.json
+msgctxt "block keyword"
+msgid "banner"
+msgstr ""
+
+#: assets/build/awesome-timeline/block.json
+#: src/awesome-timeline/block.json
+msgctxt "block title"
+msgid "Awesome Timeline"
+msgstr ""
+
+#: assets/build/awesome-timeline/block.json
+#: src/awesome-timeline/block.json
+msgctxt "block description"
+msgid "A beautiful vertical timeline block with alternating left/right items"
+msgstr ""
+
+#: assets/build/awesome-timeline/block.json
+#: src/awesome-timeline/block.json
+msgctxt "block keyword"
+msgid "timeline"
+msgstr ""
+
+#: assets/build/awesome-timeline/block.json
+#: src/awesome-timeline/block.json
+msgctxt "block keyword"
+msgid "history"
+msgstr ""
+
+#: assets/build/awesome-timeline/block.json
+#: src/awesome-timeline/block.json
+msgctxt "block keyword"
+msgid "events"
+msgstr ""
+
+#: assets/build/awesome-timeline/block.json
+#: src/awesome-timeline/block.json
+msgctxt "block keyword"
+msgid "schedule"
+msgstr ""
+
+#: assets/build/card-block/block.json
 #: src/card-block/block.json
 msgctxt "block title"
 msgid "Card Block"
 msgstr ""
 
-#: build/card-block/block.json
+#: assets/build/card-block/block.json
 #: src/card-block/block.json
 msgctxt "block description"
 msgid "Beautiful card layout with image, tag, title, excerpt, author and button"
 msgstr ""
 
-#: build/card-block/block.json
+#: assets/build/card-block/block.json
 #: src/card-block/block.json
 msgctxt "block keyword"
 msgid "card"
 msgstr ""
 
-#: build/card-block/block.json
-#: build/post-block/block.json
+#: assets/build/card-block/block.json
+#: assets/build/post-block/block.json
 #: src/card-block/block.json
 #: src/post-block/block.json
 msgctxt "block keyword"
 msgid "post"
 msgstr ""
 
-#: build/card-block/block.json
+#: assets/build/card-block/block.json
 #: src/card-block/block.json
 msgctxt "block keyword"
 msgid "content"
 msgstr ""
 
-#: build/card-block/block.json
+#: assets/build/card-block/block.json
 #: src/card-block/block.json
 msgctxt "block keyword"
 msgid "featured"
 msgstr ""
 
-#: build/feature-block/block.json
+#: assets/build/feature-block/block.json
 #: src/feature-block/block.json
 msgctxt "block title"
 msgid "Feature Block"
 msgstr ""
 
-#: build/feature-block/block.json
+#: assets/build/feature-block/block.json
 #: src/feature-block/block.json
 msgctxt "block description"
 msgid "Display features/services with icon, title and description"
 msgstr ""
 
-#: build/feature-block/block.json
+#: assets/build/feature-block/block.json
 #: src/feature-block/block.json
 msgctxt "block keyword"
 msgid "feature"
 msgstr ""
 
-#: build/feature-block/block.json
+#: assets/build/feature-block/block.json
 #: src/feature-block/block.json
 msgctxt "block keyword"
 msgid "service"
 msgstr ""
 
-#: build/feature-block/block.json
+#: assets/build/feature-block/block.json
 #: src/feature-block/block.json
 msgctxt "block keyword"
 msgid "icon"
 msgstr ""
 
-#: build/feature-block/block.json
+#: assets/build/feature-block/block.json
 #: src/feature-block/block.json
 msgctxt "block keyword"
 msgid "highlight"
 msgstr ""
 
-#: build/grid-block/block.json
+#: assets/build/grid-block/block.json
 #: src/grid-block/block.json
 msgctxt "block title"
 msgid "Grid Block"
 msgstr ""
 
-#: build/grid-block/block.json
+#: assets/build/grid-block/block.json
 #: src/grid-block/block.json
 msgctxt "block description"
 msgid "Create responsive grid layouts with customizable columns and gaps"
 msgstr ""
 
-#: build/grid-block/block.json
+#: assets/build/grid-block/block.json
 #: src/grid-block/block.json
 msgctxt "block keyword"
 msgid "grid"
 msgstr ""
 
-#: build/grid-block/block.json
+#: assets/build/grid-block/block.json
 #: src/grid-block/block.json
 msgctxt "block keyword"
 msgid "layout"
 msgstr ""
 
-#: build/grid-block/block.json
+#: assets/build/grid-block/block.json
 #: src/grid-block/block.json
 msgctxt "block keyword"
 msgid "columns"
 msgstr ""
 
-#: build/grid-block/block.json
+#: assets/build/grid-block/block.json
 #: src/grid-block/block.json
 msgctxt "block keyword"
 msgid "rows"
 msgstr ""
 
-#: build/post-block/block.json
+#: assets/build/post-block/block.json
 #: src/post-block/block.json
 msgctxt "block title"
 msgid "Post Block"
 msgstr ""
 
-#: build/post-block/block.json
+#: assets/build/post-block/block.json
 #: src/post-block/block.json
 msgctxt "block description"
 msgid "Display posts with customizable layout"
 msgstr ""
 
-#: build/post-block/block.json
+#: assets/build/post-block/block.json
 #: src/post-block/block.json
 msgctxt "block keyword"
 msgid "blog"
 msgstr ""
 
-#: build/post-block/block.json
+#: assets/build/post-block/block.json
 #: src/post-block/block.json
 msgctxt "block keyword"
 msgid "news"

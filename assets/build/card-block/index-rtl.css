@@ -49,8 +49,8 @@
 .ab-media-actions {
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
+  left: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.6);
   display: flex;
@@ -69,5 +69,3 @@
 .components-panel__row + .components-panel__row {
   margin-top: 8px;
 }
-
-/*# sourceMappingURL=index.css.map*/

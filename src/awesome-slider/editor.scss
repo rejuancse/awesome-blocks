@@ -2,11 +2,11 @@
  * Awesome Slider - Editor Styles
  */
 
+// Instead of @import, we use @use with namespace
+@use './style.scss' as *;
+
 // Editor preview styles
 .as-editor-preview {
-    // Import all frontend styles for editor preview
-    @import './style.scss';
-
     // Editor specific adjustments
     .slider {
         pointer-events: none; // Disable navigation in editor
