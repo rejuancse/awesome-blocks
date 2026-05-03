@@ -7,7 +7,7 @@ namespace Composer\Autoload;
 class ComposerStaticInit140d8c6336c69b4d14e39565f02c66fd
 {
     public static $files = array (
-        '0c1a2f1c67258d2a1677c5823c5f9a18' => __DIR__ . '/../..' . '/includes/render-post-block.php',
+        'abe3903f04fc7ef1c4e54633197d3206' => __DIR__ . '/../..' . '/src/post-block/render.php',
         '775ddbd2e32bd16380e072e7bbff8268' => __DIR__ . '/../..' . '/includes/register-blocks.php',
     );
 

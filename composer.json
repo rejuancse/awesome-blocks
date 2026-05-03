@@ -15,7 +15,7 @@
             "Awesome_Block\\": "includes/"
         },
         "files": [
-            "includes/render-post-block.php",
+            "src/post-block/render.php",
             "includes/register-blocks.php"
         ]
     }
