@@ -1,6 +1,3 @@
-/**
- * WordPress Dependencies
- */
 import { __ } from '@wordpress/i18n';
 import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
 import {
@@ -15,9 +12,6 @@ import { useSelect } from '@wordpress/data';
 import apiFetch from '@wordpress/api-fetch';
 import { useState, useEffect } from '@wordpress/element';
 
-/**
- * Edit Component
- */
 export default function Edit({ attributes, setAttributes }) {
     const {
         columns = 3,
@@ -56,7 +50,7 @@ export default function Edit({ attributes, setAttributes }) {
             per_page:   productsPerPage,
             orderby:    orderBy,
             order:      order.toLowerCase(),
-            _embed:     '1',            // ← KEY: brings in _embedded data
+            _embed:     '1',
         });
 
         if (selectedCategories.length > 0) {
@@ -199,7 +193,6 @@ export default function Edit({ attributes, setAttributes }) {
     return (
         <>
             <InspectorControls>
-                {/* Layout Settings */}
                 <PanelBody title={__('Layout Settings', 'awesome-blocks')} initialOpen={true}>
                     <RangeControl
                         label={__('Columns', 'awesome-blocks')}
@@ -215,7 +208,6 @@ export default function Edit({ attributes, setAttributes }) {
                     />
                 </PanelBody>
 
-                {/* Product Query */}
                 <PanelBody title={__('Product Query', 'awesome-blocks')} initialOpen={false}>
                     <PanelRow>
                         <SelectControl
@@ -288,7 +280,6 @@ export default function Edit({ attributes, setAttributes }) {
                     </PanelRow>
                 </PanelBody>
 
-                {/* Display Options */}
                 <PanelBody title={__('Display Options', 'awesome-blocks')} initialOpen={false}>
                     <ToggleControl label={__('Show Category', 'awesome-blocks')}     checked={showCategory}   onChange={() => setAttributes({ showCategory:   !showCategory })} />
                     <ToggleControl label={__('Show Rating', 'awesome-blocks')}       checked={showRating}     onChange={() => setAttributes({ showRating:     !showRating })} />
@@ -339,7 +330,6 @@ export default function Edit({ attributes, setAttributes }) {
                                                     <img src={imageUrl} alt={product.name || product.title?.rendered || ''} />
                                                 </a>
 
-                                                {/* Discount Badge */}
                                                 {showBadges && discountPct > 0 && (
                                                     <div className={`ab-product-badges ab-badge-${badgePosition}`}>
                                                         <span className="ab-discount-badge">-{discountPct}%</span>
@@ -386,7 +376,6 @@ export default function Edit({ attributes, setAttributes }) {
                                                     </div>
                                                 )}
 
-                                                {/* Add to Cart */}
                                                 {showAddToCart && (
                                                     <div className="ab-add-to-cart">
                                                         <span>{__('Add to cart', 'awesome-blocks')}</span>
