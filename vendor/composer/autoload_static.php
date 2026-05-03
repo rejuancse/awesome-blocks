@@ -8,6 +8,7 @@ class ComposerStaticInit140d8c6336c69b4d14e39565f02c66fd
 {
     public static $files = array (
         'abe3903f04fc7ef1c4e54633197d3206' => __DIR__ . '/../..' . '/src/post-block/render.php',
+        '391a9fce064e216d6852e94dadf9bd47' => __DIR__ . '/../..' . '/src/woo-product-list/render.php',
     );
 
     public static $prefixLengthsPsr4 = array (

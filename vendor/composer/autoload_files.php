@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'abe3903f04fc7ef1c4e54633197d3206' => $baseDir . '/src/post-block/render.php',
+    '391a9fce064e216d6852e94dadf9bd47' => $baseDir . '/src/woo-product-list/render.php',
 );

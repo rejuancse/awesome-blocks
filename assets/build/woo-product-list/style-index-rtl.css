@@ -1,0 +1,366 @@
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/woo-product-list/style.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+/**
+ * WooCommerce Product List - Frontend Styles
+ */
+/*********************
+BREAKPOINTS
+*********************/
+.ab-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.ab-row .ab-col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.ab-row .ab-col-11 {
+  flex: 0 0 91.666667%;
+  max-width: 91.666667%;
+}
+.ab-row .ab-col-10 {
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+.ab-row .ab-col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.ab-row .ab-col-8 {
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+.ab-row .ab-col-7 {
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+}
+.ab-row .ab-col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.ab-row .ab-col-5 {
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+}
+.ab-row .ab-col-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+@media (max-width: 767px) {
+  .ab-row .ab-col-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.ab-row .ab-col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.ab-row .ab-col-2 {
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+.ab-row .ab-col-1 {
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%;
+}
+.ab-row .ab-col-71 {
+  flex: 0 0 auto;
+  width: 14.28%;
+}
+.ab-row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.ab-products-list .ab-product-card {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ececec;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+.ab-products-list .ab-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+.ab-products-list .ab-product-card:hover .ab-product-image-wrapper img {
+  transform: scale(1.05);
+}
+.ab-products-list .ab-product-card:hover .ab-add-to-cart {
+  background-color: #3BB77E;
+  color: white;
+}
+.ab-products-list .ab-product-card .ab-product-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.ab-products-list .ab-product-card .ab-product-image-wrapper a {
+  display: block;
+}
+.ab-products-list .ab-product-card .ab-product-image-wrapper img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.3s ease;
+}
+.ab-products-list .ab-product-card .ab-product-image-wrapper .ab-product-badges {
+  position: absolute;
+  z-index: 9;
+}
+.ab-products-list .ab-product-card .ab-product-image-wrapper .ab-product-badges .ab-discount-badge {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 600;
+  border-radius: 0 0 0 15px;
+  color: white;
+  padding: 10px 20px;
+  background-color: #f59758;
+  box-shadow: 0 3px 10px rgba(245, 151, 88, 0.3);
+}
+.ab-products-list .ab-product-card .ab-product-image-wrapper .ab-product-badges.ab-badge-top-left {
+  right: 0;
+  top: 0;
+}
+.ab-products-list .ab-product-card .ab-product-image-wrapper .ab-product-badges.ab-badge-top-right {
+  left: 0;
+  top: 0;
+}
+.ab-products-list .ab-product-card .ab-product-image-wrapper .ab-product-badges.ab-badge-top-right .ab-discount-badge {
+  border-radius: 0px 0 15px 0px;
+}
+.ab-products-list .ab-product-card .ab-product-details {
+  padding: 20px;
+  position: relative;
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-product-category {
+  color: #adadad;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-product-category a {
+  font-family: "Quicksand", sans-serif;
+  color: #adadad;
+  font-size: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-product-category a:hover {
+  color: #3BB77E;
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-product-category a:not(:last-child):after {
+  content: ", ";
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-product-title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 6px 0;
+  line-height: 1.4;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-product-title a {
+  font-family: "Quicksand", sans-serif;
+  color: #253D4E;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-product-title a:hover {
+  color: #3BB77E;
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-product-rating {
+  display: flex;
+  align-items: center;
+  margin: 8px 0 0;
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-product-rating .star-rating {
+  overflow: hidden;
+  position: relative;
+  height: 1em;
+  line-height: 1;
+  font-size: 14px;
+  width: 5.4em;
+  font-family: "WooCommerce";
+  color: #f9b233;
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-product-rating .star-rating:before {
+  content: "SSSSS";
+  float: right;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-product-rating .star-rating span {
+  overflow: hidden;
+  float: right;
+  top: 0;
+  right: 0;
+  position: relative;
+  padding-top: 1.5em;
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-product-rating .ab-review-count {
+  color: #B6B6B6;
+  font-size: 13px;
+  margin-right: 5px;
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-product-price {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-product-price del {
+  order: 2;
+  color: #adadad;
+  text-decoration: line-through;
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-product-price del .woocommerce-Price-amount.amount {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-product-price del .woocommerce-Price-amount.amount .woocommerce-Price-currencySymbol {
+  font-size: 12px;
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-product-price ins {
+  order: 1;
+  text-decoration: none;
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-product-price ins .woocommerce-Price-amount.amount {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #3BB77E;
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-product-price ins .woocommerce-Price-amount.amount .woocommerce-Price-currencySymbol {
+  font-size: 16px;
+  margin-right: 2px;
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-product-price > .woocommerce-Price-amount.amount {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #3BB77E;
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-product-price > .woocommerce-Price-amount.amount .woocommerce-Price-currencySymbol {
+  font-size: 16px;
+  margin-right: 2px;
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-product-price .screen-reader-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-add-to-cart {
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+  display: block;
+  padding: 12px 20px;
+  border-radius: 6px;
+  background-color: #DEF9EC;
+  font-size: 14px;
+  font-weight: 700;
+  color: #3BB77E;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-add-to-cart:hover {
+  background-color: #3BB77E;
+  color: white;
+  box-shadow: 0 5px 15px rgba(59, 183, 126, 0.3);
+}
+.ab-products-list .ab-product-card .ab-product-details .ab-add-to-cart:active {
+  transform: translateY(2px);
+}
+.ab-pagination {
+  margin: 10px 0 30px;
+  text-align: center;
+}
+.ab-pagination ul.page-numbers {
+  display: inline-flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ab-pagination ul.page-numbers li {
+  margin: 0 5px;
+}
+.ab-pagination ul.page-numbers li .page-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 15px;
+  font-weight: 600;
+  color: #253D4E;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background-color: #f5f5f5;
+}
+.ab-pagination ul.page-numbers li .page-numbers.current {
+  background-color: #3BB77E;
+  color: white;
+  box-shadow: 0 5px 15px rgba(59, 183, 126, 0.3);
+}
+.ab-pagination ul.page-numbers li .page-numbers:hover:not(.current) {
+  background-color: #e9e9e9;
+}
+.ab-pagination ul.page-numbers li .page-numbers.next, .ab-pagination ul.page-numbers li .page-numbers.prev {
+  font-size: 16px;
+}
+@media screen and (max-width: 991px) {
+  .ab-products-list {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+@media screen and (max-width: 767px) {
+  .ab-products-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .ab-product-card .ab-product-details {
+    padding: 15px 20px;
+  }
+  .ab-product-card .ab-product-details .ab-product-title {
+    font-size: 15px;
+    height: 42px;
+  }
+  .ab-product-card .ab-product-details .ab-add-to-cart {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .ab-products-list {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin: 20px auto;
+  }
+}

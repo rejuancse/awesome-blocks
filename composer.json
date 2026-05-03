@@ -15,7 +15,8 @@
             "Awesome_Block\\": "includes/"
         },
         "files": [
-            "src/post-block/render.php"
+            "src/post-block/render.php",
+            "src/woo-product-list/render.php"
         ]
     }
 }

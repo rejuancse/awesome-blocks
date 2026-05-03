@@ -66,5 +66,16 @@ class Register_Blocks {
         register_block_type_from_metadata(
             AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/awesome-timeline'
         );
+
+        // Register WooCommerce Product List Block
+        if ( function_exists( 'register_block_type_from_metadata' ) ) {
+            register_block_type_from_metadata(
+                AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/woo-product-list',
+                array(
+                    'render_callback' => 'render_awesome_woo_product_list',
+                )
+            );
+        }
+
     }
 }

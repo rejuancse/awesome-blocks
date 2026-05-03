@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-05-03T07:38:28+00:00\n"
+"POT-Creation-Date: 2026-05-03T18:20:57+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: awesome-blocks\n"
@@ -46,6 +46,32 @@ msgstr ""
 #: assets/build/post-block/render.php:113
 #: src/post-block/render.php:113
 msgid "Read More"
+msgstr ""
+
+#: assets/build/woo-product-list/render.php:24
+#: src/woo-product-list/render.php:24
+msgid "WooCommerce Required"
+msgstr ""
+
+#: assets/build/woo-product-list/render.php:25
+#: src/woo-product-list/render.php:25
+msgid "Please activate the WooCommerce plugin to use this block."
+msgstr ""
+
+#: assets/build/woo-product-list/render.php:79
+#: src/woo-product-list/render.php:79
+msgid "No products found."
+msgstr ""
+
+#: assets/build/woo-product-list/render.php:128
+#: src/woo-product-list/render.php:128
+#, php-format
+msgid "Rated %s out of 5"
+msgstr ""
+
+#: assets/build/woo-product-list/render.php:131
+#: src/woo-product-list/render.php:131
+msgid "out of"
 msgstr ""
 
 #: assets/build/awesome-slider/index.js:141
@@ -125,16 +151,19 @@ msgstr ""
 #: assets/build/card-block/index.js:231
 #: assets/build/feature-block/index.js:75
 #: assets/build/post-block/index.js:161
+#: assets/build/woo-product-list/index.js:250
 #: src/awesome-slider/edit.js:224
 #: src/awesome-timeline/edit.js:82
 #: src/card-block/edit.js:222
 #: src/feature-block/edit.js:66
 #: src/post-block/edit.js:125
+#: src/woo-product-list/edit.js:229
 #: assets/build/awesome-slider/index.js:224
 #: assets/build/awesome-timeline/index.js:82
 #: assets/build/card-block/index.js:222
 #: assets/build/feature-block/index.js:66
 #: assets/build/post-block/index.js:125
+#: assets/build/woo-product-list/index.js:229
 msgid "Title"
 msgstr ""
 
@@ -276,12 +305,16 @@ msgstr ""
 #: assets/build/awesome-timeline/index.js:114
 #: assets/build/card-block/index.js:186
 #: assets/build/post-block/index.js:158
+#: assets/build/woo-product-list/edit.js:108
+#: assets/build/woo-product-list/index.js:238
 #: src/awesome-timeline/edit.js:93
 #: src/card-block/edit.js:176
 #: src/post-block/edit.js:124
+#: src/woo-product-list/edit.js:225
 #: assets/build/awesome-timeline/index.js:93
 #: assets/build/card-block/index.js:176
 #: assets/build/post-block/index.js:124
+#: assets/build/woo-product-list/index.js:225
 msgid "Date"
 msgstr ""
 
@@ -387,12 +420,16 @@ msgstr ""
 #: assets/build/card-block/index.js:330
 #: assets/build/feature-block/index.js:128
 #: assets/build/post-block/index.js:221
+#: assets/build/woo-product-list/edit.js:143
+#: assets/build/woo-product-list/index.js:326
 #: src/card-block/edit.js:322
 #: src/feature-block/edit.js:116
 #: src/post-block/edit.js:168
+#: src/woo-product-list/edit.js:292
 #: assets/build/card-block/index.js:322
 #: assets/build/feature-block/index.js:116
 #: assets/build/post-block/index.js:168
+#: assets/build/woo-product-list/index.js:292
 msgid "Display Options"
 msgstr ""
 
@@ -712,8 +749,11 @@ msgid "Create responsive grid layouts with customizable columns and gaps"
 msgstr ""
 
 #: assets/build/post-block/index.js:97
+#: assets/build/woo-product-list/index.js:177
 #: src/post-block/edit.js:79
+#: src/woo-product-list/edit.js:170
 #: assets/build/post-block/index.js:79
+#: assets/build/woo-product-list/index.js:170
 msgid "All Categories"
 msgstr ""
 
@@ -742,8 +782,12 @@ msgid "Select a category to filter posts"
 msgstr ""
 
 #: assets/build/post-block/index.js:155
+#: assets/build/woo-product-list/edit.js:105
+#: assets/build/woo-product-list/index.js:235
 #: src/post-block/edit.js:121
+#: src/woo-product-list/edit.js:222
 #: assets/build/post-block/index.js:121
+#: assets/build/woo-product-list/index.js:222
 msgid "Order By"
 msgstr ""
 
@@ -760,32 +804,51 @@ msgid "Author"
 msgstr ""
 
 #: assets/build/post-block/index.js:170
+#: assets/build/woo-product-list/index.js:253
 #: src/post-block/edit.js:128
+#: src/woo-product-list/edit.js:230
 #: assets/build/post-block/index.js:128
+#: assets/build/woo-product-list/index.js:230
 msgid "Random"
 msgstr ""
 
 #: assets/build/post-block/index.js:177
+#: assets/build/woo-product-list/edit.js:120
+#: assets/build/woo-product-list/index.js:262
 #: src/post-block/edit.js:134
+#: src/woo-product-list/edit.js:237
 #: assets/build/post-block/index.js:134
+#: assets/build/woo-product-list/index.js:237
 msgid "Order"
 msgstr ""
 
 #: assets/build/post-block/index.js:180
+#: assets/build/woo-product-list/edit.js:123
+#: assets/build/woo-product-list/index.js:265
 #: src/post-block/edit.js:137
+#: src/woo-product-list/edit.js:240
 #: assets/build/post-block/index.js:137
+#: assets/build/woo-product-list/index.js:240
 msgid "Descending"
 msgstr ""
 
 #: assets/build/post-block/index.js:183
+#: assets/build/woo-product-list/edit.js:124
+#: assets/build/woo-product-list/index.js:268
 #: src/post-block/edit.js:138
+#: src/woo-product-list/edit.js:241
 #: assets/build/post-block/index.js:138
+#: assets/build/woo-product-list/index.js:241
 msgid "Ascending"
 msgstr ""
 
 #: assets/build/post-block/index.js:190
+#: assets/build/woo-product-list/edit.js:85
+#: assets/build/woo-product-list/index.js:212
 #: src/post-block/edit.js:144
+#: src/woo-product-list/edit.js:205
 #: assets/build/post-block/index.js:144
+#: assets/build/woo-product-list/index.js:205
 msgid "Columns"
 msgstr ""
 
@@ -877,6 +940,179 @@ msgstr ""
 #: src/post-block/index.js:26
 #: assets/build/post-block/index.js:311
 msgid "Display posts with customizable layout"
+msgstr ""
+
+#: assets/build/woo-product-list/edit.js:83
+#: assets/build/woo-product-list/index.js:209
+#: src/woo-product-list/edit.js:203
+#: assets/build/woo-product-list/index.js:203
+msgid "Layout Settings"
+msgstr ""
+
+#: assets/build/woo-product-list/edit.js:93
+#: assets/build/woo-product-list/index.js:221
+#: src/woo-product-list/edit.js:211
+#: assets/build/woo-product-list/index.js:211
+msgid "Products per Page"
+msgstr ""
+
+#: assets/build/woo-product-list/edit.js:102
+#: assets/build/woo-product-list/index.js:231
+#: src/woo-product-list/edit.js:219
+#: assets/build/woo-product-list/index.js:219
+msgid "Product Query"
+msgstr ""
+
+#: assets/build/woo-product-list/edit.js:109
+#: assets/build/woo-product-list/index.js:241
+#: src/woo-product-list/edit.js:226
+#: assets/build/woo-product-list/index.js:226
+msgid "Price"
+msgstr ""
+
+#: assets/build/woo-product-list/edit.js:131
+msgid "Product IDs to Exclude (comma separated)"
+msgstr ""
+
+#: assets/build/woo-product-list/edit.js:138
+msgid "Enter product IDs separated by commas"
+msgstr ""
+
+#: assets/build/woo-product-list/edit.js:145
+#: assets/build/woo-product-list/index.js:329
+#: src/woo-product-list/edit.js:293
+#: assets/build/woo-product-list/index.js:293
+msgid "Show Category"
+msgstr ""
+
+#: assets/build/woo-product-list/edit.js:150
+#: assets/build/woo-product-list/index.js:335
+#: src/woo-product-list/edit.js:294
+#: assets/build/woo-product-list/index.js:294
+msgid "Show Rating"
+msgstr ""
+
+#: assets/build/woo-product-list/edit.js:155
+#: assets/build/woo-product-list/index.js:341
+#: src/woo-product-list/edit.js:295
+#: assets/build/woo-product-list/index.js:295
+msgid "Show Price"
+msgstr ""
+
+#: assets/build/woo-product-list/edit.js:160
+#: assets/build/woo-product-list/index.js:347
+#: src/woo-product-list/edit.js:296
+#: assets/build/woo-product-list/index.js:296
+msgid "Show Add to Cart"
+msgstr ""
+
+#: assets/build/woo-product-list/edit.js:165
+#: assets/build/woo-product-list/index.js:353
+#: src/woo-product-list/edit.js:297
+#: assets/build/woo-product-list/index.js:297
+msgid "Show Badges"
+msgstr ""
+
+#: assets/build/woo-product-list/edit.js:171
+#: assets/build/woo-product-list/index.js:359
+#: src/woo-product-list/edit.js:300
+#: assets/build/woo-product-list/index.js:300
+msgid "Badge Position"
+msgstr ""
+
+#: assets/build/woo-product-list/edit.js:174
+#: assets/build/woo-product-list/index.js:362
+#: src/woo-product-list/edit.js:303
+#: assets/build/woo-product-list/index.js:303
+msgid "Top Left"
+msgstr ""
+
+#: assets/build/woo-product-list/edit.js:175
+#: assets/build/woo-product-list/index.js:365
+#: src/woo-product-list/edit.js:304
+#: assets/build/woo-product-list/index.js:304
+msgid "Top Right"
+msgstr ""
+
+#: assets/build/woo-product-list/edit.js:176
+#: assets/build/woo-product-list/index.js:368
+#: src/woo-product-list/edit.js:305
+#: assets/build/woo-product-list/index.js:305
+msgid "Bottom Left"
+msgstr ""
+
+#: assets/build/woo-product-list/edit.js:177
+#: assets/build/woo-product-list/index.js:371
+#: src/woo-product-list/edit.js:306
+#: assets/build/woo-product-list/index.js:306
+msgid "Bottom Right"
+msgstr ""
+
+#: assets/build/woo-product-list/edit.js:192
+#: assets/build/woo-product-list/index.js:396
+#: src/woo-product-list/edit.js:321
+#: assets/build/woo-product-list/index.js:321
+msgid "No products found. Add some WooCommerce products first."
+msgstr ""
+
+#: assets/build/woo-product-list/index.js:244
+#: src/woo-product-list/edit.js:227
+#: assets/build/woo-product-list/index.js:227
+msgid "Popularity"
+msgstr ""
+
+#: assets/build/woo-product-list/index.js:247
+#: src/woo-product-list/edit.js:228
+#: assets/build/woo-product-list/index.js:228
+msgid "Rating"
+msgstr ""
+
+#: assets/build/woo-product-list/index.js:286
+#: src/woo-product-list/edit.js:249
+#: assets/build/woo-product-list/index.js:249
+msgid "Filter by Categories"
+msgstr ""
+
+#: assets/build/woo-product-list/index.js:291
+#: src/woo-product-list/edit.js:257
+#: assets/build/woo-product-list/index.js:257
+msgid "Selected:"
+msgstr ""
+
+#: assets/build/woo-product-list/index.js:291
+#: src/woo-product-list/edit.js:258
+#: assets/build/woo-product-list/index.js:258
+msgid "Select categories to filter products"
+msgstr ""
+
+#: assets/build/woo-product-list/index.js:320
+#: src/woo-product-list/edit.js:283
+#: assets/build/woo-product-list/index.js:283
+msgid "Clear All"
+msgstr ""
+
+#: assets/build/woo-product-list/index.js:453
+#: src/woo-product-list/edit.js:361
+#: assets/build/woo-product-list/index.js:361
+msgid "Untitled Product"
+msgstr ""
+
+#: assets/build/woo-product-list/index.js:486
+#: src/woo-product-list/edit.js:392
+#: assets/build/woo-product-list/index.js:392
+msgid "Add to cart"
+msgstr ""
+
+#: assets/build/woo-product-list/index.js:539
+#: src/woo-product-list/index.js:24
+#: assets/build/woo-product-list/index.js:431
+msgid "WooCommerce Product List"
+msgstr ""
+
+#: assets/build/woo-product-list/index.js:540
+#: src/woo-product-list/index.js:25
+#: assets/build/woo-product-list/index.js:432
+msgid "Display WooCommerce products in a beautiful grid layout"
 msgstr ""
 
 #: assets/build/awesome-slider/block.json
@@ -1083,4 +1319,40 @@ msgstr ""
 #: src/post-block/block.json
 msgctxt "block keyword"
 msgid "news"
+msgstr ""
+
+#: assets/build/woo-product-list/block.json
+#: src/woo-product-list/block.json
+msgctxt "block title"
+msgid "WooCommerce Product List"
+msgstr ""
+
+#: assets/build/woo-product-list/block.json
+#: src/woo-product-list/block.json
+msgctxt "block description"
+msgid "Display WooCommerce products in a beautiful grid layout"
+msgstr ""
+
+#: assets/build/woo-product-list/block.json
+#: src/woo-product-list/block.json
+msgctxt "block keyword"
+msgid "woocommerce"
+msgstr ""
+
+#: assets/build/woo-product-list/block.json
+#: src/woo-product-list/block.json
+msgctxt "block keyword"
+msgid "products"
+msgstr ""
+
+#: assets/build/woo-product-list/block.json
+#: src/woo-product-list/block.json
+msgctxt "block keyword"
+msgid "product list"
+msgstr ""
+
+#: assets/build/woo-product-list/block.json
+#: src/woo-product-list/block.json
+msgctxt "block keyword"
+msgid "shop"
 msgstr ""

@@ -3,7 +3,7 @@
         'name' => 'thebitcraft/awesome-blocks',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '544f822a4deaf42966cd484ae522385899947973',
+        'reference' => '099f04d600d742c756722f80040a7e17980ca3a7',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'thebitcraft/awesome-blocks' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '544f822a4deaf42966cd484ae522385899947973',
+            'reference' => '099f04d600d742c756722f80040a7e17980ca3a7',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

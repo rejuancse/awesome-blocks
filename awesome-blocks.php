@@ -73,6 +73,7 @@ final class Awesome_Block {
         new Awesome_Block\Assets();
         new Awesome_Block\Register_Blocks();
         new Awesome_Block\Awesome_Block_i18n();
+        new Awesome_Block\Product_REST_API();
     }
 }
 
