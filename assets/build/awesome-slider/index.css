@@ -9,35 +9,35 @@
    * Awesome Slider - Frontend Styles
    */
 }
-.as-editor-preview .elementor-editor-active .addonnest_banner__slider .slide {
+.as-editor-preview .elementor-editor-active .awesome_block_banner__slider .slide {
   position: inherit !important;
 }
-.as-editor-preview .elementor-editor-active .addonnest_banner__slider .slider .slide [data-animation-in] {
+.as-editor-preview .elementor-editor-active .awesome_block_banner__slider .slider .slide [data-animation-in] {
   opacity: 0;
 }
-.as-editor-preview .elementor-editor-active .addonnest_banner__slider .slider .slide:first-child [data-animation-in] {
+.as-editor-preview .elementor-editor-active .awesome_block_banner__slider .slider .slide:first-child [data-animation-in] {
   opacity: 1;
 }
-.as-editor-preview .addonnest_banner__slider {
+.as-editor-preview .awesome_block_banner__slider {
   overflow: hidden;
   position: relative;
 }
-.as-editor-preview .addonnest_banner__slider .slide__content .title {
+.as-editor-preview .awesome_block_banner__slider .slide__content .title {
   color: #fff;
 }
-.as-editor-preview .addonnest_banner__slider .slide__content--headings.text-center {
+.as-editor-preview .awesome_block_banner__slider .slide__content--headings.text-center {
   text-align: center;
 }
-.as-editor-preview .addonnest_banner__slider .slide {
+.as-editor-preview .awesome_block_banner__slider .slide {
   position: relative;
   transition: all 1s ease;
 }
-.as-editor-preview .addonnest_banner__slider .slide .slide__img {
+.as-editor-preview .awesome_block_banner__slider .slide .slide__img {
   width: 100%;
   overflow: hidden;
   position: relative;
 }
-.as-editor-preview .addonnest_banner__slider .slide .slide__img::before {
+.as-editor-preview .awesome_block_banner__slider .slide .slide__img::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -48,7 +48,7 @@
   opacity: 0.4;
   z-index: 1;
 }
-.as-editor-preview .addonnest_banner__slider .slide .slide__img img {
+.as-editor-preview .awesome_block_banner__slider .slide .slide__img img {
   max-width: 100%;
   width: 100%;
   height: auto;
@@ -58,10 +58,10 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-.as-editor-preview .addonnest_banner__slider .slide .slide__img img.zooming {
+.as-editor-preview .awesome_block_banner__slider .slide .slide__img img.zooming {
   transform: scale(1.1);
 }
-.as-editor-preview .addonnest_banner__slider .slide .button-custom {
+.as-editor-preview .awesome_block_banner__slider .slide .button-custom {
   font-size: 18px;
   padding: 10px 30px;
   border-radius: 6px;
@@ -74,11 +74,11 @@
   color: #fff;
   font-weight: 700;
 }
-.as-editor-preview .addonnest_banner__slider .slide .button-custom:hover {
+.as-editor-preview .awesome_block_banner__slider .slide .button-custom:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-.as-editor-preview .addonnest_banner__slider .slide .slide__content {
+.as-editor-preview .awesome_block_banner__slider .slide .slide__content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -88,45 +88,45 @@
   opacity: 0;
   transition: opacity 0.5s ease;
 }
-.as-editor-preview .addonnest_banner__slider .slide .slide__content.slide__content__left {
+.as-editor-preview .awesome_block_banner__slider .slide .slide__content.slide__content__left {
   left: 15%;
   transform: translate(0%, -50%);
   right: 15%;
 }
-.as-editor-preview .addonnest_banner__slider .slide .slide__content.slide__content__right {
+.as-editor-preview .awesome_block_banner__slider .slide .slide__content.slide__content__right {
   right: 15%;
   left: auto;
   transform: translate(0%, -50%);
 }
-.as-editor-preview .addonnest_banner__slider .slide .slide__content.slide__content__center {
+.as-editor-preview .awesome_block_banner__slider .slide .slide__content.slide__content__center {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.as-editor-preview .addonnest_banner__slider .slide .slide__content--headings {
+.as-editor-preview .awesome_block_banner__slider .slide .slide__content--headings {
   color: #fff;
 }
-.as-editor-preview .addonnest_banner__slider .slide .slide__content--headings h2 {
+.as-editor-preview .awesome_block_banner__slider .slide .slide__content--headings h2 {
   font-size: 4.5rem;
   margin: 10px 0;
   line-height: 1.2;
 }
-.as-editor-preview .addonnest_banner__slider .slide .slide__content--headings .animated {
+.as-editor-preview .awesome_block_banner__slider .slide .slide__content--headings .animated {
   transition: all 0.5s ease;
 }
-.as-editor-preview .addonnest_banner__slider .slide .slide__content--headings .top-title {
+.as-editor-preview .awesome_block_banner__slider .slide .slide__content--headings .top-title {
   font-size: 2.5rem;
   font-family: "Playball", cursive;
   margin-bottom: 20px;
   line-height: 1.4;
   display: block;
 }
-.as-editor-preview .addonnest_banner__slider .slide .slide__content--headings .title {
+.as-editor-preview .awesome_block_banner__slider .slide .slide__content--headings .title {
   font-size: 3.5rem;
   margin-bottom: 20px;
   line-height: 1.2;
   display: block;
 }
-.as-editor-preview .addonnest_banner__slider .slide .slide__content--headings .button-custom {
+.as-editor-preview .awesome_block_banner__slider .slide .slide__content--headings .button-custom {
   text-decoration: none;
   color: #fff;
   padding: 12px 22px;
@@ -135,25 +135,25 @@
   text-transform: uppercase;
   transition: 0.3s !important;
 }
-.as-editor-preview .addonnest_banner__slider .slide .slide__content--headings .button-custom:hover {
+.as-editor-preview .awesome_block_banner__slider .slide .slide__content--headings .button-custom:hover {
   background: #fff;
   color: #000;
 }
-.as-editor-preview .addonnest_banner__slider .animated {
+.as-editor-preview .awesome_block_banner__slider .animated {
   animation-duration: 0.8s;
   animation-fill-mode: both;
   transition: opacity 0.8s ease, transform 0.8s ease;
   will-change: transform, opacity;
   backface-visibility: hidden;
 }
-.as-editor-preview .addonnest_banner__slider .slider [data-animation-in] {
+.as-editor-preview .awesome_block_banner__slider .slider [data-animation-in] {
   opacity: 0;
   animation-duration: 0.8s;
   animation-fill-mode: both;
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
-.as-editor-preview .addonnest_banner__slider .slider .slide.slick-active .slide__content,
-.as-editor-preview .addonnest_banner__slider .slider .slick-active [data-animation-in] {
+.as-editor-preview .awesome_block_banner__slider .slider .slide.slick-active .slide__content,
+.as-editor-preview .awesome_block_banner__slider .slider .slick-active [data-animation-in] {
   opacity: 1;
 }
 @keyframes fadeInUp {
@@ -166,7 +166,7 @@
     transform: translate3d(0, 0, 0);
   }
 }
-.as-editor-preview .addonnest_banner__slider .fadeInUp {
+.as-editor-preview .awesome_block_banner__slider .fadeInUp {
   animation-name: fadeInUp;
 }
 @keyframes fadeInDown {
@@ -179,7 +179,7 @@
     transform: translate3d(0, 0, 0);
   }
 }
-.as-editor-preview .addonnest_banner__slider .fadeInDown {
+.as-editor-preview .awesome_block_banner__slider .fadeInDown {
   animation-name: fadeInDown;
 }
 @keyframes fadeInLeft {
@@ -192,7 +192,7 @@
     transform: translate3d(0, 0, 0);
   }
 }
-.as-editor-preview .addonnest_banner__slider .fadeInLeft {
+.as-editor-preview .awesome_block_banner__slider .fadeInLeft {
   animation-name: fadeInLeft;
 }
 @keyframes fadeInRight {
@@ -205,13 +205,13 @@
     transform: translate3d(0, 0, 0);
   }
 }
-.as-editor-preview .addonnest_banner__slider .fadeInRight {
+.as-editor-preview .awesome_block_banner__slider .fadeInRight {
   animation-name: fadeInRight;
 }
-.as-editor-preview .addonnest_banner__slider .slick-dotted .slick-slider {
+.as-editor-preview .awesome_block_banner__slider .slick-dotted .slick-slider {
   margin-bottom: 30px;
 }
-.as-editor-preview .addonnest_banner__slider .slick-dots {
+.as-editor-preview .awesome_block_banner__slider .slick-dots {
   position: absolute;
   bottom: 35px;
   list-style: none;
@@ -222,7 +222,7 @@
   margin: 0;
   width: 100%;
 }
-.as-editor-preview .addonnest_banner__slider .slick-dots li {
+.as-editor-preview .awesome_block_banner__slider .slick-dots li {
   position: relative;
   display: inline-block;
   margin: 0 4px;
@@ -230,7 +230,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.as-editor-preview .addonnest_banner__slider .slick-dots li button {
+.as-editor-preview .awesome_block_banner__slider .slick-dots li button {
   border: 0;
   display: block;
   outline: none;
@@ -242,25 +242,25 @@
   transition: all 0.3s ease;
   background: transparent;
 }
-.as-editor-preview .addonnest_banner__slider .simple-dots .slick-dots li {
+.as-editor-preview .awesome_block_banner__slider .simple-dots .slick-dots li {
   width: 20px;
   height: 20px;
 }
-.as-editor-preview .addonnest_banner__slider .simple-dots .slick-dots li button {
+.as-editor-preview .awesome_block_banner__slider .simple-dots .slick-dots li button {
   border-radius: 50%;
   background-color: white;
   opacity: 0.25;
   width: 20px;
   height: 20px;
 }
-.as-editor-preview .addonnest_banner__slider .simple-dots .slick-dots li button:hover, .as-editor-preview .addonnest_banner__slider .simple-dots .slick-dots li button:focus {
+.as-editor-preview .awesome_block_banner__slider .simple-dots .slick-dots li button:hover, .as-editor-preview .awesome_block_banner__slider .simple-dots .slick-dots li button:focus {
   opacity: 1;
 }
-.as-editor-preview .addonnest_banner__slider .simple-dots .slick-dots li.slick-active button {
+.as-editor-preview .awesome_block_banner__slider .simple-dots .slick-dots li.slick-active button {
   color: white;
   opacity: 0.75;
 }
-.as-editor-preview .addonnest_banner__slider .stick-dots .slick-dots li button {
+.as-editor-preview .awesome_block_banner__slider .stick-dots .slick-dots li button {
   position: relative;
   background-color: white;
   opacity: 0.25;
@@ -270,18 +270,18 @@
   border-radius: 2px;
   transition: all 0.3s ease;
 }
-.as-editor-preview .addonnest_banner__slider .stick-dots .slick-dots li button:hover, .as-editor-preview .addonnest_banner__slider .stick-dots .slick-dots li button:focus {
+.as-editor-preview .awesome_block_banner__slider .stick-dots .slick-dots li button:hover, .as-editor-preview .awesome_block_banner__slider .stick-dots .slick-dots li button:focus {
   opacity: 1;
 }
-.as-editor-preview .addonnest_banner__slider .stick-dots .slick-dots li.slick-active button {
+.as-editor-preview .awesome_block_banner__slider .stick-dots .slick-dots li.slick-active button {
   color: white;
   opacity: 0.75;
   width: 50px;
 }
-.as-editor-preview .addonnest_banner__slider .stick-dots .slick-dots li.slick-active button:hover, .as-editor-preview .addonnest_banner__slider .stick-dots .slick-dots li.slick-active button:focus {
+.as-editor-preview .awesome_block_banner__slider .stick-dots .slick-dots li.slick-active button:hover, .as-editor-preview .awesome_block_banner__slider .stick-dots .slick-dots li.slick-active button:focus {
   opacity: 1;
 }
-.as-editor-preview .addonnest_banner__slider .slick-nav {
+.as-editor-preview .awesome_block_banner__slider .slick-nav {
   width: 44px;
   height: 44px;
   position: absolute;
@@ -296,24 +296,24 @@
   align-items: center;
   justify-content: center;
 }
-.as-editor-preview .addonnest_banner__slider .slick-nav.prev-arrow {
+.as-editor-preview .awesome_block_banner__slider .slick-nav.prev-arrow {
   left: 3%;
   transform: translateY(-50%) scaleX(-1);
   transition: 0.3s;
 }
-.as-editor-preview .addonnest_banner__slider .slick-nav.prev-arrow:hover {
+.as-editor-preview .awesome_block_banner__slider .slick-nav.prev-arrow:hover {
   transform: translateY(-50%) scaleX(-1) scale(1.1);
 }
-.as-editor-preview .addonnest_banner__slider .slick-nav.next-arrow {
+.as-editor-preview .awesome_block_banner__slider .slick-nav.next-arrow {
   right: 3%;
   left: auto;
   transform: translateY(-50%);
   transition: 0.3s;
 }
-.as-editor-preview .addonnest_banner__slider .slick-nav.next-arrow:hover {
+.as-editor-preview .awesome_block_banner__slider .slick-nav.next-arrow:hover {
   transform: translateY(-50%) scale(1.1);
 }
-.as-editor-preview .addonnest_banner__slider .slick-nav i {
+.as-editor-preview .awesome_block_banner__slider .slick-nav i {
   display: block;
   position: absolute;
   margin: -10px 0 0 -10px;
@@ -322,7 +322,7 @@
   left: 50%;
   top: 50%;
 }
-.as-editor-preview .addonnest_banner__slider .slick-nav i:before, .as-editor-preview .addonnest_banner__slider .slick-nav i:after {
+.as-editor-preview .awesome_block_banner__slider .slick-nav i:before, .as-editor-preview .awesome_block_banner__slider .slick-nav i:after {
   content: "";
   width: 10px;
   height: 2px;
@@ -335,13 +335,13 @@
   display: block;
   transform-origin: 9px 50%;
 }
-.as-editor-preview .addonnest_banner__slider .slick-nav i:before {
+.as-editor-preview .awesome_block_banner__slider .slick-nav i:before {
   transform: rotate(-40deg);
 }
-.as-editor-preview .addonnest_banner__slider .slick-nav i:after {
+.as-editor-preview .awesome_block_banner__slider .slick-nav i:after {
   transform: rotate(40deg);
 }
-.as-editor-preview .addonnest_banner__slider .slick-nav:before, .as-editor-preview .addonnest_banner__slider .slick-nav:after {
+.as-editor-preview .awesome_block_banner__slider .slick-nav:before, .as-editor-preview .awesome_block_banner__slider .slick-nav:after {
   content: "";
   display: block;
   position: absolute;
@@ -352,7 +352,7 @@
   border-radius: 50%;
   border: 2px solid #fff;
 }
-.as-editor-preview .addonnest_banner__slider .slick-nav svg {
+.as-editor-preview .awesome_block_banner__slider .slick-nav svg {
   width: 44px;
   height: 44px;
   display: block;
@@ -364,16 +364,16 @@
   stroke-dasharray: 126 126 0;
   transform: rotate(0deg);
 }
-.as-editor-preview .addonnest_banner__slider .slick-nav.animate svg {
+.as-editor-preview .awesome_block_banner__slider .slick-nav.animate svg {
   animation: stroke 1s ease forwards 0.3s;
 }
-.as-editor-preview .addonnest_banner__slider .slick-nav.animate i {
+.as-editor-preview .awesome_block_banner__slider .slick-nav.animate i {
   animation: arrow 1.6s ease forwards;
 }
-.as-editor-preview .addonnest_banner__slider .slick-nav.animate i:before {
+.as-editor-preview .awesome_block_banner__slider .slick-nav.animate i:before {
   animation: arrowUp 1.6s ease forwards;
 }
-.as-editor-preview .addonnest_banner__slider .slick-nav.animate i:after {
+.as-editor-preview .awesome_block_banner__slider .slick-nav.animate i:after {
   animation: arrowDown 1.6s ease forwards;
 }
 @keyframes stroke {
@@ -425,66 +425,66 @@
   }
 }
 @media only screen and (max-width: 1200px) {
-  .as-editor-preview .addonnest_banner__slider .slide .slide__content {
+  .as-editor-preview .awesome_block_banner__slider .slide .slide__content {
     width: 90%;
   }
-  .as-editor-preview .addonnest_banner__slider .slide__content--headings h2 {
+  .as-editor-preview .awesome_block_banner__slider .slide__content--headings h2 {
     font-size: 3.5rem;
   }
-  .as-editor-preview .addonnest_banner__slider .slide__content--headings .top-title {
+  .as-editor-preview .awesome_block_banner__slider .slide__content--headings .top-title {
     font-size: 2rem;
   }
-  .as-editor-preview .addonnest_banner__slider .slide__content--headings .title {
+  .as-editor-preview .awesome_block_banner__slider .slide__content--headings .title {
     font-size: 2.8rem;
   }
 }
 @media only screen and (max-width: 768px) {
-  .as-editor-preview .addonnest_banner__slider .slide__content--headings h2 {
+  .as-editor-preview .awesome_block_banner__slider .slide__content--headings h2 {
     font-size: 2.5rem;
   }
-  .as-editor-preview .addonnest_banner__slider .slide__content--headings .top-title {
+  .as-editor-preview .awesome_block_banner__slider .slide__content--headings .top-title {
     font-size: 1.5rem;
   }
-  .as-editor-preview .addonnest_banner__slider .slide__content--headings .title {
+  .as-editor-preview .awesome_block_banner__slider .slide__content--headings .title {
     font-size: 2rem;
   }
-  .as-editor-preview .addonnest_banner__slider .slick-nav {
+  .as-editor-preview .awesome_block_banner__slider .slick-nav {
     width: 35px;
     height: 35px;
   }
-  .as-editor-preview .addonnest_banner__slider .slick-nav.prev-arrow {
+  .as-editor-preview .awesome_block_banner__slider .slick-nav.prev-arrow {
     left: 2%;
   }
-  .as-editor-preview .addonnest_banner__slider .slick-nav.next-arrow {
+  .as-editor-preview .awesome_block_banner__slider .slick-nav.next-arrow {
     right: 2%;
   }
-  .as-editor-preview .addonnest_banner__slider .button-custom {
+  .as-editor-preview .awesome_block_banner__slider .button-custom {
     padding: 10px 18px;
     font-size: 16px;
   }
 }
 @media only screen and (max-width: 480px) {
-  .as-editor-preview .addonnest_banner__slider .slide__content--headings h2 {
+  .as-editor-preview .awesome_block_banner__slider .slide__content--headings h2 {
     font-size: 1.8rem;
   }
-  .as-editor-preview .addonnest_banner__slider .slide__content--headings .top-title {
+  .as-editor-preview .awesome_block_banner__slider .slide__content--headings .top-title {
     font-size: 1.2rem;
   }
-  .as-editor-preview .addonnest_banner__slider .slide__content--headings .title {
+  .as-editor-preview .awesome_block_banner__slider .slide__content--headings .title {
     font-size: 1.5rem;
   }
-  .as-editor-preview .addonnest_banner__slider .button-custom {
+  .as-editor-preview .awesome_block_banner__slider .button-custom {
     padding: 8px 16px;
     font-size: 14px;
   }
-  .as-editor-preview .addonnest_banner__slider .slick-dots {
+  .as-editor-preview .awesome_block_banner__slider .slick-dots {
     bottom: 10px;
   }
-  .as-editor-preview .addonnest_banner__slider .stick-dots .slick-dots li button {
+  .as-editor-preview .awesome_block_banner__slider .stick-dots .slick-dots li button {
     width: 25px;
     height: 4px;
   }
-  .as-editor-preview .addonnest_banner__slider .stick-dots .slick-dots li.slick-active button {
+  .as-editor-preview .awesome_block_banner__slider .stick-dots .slick-dots li.slick-active button {
     width: 35px;
   }
 }

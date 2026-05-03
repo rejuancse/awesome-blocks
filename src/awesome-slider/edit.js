@@ -276,7 +276,7 @@ export default function Edit({ attributes, setAttributes }) {
                         </p>
                     </div>
                 ) : (
-                    <section className="addonnest_banner__slider as-editor-preview">
+                    <section className="awesome_block_banner__slider as-editor-preview">
                         <div
                             ref={sliderRef}
                             className="slider"

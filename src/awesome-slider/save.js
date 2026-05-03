@@ -20,7 +20,7 @@ export default function Save({ attributes }) {
 
     return (
         <div {...blockProps}>
-            <section className="addonnest_banner__slider">
+            <section className="awesome_block_banner__slider">
                 <div className="slider"
                     data-autoplay={autoplay ? 'yes' : 'no'}
                     data-autoplay-speed={autoplaySpeed}

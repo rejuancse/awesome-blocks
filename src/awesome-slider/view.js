@@ -22,9 +22,9 @@
 
         var $ = jQuery;
 
-        // AddonNest Slider
-        function initAddonNestSliders() {
-            $('.addonnest_banner__slider .slider:not(.slick-initialized)').each(
+        // Awesome_Block Slider
+        function initAwesome_BlockSliders() {
+            $('.awesome_block_banner__slider .slider:not(.slick-initialized)').each(
             function () {
                 var $this = $(this);
 
@@ -168,11 +168,11 @@
         }
 
         // Initial initialization
-        initAddonNestSliders();
+        initAwesome_BlockSliders();
 
         // Re-init on window resize
         $(window).on('resize', function () {
-            setTimeout(initAddonNestSliders, 300);
+            setTimeout(initAwesome_BlockSliders, 300);
         });
     }
 
