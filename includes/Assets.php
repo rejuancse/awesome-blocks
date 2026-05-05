@@ -22,6 +22,13 @@ class Assets {
      */
     function register_admin_assets() {
         // Only enqueue if awesome slider block is present
+        wp_enqueue_style(
+            'common-css',
+            AWESOME_BLOCK_ASSETS . '/css/common.css',
+            array(),
+            AWESOME_BLOCK_VERSION
+        );
+
         if (has_block('awesome/awesome-slider') || is_admin()) {
             // Enqueue Slick Slider CSS
             wp_enqueue_style(
