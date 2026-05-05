@@ -26,19 +26,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
-/**
- * WordPress Dependencies
- */
 
 
 
 
 
 
-
-/**
- * Edit Component
- */
 
 function Edit({
   attributes,
@@ -79,7 +72,7 @@ function Edit({
       per_page: productsPerPage,
       orderby: orderBy,
       order: order.toLowerCase(),
-      _embed: '1' // ← KEY: brings in _embedded data
+      _embed: '1'
     });
     if (selectedCategories.length > 0) {
       // WooCommerce REST API uses product_cat as a comma-separated param

@@ -17,6 +17,38 @@ if (! defined('ABSPATH')) {
  */
 function ab_render_post_block($attributes)
 {
+    // Skip caching for admin users or during preview
+    if (current_user_can('edit_posts') || is_preview()) {
+        return ab_render_post_block_content($attributes);
+    }
+
+    // Generate cache key from block attributes
+    ksort($attributes);
+    $cache_key = 'ab_post_block_' . md5(wp_json_encode($attributes));
+
+    // Try to get from cache
+    $cached = get_transient($cache_key);
+    if (false !== $cached) {
+        return $cached;
+    }
+
+    // Generate content
+    $content = ab_render_post_block_content($attributes);
+
+    // Cache for 1 hour
+    set_transient($cache_key, $content, HOUR_IN_SECONDS);
+
+    return $content;
+}
+
+/**
+ * Render Post Block Content
+ *
+ * @param array $attributes Block attributes.
+ * @return string HTML output.
+ */
+function ab_render_post_block_content($attributes)
+{
     // Get attributes
     $posts_to_show    = isset($attributes['postsToShow']) ? intval($attributes['postsToShow']) : 3;
     $order            = isset($attributes['order']) ? sanitize_text_field($attributes['order']) : 'desc';

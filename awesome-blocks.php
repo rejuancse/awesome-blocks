@@ -74,6 +74,9 @@ final class Awesome_Block {
         new Awesome_Block\Register_Blocks();
         new Awesome_Block\Awesome_Block_i18n();
         new Awesome_Block\Product_REST_API();
+
+        // Initialize Fragment Cache hooks
+        Awesome_Block\Fragment_Cache::init_hooks();
     }
 }
 

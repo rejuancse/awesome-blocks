@@ -34,41 +34,41 @@ class Register_Blocks {
      * Register Blocks server-side with automatic asset loading
      */
     public function awesome_block_register_blocks() {
-        // Register Post Block
-        register_block_type_from_metadata(
-            AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/post-block',
-            array(
-                'render_callback' => 'ab_render_post_block',
-            )
-        );
-
-        // Register Card Block - No render callback needed as it's static
-        register_block_type_from_metadata(
-            AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/card-block'
-        );
-
-        // Register Feature Block - No render callback needed as it's static
-        register_block_type_from_metadata(
-            AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/feature-block'
-        );
-
-        // Register Grid Block - No render callback needed as it uses InnerBlocks
-        register_block_type_from_metadata(
-            AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/grid-block'
-        );
-
-        // Register Awesome Slider Block - No render callback needed as it's static
-        register_block_type_from_metadata(
-            AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/awesome-slider'
-        );
-
-        // Register Awesome Timeline Block - No render callback needed as it's static
-        register_block_type_from_metadata(
-            AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/awesome-timeline'
-        );
-
-        // Register WooCommerce Product List Block
         if ( function_exists( 'register_block_type_from_metadata' ) ) {
+            // Register Post Block
+            register_block_type_from_metadata(
+                AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/post-block',
+                array(
+                    'render_callback' => 'ab_render_post_block',
+                )
+            );
+
+            // Register Card Block - No render callback needed as it's static
+            register_block_type_from_metadata(
+                AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/card-block'
+            );
+
+            // Register Feature Block - No render callback needed as it's static
+            register_block_type_from_metadata(
+                AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/feature-block'
+            );
+
+            // Register Grid Block - No render callback needed as it uses InnerBlocks
+            register_block_type_from_metadata(
+                AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/grid-block'
+            );
+
+            // Register Awesome Slider Block - No render callback needed as it's static
+            register_block_type_from_metadata(
+                AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/awesome-slider'
+            );
+
+            // Register Awesome Timeline Block - No render callback needed as it's static
+            register_block_type_from_metadata(
+                AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/awesome-timeline'
+            );
+
+            // Register WooCommerce Product List Block
             register_block_type_from_metadata(
                 AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/woo-product-list',
                 array(
@@ -76,6 +76,5 @@ class Register_Blocks {
                 )
             );
         }
-
     }
 }

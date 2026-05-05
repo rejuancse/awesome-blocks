@@ -16,6 +16,37 @@ if (!defined('ABSPATH')) {
  * @return string Rendered HTML
  */
 function render_awesome_woo_product_list($attributes) {
+    // Skip caching for admin users or during preview
+    if (current_user_can('edit_posts') || is_preview()) {
+        return render_awesome_woo_product_list_content($attributes);
+    }
+
+    // Generate cache key from block attributes
+    ksort($attributes);
+    $cache_key = 'ab_woo_product_list_' . md5(wp_json_encode($attributes));
+
+    // Try to get from cache
+    $cached = get_transient($cache_key);
+    if (false !== $cached) {
+        return $cached;
+    }
+
+    // Generate content
+    $content = render_awesome_woo_product_list_content($attributes);
+
+    // Cache for 1 hour
+    set_transient($cache_key, $content, HOUR_IN_SECONDS);
+
+    return $content;
+}
+
+/**
+ * Render WooCommerce Product List content
+ *
+ * @param array $attributes Block attributes.
+ * @return string Rendered HTML
+ */
+function render_awesome_woo_product_list_content($attributes) {
     // Check if WooCommerce is active
     if (!class_exists('WooCommerce')) {
         return '<div class="ab-woo-notice">' .
