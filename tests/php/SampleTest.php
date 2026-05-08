@@ -34,9 +34,6 @@ class SampleTest extends TestCase {
 
         // Remove action
         remove_action( 'test_hook', $callback, 10 );
-
-        // Note: In real WordPress tests, you'd verify removal
-        // This is just to demonstrate the pattern
     }
 
     /**

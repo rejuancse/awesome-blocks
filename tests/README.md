@@ -1,6 +1,6 @@
 # Testing - Quick Start
 
-Awesome Blocks প্লাগইনের জন্য PHPUnit এবং Jest testing setup সম্পূর্ণ হয়েছে।
+PHPUnit and Jest testing setup for the Awesome Blocks plugin is complete.
 
 ## 🚀 Quick Start
 
@@ -11,7 +11,7 @@ Awesome Blocks প্লাগইনের জন্য PHPUnit এবং Jest t
 ./setup-tests.sh
 ```
 
-অথবা ম্যানুয়ালি:
+Or Manual:
 
 ```bash
 # Install PHP dependencies
@@ -34,27 +34,9 @@ npm test
 ./vendor/bin/phpunit && npm test
 ```
 
-## 📁 Test Structure
+## Test Structure
 
-```
-tests/
-├── php/                          # PHPUnit tests
-│   ├── bootstrap.php             # Bootstrap file
-│   ├── TestCase.php              # Base test class
-│   ├── stubs/                    # WordPress stubs
-│   ├── SampleTest.php            # Example test
-│   └── FragmentCacheTest.php     # Feature test
-│
-├── js/                           # Jest tests
-│   ├── setup-tests.js            # Jest setup
-│   ├── __mocks__/                # Mocks
-│   ├── SampleTest.test.js        # Example test
-│   └── BlockExample.test.js      # Component test
-│
-└── README.md                     # This file
-```
-
-## 📝 Common Commands
+## Common Commands
 
 ### PHPUnit
 
@@ -81,14 +63,3 @@ npm run test:watch
 # With coverage
 npm run test:coverage
 ```
-
-## 📚 Full Documentation
-
-সম্পূর্ণ নির্দেশিকার জন্য `TESTING.md` ফাইল দেখুন।
-
-## ✅ Sample Tests Available
-
-- **PHP**: `SampleTest.php`, `FragmentCacheTest.php`
-- **JavaScript**: `SampleTest.test.js`, `BlockExample.test.js`
-
-এই sample tests দেখে আপনি নিজের tests লিখতে পারবেন।
