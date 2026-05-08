@@ -43,6 +43,14 @@ class Register_Blocks {
                 )
             );
 
+            // Register WooCommerce Product List Block
+            register_block_type_from_metadata(
+                AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/woo-product-list',
+                array(
+                    'render_callback' => array( __NAMESPACE__ . '\\Woo_Product_List', 'render' ),
+                )
+            );
+
             // Register Card Block - No render callback needed as it's static
             register_block_type_from_metadata(
                 AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/card-block'
@@ -68,12 +76,9 @@ class Register_Blocks {
                 AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/awesome-timeline'
             );
 
-            // Register WooCommerce Product List Block
+            // Register Photo Gallery Block - No render callback needed as it's static
             register_block_type_from_metadata(
-                AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/woo-product-list',
-                array(
-                    'render_callback' => array( __NAMESPACE__ . '\\Woo_Product_List', 'render' ),
-                )
+                AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/photo-gallery'
             );
         }
     }

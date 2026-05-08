@@ -12,7 +12,7 @@ import edit from './edit';
 import save from './save';
 
 /**
- * Styles - WordPress webpack will process these
+ * Styles
  */
 import './style.scss';
 import './editor.scss';
@@ -22,8 +22,8 @@ import './editor.scss';
  */
 registerBlockType( metadata.name, {
     ...metadata,
-    title: __('Awesome Grid Block', 'awesome-blocks'),
-    description: __('Create responsive grid layouts with customizable columns and gaps', 'awesome-blocks'),
+    title: __('Photo Gallery', 'awesome-blocks'),
+    description: __('Beautiful responsive photo gallery with lightbox popup and navigation', 'awesome-blocks'),
     edit,
     save,
 });

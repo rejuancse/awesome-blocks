@@ -1,0 +1,156 @@
+/**
+ * Photo Gallery - Editor Styles
+ */
+
+.pg-gallery-wrap {
+    margin: 0;
+    padding: 0;
+}
+
+.pg-empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+    background: #f0f0f1;
+    border: 2px dashed #b0b0b0;
+    border-radius: 8px;
+
+    .dashicon {
+        color: #646970;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 14px;
+        color: #646970;
+        margin: 0 0 20px;
+    }
+
+    .pg-upload-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
+}
+
+.pg-grid {
+    margin-bottom: 20px;
+}
+
+.pg-item {
+    position: relative;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+
+        .pg-item-overlay {
+            opacity: 1;
+        }
+    }
+
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.pg-item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.pg-item-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    button {
+        background: #fff;
+        border: none;
+        padding: 8px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover:not(:disabled) {
+            background: #f0f0f1;
+            transform: scale(1.1);
+        }
+
+        &:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        &.is-destructive:hover {
+            background: #ffeded;
+            color: #cc1818;
+        }
+    }
+}
+
+.pg-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.4;
+    pointer-events: none;
+}
+
+.pg-add-more {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+    button {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
+}
+
+// Hover Effects
+.pg-hover-zoom {
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.pg-hover-fade {
+    transition: opacity 0.3s ease;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.pg-hover-slide {
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateX(5px);
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "apiVersion": 2,
+    "name": "awesome/photo-gallery",
+    "title": "Photo Gallery",
+    "category": "awesome-block",
+    "icon": "format-gallery",
+    "description": "Beautiful responsive photo gallery with lightbox popup and navigation",
+    "keywords": ["gallery", "images", "photos", "lightbox", "portfolio"],
+    "attributes": {
+        "images": {
+            "type": "array",
+            "default": [],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "number"
+                    },
+                    "url": {
+                        "type": "string"
+                    },
+                    "alt": {
+                        "type": "string"
+                    },
+                    "caption": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "columns": {
+            "type": "number",
+            "default": 3
+        },
+        "gutter": {
+            "type": "number",
+            "default": 10
+        },
+        "imageSize": {
+            "type": "string",
+            "default": "medium_large"
+        },
+        "enableLightbox": {
+            "type": "boolean",
+            "default": true
+        },
+        "enableCaptions": {
+            "type": "boolean",
+            "default": true
+        },
+        "borderRadius": {
+            "type": "number",
+            "default": 8
+        },
+        "hoverEffect": {
+            "type": "string",
+            "default": "zoom"
+        },
+        "aspectRatio": {
+            "type": "string",
+            "default": "landscape"
+        }
+    },
+    "supports": {
+        "align": ["wide", "full"],
+        "html": false
+    },
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./editor-index.css",
+    "style": "file:./style-index.css",
+    "viewScript": "file:./view.js"
+}
