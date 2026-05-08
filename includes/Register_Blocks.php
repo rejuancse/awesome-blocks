@@ -39,7 +39,7 @@ class Register_Blocks {
             register_block_type_from_metadata(
                 AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/post-block',
                 array(
-                    'render_callback' => 'ab_render_post_block',
+                    'render_callback' => array( __NAMESPACE__ . '\\Post_Block', 'render' ),
                 )
             );
 
@@ -72,7 +72,7 @@ class Register_Blocks {
             register_block_type_from_metadata(
                 AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/woo-product-list',
                 array(
-                    'render_callback' => 'render_awesome_woo_product_list',
+                    'render_callback' => array( __NAMESPACE__ . '\\Woo_Product_List', 'render' ),
                 )
             );
         }

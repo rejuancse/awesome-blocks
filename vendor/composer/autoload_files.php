@@ -9,6 +9,4 @@ return array(
     '6124b4c8570aa390c21fafd04a26c69f' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
     'ec07570ca5a812141189b1fa81503674' => $vendorDir . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
     '7d3b315c4f303f2fc14aca642a738e50' => $vendorDir . '/yoast/phpunit-polyfills/phpunitpolyfills-autoload.php',
-    'abe3903f04fc7ef1c4e54633197d3206' => $baseDir . '/src/post-block/render.php',
-    '391a9fce064e216d6852e94dadf9bd47' => $baseDir . '/src/woo-product-list/render.php',
 );

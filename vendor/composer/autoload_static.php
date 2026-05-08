@@ -10,8 +10,6 @@ class ComposerStaticInit140d8c6336c69b4d14e39565f02c66fd
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '7d3b315c4f303f2fc14aca642a738e50' => __DIR__ . '/..' . '/yoast/phpunit-polyfills/phpunitpolyfills-autoload.php',
-        'abe3903f04fc7ef1c4e54633197d3206' => __DIR__ . '/../..' . '/src/post-block/render.php',
-        '391a9fce064e216d6852e94dadf9bd47' => __DIR__ . '/../..' . '/src/woo-product-list/render.php',
     );
 
     public static $prefixLengthsPsr4 = array (

@@ -12,11 +12,7 @@
     "autoload": {
         "psr-4": {
             "Awesome_Block\\": "includes/"
-        },
-        "files": [
-            "src/post-block/render.php",
-            "src/woo-product-list/render.php"
-        ]
+        }
     },
     "autoload-dev": {
         "psr-4": {
