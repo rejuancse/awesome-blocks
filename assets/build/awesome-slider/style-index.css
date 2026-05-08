@@ -13,6 +13,7 @@
 .elementor-editor-active .awesome_block_banner__slider .slider .slide:first-child [data-animation-in] {
   opacity: 1;
 }
+
 .awesome_block_banner__slider {
   overflow: hidden;
   position: relative;

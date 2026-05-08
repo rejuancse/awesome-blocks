@@ -16,6 +16,7 @@
 .elementor-editor-active .awesome_block_banner__slider .slider .slide:first-child [data-animation-in] {
   opacity: 1;
 }
+
 .awesome_block_banner__slider {
   overflow: hidden;
   position: relative;
@@ -486,6 +487,7 @@
     width: 35px;
   }
 }
+
 .as-editor-preview .slider {
   pointer-events: none;
   -webkit-user-select: none;
@@ -496,6 +498,7 @@
 .as-editor-preview .slick-dots {
   pointer-events: none;
 }
+
 .as-wrap {
   padding: 20px;
   background: #f0f0f0;
@@ -567,6 +570,7 @@
   gap: 8px;
   margin-top: 10px;
 }
+
 .as-placeholder {
   border: 2px dashed #ccc;
   border-radius: 8px;

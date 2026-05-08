@@ -222,6 +222,7 @@
 .ab-products-list .ab-product-card .ab-product-details .ab-add-to-cart:active {
   transform: translateY(2px);
 }
+
 .ab-pagination {
   margin: 10px 0 30px;
   text-align: center;
@@ -261,6 +262,7 @@
 .ab-pagination ul.page-numbers li .page-numbers.next, .ab-pagination ul.page-numbers li .page-numbers.prev {
   font-size: 16px;
 }
+
 @media screen and (max-width: 991px) {
   .ab-products-list {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

@@ -1,0 +1,60 @@
+#!/usr/bin/env php
+<?php declare(strict_types=1);
+
+use PHPUnit\TextUI\Command;
+
+if (!version_compare(PHP_VERSION, PHP_VERSION, '=')) {
+    fwrite(
+        STDERR,
+        sprintf(
+            '%s declares an invalid value for PHP_VERSION.' . PHP_EOL .
+            'This breaks fundamental functionality such as version_compare().' . PHP_EOL .
+            'Please use a different PHP interpreter.' . PHP_EOL,
+            PHP_BINARY
+        )
+    );
+
+    die(1);
+}
+
+if (version_compare('7.3.0', PHP_VERSION, '>')) {
+    fwrite(
+        STDERR,
+        sprintf(
+            'This version of PHPUnit requires PHP >= 7.3.' . PHP_EOL .
+            'You are using PHP %s (%s).' . PHP_EOL,
+            PHP_VERSION,
+            PHP_BINARY
+        )
+    );
+
+    die(1);
+}
+
+$requiredExtensions = ['dom', 'json', 'libxml', 'mbstring', 'tokenizer', 'xml', 'xmlwriter'];
+
+$unavailableExtensions = array_filter(
+    $requiredExtensions,
+    static function ($extension) {
+        return !extension_loaded($extension);
+    }
+);
+
+if ([] !== $unavailableExtensions) {
+    fwrite(
+        STDERR,
+        sprintf(
+            'PHPUnit requires the following PHP extensions:' . PHP_EOL . '%s' . PHP_EOL,
+            implode(PHP_EOL, $unavailableExtensions)
+        )
+    );
+
+    die(1);
+}
+
+define('__PHPUNIT_PHAR__', str_replace('phpunit.phar', 'phpunit', __DIR__ . '/../phpunit/phpunit/phpunit'));
+
+require dirname(__DIR__, 2) . '/vendor/autoload.php';
+
+$command = new Command();
+exit($command->run($_SERVER['argv']));

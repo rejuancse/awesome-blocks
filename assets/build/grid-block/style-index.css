@@ -40,11 +40,13 @@
     grid-template-columns: repeat(3, 1fr) !important;
   }
 }
+
 .ab-grid-container > .wp-block,
 .ab-grid-container > .ab-grid-item {
   min-width: 0;
   box-sizing: border-box;
 }
+
 .ab-grid-container .ab-grid-container {
   min-height: auto;
 }

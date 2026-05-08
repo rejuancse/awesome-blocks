@@ -4,9 +4,39 @@
     "main": "src/index.js",
     "scripts": {
       "build": "wp-scripts build",
-      "start": "wp-scripts start"
+      "start": "wp-scripts start",
+      "test": "wp-scripts test-unit-js",
+      "test:watch": "wp-scripts test-unit-js --watch",
+      "test:coverage": "wp-scripts test-unit-js --coverage",
+      "test:php": "php vendor/phpunit/phpunit/phpunit",
+      "test:php:verbose": "php vendor/phpunit/phpunit/phpunit --verbose",
+      "test:all": "npm run test:php && npm test"
     },
     "devDependencies": {
-      "@wordpress/scripts": "^26.0.0"
+      "@wordpress/scripts": "^26.0.0",
+      "@testing-library/react": "^14.0.0",
+      "@testing-library/jest-dom": "^6.1.0",
+      "jest": "^29.7.0",
+      "jest-environment-jsdom": "^29.7.0"
+    },
+    "jest": {
+      "testEnvironment": "jsdom",
+      "setupFilesAfterEnv": [
+        "<rootDir>/tests/js/setup-tests.js"
+      ],
+      "testMatch": [
+        "**/tests/js/**/*.test.js",
+        "**/tests/js/**/*.spec.js"
+      ],
+      "collectCoverageFrom": [
+        "src/**/*.{js,jsx}",
+        "!src/**/*.test.{js,jsx}",
+        "!src/**/*.spec.{js,jsx}",
+        "!src/**/index.js"
+      ],
+      "moduleNameMapper": {
+        "\\.(css|scss)$": "<rootDir>/tests/js/__mocks__/styleMock.js",
+        "\\.(jpg|jpeg|png|gif|svg)$": "<rootDir>/tests/js/__mocks__/fileMock.js"
+      }
     }
 }

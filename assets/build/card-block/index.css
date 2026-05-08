@@ -7,6 +7,7 @@
 .ab-media-upload-wrapper {
   width: 100%;
 }
+
 .ab-media-upload-button {
   width: 100%;
   display: flex;
@@ -21,6 +22,7 @@
   width: 18px;
   height: 18px;
 }
+
 .ab-media-preview {
   position: relative;
   width: 100%;
@@ -46,6 +48,7 @@
 .ab-media-preview:hover .ab-media-actions {
   opacity: 1;
 }
+
 .ab-media-actions {
   position: absolute;
   top: 0;
@@ -60,12 +63,15 @@
   opacity: 0;
   transition: opacity 0.2s ease;
 }
+
 .cb-wrap {
   margin: 20px 0;
 }
+
 .cb-card {
   cursor: default;
 }
+
 .components-panel__row + .components-panel__row {
   margin-top: 8px;
 }

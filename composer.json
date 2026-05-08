@@ -9,7 +9,6 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
     "autoload": {
         "psr-4": {
             "Awesome_Block\\": "includes/"
@@ -18,5 +17,14 @@
             "src/post-block/render.php",
             "src/woo-product-list/render.php"
         ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Awesome_Block\\Tests\\": "tests/php/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6",
+        "yoast/phpunit-polyfills": "^1.0"
     }
 }
