@@ -42,33 +42,33 @@ fi
 
 echo -e "${BLUE}Step 1: Installing PHP dependencies...${NC}"
 composer install --dev
-echo -e "${GREEN}✓ PHP dependencies installed${NC}"
+echo -e "${GREEN} PHP dependencies installed${NC}"
 echo ""
 
 echo -e "${BLUE}Step 2: Regenerating autoload files...${NC}"
 composer dump-autoload
-echo -e "${GREEN}✓ Autoload files generated${NC}"
+echo -e "${GREEN} Autoload files generated${NC}"
 echo ""
 
 echo -e "${BLUE}Step 3: Installing JavaScript dependencies...${NC}"
 npm install
-echo -e "${GREEN}✓ JavaScript dependencies installed${NC}"
+echo -e "${GREEN} JavaScript dependencies installed${NC}"
 echo ""
 
 echo -e "${BLUE}Step 4: Creating test directories...${NC}"
 mkdir -p tests/php
 mkdir -p tests/js
 mkdir -p coverage
-echo -e "${GREEN}✓ Test directories created${NC}"
+echo -e "${GREEN} Test directories created${NC}"
 echo ""
 
 echo -e "${BLUE}Step 5: Setting permissions...${NC}"
 chmod +x vendor/bin/phpunit 2>/dev/null || true
-echo -e "${GREEN}✓ Permissions set${NC}"
+echo -e "${GREEN} Permissions set${NC}"
 echo ""
 
 echo "=========================================="
-echo -e "${GREEN}✓ Setup completed successfully!${NC}"
+echo -e "${GREEN} Setup completed successfully!${NC}"
 echo "=========================================="
 echo ""
 echo "You can now run tests with:"
