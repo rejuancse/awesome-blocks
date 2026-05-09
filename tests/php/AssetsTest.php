@@ -46,35 +46,6 @@ class AssetsTest extends TestCase {
     }
 
     /**
-     * Test slick assets are enqueued when slider block is present
-     */
-    public function test_slick_assets_enqueued_with_slider_block() {
-        $assets = new Assets();
-
-        $this->assertTrue( method_exists( $assets, 'register_admin_assets' ), 'register_admin_assets method should exist' );
-        $this->assertTrue( true, 'Assets method structure verified' );
-    }
-
-    /**
-     * Test slick assets are enqueued in admin
-     */
-    public function test_slick_assets_enqueued_in_admin() {
-        $assets = new Assets();
-
-        $this->assertTrue( method_exists( $assets, 'register_admin_assets' ), 'register_admin_assets method should exist' );
-        $this->assertTrue( true, 'Assets method structure verified' );
-    }
-
-    /**
-     * Test jQuery dependency is loaded
-     */
-    public function test_jquery_is_loaded() {
-        $jquery_handle = 'jquery';
-
-        $this->assertEquals( 'jquery', $jquery_handle, 'jQuery handle should be "jquery"' );
-    }
-
-    /**
      * Test assets method exists
      */
     public function test_register_admin_assets_method_exists() {
@@ -88,23 +59,6 @@ class AssetsTest extends TestCase {
     public function test_assets_class_instantiation() {
         $assets = new Assets();
         $this->assertInstanceOf( Assets::class, $assets );
-    }
-
-    /**
-     * Test all asset handles are properly defined
-     */
-    public function test_asset_handles_are_defined() {
-        $expected_handles = array(
-            'common-css',
-            'slick-slider-css',
-            'slick-slider-theme-css',
-            'jquery',
-            'slick-slider-js',
-        );
-
-        foreach ( $expected_handles as $handle ) {
-            $this->assertIsString( $handle, "Asset handle '{$handle}' should be a string" );
-        }
     }
 
     /**

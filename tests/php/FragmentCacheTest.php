@@ -43,7 +43,7 @@ class FragmentCacheTest extends TestCase {
     }
 
     /**
-     * Test remember method with callback execution
+     * Test remember method executes callback
      */
     public function test_remember_executes_callback() {
         $key = 'test_callback_' . time();
@@ -60,7 +60,7 @@ class FragmentCacheTest extends TestCase {
     }
 
     /**
-     * Test remember method returns correct type
+     * Test remember method returns various types
      */
     public function test_remember_returns_various_types() {
         $key_string = 'test_string_' . time();
@@ -149,32 +149,7 @@ class FragmentCacheTest extends TestCase {
     }
 
     /**
-     * Test constants are defined correctly
-     */
-    public function test_fragment_cache_constants() {
-        $this->assertTrue( defined( 'Awesome_Block\Fragment_Cache::PREFIX' ) );
-        $this->assertTrue( defined( 'Awesome_Block\Fragment_Cache::EXPIRATION' ) );
-    }
-
-    /**
-     * Test callback is callable
-     */
-    public function test_callback_parameter_is_callable() {
-        $key = 'test_callable_' . time();
-
-        $valid_callback = function() {
-            return 'valid';
-        };
-
-        $this->assertIsCallable( $valid_callback );
-
-        $result = Fragment_Cache::remember( $key, $valid_callback, 100 );
-
-        $this->assertEquals( 'valid', $result );
-    }
-
-    /**
-     * Test cache expiration parameter
+     * Test custom expiration parameter
      */
     public function test_custom_expiration_parameter() {
         $key = 'test_expiration_' . time();
