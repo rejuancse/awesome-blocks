@@ -1,14 +1,14 @@
 {
   "apiVersion": 2,
-  "name": "awesome/woo-product-list",
-  "title": "WooCommerce Product List",
+  "name": "awesome/woo-category-grid",
+  "title": "WooCommerce Category Grid",
   "category": "awesome-block",
-  "icon": "products",
-  "description": "Display WooCommerce products in a beautiful grid layout",
+  "icon": "category",
+  "description": "Display WooCommerce product categories in a beautiful grid layout",
   "keywords": [
     "woocommerce",
-    "products",
-    "product list",
+    "categories",
+    "product categories",
     "shop"
   ],
   "attributes": {
@@ -16,45 +16,37 @@
       "type": "number",
       "default": 3
     },
-    "productsPerPage": {
+    "categoriesPerPage": {
       "type": "number",
-      "default": 6
+      "default": 9
     },
     "orderBy": {
       "type": "string",
-      "default": "date"
+      "default": "name"
     },
     "order": {
       "type": "string",
-      "default": "DESC"
+      "default": "ASC"
     },
-    "selectedCategories": {
+    "hideEmpty": {
+      "type": "boolean",
+      "default": true
+    },
+    "showImage": {
+      "type": "boolean",
+      "default": true
+    },
+    "showCount": {
+      "type": "boolean",
+      "default": true
+    },
+    "imageSize": {
+      "type": "string",
+      "default": "medium"
+    },
+    "excludeCategories": {
       "type": "array",
       "default": []
-    },
-    "showCategory": {
-      "type": "boolean",
-      "default": true
-    },
-    "showRating": {
-      "type": "boolean",
-      "default": true
-    },
-    "showPrice": {
-      "type": "boolean",
-      "default": true
-    },
-    "showAddToCart": {
-      "type": "boolean",
-      "default": true
-    },
-    "showBadges": {
-      "type": "boolean",
-      "default": true
-    },
-    "badgePosition": {
-      "type": "string",
-      "default": "top-left"
     }
   },
   "supports": {

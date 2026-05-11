@@ -80,6 +80,14 @@ class Register_Blocks {
             register_block_type_from_metadata(
                 AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/photo-gallery'
             );
+
+            // Register WooCommerce Category Grid Block
+            register_block_type_from_metadata(
+                AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/woo-category-grid',
+                array(
+                    'render_callback' => array( __NAMESPACE__ . '\\Woo_Category_List', 'render' ),
+                )
+            );
         }
     }
 }

@@ -1,0 +1,146 @@
+/**
+ * WooCommerce Category Grid - Editor Styles
+ */
+
+.ab-category-grid {
+    margin: 0;
+    padding: 20px 0;
+
+    .ab-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+    }
+
+    .ab-col {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    // Column layouts
+    &.ab-columns-1 .ab-col { width: 100%; }
+    &.ab-columns-2 .ab-col { width: 50%; }
+    &.ab-columns-3 .ab-col { width: 33.333%; }
+    &.ab-columns-4 .ab-col { width: 25%; }
+    &.ab-columns-5 .ab-col { width: 20%; }
+    &.ab-columns-6 .ab-col { width: 16.666%; }
+
+    @media (max-width: 1024px) {
+        &.ab-columns-4 .ab-col,
+        &.ab-columns-5 .ab-col,
+        &.ab-columns-6 .ab-col {
+            width: 33.333%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        &.ab-columns-2 .ab-col,
+        &.ab-columns-3 .ab-col,
+        &.ab-columns-4 .ab-col,
+        &.ab-columns-5 .ab-col,
+        &.ab-columns-6 .ab-col {
+            width: 50%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .ab-col {
+            width: 100% !important;
+        }
+    }
+
+    .ab-category-card {
+        background: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        margin-bottom: 20px;
+
+        &:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+    }
+
+    .ab-category-image-wrapper {
+        position: relative;
+        overflow: hidden;
+        background: #f9f9f9;
+
+        .ab-category-image {
+            display: block;
+            width: 100%;
+            height: 200px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.3s ease;
+            }
+
+            &:hover img {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .ab-category-details {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .ab-category-title {
+        margin: 0 0 10px 0;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.3;
+
+        a {
+            color: #333333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: #0073aa;
+            }
+        }
+    }
+
+    .ab-category-count {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        font-size: 14px;
+        color: #666666;
+
+        .ab-count-number {
+            background: #f0f0f0;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-weight: 600;
+            color: #333333;
+        }
+
+        .ab-count-label {
+            text-transform: lowercase;
+        }
+    }
+}
+
+// Responsive adjustments for editor
+@media (max-width: 782px) {
+    .ab-category-grid {
+        padding: 10px 0;
+
+        .ab-row {
+            margin: 0 -5px;
+        }
+
+        .ab-col {
+            padding: 0 5px;
+        }
+    }
+}

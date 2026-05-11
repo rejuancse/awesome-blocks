@@ -1,0 +1,53 @@
+{
+    "apiVersion": 2,
+    "name": "awesome/woo-category-grid",
+    "title": "WooCommerce Category Grid",
+    "category": "awesome-block",
+    "icon": "category",
+    "description": "Display WooCommerce product categories in a beautiful grid layout",
+    "keywords": ["woocommerce", "categories", "product categories", "shop"],
+    "attributes": {
+        "columns": {
+            "type": "number",
+            "default": 3
+        },
+        "categoriesPerPage": {
+            "type": "number",
+            "default": 9
+        },
+        "orderBy": {
+            "type": "string",
+            "default": "name"
+        },
+        "order": {
+            "type": "string",
+            "default": "ASC"
+        },
+        "hideEmpty": {
+            "type": "boolean",
+            "default": true
+        },
+        "showImage": {
+            "type": "boolean",
+            "default": true
+        },
+        "showCount": {
+            "type": "boolean",
+            "default": true
+        },
+        "imageSize": {
+            "type": "string",
+            "default": "medium"
+        },
+        "excludeCategories": {
+            "type": "array",
+            "default": []
+        }
+    },
+    "supports": {
+        "align": ["wide", "full"],
+        "html": false
+    },
+    "editorScript": "file:./index.js",
+    "style": "file:./style-index.css"
+}
