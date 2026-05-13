@@ -94,10 +94,9 @@ class Woo_Category_List {
 		$column_class = 12 / $columns;
 
 		ob_start();
-
 		?>
-		<div class="ab-category-grid">
-			<div class="ab-row">
+		<div class="ab-product-category">
+			<div class="ab-row cats">
 				<?php foreach ( $categories as $category ) :
 					$term_id       = $category->term_id;
 					$term_link     = get_term_link( $category );
@@ -112,47 +111,42 @@ class Woo_Category_List {
 						$image_url = wp_get_attachment_image_url( $thumbnail_id, $image_size );
 					}
 
-					// Placeholder image
+					// Placeholder SVG (no image)
 					if ( $show_image && empty( $image_url ) ) {
-						$image_url = wc_placeholder_img_src();
+						$image_url = 'data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'300\' viewBox=\'0 0 300 300\'%3E%3Crect width=\'300\' height=\'300\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'sans-serif\' font-size=\'14\' fill=\'%23999\'%3ENo Image%3C/text%3E%3C/svg%3E';
 					}
 					?>
 					<div class="ab-col-<?php echo esc_attr( $column_class ); ?>">
-						<div class="ab-category-card">
-							<?php if ( $show_image && $image_url ) : ?>
-								<div class="ab-category-image-wrapper">
-									<a href="<?php echo esc_url( $term_link ); ?>" class="ab-category-image">
-										<img
-											src="<?php echo esc_url( $image_url ); ?>"
-											alt="<?php echo esc_attr( $category_name ); ?>"
-											class="img-fluid"
-										/>
-									</a>
-								</div>
-							<?php endif; ?>
+						<div class="item">
+							<a href="<?php echo esc_url( $term_link ); ?>">
+								<div class="iconbox">
+									<?php if ( $show_image && $image_url ) : ?>
+										<div class="icon">
+											<img
+												class="category-thumbnail"
+												src="<?php echo esc_url( $image_url ); ?>"
+												alt="<?php echo esc_attr( $category_name ); ?>"
+											/>
+										</div>
+									<?php endif; ?>
 
-							<div class="ab-category-details">
-								<h3 class="ab-category-title">
-									<a href="<?php echo esc_url( $term_link ); ?>">
-										<?php echo esc_html( $category_name ); ?>
-									</a>
-								</h3>
-
-								<?php if ( $show_count && $product_count > 0 ) : ?>
-									<div class="ab-category-count">
-										<span class="ab-count-number"><?php echo esc_html( $product_count ); ?></span>
-										<span class="ab-count-label">
-											<?php
-												echo esc_html(
-													$product_count === 1
-														? __( 'product', 'awesome-blocks' )
-														: __( 'products', 'awesome-blocks' )
-												);
-											?>
-										</span>
+									<div class="details">
+										<h5 class="title"><?php echo esc_html( $category_name ); ?></h5>
+										<?php if ( $show_count && $product_count > 0 ) : ?>
+											<p>
+												<?php echo esc_html( $product_count ); ?>
+												<?php
+													echo esc_html(
+														$product_count === 1
+															? __( 'product', 'awesome-blocks' )
+															: __( 'products', 'awesome-blocks' )
+													);
+												?>
+											</p>
+										<?php endif; ?>
 									</div>
-								<?php endif; ?>
-							</div>
+								</div>
+							</a>
 						</div>
 					</div>
 				<?php endforeach; ?>

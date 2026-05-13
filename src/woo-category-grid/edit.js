@@ -14,10 +14,10 @@ import { useState, useEffect } from '@wordpress/element';
 
 export default function Edit({ attributes, setAttributes }) {
     const {
-        columns = 3,
-        categoriesPerPage = 9,
+        columns = 6,
+        categoriesPerPage = 6,
         orderBy = 'name',
-        order = 'ASC',
+        order = 'DESC',
         hideEmpty = true,
         showImage = true,
         showCount = true,
@@ -239,20 +239,20 @@ export default function Edit({ attributes, setAttributes }) {
                         <p>{__('No categories found. Add some WooCommerce product categories first.', 'awesome-blocks')}</p>
                     </div>
                 ) : (
-                    <div className={`ab-category-grid ab-columns-${columns}`}>
-                        <div className="ab-row">
+                    <div className="ab-product-category">
+                        <div className="ab-row cats">
                             {categories.map((category) => {
                                 const imageUrl = showImage ? (getImageUrl(category) || PLACEHOLDER) : null;
                                 const categoryLink = getCategoryLink(category);
                                 const productCount = category.count || 0;
 
                                 return (
-                                    <div key={category.id} className={`ab-col ab-col-${12 / columns}`}>
-                                        <div class="item">
+                                    <div key={category.id} className={`ab-col-${12 / columns}`}>
+                                        <div className="item">
                                             <a href={categoryLink}>
-                                                <div class="iconbox">
+                                                <div className="iconbox">
                                                     {imageUrl && (
-                                                        <div class="icon">
+                                                        <div className="icon">
                                                             <img
                                                                 className='category-thumbnail'
                                                                 src={imageUrl}
@@ -260,24 +260,21 @@ export default function Edit({ attributes, setAttributes }) {
                                                             />
                                                         </div>
                                                     )}
-                                                    <div class="details">
-                                                        <h5 class="title">{category.name || __('Untitled Category', 'awesome-blocks')}</h5>
+
+                                                    <div className="details">
+                                                        <h5 className="title">{category.name || __('Untitled Category', 'awesome-blocks')}</h5>
                                                         {showCount && productCount > 0 && (
-                                                            <div className="ab-category-count">
-                                                                <p>
-                                                                    {productCount}
-                                                                    {productCount === 1
-                                                                        ? __('product', 'awesome-blocks')
-                                                                        : __('products', 'awesome-blocks')}
-                                                                </p>
-                                                            </div>
+                                                            <p>
+                                                                {productCount}
+                                                                {productCount === 1
+                                                                    ? __(' product', 'awesome-blocks')
+                                                                    : __(' products', 'awesome-blocks')}
+                                                            </p>
                                                         )}
                                                     </div>
                                                 </div>
                                             </a>
                                         </div>
-
-
                                     </div>
                                 );
                             })}

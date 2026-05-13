@@ -38,10 +38,10 @@ function Edit({
   setAttributes
 }) {
   const {
-    columns = 3,
-    categoriesPerPage = 9,
+    columns = 6,
+    categoriesPerPage = 6,
     orderBy = 'name',
-    order = 'ASC',
+    order = 'DESC',
     hideEmpty = true,
     showImage = true,
     showCount = true,
@@ -267,35 +267,33 @@ function Edit({
       borderRadius: '8px'
     }
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('No categories found. Add some WooCommerce product categories first.', 'awesome-blocks'))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: `ab-category-grid ab-columns-${columns}`
+    className: "ab-product-category"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "ab-row"
+    className: "ab-row cats"
   }, categories.map(category => {
     const imageUrl = showImage ? getImageUrl(category) || PLACEHOLDER : null;
     const categoryLink = getCategoryLink(category);
     const productCount = category.count || 0;
     return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       key: category.id,
-      className: `ab-col ab-col-${12 / columns}`
+      className: `ab-col-${12 / columns}`
     }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      class: "item"
+      className: "item"
     }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
       href: categoryLink
     }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      class: "iconbox"
+      className: "iconbox"
     }, imageUrl && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      class: "icon"
+      className: "icon"
     }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
       className: "category-thumbnail",
       src: imageUrl,
       alt: category.name || (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Category Image', 'awesome-blocks')
     })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      class: "details"
+      className: "details"
     }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", {
-      class: "title"
-    }, category.name || (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Untitled Category', 'awesome-blocks')), showCount && productCount > 0 && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "ab-category-count"
-    }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, productCount, productCount === 1 ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('product', 'awesome-blocks') : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('products', 'awesome-blocks'))))))));
+      className: "title"
+    }, category.name || (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Untitled Category', 'awesome-blocks')), showCount && productCount > 0 && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, productCount, productCount === 1 ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(' product', 'awesome-blocks') : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(' products', 'awesome-blocks')))))));
   })))));
 }
 
@@ -457,7 +455,7 @@ module.exports = window["wp"]["i18n"];
   \******************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":2,"name":"awesome/woo-category-grid","title":"WooCommerce Category Grid","category":"awesome-block","icon":"category","description":"Display WooCommerce product categories in a beautiful grid layout","keywords":["woocommerce","categories","product categories","shop"],"attributes":{"columns":{"type":"number","default":3},"categoriesPerPage":{"type":"number","default":9},"orderBy":{"type":"string","default":"name"},"order":{"type":"string","default":"ASC"},"hideEmpty":{"type":"boolean","default":true},"showImage":{"type":"boolean","default":true},"showCount":{"type":"boolean","default":true},"imageSize":{"type":"string","default":"medium"},"excludeCategories":{"type":"array","default":[]}},"supports":{"align":["wide","full"],"html":false},"editorScript":"file:./index.js","style":"file:./style-index.css"}');
+module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":2,"name":"awesome/woo-category-grid","title":"WooCommerce Category Grid","category":"awesome-block","icon":"category","description":"Display WooCommerce product categories in a beautiful grid layout","keywords":["woocommerce","categories","product categories","shop"],"attributes":{"columns":{"type":"number","default":6},"categoriesPerPage":{"type":"number","default":6},"orderBy":{"type":"string","default":"name"},"order":{"type":"string","default":"DESC"},"hideEmpty":{"type":"boolean","default":true},"showImage":{"type":"boolean","default":true},"showCount":{"type":"boolean","default":true},"imageSize":{"type":"string","default":"medium"},"excludeCategories":{"type":"array","default":[]}},"supports":{"align":["wide","full"],"html":false},"editorScript":"file:./index.js","style":"file:./style-index.css"}');
 
 /***/ }
 
