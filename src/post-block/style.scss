@@ -123,13 +123,9 @@
         line-height: 1.3;
 
         a {
-            color: #333;
+            color: inherit;
             text-decoration: none;
             transition: color 0.3s ease;
-
-            &:hover {
-                color: #0073aa;
-            }
         }
     }
 
@@ -149,7 +145,12 @@
         transition: color 0.3s ease;
 
         &:hover {
-            color: #005177;
+            color: var(--ab-link-hover-color, #005177);
         }
+    }
+
+    // Link hover effects
+    .ab-post-title a:hover {
+        color: var(--ab-link-hover-color, #005177);
     }
 }

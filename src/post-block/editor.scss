@@ -11,4 +11,105 @@
     .components-placeholder {
         margin: 0;
     }
+
+    .ab-style-control-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 12px;
+
+        label {
+            font-size: 13px;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+
+        .components-color-picker {
+            margin-left: auto;
+        }
+
+        .components-button {
+            margin-left: 8px;
+        }
+    }
+
+    .ab-color-input-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 12px;
+
+        .ab-color-input {
+            width: 50px;
+            height: 40px;
+            padding: 2px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            background: #fff;
+            flex-shrink: 0;
+
+            &::-webkit-color-swatch-wrapper {
+                padding: 0;
+            }
+
+            &::-webkit-color-swatch {
+                border: none;
+                border-radius: 2px;
+            }
+
+            &::-moz-color-swatch {
+                border: none;
+                border-radius: 2px;
+            }
+
+            &:hover {
+                border-color: #0073aa;
+            }
+
+            &:focus {
+                outline: none;
+                border-color: #0073aa;
+                box-shadow: 0 0 0 1px #0073aa;
+            }
+        }
+
+        .ab-color-text-input {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 13px;
+            font-family: monospace;
+            text-transform: uppercase;
+
+            &:focus {
+                outline: none;
+                border-color: #0073aa;
+                box-shadow: 0 0 0 1px #0073aa;
+            }
+
+            &::placeholder {
+                text-transform: none;
+            }
+        }
+    }
+
+    .ab-post-item {
+        a {
+            transition: color 0.2s ease;
+
+            &:hover {
+                color: var(--ab-link-hover-color, #005177);
+            }
+        }
+    }
+
+    // Font family dropdown preview
+    .components-select-control__input {
+        &:focus {
+            border-color: #0073aa;
+            box-shadow: 0 0 0 1px #0073aa;
+        }
+    }
 }
