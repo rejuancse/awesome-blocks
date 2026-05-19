@@ -81,6 +81,18 @@
       "type": "number",
       "default": 15
     },
+    "excerptFontWeight": {
+      "type": "string",
+      "default": "400"
+    },
+    "excerptFontFamily": {
+      "type": "string",
+      "default": ""
+    },
+    "excerptMaxChars": {
+      "type": "number",
+      "default": 0
+    },
     "metaColor": {
       "type": "string",
       "default": "#666666"
@@ -89,6 +101,14 @@
       "type": "number",
       "default": 14
     },
+    "metaFontWeight": {
+      "type": "string",
+      "default": "400"
+    },
+    "metaFontFamily": {
+      "type": "string",
+      "default": ""
+    },
     "linkColor": {
       "type": "string",
       "default": "#0073aa"
@@ -96,6 +116,18 @@
     "linkHoverColor": {
       "type": "string",
       "default": "#005177"
+    },
+    "linkFontSize": {
+      "type": "number",
+      "default": 14
+    },
+    "linkFontWeight": {
+      "type": "string",
+      "default": "600"
+    },
+    "linkFontFamily": {
+      "type": "string",
+      "default": ""
     },
     "cardBgColor": {
       "type": "string",

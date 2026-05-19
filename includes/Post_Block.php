@@ -73,12 +73,20 @@ class Post_Block {
 
 		$excerpt_color        = isset( $attributes['excerptColor'] ) ? sanitize_text_field( $attributes['excerptColor'] ) : '#555555';
 		$excerpt_font_size    = isset( $attributes['excerptFontSize'] ) ? intval( $attributes['excerptFontSize'] ) : 15;
+		$excerpt_font_weight  = isset( $attributes['excerptFontWeight'] ) ? sanitize_text_field( $attributes['excerptFontWeight'] ) : '400';
+		$excerpt_font_family  = isset( $attributes['excerptFontFamily'] ) ? sanitize_text_field( $attributes['excerptFontFamily'] ) : '';
+		$excerpt_max_chars    = isset( $attributes['excerptMaxChars'] ) ? intval( $attributes['excerptMaxChars'] ) : 0;
 
 		$meta_color           = isset( $attributes['metaColor'] ) ? sanitize_text_field( $attributes['metaColor'] ) : '#666666';
 		$meta_font_size       = isset( $attributes['metaFontSize'] ) ? intval( $attributes['metaFontSize'] ) : 14;
+		$meta_font_weight     = isset( $attributes['metaFontWeight'] ) ? sanitize_text_field( $attributes['metaFontWeight'] ) : '400';
+		$meta_font_family     = isset( $attributes['metaFontFamily'] ) ? sanitize_text_field( $attributes['metaFontFamily'] ) : '';
 
 		$link_color           = isset( $attributes['linkColor'] ) ? sanitize_text_field( $attributes['linkColor'] ) : '#0073aa';
 		$link_hover_color     = isset( $attributes['linkHoverColor'] ) ? sanitize_text_field( $attributes['linkHoverColor'] ) : '#005177';
+		$link_font_size       = isset( $attributes['linkFontSize'] ) ? intval( $attributes['linkFontSize'] ) : 14;
+		$link_font_weight     = isset( $attributes['linkFontWeight'] ) ? sanitize_text_field( $attributes['linkFontWeight'] ) : '600';
+		$link_font_family     = isset( $attributes['linkFontFamily'] ) ? sanitize_text_field( $attributes['linkFontFamily'] ) : '';
 
 		$card_bg_color        = isset( $attributes['cardBgColor'] ) ? sanitize_text_field( $attributes['cardBgColor'] ) : '#ffffff';
 		$card_border          = isset( $attributes['cardBorder'] ) ? sanitize_text_field( $attributes['cardBorder'] ) : 'none';
@@ -95,13 +103,47 @@ class Post_Block {
 
 		// Enqueue Google Fonts if a custom font is selected
 		$google_fonts_url = '';
+		$enqueued_fonts = array();
+
 		if ( ! empty( $title_font_family ) ) {
 			// Extract font name from font-family string
 			$font_name = str_replace( "'", '', explode( ',', $title_font_family )[0] );
-			$google_fonts_url = 'https://fonts.googleapis.com/css2?family=' . str_replace( ' ', '+', $font_name ) . '&display=swap';
+			$font_handle = 'ab-google-font-' . sanitize_title( $font_name );
+			if ( ! in_array( $font_handle, $enqueued_fonts ) ) {
+				$google_fonts_url = 'https://fonts.googleapis.com/css2?family=' . str_replace( ' ', '+', $font_name ) . '&display=swap';
+				wp_enqueue_style( $font_handle, $google_fonts_url, array(), null );
+				$enqueued_fonts[] = $font_handle;
+			}
+		}
 
-			// Enqueue the font
-			wp_enqueue_style( 'ab-google-font-' . sanitize_title( $font_name ), $google_fonts_url, array(), null );
+		if ( ! empty( $excerpt_font_family ) ) {
+			$font_name = str_replace( "'", '', explode( ',', $excerpt_font_family )[0] );
+			$font_handle = 'ab-google-font-' . sanitize_title( $font_name );
+			if ( ! in_array( $font_handle, $enqueued_fonts ) ) {
+				$google_fonts_url = 'https://fonts.googleapis.com/css2?family=' . str_replace( ' ', '+', $font_name ) . '&display=swap';
+				wp_enqueue_style( $font_handle, $google_fonts_url, array(), null );
+				$enqueued_fonts[] = $font_handle;
+			}
+		}
+
+		if ( ! empty( $meta_font_family ) ) {
+			$font_name = str_replace( "'", '', explode( ',', $meta_font_family )[0] );
+			$font_handle = 'ab-google-font-' . sanitize_title( $font_name );
+			if ( ! in_array( $font_handle, $enqueued_fonts ) ) {
+				$google_fonts_url = 'https://fonts.googleapis.com/css2?family=' . str_replace( ' ', '+', $font_name ) . '&display=swap';
+				wp_enqueue_style( $font_handle, $google_fonts_url, array(), null );
+				$enqueued_fonts[] = $font_handle;
+			}
+		}
+
+		if ( ! empty( $link_font_family ) ) {
+			$font_name = str_replace( "'", '', explode( ',', $link_font_family )[0] );
+			$font_handle = 'ab-google-font-' . sanitize_title( $font_name );
+			if ( ! in_array( $font_handle, $enqueued_fonts ) ) {
+				$google_fonts_url = 'https://fonts.googleapis.com/css2?family=' . str_replace( ' ', '+', $font_name ) . '&display=swap';
+				wp_enqueue_style( $font_handle, $google_fonts_url, array(), null );
+				$enqueued_fonts[] = $font_handle;
+			}
 		}
 
 		// Query arguments
@@ -195,6 +237,12 @@ class Post_Block {
 				if ( $meta_font_size > 0 ) {
 					$meta_style .= 'font-size:' . $meta_font_size . 'px;';
 				}
+				if ( ! empty( $meta_font_weight ) ) {
+					$meta_style .= 'font-weight:' . $meta_font_weight . ';';
+				}
+				if ( ! empty( $meta_font_family ) ) {
+					$meta_style .= 'font-family:' . $meta_font_family . ';';
+				}
 
 				echo '<div class="ab-post-meta" style="' . esc_attr( $meta_style ) . '">';
 
@@ -245,9 +293,27 @@ class Post_Block {
 				if ( $excerpt_font_size > 0 ) {
 					$excerpt_style .= 'font-size:' . $excerpt_font_size . 'px;';
 				}
+				if ( ! empty( $excerpt_font_weight ) ) {
+					$excerpt_style .= 'font-weight:' . $excerpt_font_weight . ';';
+				}
+				if ( ! empty( $excerpt_font_family ) ) {
+					$excerpt_style .= 'font-family:' . $excerpt_font_family . ';';
+				}
 
 				echo '<div class="ab-post-excerpt" style="' . esc_attr( $excerpt_style ) . '">';
-				echo wp_kses_post( get_the_excerpt() );
+
+				// Get excerpt content
+				$excerpt_content = get_the_excerpt();
+
+				// Apply character limit if set
+				if ( $excerpt_max_chars > 0 ) {
+					$plain_text = wp_strip_all_tags( $excerpt_content );
+					if ( strlen( $plain_text ) > $excerpt_max_chars ) {
+						$excerpt_content = substr( $plain_text, 0, $excerpt_max_chars ) . '…';
+					}
+				}
+
+				echo wp_kses_post( $excerpt_content );
 				echo '</div>';
 			}
 
@@ -255,6 +321,15 @@ class Post_Block {
 			$link_style = '';
 			if ( ! empty( $link_color ) ) {
 				$link_style .= 'color:' . $link_color . ';';
+			}
+			if ( $link_font_size > 0 ) {
+				$link_style .= 'font-size:' . $link_font_size . 'px;';
+			}
+			if ( ! empty( $link_font_weight ) ) {
+				$link_style .= 'font-weight:' . $link_font_weight . ';';
+			}
+			if ( ! empty( $link_font_family ) ) {
+				$link_style .= 'font-family:' . $link_font_family . ';';
 			}
 
 			echo '<a href="' . esc_url( get_permalink() ) . '" class="ab-post-read-more" style="' . esc_attr( $link_style ) . '">';
