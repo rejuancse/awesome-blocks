@@ -9,3 +9,4 @@ import './awesome-timeline';
 import './feature-block';
 import './grid-block';
 import './woo-product-list';
+import './hero-video';

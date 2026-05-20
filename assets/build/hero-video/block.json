@@ -1,0 +1,145 @@
+{
+  "apiVersion": 2,
+  "name": "awesome/hero-video",
+  "title": "Hero Video",
+  "category": "awesome-block",
+  "icon": "format-video",
+  "description": "Display a hero video with overlay content",
+  "keywords": [
+    "hero",
+    "video",
+    "banner"
+  ],
+  "attributes": {
+    "videoUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "posterUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "title": {
+      "type": "string",
+      "default": "A Beachfront Luxury Vacation Rental Awaits"
+    },
+    "description": {
+      "type": "string",
+      "default": "Nestled along the resplendent beaches of Santa Teresa sits Casa Teresa and Casa Teresa Grande, both Costa Rica beachfront villas offering the ultimate luxury vacation rental experience."
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Learn More"
+    },
+    "buttonUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "titleColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "titleFontSize": {
+      "type": "number",
+      "default": 48
+    },
+    "titleFontWeight": {
+      "type": "string",
+      "default": "700"
+    },
+    "titleFontFamily": {
+      "type": "string",
+      "default": ""
+    },
+    "descriptionColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "descriptionFontSize": {
+      "type": "number",
+      "default": 18
+    },
+    "descriptionFontWeight": {
+      "type": "string",
+      "default": "400"
+    },
+    "descriptionFontFamily": {
+      "type": "string",
+      "default": ""
+    },
+    "buttonBgColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "buttonTextColor": {
+      "type": "string",
+      "default": "#333333"
+    },
+    "buttonHoverBgColor": {
+      "type": "string",
+      "default": "#f0f0f0"
+    },
+    "buttonHoverTextColor": {
+      "type": "string",
+      "default": "#333333"
+    },
+    "buttonFontSize": {
+      "type": "number",
+      "default": 16
+    },
+    "buttonFontWeight": {
+      "type": "string",
+      "default": "600"
+    },
+    "buttonFontFamily": {
+      "type": "string",
+      "default": ""
+    },
+    "overlayColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "overlayOpacity": {
+      "type": "number",
+      "default": 40
+    },
+    "videoHeight": {
+      "type": "number",
+      "default": 600
+    },
+    "contentAlign": {
+      "type": "string",
+      "default": "center"
+    },
+    "padding": {
+      "type": "number",
+      "default": 80
+    },
+    "borderRadius": {
+      "type": "number",
+      "default": 0
+    },
+    "muted": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": true
+    },
+    "loop": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "html": false
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}
