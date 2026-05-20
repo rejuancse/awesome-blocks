@@ -24,6 +24,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _utils_google_fonts__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/google-fonts */ "./src/utils/google-fonts.js");
+/* harmony import */ var _utils_components__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utils/components */ "./src/utils/components.js");
 
 /**
  * WordPress Dependencies
@@ -31,6 +33,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+/**
+ * Internal Dependencies
+ */
 
 
 
@@ -79,92 +87,6 @@ const DEFAULTS = {
 };
 
 /**
- * Google Fonts options list.
- *
- * @type {Array.<{label: string, value: string}>}
- */
-const GOOGLE_FONTS = [{
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Default', 'awesome-blocks'),
-  value: ''
-}, {
-  label: 'Roboto',
-  value: "'Roboto', sans-serif"
-}, {
-  label: 'Open Sans',
-  value: "'Open Sans', sans-serif"
-}, {
-  label: 'Lato',
-  value: "'Lato', sans-serif"
-}, {
-  label: 'Montserrat',
-  value: "'Montserrat', sans-serif"
-}, {
-  label: 'Oswald',
-  value: "'Oswald', sans-serif"
-}, {
-  label: 'Raleway',
-  value: "'Raleway', sans-serif"
-}, {
-  label: 'Poppins',
-  value: "'Poppins', sans-serif"
-}, {
-  label: 'Roboto Slab',
-  value: "'Roboto Slab', serif"
-}, {
-  label: 'Merriweather',
-  value: "'Merriweather', serif"
-}, {
-  label: 'Playfair Display',
-  value: "'Playfair Display', serif"
-}, {
-  label: 'Lora',
-  value: "'Lora', serif"
-}, {
-  label: 'Source Sans Pro',
-  value: "'Source Sans Pro', sans-serif"
-}, {
-  label: 'Nunito',
-  value: "'Nunito', sans-serif"
-}, {
-  label: 'Ubuntu',
-  value: "'Ubuntu', sans-serif"
-}, {
-  label: 'PT Sans',
-  value: "'PT Sans', sans-serif"
-}, {
-  label: 'Work Sans',
-  value: "'Work Sans', sans-serif"
-}, {
-  label: 'Rubik',
-  value: "'Rubik', sans-serif"
-}, {
-  label: 'Noto Sans',
-  value: "'Noto Sans', sans-serif"
-}];
-
-/**
- * Loads a Google Font dynamically into the document <head>.
- *
- * @param {string} fontFamily CSS font-family string, e.g. "'Roboto', sans-serif".
- * @return {void}
- */
-function loadGoogleFont(fontFamily) {
-  if (!fontFamily) {
-    return;
-  }
-  const fontName = fontFamily.split(',')[0].replace(/'/g, '').trim();
-  const linkId = `google-font-${fontName.replace(/\s+/g, '-').toLowerCase()}`;
-  if (document.getElementById(linkId)) {
-    return;
-  }
-  const link = document.createElement('link');
-  link.id = linkId;
-  link.rel = 'stylesheet';
-  link.href = `https://fonts.googleapis.com/css2?family=${fontName.replace(/\s+/g, '+')}&display=swap`;
-  document.head.appendChild(link);
-}
-
-/**
  * Returns the featured image URL for a post, falling back gracefully.
  *
  * @param {Object} post          WP post object with _embedded data.
@@ -177,40 +99,6 @@ function getFeaturedImageUrl(post, thumbnailSize) {
     return null;
   }
   return media?.media_details?.sizes?.[thumbnailSize]?.source_url || media.source_url;
-}
-
-/**
- * Inline color picker + hex text input pair.
- *
- * @param {Object}   props
- * @param {string}   props.label     Visible label.
- * @param {string}   props.value     Current hex color value.
- * @param {Function} props.onChange  Called with the new hex string.
- * @param {string}   props.placeholder Placeholder text for the text input.
- * @return {JSX.Element}
- */
-function ColorControl({
-  label,
-  value,
-  onChange,
-  placeholder
-}) {
-  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.BaseControl, {
-    label: label
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "ab-color-input-wrapper"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
-    type: "color",
-    value: value,
-    onChange: event => onChange(event.target.value),
-    className: "ab-color-input"
-  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
-    type: "text",
-    value: value,
-    onChange: event => onChange(event.target.value),
-    className: "ab-color-text-input",
-    placeholder: placeholder
-  })));
 }
 
 /**
@@ -291,16 +179,16 @@ function Edit({
   // ── Side effects ─────────────────────────────────────────────────────────
 
   (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.useEffect)(() => {
-    loadGoogleFont(titleFontFamily);
+    (0,_utils_google_fonts__WEBPACK_IMPORTED_MODULE_6__.loadGoogleFont)(titleFontFamily);
   }, [titleFontFamily]);
   (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.useEffect)(() => {
-    loadGoogleFont(excerptFontFamily);
+    (0,_utils_google_fonts__WEBPACK_IMPORTED_MODULE_6__.loadGoogleFont)(excerptFontFamily);
   }, [excerptFontFamily]);
   (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.useEffect)(() => {
-    loadGoogleFont(metaFontFamily);
+    (0,_utils_google_fonts__WEBPACK_IMPORTED_MODULE_6__.loadGoogleFont)(metaFontFamily);
   }, [metaFontFamily]);
   (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.useEffect)(() => {
-    loadGoogleFont(linkFontFamily);
+    (0,_utils_google_fonts__WEBPACK_IMPORTED_MODULE_6__.loadGoogleFont)(linkFontFamily);
   }, [linkFontFamily]);
 
   // ── Derived values ───────────────────────────────────────────────────────
@@ -445,7 +333,7 @@ function Edit({
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.PanelBody, {
     title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Style Settings', 'awesome-blocks'),
     initialOpen: false
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title Style', 'awesome-blocks')), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(ColorControl, {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title Style', 'awesome-blocks')), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_utils_components__WEBPACK_IMPORTED_MODULE_7__.ColorControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title Color', 'awesome-blocks'),
     value: titleColor,
     onChange: value => setAttributes({
@@ -463,31 +351,19 @@ function Edit({
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.SelectControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title Font Weight', 'awesome-blocks'),
     value: titleFontWeight,
-    options: [{
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Normal', 'awesome-blocks'),
-      value: '400'
-    }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Medium', 'awesome-blocks'),
-      value: '500'
-    }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Semi Bold', 'awesome-blocks'),
-      value: '600'
-    }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Bold', 'awesome-blocks'),
-      value: '700'
-    }],
+    options: _utils_google_fonts__WEBPACK_IMPORTED_MODULE_6__.FONT_WEIGHTS,
     onChange: value => setAttributes({
       titleFontWeight: value
     })
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.SelectControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title Font Family', 'awesome-blocks'),
     value: titleFontFamily,
-    options: GOOGLE_FONTS,
+    options: _utils_google_fonts__WEBPACK_IMPORTED_MODULE_6__.GOOGLE_FONTS,
     onChange: value => setAttributes({
       titleFontFamily: value
     }),
     help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Select a Google Font for the title', 'awesome-blocks')
-  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Excerpt Style', 'awesome-blocks')), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(ColorControl, {
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Excerpt Style', 'awesome-blocks')), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_utils_components__WEBPACK_IMPORTED_MODULE_7__.ColorControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Excerpt Color', 'awesome-blocks'),
     value: excerptColor,
     onChange: value => setAttributes({
@@ -505,26 +381,14 @@ function Edit({
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.SelectControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Excerpt Font Weight', 'awesome-blocks'),
     value: excerptFontWeight,
-    options: [{
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Normal', 'awesome-blocks'),
-      value: '400'
-    }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Medium', 'awesome-blocks'),
-      value: '500'
-    }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Semi Bold', 'awesome-blocks'),
-      value: '600'
-    }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Bold', 'awesome-blocks'),
-      value: '700'
-    }],
+    options: _utils_google_fonts__WEBPACK_IMPORTED_MODULE_6__.FONT_WEIGHTS,
     onChange: value => setAttributes({
       excerptFontWeight: value
     })
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.SelectControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Excerpt Font Family', 'awesome-blocks'),
     value: excerptFontFamily,
-    options: GOOGLE_FONTS,
+    options: _utils_google_fonts__WEBPACK_IMPORTED_MODULE_6__.GOOGLE_FONTS,
     onChange: value => setAttributes({
       excerptFontFamily: value
     }),
@@ -540,7 +404,7 @@ function Edit({
     help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Set 0 to show full excerpt', 'awesome-blocks')
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "meta-style"
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Meta Style', 'awesome-blocks')), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(ColorControl, {
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Meta Style', 'awesome-blocks')), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_utils_components__WEBPACK_IMPORTED_MODULE_7__.ColorControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Meta Color', 'awesome-blocks'),
     value: metaColor,
     onChange: value => setAttributes({
@@ -558,40 +422,28 @@ function Edit({
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.SelectControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Meta Font Weight', 'awesome-blocks'),
     value: metaFontWeight,
-    options: [{
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Normal', 'awesome-blocks'),
-      value: '400'
-    }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Medium', 'awesome-blocks'),
-      value: '500'
-    }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Semi Bold', 'awesome-blocks'),
-      value: '600'
-    }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Bold', 'awesome-blocks'),
-      value: '700'
-    }],
+    options: _utils_google_fonts__WEBPACK_IMPORTED_MODULE_6__.FONT_WEIGHTS,
     onChange: value => setAttributes({
       metaFontWeight: value
     })
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.SelectControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Meta Font Family', 'awesome-blocks'),
     value: metaFontFamily,
-    options: GOOGLE_FONTS,
+    options: _utils_google_fonts__WEBPACK_IMPORTED_MODULE_6__.GOOGLE_FONTS,
     onChange: value => setAttributes({
       metaFontFamily: value
     }),
     help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Select a Google Font for meta info', 'awesome-blocks')
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "meta-style"
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Link Style', 'awesome-blocks')), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(ColorControl, {
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Link Style', 'awesome-blocks')), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_utils_components__WEBPACK_IMPORTED_MODULE_7__.ColorControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Link Color', 'awesome-blocks'),
     value: linkColor,
     onChange: value => setAttributes({
       linkColor: value
     }),
     placeholder: "#0073aa"
-  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(ColorControl, {
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_utils_components__WEBPACK_IMPORTED_MODULE_7__.ColorControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Link Hover Color', 'awesome-blocks'),
     value: linkHoverColor,
     onChange: value => setAttributes({
@@ -609,33 +461,21 @@ function Edit({
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.SelectControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Link Font Weight', 'awesome-blocks'),
     value: linkFontWeight,
-    options: [{
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Normal', 'awesome-blocks'),
-      value: '400'
-    }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Medium', 'awesome-blocks'),
-      value: '500'
-    }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Semi Bold', 'awesome-blocks'),
-      value: '600'
-    }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Bold', 'awesome-blocks'),
-      value: '700'
-    }],
+    options: _utils_google_fonts__WEBPACK_IMPORTED_MODULE_6__.FONT_WEIGHTS,
     onChange: value => setAttributes({
       linkFontWeight: value
     })
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.SelectControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Link Font Family', 'awesome-blocks'),
     value: linkFontFamily,
-    options: GOOGLE_FONTS,
+    options: _utils_google_fonts__WEBPACK_IMPORTED_MODULE_6__.GOOGLE_FONTS,
     onChange: value => setAttributes({
       linkFontFamily: value
     }),
     help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Select a Google Font for links', 'awesome-blocks')
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "meta-style"
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Card Style', 'awesome-blocks')), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(ColorControl, {
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Card Style', 'awesome-blocks')), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_utils_components__WEBPACK_IMPORTED_MODULE_7__.ColorControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Card Background Color', 'awesome-blocks'),
     value: cardBgColor,
     onChange: value => setAttributes({
@@ -859,6 +699,190 @@ __webpack_require__.r(__webpack_exports__);
  */
 function save() {
   return null;
+}
+
+/***/ },
+
+/***/ "./src/utils/components.js"
+/*!*********************************!*\
+  !*** ./src/utils/components.js ***!
+  \*********************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ColorControl: () => (/* binding */ ColorControl)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+
+/**
+ * WordPress Dependencies
+ */
+
+
+/**
+ * Inline color picker + hex text input pair.
+ *
+ * @param {Object}   props
+ * @param {string}   props.label     Visible label.
+ * @param {string}   props.value     Current hex color value.
+ * @param {Function} props.onChange  Called with the new hex string.
+ * @param {string}   props.placeholder Placeholder text for the text input.
+ * @return {JSX.Element}
+ */
+function ColorControl({
+  label,
+  value,
+  onChange,
+  placeholder
+}) {
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.BaseControl, {
+    label: label
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "ab-color-input-wrapper"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+    type: "color",
+    value: value,
+    onChange: event => onChange(event.target.value),
+    className: "ab-color-input"
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+    type: "text",
+    value: value,
+    onChange: event => onChange(event.target.value),
+    className: "ab-color-text-input",
+    placeholder: placeholder
+  })));
+}
+
+/***/ },
+
+/***/ "./src/utils/google-fonts.js"
+/*!***********************************!*\
+  !*** ./src/utils/google-fonts.js ***!
+  \***********************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   FONT_WEIGHTS: () => (/* binding */ FONT_WEIGHTS),
+/* harmony export */   GOOGLE_FONTS: () => (/* binding */ GOOGLE_FONTS),
+/* harmony export */   loadGoogleFont: () => (/* binding */ loadGoogleFont)
+/* harmony export */ });
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__);
+/**
+ * WordPress Dependencies
+ */
+
+
+/**
+ * Google Fonts options list.
+ *
+ * This constant can be reused across different blocks.
+ *
+ * @type {Array.<{label: string, value: string}>}
+ */
+const GOOGLE_FONTS = [{
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Default', 'awesome-blocks'),
+  value: ''
+}, {
+  label: 'Roboto',
+  value: "'Roboto', sans-serif"
+}, {
+  label: 'Open Sans',
+  value: "'Open Sans', sans-serif"
+}, {
+  label: 'Lato',
+  value: "'Lato', sans-serif"
+}, {
+  label: 'Montserrat',
+  value: "'Montserrat', sans-serif"
+}, {
+  label: 'Oswald',
+  value: "'Oswald', sans-serif"
+}, {
+  label: 'Raleway',
+  value: "'Raleway', sans-serif"
+}, {
+  label: 'Poppins',
+  value: "'Poppins', sans-serif"
+}, {
+  label: 'Roboto Slab',
+  value: "'Roboto Slab', serif"
+}, {
+  label: 'Merriweather',
+  value: "'Merriweather', serif"
+}, {
+  label: 'Playfair Display',
+  value: "'Playfair Display', serif"
+}, {
+  label: 'Lora',
+  value: "'Lora', serif"
+}, {
+  label: 'Source Sans Pro',
+  value: "'Source Sans Pro', sans-serif"
+}, {
+  label: 'Nunito',
+  value: "'Nunito', sans-serif"
+}, {
+  label: 'Ubuntu',
+  value: "'Ubuntu', sans-serif"
+}, {
+  label: 'PT Sans',
+  value: "'PT Sans', sans-serif"
+}, {
+  label: 'Work Sans',
+  value: "'Work Sans', sans-serif"
+}, {
+  label: 'Rubik',
+  value: "'Rubik', sans-serif"
+}, {
+  label: 'Noto Sans',
+  value: "'Noto Sans', sans-serif"
+}];
+
+/**
+ * Font weight options.
+ *
+ * @type {Array.<{label: string, value: string}>}
+ */
+const FONT_WEIGHTS = [{
+  label: 'Normal',
+  value: '400'
+}, {
+  label: 'Medium',
+  value: '500'
+}, {
+  label: 'Semi Bold',
+  value: '600'
+}, {
+  label: 'Bold',
+  value: '700'
+}];
+
+/**
+ * Loads a Google Font dynamically into the document <head>.
+ *
+ * @param {string} fontFamily CSS font-family string, e.g. "'Roboto', sans-serif".
+ * @return {void}
+ */
+function loadGoogleFont(fontFamily) {
+  if (!fontFamily) {
+    return;
+  }
+  const fontName = fontFamily.split(',')[0].replace(/'/g, '').trim();
+  const linkId = `google-font-${fontName.replace(/\s+/g, '-').toLowerCase()}`;
+  if (document.getElementById(linkId)) {
+    return;
+  }
+  const link = document.createElement('link');
+  link.id = linkId;
+  link.rel = 'stylesheet';
+  link.href = `https://fonts.googleapis.com/css2?family=${fontName.replace(/\s+/g, '+')}&display=swap`;
+  document.head.appendChild(link);
 }
 
 /***/ },

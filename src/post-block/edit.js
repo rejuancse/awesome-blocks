@@ -11,9 +11,14 @@ import {
 	SelectControl,
 	ToggleControl,
 	Spinner,
-	BaseControl,
 	TextControl,
 } from '@wordpress/components';
+
+/**
+ * Internal Dependencies
+ */
+import { GOOGLE_FONTS, FONT_WEIGHTS, loadGoogleFont } from '../utils/google-fonts';
+import { ColorControl } from '../utils/components';
 
 /**
  * Default attribute values.
@@ -60,59 +65,6 @@ const DEFAULTS = {
 };
 
 /**
- * Google Fonts options list.
- *
- * @type {Array.<{label: string, value: string}>}
- */
-const GOOGLE_FONTS = [
-	{ label: __( 'Default', 'awesome-blocks' ),      value: '' },
-	{ label: 'Roboto',                               value: "'Roboto', sans-serif" },
-	{ label: 'Open Sans',                            value: "'Open Sans', sans-serif" },
-	{ label: 'Lato',                                 value: "'Lato', sans-serif" },
-	{ label: 'Montserrat',                           value: "'Montserrat', sans-serif" },
-	{ label: 'Oswald',                               value: "'Oswald', sans-serif" },
-	{ label: 'Raleway',                              value: "'Raleway', sans-serif" },
-	{ label: 'Poppins',                              value: "'Poppins', sans-serif" },
-	{ label: 'Roboto Slab',                          value: "'Roboto Slab', serif" },
-	{ label: 'Merriweather',                         value: "'Merriweather', serif" },
-	{ label: 'Playfair Display',                     value: "'Playfair Display', serif" },
-	{ label: 'Lora',                                 value: "'Lora', serif" },
-	{ label: 'Source Sans Pro',                      value: "'Source Sans Pro', sans-serif" },
-	{ label: 'Nunito',                               value: "'Nunito', sans-serif" },
-	{ label: 'Ubuntu',                               value: "'Ubuntu', sans-serif" },
-	{ label: 'PT Sans',                              value: "'PT Sans', sans-serif" },
-	{ label: 'Work Sans',                            value: "'Work Sans', sans-serif" },
-	{ label: 'Rubik',                                value: "'Rubik', sans-serif" },
-	{ label: 'Noto Sans',                            value: "'Noto Sans', sans-serif" },
-];
-
-/**
- * Loads a Google Font dynamically into the document <head>.
- *
- * @param {string} fontFamily CSS font-family string, e.g. "'Roboto', sans-serif".
- * @return {void}
- */
-function loadGoogleFont( fontFamily ) {
-	if ( ! fontFamily ) {
-		return;
-	}
-
-	const fontName = fontFamily.split( ',' )[ 0 ].replace( /'/g, '' ).trim();
-	const linkId   = `google-font-${ fontName.replace( /\s+/g, '-' ).toLowerCase() }`;
-
-	if ( document.getElementById( linkId ) ) {
-		return;
-	}
-
-	const link  = document.createElement( 'link' );
-	link.id     = linkId;
-	link.rel    = 'stylesheet';
-	link.href   = `https://fonts.googleapis.com/css2?family=${ fontName.replace( /\s+/g, '+' ) }&display=swap`;
-
-	document.head.appendChild( link );
-}
-
-/**
  * Returns the featured image URL for a post, falling back gracefully.
  *
  * @param {Object} post          WP post object with _embedded data.
@@ -127,38 +79,6 @@ function getFeaturedImageUrl( post, thumbnailSize ) {
 	}
 
 	return media?.media_details?.sizes?.[ thumbnailSize ]?.source_url || media.source_url;
-}
-
-/**
- * Inline color picker + hex text input pair.
- *
- * @param {Object}   props
- * @param {string}   props.label     Visible label.
- * @param {string}   props.value     Current hex color value.
- * @param {Function} props.onChange  Called with the new hex string.
- * @param {string}   props.placeholder Placeholder text for the text input.
- * @return {JSX.Element}
- */
-function ColorControl( { label, value, onChange, placeholder } ) {
-	return (
-		<BaseControl label={ label }>
-			<div className="ab-color-input-wrapper">
-				<input
-					type="color"
-					value={ value }
-					onChange={ ( event ) => onChange( event.target.value ) }
-					className="ab-color-input"
-				/>
-				<input
-					type="text"
-					value={ value }
-					onChange={ ( event ) => onChange( event.target.value ) }
-					className="ab-color-text-input"
-					placeholder={ placeholder }
-				/>
-			</div>
-		</BaseControl>
-	);
 }
 
 /**
@@ -396,12 +316,7 @@ export default function Edit( { attributes, setAttributes } ) {
 					<SelectControl
 						label={ __( 'Title Font Weight', 'awesome-blocks' ) }
 						value={ titleFontWeight }
-						options={ [
-							{ label: __( 'Normal',    'awesome-blocks' ), value: '400' },
-							{ label: __( 'Medium',    'awesome-blocks' ), value: '500' },
-							{ label: __( 'Semi Bold', 'awesome-blocks' ), value: '600' },
-							{ label: __( 'Bold',      'awesome-blocks' ), value: '700' },
-						] }
+						options={ FONT_WEIGHTS }
 						onChange={ ( value ) => setAttributes( { titleFontWeight: value } ) }
 					/>
 					<SelectControl
@@ -430,12 +345,7 @@ export default function Edit( { attributes, setAttributes } ) {
 					<SelectControl
 						label={ __( 'Excerpt Font Weight', 'awesome-blocks' ) }
 						value={ excerptFontWeight }
-						options={ [
-							{ label: __( 'Normal',    'awesome-blocks' ), value: '400' },
-							{ label: __( 'Medium',    'awesome-blocks' ), value: '500' },
-							{ label: __( 'Semi Bold', 'awesome-blocks' ), value: '600' },
-							{ label: __( 'Bold',      'awesome-blocks' ), value: '700' },
-						] }
+						options={ FONT_WEIGHTS }
 						onChange={ ( value ) => setAttributes( { excerptFontWeight: value } ) }
 					/>
 					<SelectControl
@@ -472,12 +382,7 @@ export default function Edit( { attributes, setAttributes } ) {
 					<SelectControl
 						label={ __( 'Meta Font Weight', 'awesome-blocks' ) }
 						value={ metaFontWeight }
-						options={ [
-							{ label: __( 'Normal',    'awesome-blocks' ), value: '400' },
-							{ label: __( 'Medium',    'awesome-blocks' ), value: '500' },
-							{ label: __( 'Semi Bold', 'awesome-blocks' ), value: '600' },
-							{ label: __( 'Bold',      'awesome-blocks' ), value: '700' },
-						] }
+						options={ FONT_WEIGHTS }
 						onChange={ ( value ) => setAttributes( { metaFontWeight: value } ) }
 					/>
 					<SelectControl
@@ -512,12 +417,7 @@ export default function Edit( { attributes, setAttributes } ) {
 					<SelectControl
 						label={ __( 'Link Font Weight', 'awesome-blocks' ) }
 						value={ linkFontWeight }
-						options={ [
-							{ label: __( 'Normal',    'awesome-blocks' ), value: '400' },
-							{ label: __( 'Medium',    'awesome-blocks' ), value: '500' },
-							{ label: __( 'Semi Bold', 'awesome-blocks' ), value: '600' },
-							{ label: __( 'Bold',      'awesome-blocks' ), value: '700' },
-						] }
+						options={ FONT_WEIGHTS }
 						onChange={ ( value ) => setAttributes( { linkFontWeight: value } ) }
 					/>
 					<SelectControl
