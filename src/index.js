@@ -10,3 +10,4 @@ import './feature-block';
 import './grid-block';
 import './woo-product-list';
 import './hero-video';
+import './image-compare';

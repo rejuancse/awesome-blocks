@@ -93,6 +93,11 @@ class Register_Blocks {
             register_block_type_from_metadata(
                 AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/hero-video'
             );
+
+            // Register Image Compare Block - No render callback needed as it uses render.php
+            register_block_type_from_metadata(
+                AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/image-compare'
+            );
         }
     }
 }

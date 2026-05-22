@@ -1,0 +1,34 @@
+{
+    "apiVersion": 2,
+    "name": "awesome/image-compare",
+    "title": "Image Compare",
+    "category": "awesome-block",
+    "icon": "format-image",
+    "description": "Compare two images with an interactive slider",
+    "keywords": ["image", "compare", "before", "after", "slider"],
+    "attributes": {
+        "beforeImageUrl": {
+            "type": "string",
+            "default": ""
+        },
+        "beforeImageId": {
+            "type": "number",
+            "default": 0
+        },
+        "afterImageUrl": {
+            "type": "string",
+            "default": ""
+        },
+        "afterImageId": {
+            "type": "number",
+            "default": 0
+        }
+    },
+    "supports": {
+        "align": ["wide", "full"],
+        "html": false
+    },
+    "editorScript": "file:./index.js",
+    "style": "file:./style-index.css",
+    "viewScript": "file:./view.js"
+}
