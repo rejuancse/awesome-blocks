@@ -73,16 +73,16 @@ function Edit({
   // Handle slider functionality in editor
   (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.useEffect)(() => {
     const moveDivisor = () => {
-      const slider = document.getElementById('ic-slider');
-      const handle = document.getElementById('ic-handle');
-      const divisor = document.getElementById('ic-divisor');
+      const slider = document.getElementById('awesome-image-slider');
+      const handle = document.getElementById('awesome-image-handle');
+      const divisor = document.getElementById('awesome-image-divisor');
       if (slider && handle && divisor) {
         handle.style.left = slider.value + '%';
         divisor.style.width = slider.value + '%';
       }
     };
     moveDivisor();
-    const slider = document.getElementById('ic-slider');
+    const slider = document.getElementById('awesome-image-slider');
     if (slider) {
       slider.addEventListener('input', moveDivisor);
     }
@@ -171,37 +171,41 @@ function Edit({
   }))))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...blockProps
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "ic-wrap"
+    className: "awesome-image-wrap"
   }, !beforeImageUrl || !afterImageUrl ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "ic-placeholder"
+    className: "awesome-image-placeholder"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Dashicon, {
     icon: "format-image",
     size: 40
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Please upload both images to see the comparison slider', 'awesome-blocks'))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "ic-container"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "ic-comparison"
+    className: "awesome-image-container"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+    className: "label before-label button"
+  }, "Before"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+    className: "label after-label button"
+  }, "After"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "awesome-image-comparison"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("figure", {
-    className: "ic-figure",
+    className: "awesome-image-figure",
     style: {
       backgroundImage: `url(${beforeImageUrl})`
     }
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    id: "ic-handle",
-    className: "ic-handle"
+    id: "awesome-image-handle",
+    className: "awesome-image-handle"
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    id: "ic-divisor",
-    className: "ic-divisor",
+    id: "awesome-image-divisor",
+    className: "awesome-image-divisor",
     style: {
       backgroundImage: `url(${afterImageUrl})`
     }
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
-    id: "ic-slider",
+    id: "awesome-image-slider",
     type: "range",
     min: "0",
     max: "100",
     value: "50",
-    className: "ic-slider"
+    className: "awesome-image-slider"
   }))))));
 }
 
@@ -289,32 +293,38 @@ function Save({
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...blockProps
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "ic-wrap"
+    className: "awesome-image-wrap"
   }, beforeImageUrl && afterImageUrl && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "ic-container"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "ic-comparison"
+    className: "awesome-image-container"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+    class: "label before-label button",
+    style: "visibility: visible;"
+  }, "Before"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+    class: "label after-label button",
+    style: "visibility: visible;"
+  }, "After"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "awesome-image-comparison"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("figure", {
-    className: "ic-figure",
+    className: "awesome-image-figure",
     style: {
       backgroundImage: `url(${beforeImageUrl})`
     }
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    id: "ic-handle",
-    className: "ic-handle"
+    id: "awesome-image-handle",
+    className: "awesome-image-handle"
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    id: "ic-divisor",
-    className: "ic-divisor",
+    id: "awesome-image-divisor",
+    className: "awesome-image-divisor",
     style: {
       backgroundImage: `url(${afterImageUrl})`
     }
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
-    id: "ic-slider",
+    id: "awesome-image-slider",
     type: "range",
     min: "0",
     max: "100",
     value: "50",
-    className: "ic-slider"
+    className: "awesome-image-slider"
   })))));
 }
 

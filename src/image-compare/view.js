@@ -2,14 +2,14 @@
  * Frontend functionality for image comparison slider
  */
 function initImageCompare() {
-    const sliders = document.querySelectorAll('.ic-slider');
+    const sliders = document.querySelectorAll('.awesome-image-slider');
 
     sliders.forEach((slider) => {
-        const wrapper = slider.closest('.ic-comparison');
+        const wrapper = slider.closest('.awesome-image-comparison');
         if (!wrapper) return;
 
-        const handle = wrapper.querySelector('.ic-handle');
-        const divisor = wrapper.querySelector('.ic-divisor');
+        const handle = wrapper.querySelector('.awesome-image-handle');
+        const divisor = wrapper.querySelector('.awesome-image-divisor');
 
         if (!handle || !divisor) return;
 

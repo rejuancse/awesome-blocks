@@ -50,9 +50,9 @@ export default function Edit({ attributes, setAttributes }) {
     // Handle slider functionality in editor
     useEffect(() => {
         const moveDivisor = () => {
-            const slider = document.getElementById('ic-slider');
-            const handle = document.getElementById('ic-handle');
-            const divisor = document.getElementById('ic-divisor');
+            const slider = document.getElementById('awesome-image-slider');
+            const handle = document.getElementById('awesome-image-handle');
+            const divisor = document.getElementById('awesome-image-divisor');
 
             if (slider && handle && divisor) {
                 handle.style.left = slider.value + '%';
@@ -62,7 +62,7 @@ export default function Edit({ attributes, setAttributes }) {
 
         moveDivisor();
 
-        const slider = document.getElementById('ic-slider');
+        const slider = document.getElementById('awesome-image-slider');
         if (slider) {
             slider.addEventListener('input', moveDivisor);
         }
@@ -173,33 +173,36 @@ export default function Edit({ attributes, setAttributes }) {
             </InspectorControls>
 
             <div {...blockProps}>
-                <div className="ic-wrap">
+                <div className="awesome-image-wrap">
                     {!beforeImageUrl || !afterImageUrl ? (
-                        <div className="ic-placeholder">
+                        <div className="awesome-image-placeholder">
                             <Dashicon icon="format-image" size={40} />
                             <p>{__('Please upload both images to see the comparison slider', 'awesome-blocks')}</p>
                         </div>
                     ) : (
-                        <div className="ic-container">
-                            <div className="ic-comparison">
+                        <div className="awesome-image-container">
+                            <span className="label before-label button">Before</span>
+                            <span className="label after-label button">After</span>
+
+                            <div className="awesome-image-comparison">
                                 <figure
-                                    className="ic-figure"
+                                    className="awesome-image-figure"
                                     style={{ backgroundImage: `url(${beforeImageUrl})` }}
                                 >
-                                    <div id="ic-handle" className="ic-handle"></div>
+                                    <div id="awesome-image-handle" className="awesome-image-handle"></div>
                                     <div
-                                        id="ic-divisor"
-                                        className="ic-divisor"
+                                        id="awesome-image-divisor"
+                                        className="awesome-image-divisor"
                                         style={{ backgroundImage: `url(${afterImageUrl})` }}
                                     ></div>
                                 </figure>
                                 <input
-                                    id="ic-slider"
+                                    id="awesome-image-slider"
                                     type="range"
                                     min="0"
                                     max="100"
                                     value="50"
-                                    className="ic-slider"
+                                    className="awesome-image-slider"
                                 />
                             </div>
                         </div>
