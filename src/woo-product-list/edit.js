@@ -161,7 +161,7 @@ export default function Edit({ attributes, setAttributes }) {
 
     //  Category selector helpers
     const categoryOptions = [
-        { label: __('All Categories', 'awesome-blocks'), value: '' },
+        { label: __('All Categories', 'theme-blocks' ), value: '' },
         ...productCategories.map(cat => ({
             label: cat.name,
             value: String(cat.id), // Keep as string for SelectControl
@@ -193,44 +193,44 @@ export default function Edit({ attributes, setAttributes }) {
     return (
         <>
             <InspectorControls>
-                <PanelBody title={__('Layout Settings', 'awesome-blocks')} initialOpen={true}>
+                <PanelBody title={__('Layout Settings', 'theme-blocks' )} initialOpen={true}>
                     <RangeControl
-                        label={__('Columns', 'awesome-blocks')}
+                        label={__('Columns', 'theme-blocks' )}
                         value={columns}
                         onChange={(value) => setAttributes({ columns: value })}
                         min={1} max={6} step={1}
                     />
                     <RangeControl
-                        label={__('Products per Page', 'awesome-blocks')}
+                        label={__('Products per Page', 'theme-blocks' )}
                         value={productsPerPage}
                         onChange={(value) => setAttributes({ productsPerPage: value })}
                         min={1} max={50} step={1}
                     />
                 </PanelBody>
 
-                <PanelBody title={__('Product Query', 'awesome-blocks')} initialOpen={false}>
+                <PanelBody title={__('Product Query', 'theme-blocks' )} initialOpen={false}>
                     <PanelRow>
                         <SelectControl
-                            label={__('Order By', 'awesome-blocks')}
+                            label={__('Order By', 'theme-blocks' )}
                             value={orderBy}
                             options={[
-                                { label: __('Date', 'awesome-blocks'),       value: 'date' },
-                                { label: __('Price', 'awesome-blocks'),      value: 'price' },
-                                { label: __('Popularity', 'awesome-blocks'), value: 'popularity' },
-                                { label: __('Rating', 'awesome-blocks'),     value: 'rating' },
-                                { label: __('Title', 'awesome-blocks'),      value: 'title' },
-                                { label: __('Random', 'awesome-blocks'),     value: 'rand' },
+                                { label: __('Date', 'theme-blocks' ),       value: 'date' },
+                                { label: __('Price', 'theme-blocks' ),      value: 'price' },
+                                { label: __('Popularity', 'theme-blocks' ), value: 'popularity' },
+                                { label: __('Rating', 'theme-blocks' ),     value: 'rating' },
+                                { label: __('Title', 'theme-blocks' ),      value: 'title' },
+                                { label: __('Random', 'theme-blocks' ),     value: 'rand' },
                             ]}
                             onChange={(value) => setAttributes({ orderBy: value })}
                         />
                     </PanelRow>
                     <PanelRow>
                         <SelectControl
-                            label={__('Order', 'awesome-blocks')}
+                            label={__('Order', 'theme-blocks' )}
                             value={order}
                             options={[
-                                { label: __('Descending', 'awesome-blocks'), value: 'DESC' },
-                                { label: __('Ascending', 'awesome-blocks'),  value: 'ASC' },
+                                { label: __('Descending', 'theme-blocks' ), value: 'DESC' },
+                                { label: __('Ascending', 'theme-blocks' ),  value: 'ASC' },
                             ]}
                             onChange={(value) => setAttributes({ order: value })}
                         />
@@ -238,7 +238,7 @@ export default function Edit({ attributes, setAttributes }) {
                     <PanelRow>
                         <div style={{ width: '100%' }}>
                             <label style={{ display: 'block', marginBottom: '8px', fontWeight: '500' }}>
-                                {__('Filter by Categories', 'awesome-blocks')}
+                                {__('Filter by Categories', 'theme-blocks' )}
                             </label>
                             <SelectControl
                                 value=""
@@ -246,8 +246,8 @@ export default function Edit({ attributes, setAttributes }) {
                                 onChange={handleCategoryChange}
                                 help={
                                     selectedCategories.length > 0
-                                        ? __('Selected:', 'awesome-blocks') + ' ' + selectedCategoryNames.join(', ')
-                                        : __('Select categories to filter products', 'awesome-blocks')
+                                        ? __('Selected:', 'theme-blocks' ) + ' ' + selectedCategoryNames.join(', ')
+                                        : __('Select categories to filter products', 'theme-blocks' )
                                 }
                             />
                             {selectedCategories.length > 0 && (
@@ -272,7 +272,7 @@ export default function Edit({ attributes, setAttributes }) {
                                         style={{ marginLeft: '8px', padding: '4px 8px', cursor: 'pointer' }}
                                         onClick={() => setAttributes({ selectedCategories: [] })}
                                     >
-                                        {__('Clear All', 'awesome-blocks')}
+                                        {__('Clear All', 'theme-blocks' )}
                                     </button>
                                 </div>
                             )}
@@ -280,21 +280,21 @@ export default function Edit({ attributes, setAttributes }) {
                     </PanelRow>
                 </PanelBody>
 
-                <PanelBody title={__('Display Options', 'awesome-blocks')} initialOpen={false}>
-                    <ToggleControl label={__('Show Category', 'awesome-blocks')}     checked={showCategory}   onChange={() => setAttributes({ showCategory:   !showCategory })} />
-                    <ToggleControl label={__('Show Rating', 'awesome-blocks')}       checked={showRating}     onChange={() => setAttributes({ showRating:     !showRating })} />
-                    <ToggleControl label={__('Show Price', 'awesome-blocks')}        checked={showPrice}      onChange={() => setAttributes({ showPrice:      !showPrice })} />
-                    <ToggleControl label={__('Show Add to Cart', 'awesome-blocks')}  checked={showAddToCart}  onChange={() => setAttributes({ showAddToCart:  !showAddToCart })} />
-                    <ToggleControl label={__('Show Badges', 'awesome-blocks')}       checked={showBadges}     onChange={() => setAttributes({ showBadges:     !showBadges })} />
+                <PanelBody title={__('Display Options', 'theme-blocks' )} initialOpen={false}>
+                    <ToggleControl label={__('Show Category', 'theme-blocks' )}     checked={showCategory}   onChange={() => setAttributes({ showCategory:   !showCategory })} />
+                    <ToggleControl label={__('Show Rating', 'theme-blocks' )}       checked={showRating}     onChange={() => setAttributes({ showRating:     !showRating })} />
+                    <ToggleControl label={__('Show Price', 'theme-blocks' )}        checked={showPrice}      onChange={() => setAttributes({ showPrice:      !showPrice })} />
+                    <ToggleControl label={__('Show Add to Cart', 'theme-blocks' )}  checked={showAddToCart}  onChange={() => setAttributes({ showAddToCart:  !showAddToCart })} />
+                    <ToggleControl label={__('Show Badges', 'theme-blocks' )}       checked={showBadges}     onChange={() => setAttributes({ showBadges:     !showBadges })} />
                     {showBadges && (
                         <SelectControl
-                            label={__('Badge Position', 'awesome-blocks')}
+                            label={__('Badge Position', 'theme-blocks' )}
                             value={badgePosition}
                             options={[
-                                { label: __('Top Left',     'awesome-blocks'), value: 'top-left' },
-                                { label: __('Top Right',    'awesome-blocks'), value: 'top-right' },
-                                { label: __('Bottom Left',  'awesome-blocks'), value: 'bottom-left' },
-                                { label: __('Bottom Right', 'awesome-blocks'), value: 'bottom-right' },
+                                { label: __('Top Left',     'theme-blocks' ), value: 'top-left' },
+                                { label: __('Top Right',    'theme-blocks' ), value: 'top-right' },
+                                { label: __('Bottom Left',  'theme-blocks' ), value: 'bottom-left' },
+                                { label: __('Bottom Right', 'theme-blocks' ), value: 'bottom-right' },
                             ]}
                             onChange={(value) => setAttributes({ badgePosition: value })}
                         />
@@ -309,11 +309,11 @@ export default function Edit({ attributes, setAttributes }) {
                     </div>
                 ) : products.length === 0 ? (
                     <div style={{ padding: '40px', textAlign: 'center', background: '#f9f9f9', borderRadius: '8px' }}>
-                        <p>{__('No products found. Add some WooCommerce products first.', 'awesome-blocks')}</p>
+                        <p>{__('No products found. Add some WooCommerce products first.', 'theme-blocks' )}</p>
                     </div>
                 ) : (
-                    <div className={`ab-products-list ab-columns-${columns}`}>
-                        <div className="ab-row">
+                    <div className={`theme-blocks-products-list theme-blocks-columns-${columns}`}>
+                        <div className="theme-blocks-row">
                             {products.map((product) => {
                                 const imageUrl      = getImageUrl(product) || PLACEHOLDER;
                                 const categoryHtml  = showCategory ? getCategoryNames(product) : null;
@@ -323,62 +323,62 @@ export default function Edit({ attributes, setAttributes }) {
                                 const productLink   = product.permalink || product.link || '#';
 
                                 return (
-                                    <div key={product.id} className={`ab-col ab-col-${12 / columns}`}>
-                                        <div className="ab-product-card">
-                                            <div className="ab-product-image-wrapper">
-                                                <a href={productLink} className="ab-product-image" target="_blank" rel="noopener noreferrer">
+                                    <div key={product.id} className={`theme-blocks-col theme-blocks-col-${12 / columns}`}>
+                                        <div className="theme-blocks-product-card">
+                                            <div className="theme-blocks-product-image-wrapper">
+                                                <a href={productLink} className="theme-blocks-product-image" target="_blank" rel="noopener noreferrer">
                                                     <img src={imageUrl} alt={product.name || product.title?.rendered || ''} />
                                                 </a>
 
                                                 {showBadges && discountPct > 0 && (
-                                                    <div className={`ab-product-badges ab-badge-${badgePosition}`}>
-                                                        <span className="ab-discount-badge">-{discountPct}%</span>
+                                                    <div className={`theme-blocks-product-badges theme-blocks-badge-${badgePosition}`}>
+                                                        <span className="theme-blocks-discount-badge">-{discountPct}%</span>
                                                     </div>
                                                 )}
                                             </div>
 
-                                            <div className="ab-product-details">
+                                            <div className="theme-blocks-product-details">
                                                 {/* Category */}
                                                 {categoryHtml && (
-                                                    <div className="ab-product-category">
+                                                    <div className="theme-blocks-product-category">
                                                         <span>{categoryHtml}</span>
                                                     </div>
                                                 )}
 
                                                 {/* Title */}
-                                                <h3 className="ab-product-title">
+                                                <h3 className="theme-blocks-product-title">
                                                     <a href={productLink} target="_blank" rel="noopener noreferrer">
-                                                        {product.name || product.title?.rendered || __('Untitled Product', 'awesome-blocks')}
+                                                        {product.name || product.title?.rendered || __('Untitled Product', 'theme-blocks' )}
                                                     </a>
                                                 </h3>
 
                                                 {/* Rating */}
                                                 {showRating && rating > 0 && (
-                                                    <div className="ab-product-rating">
+                                                    <div className="theme-blocks-product-rating">
                                                         <div className="star-rating" title={`Rated ${rating} out of 5`}>
                                                             <span style={{ width: `${ratingWidth}%` }}>
                                                                 <strong>{rating}</strong> out of <span>5</span>
                                                             </span>
                                                         </div>
-                                                        <div className="ab-review-count">({count})</div>
+                                                        <div className="theme-blocks-review-count">({count})</div>
                                                     </div>
                                                 )}
 
                                                 {/* Price */}
                                                 {showPrice && price && (
-                                                    <div className="ab-product-price">
+                                                    <div className="theme-blocks-product-price">
                                                         {onSale && regularPrice && (
-                                                            <del className="ab-regular-price">${regularPrice}</del>
+                                                            <del className="theme-blocks-regular-price">${regularPrice}</del>
                                                         )}
-                                                        <span className={onSale ? 'ab-sale-price' : ''}>
+                                                        <span className={onSale ? 'theme-blocks-sale-price' : ''}>
                                                             ${onSale ? salePrice : price}
                                                         </span>
                                                     </div>
                                                 )}
 
                                                 {showAddToCart && (
-                                                    <div className="ab-add-to-cart">
-                                                        <span>{__('Add to cart', 'awesome-blocks')}</span>
+                                                    <div className="theme-blocks-add-to-cart">
+                                                        <span>{__('Add to cart', 'theme-blocks' )}</span>
                                                     </div>
                                                 )}
                                             </div>

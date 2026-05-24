@@ -1,8 +1,8 @@
 /**
  * WooCommerce Category Grid - Frontend Styles
  */
-.ab-product-category {
-	.ab-row.cats {
+.theme-blocks-product-category {
+	.theme-blocks-row.cats {
 		display: flex;
 		flex-wrap: wrap;
 		margin: 0 -10px;
@@ -115,22 +115,22 @@
 }
 
 // Column specific styles
-.ab-col-2 {
+.theme-blocks-col-2 {
 	flex: 0 0 16.666667%;
 	max-width: 16.666667%;
 }
 
 // Responsive adjustments
 @media (max-width: 1024px) {
-	.ab-col-2 {
+	.theme-blocks-col-2 {
 		flex: 0 0 25%;
 		max-width: 25%;
 	}
 }
 
 @media (max-width: 768px) {
-	.ab-product-category {
-		.ab-row.cats {
+	.theme-blocks-product-category {
+		.theme-blocks-row.cats {
 			margin: 0 -5px;
 
 			> * {
@@ -164,19 +164,19 @@
 		}
 	}
 
-	.ab-col-2 {
+	.theme-blocks-col-2 {
 		flex: 0 0 33.333333%;
 		max-width: 33.333333%;
 	}
 }
 
 @media (max-width: 480px) {
-	.ab-col-2 {
+	.theme-blocks-col-2 {
 		flex: 0 0 50%;
 		max-width: 50%;
 	}
 
-	.ab-product-category {
+	.theme-blocks-product-category {
 		.item {
 			.iconbox {
 				.icon {
@@ -210,7 +210,7 @@
 	}
 }
 
-.ab-product-category {
+.theme-blocks-product-category {
 	.item {
 		animation: fadeIn 0.5s ease-out;
 	}

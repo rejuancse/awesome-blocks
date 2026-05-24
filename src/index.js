@@ -4,8 +4,8 @@
  */
 import './post-block';
 import './card-block';
-import './awesome-slider';
-import './awesome-timeline';
+import './tblock-slider';
+import './tblock-timeline';
 import './feature-block';
 import './grid-block';
 import './woo-product-list';

@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Test Setup Script for Awesome Blocks Plugin
+# Test Setup Script for ThemeBlocks Plugin
 # This script installs dependencies and sets up the testing environment
 
 set -e
 
 echo "=========================================="
-echo "Awesome Blocks - Test Setup Script"
+echo "ThemeBlocks - Test Setup Script"
 echo "=========================================="
 echo ""
 

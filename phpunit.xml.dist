@@ -12,7 +12,7 @@
          resolveDependencies="false"
 >
     <testsuites>
-        <testsuite name="Awesome Blocks Test Suite">
+        <testsuite name="ThemeBlocks Test Suite">
             <directory>tests/php</directory>
         </testsuite>
     </testsuites>

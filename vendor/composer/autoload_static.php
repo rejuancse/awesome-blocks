@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit140d8c6336c69b4d14e39565f02c66fd
+class ComposerStaticInit25d394571ef4516e90212f820473361d
 {
     public static $files = array (
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
@@ -13,6 +13,11 @@ class ComposerStaticInit140d8c6336c69b4d14e39565f02c66fd
     );
 
     public static $prefixLengthsPsr4 = array (
+        'T' => 
+        array (
+            'ThemeBlocks\\Tests\\' => 18,
+            'ThemeBlocks\\' => 12,
+        ),
         'P' => 
         array (
             'PhpParser\\' => 10,
@@ -22,14 +27,17 @@ class ComposerStaticInit140d8c6336c69b4d14e39565f02c66fd
             'Doctrine\\Instantiator\\' => 22,
             'DeepCopy\\' => 9,
         ),
-        'A' => 
-        array (
-            'Awesome_Block\\Tests\\' => 20,
-            'Awesome_Block\\' => 14,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'ThemeBlocks\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/tests/php',
+        ),
+        'ThemeBlocks\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/includes',
+        ),
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
@@ -41,14 +49,6 @@ class ComposerStaticInit140d8c6336c69b4d14e39565f02c66fd
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
-        ),
-        'Awesome_Block\\Tests\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/tests/php',
-        ),
-        'Awesome_Block\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/includes',
         ),
     );
 
@@ -688,9 +688,9 @@ class ComposerStaticInit140d8c6336c69b4d14e39565f02c66fd
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit140d8c6336c69b4d14e39565f02c66fd::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit140d8c6336c69b4d14e39565f02c66fd::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit140d8c6336c69b4d14e39565f02c66fd::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit25d394571ef4516e90212f820473361d::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit25d394571ef4516e90212f820473361d::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit25d394571ef4516e90212f820473361d::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -2,17 +2,20 @@
 /**
  * Fragment Cache Helper Class
  *
- * @package Awesome_Blocks
+ * @package ThemeBlocks
  */
 
-namespace Awesome_Block;
+namespace ThemeBlocks;
 
 defined( 'ABSPATH' ) || exit;
 
+/**
+ * Fragment Cache Helper Class
+ */
 class Fragment_Cache {
 
-	const PREFIX      = 'ab_fragment_';
-	const EXPIRATION  = 3600; // 1 Hour
+	const PREFIX     = 'theme_blocks_fragment_';
+	const EXPIRATION = 3600; // 1 Hour
 
 	/**
 	 * Get or cache fragment
@@ -61,23 +64,30 @@ class Fragment_Cache {
 	/**
 	 * Clear all fragment caches
 	 *
-	 * @return bool Success status.
+	 * @param string $prefix Optional prefix to clear specific caches.
+	 * @return void
 	 */
 	public static function clear( $prefix = '' ) {
 		global $wpdb;
 
-		$like = '_transient_' . self::PREFIX . sanitize_key( $prefix ) . '%';
+		$like         = '_transient_' . self::PREFIX . sanitize_key( $prefix ) . '%';
+		$like_timeout = '_transient_timeout_' . self::PREFIX . sanitize_key( $prefix ) . '%';
 
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- Direct query required to bulk-delete transients by prefix; no suitable WP API exists for this operation.
 		$wpdb->query(
 			$wpdb->prepare( "DELETE FROM {$wpdb->options} WHERE option_name LIKE %s", $like )
 		);
+
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- Direct query required to bulk-delete transient timeouts by prefix; no suitable WP API exists for this operation.
 		$wpdb->query(
-			$wpdb->prepare( "DELETE FROM {$wpdb->options} WHERE option_name LIKE %s", '_transient_timeout_' . self::PREFIX . sanitize_key( $prefix ) . '%' )
+			$wpdb->prepare( "DELETE FROM {$wpdb->options} WHERE option_name LIKE %s", $like_timeout )
 		);
 	}
 
 	/**
 	 * Hook into WordPress actions to auto-clear cache
+	 *
+	 * @return void
 	 */
 	public static function init_hooks() {
 		// Clear post block cache when posts are updated

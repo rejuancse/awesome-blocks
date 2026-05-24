@@ -16,18 +16,18 @@ import { BaseControl } from '@wordpress/components';
 export function ColorControl( { label, value, onChange, placeholder } ) {
 	return (
 		<BaseControl label={ label }>
-			<div className="ab-color-input-wrapper">
+			<div className="theme-blocks-color-input-wrapper">
 				<input
 					type="color"
 					value={ value }
 					onChange={ ( event ) => onChange( event.target.value ) }
-					className="ab-color-input"
+					className="theme-blocks-color-input"
 				/>
 				<input
 					type="text"
 					value={ value }
 					onChange={ ( event ) => onChange( event.target.value ) }
-					className="ab-color-text-input"
+					className="theme-blocks-color-text-input"
 					placeholder={ placeholder }
 				/>
 			</div>

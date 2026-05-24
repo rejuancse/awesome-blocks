@@ -1,10 +1,10 @@
 /**
  * Editor Styles
  */
-.wp-block-awesome-post-block {
+.wp-block-tblock-post-block {
     padding: 0;
 
-    .ab-posts-grid {
+    .theme-blocks-posts-grid {
         min-height: 200px;
     }
 
@@ -12,7 +12,7 @@
         margin: 0;
     }
 
-    .ab-style-control-row {
+    .theme-blocks-style-control-row {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -33,13 +33,13 @@
         }
     }
 
-    .ab-color-input-wrapper {
+    .theme-blocks-color-input-wrapper {
         display: flex;
         align-items: center;
         gap: 10px;
         margin-bottom: 12px;
 
-        .ab-color-input {
+        .theme-blocks-color-input {
             width: 50px;
             height: 40px;
             padding: 2px;
@@ -74,7 +74,7 @@
             }
         }
 
-        .ab-color-text-input {
+        .theme-blocks-color-text-input {
             flex: 1;
             padding: 8px 12px;
             border: 1px solid #ddd;
@@ -95,12 +95,12 @@
         }
     }
 
-    .ab-post-item {
+    .theme-blocks-post-item {
         a {
             transition: color 0.2s ease;
 
             &:hover {
-                color: var(--ab-link-hover-color, #005177);
+                color: var(--theme-blocks-link-hover-color, #005177);
             }
         }
     }

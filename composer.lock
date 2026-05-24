@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "59676c0c3ded9d161a6fc42d3157a4b9",
+    "content-hash": "7f354cd786c13fd69d61f49677ad5dac",
     "packages": [],
     "packages-dev": [
         {
@@ -640,12 +640,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "ab76d93efcc2d008cc2a4875c05777cecd58d81b"
+                "reference": "f8f1f3ee132b38f2f9c05fcb0efa84bff52e2067"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ab76d93efcc2d008cc2a4875c05777cecd58d81b",
-                "reference": "ab76d93efcc2d008cc2a4875c05777cecd58d81b",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f8f1f3ee132b38f2f9c05fcb0efa84bff52e2067",
+                "reference": "f8f1f3ee132b38f2f9c05fcb0efa84bff52e2067",
                 "shasum": ""
             },
             "require": {
@@ -727,7 +727,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2026-04-21T10:02:46+00:00"
+            "time": "2026-05-19T20:43:40+00:00"
         },
         {
             "name": "sebastian/cli-parser",

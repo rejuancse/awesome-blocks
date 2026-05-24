@@ -110,19 +110,19 @@ describe('Block Component Tests', () => {
 
         test('uses WordPress i18n', () => {
             const text = 'Save Changes';
-            const translated = wp.i18n.__(text, 'awesome-blocks');
+            const translated = wp.i18n.__(text, 'theme-blocks' );
 
             expect(translated).toBe(text);
         });
 
         test('registers block type', () => {
-            wp.blocks.registerBlockType('awesome-blocks/test', {
+            wp.blocks.registerBlockType('themeblocks/test', {
                 title: 'Test Block',
                 category: 'common',
             });
 
             expect(wp.blocks.registerBlockType).toHaveBeenCalledWith(
-                'awesome-blocks/test',
+                'themeblocks/test',
                 expect.objectContaining({
                     title: 'Test Block',
                     category: 'common',

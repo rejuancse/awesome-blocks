@@ -18,8 +18,8 @@ $transition: all 0.3s ease;
 $box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 $hover-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 
-.ab-products-list {
-	.ab-product-card {
+.theme-blocks-products-list {
+	.theme-blocks-product-card {
 		position: relative;
 		background-color: $background-light;
 		border: 1px solid $border-color;
@@ -33,19 +33,19 @@ $hover-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 			transform: translateY(-5px);
 			box-shadow: $hover-shadow;
 
-			.ab-product-image-wrapper {
+			.theme-blocks-product-image-wrapper {
 				img {
 				transform: scale(1.05);
 				}
 			}
 
-			.ab-add-to-cart {
+			.theme-blocks-add-to-cart {
 				background-color: $primary-color;
 				color: white;
 			}
 		}
 
-		.ab-product-image-wrapper {
+		.theme-blocks-product-image-wrapper {
 			position: relative;
 			overflow: hidden;
 
@@ -60,11 +60,11 @@ $hover-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 				transition: $transition;
 			}
 
-			.ab-product-badges {
+			.theme-blocks-product-badges {
 				position: absolute;
 				z-index: 9;
 
-				.ab-discount-badge {
+				.theme-blocks-discount-badge {
 					display: inline-block;
 					font-size: 12px;
 					line-height: 1;
@@ -76,27 +76,27 @@ $hover-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 					box-shadow: 0 3px 10px rgba($secondary-color, 0.3);
 				}
 
-				&.ab-badge-top-left {
+				&.theme-blocks-badge-top-left {
 					left: 0;
 					top: 0;
 				}
 
-				&.ab-badge-top-right {
+				&.theme-blocks-badge-top-right {
 					right: 0;
 					top: 0;
 
-					.ab-discount-badge {
+					.theme-blocks-discount-badge {
 						border-radius: 0 0px 0px 15px;
 					}
 				}
 			}
 		}
 
-		.ab-product-details {
+		.theme-blocks-product-details {
 			padding: 20px;
 			position: relative;
 
-			.ab-product-category {
+			.theme-blocks-product-category {
 				color: $light-text;
 				font-size: 12px;
 				margin-bottom: 5px;
@@ -118,7 +118,7 @@ $hover-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 				}
 			}
 
-			.ab-product-title {
+			.theme-blocks-product-title {
                 font-family: "Quicksand", sans-serif;
                 font-size: 17px;
                 font-weight: 700;
@@ -141,7 +141,7 @@ $hover-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
                 }
             }
 
-			.ab-product-rating {
+			.theme-blocks-product-rating {
 				display: flex;
 				align-items: center;
 				margin: 8px 0 0;
@@ -174,14 +174,14 @@ $hover-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 					}
 				}
 
-				.ab-review-count {
+				.theme-blocks-review-count {
 					color: $lighter-text;
 					font-size: 13px;
 					margin-left: 5px;
 				}
 			}
 
-			.ab-product-price {
+			.theme-blocks-product-price {
 					font-family: "Quicksand", sans-serif;
 					display: flex;
 					align-items: center;
@@ -247,7 +247,7 @@ $hover-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 				}
 			}
 
-			.ab-add-to-cart {
+			.theme-blocks-add-to-cart {
 				font-family: "Quicksand", sans-serif;
 				position: relative;
 				display: block;
@@ -279,7 +279,7 @@ $hover-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 // Pagination styles
-.ab-pagination {
+.theme-blocks-pagination {
    margin: 10px 0 30px;
    text-align: center;
 
@@ -327,26 +327,26 @@ $hover-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 
 // Responsive styles
 @media screen and (max-width: 991px) {
-	.ab-products-list {
+	.theme-blocks-products-list {
 		grid-template-columns: repeat( auto-fill, minmax( 250px, 1fr ) );
 	}
 }
 
 @media screen and (max-width: 767px) {
-	.ab-products-list {
+	.theme-blocks-products-list {
 		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 		gap: 20px;
 	}
 
-	.ab-product-card .ab-product-details {
+	.theme-blocks-product-card .theme-blocks-product-details {
 		padding: 15px 20px;
 
-		.ab-product-title {
+		.theme-blocks-product-title {
 			font-size: 15px;
 			height: 42px;
 		}
 
-		.ab-add-to-cart {
+		.theme-blocks-add-to-cart {
 			padding: 10px 15px;
 			font-size: 13px;
 		}
@@ -354,7 +354,7 @@ $hover-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 @media screen and (max-width: 480px) {
-	.ab-products-list {
+	.theme-blocks-products-list {
 		grid-template-columns: 1fr;
 		max-width: 320px;
 		margin: 20px auto;

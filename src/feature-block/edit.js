@@ -49,10 +49,10 @@ export default function Edit({ attributes, setAttributes }) {
     return (
         <>
             <InspectorControls>
-                <PanelBody title={__('Feature Content', 'awesome-blocks')} initialOpen={true}>
+                <PanelBody title={__('Feature Content', 'theme-blocks' )} initialOpen={true}>
                     <PanelRow>
                         <SelectControl
-                            label={__('Icon', 'awesome-blocks')}
+                            label={__('Icon', 'theme-blocks' )}
                             value={icon}
                             options={DASHICONS.map(d => ({
                                 label: d.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
@@ -63,14 +63,14 @@ export default function Edit({ attributes, setAttributes }) {
                     </PanelRow>
                     <PanelRow>
                         <TextControl
-                            label={__('Title', 'awesome-blocks')}
+                            label={__('Title', 'theme-blocks' )}
                             value={title}
                             onChange={(value) => setAttributes({ title: value })}
                         />
                     </PanelRow>
                     <PanelRow>
                         <TextareaControl
-                            label={__('Description', 'awesome-blocks')}
+                            label={__('Description', 'theme-blocks' )}
                             value={description}
                             onChange={(value) => setAttributes({ description: value })}
                             rows={3}
@@ -78,7 +78,7 @@ export default function Edit({ attributes, setAttributes }) {
                     </PanelRow>
                     <PanelRow>
                         <TextControl
-                            label={__('Link (Optional)', 'awesome-blocks')}
+                            label={__('Link (Optional)', 'theme-blocks' )}
                             value={link}
                             onChange={(value) => setAttributes({ link: value })}
                             placeholder="https://example.com"
@@ -87,7 +87,7 @@ export default function Edit({ attributes, setAttributes }) {
                     {link && (
                         <PanelRow>
                             <ToggleControl
-                                label={__('Open in New Tab', 'awesome-blocks')}
+                                label={__('Open in New Tab', 'theme-blocks' )}
                                 checked={openInNewTab}
                                 onChange={() => setAttributes({ openInNewTab: !openInNewTab })}
                             />
@@ -95,44 +95,44 @@ export default function Edit({ attributes, setAttributes }) {
                     )}
                 </PanelBody>
 
-                <PanelBody title={__('Icon Style', 'awesome-blocks')} initialOpen={false}>
+                <PanelBody title={__('Icon Style', 'theme-blocks' )} initialOpen={false}>
                     <PanelColorSettings
-                        title={__('Icon Colors', 'awesome-blocks')}
+                        title={__('Icon Colors', 'theme-blocks' )}
                         colorSettings={[
                             {
                                 value: iconColor,
                                 onChange: (color) => setAttributes({ iconColor: color }),
-                                label: __('Icon Color', 'awesome-blocks'),
+                                label: __('Icon Color', 'theme-blocks' ),
                             },
                             {
                                 value: iconBgColor,
                                 onChange: (color) => setAttributes({ iconBgColor: color }),
-                                label: __('Icon Background', 'awesome-blocks'),
+                                label: __('Icon Background', 'theme-blocks' ),
                             },
                         ]}
                     />
                 </PanelBody>
 
-                <PanelBody title={__('Display Options', 'awesome-blocks')} initialOpen={false}>
+                <PanelBody title={__('Display Options', 'theme-blocks' )} initialOpen={false}>
                     <ToggleControl
-                        label={__('Show Icon', 'awesome-blocks')}
+                        label={__('Show Icon', 'theme-blocks' )}
                         checked={showIcon}
                         onChange={() => setAttributes({ showIcon: !showIcon })}
                     />
                     {link && (
                         <ToggleControl
-                            label={__('Show Link Button', 'awesome-blocks')}
+                            label={__('Show Link Button', 'theme-blocks' )}
                             checked={showLink}
                             onChange={() => setAttributes({ showLink: !showLink })}
                         />
                     )}
                     <SelectControl
-                        label={__('Alignment', 'awesome-blocks')}
+                        label={__('Alignment', 'theme-blocks' )}
                         value={alignment}
                         options={[
-                            { label: __('Left', 'awesome-blocks'), value: 'left' },
-                            { label: __('Center', 'awesome-blocks'), value: 'center' },
-                            { label: __('Right', 'awesome-blocks'), value: 'right' },
+                            { label: __('Left', 'theme-blocks' ), value: 'left' },
+                            { label: __('Center', 'theme-blocks' ), value: 'center' },
+                            { label: __('Right', 'theme-blocks' ), value: 'right' },
                         ]}
                         onChange={(value) => setAttributes({ alignment: value })}
                     />
@@ -160,7 +160,7 @@ export default function Edit({ attributes, setAttributes }) {
                                     target={openInNewTab ? '_blank' : '_self'}
                                     rel={openInNewTab ? 'noopener noreferrer' : undefined}
                                 >
-                                    {__('Learn More →', 'awesome-blocks')}
+                                    {__('Learn More →', 'theme-blocks' )}
                                 </a>
                             )}
                         </div>

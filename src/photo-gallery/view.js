@@ -209,7 +209,7 @@ class PhotoGalleryLightbox {
 
 // Initialize all galleries on the page
 function initPhotoGalleries() {
-    const galleries = document.querySelectorAll('.wp-block-awesome-photo-gallery');
+    const galleries = document.querySelectorAll('.wp-block-tblock-photo-gallery');
 
     galleries.forEach((gallery) => {
         // Store instance on the element for later reference
@@ -228,5 +228,5 @@ if (document.readyState === 'loading') {
 
 // Re-initialize when block is updated (for WordPress editor preview)
 if (window.wp) {
-    window.wp.hooks.addAction('wp.block.library.updateBlock', 'awesome/photo-gallery', initPhotoGalleries);
+    window.wp.hooks.addAction('wp.block.library.updateBlock', 'tblock/photo-gallery', initPhotoGalleries);
 }

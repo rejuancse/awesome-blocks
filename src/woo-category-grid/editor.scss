@@ -2,54 +2,54 @@
  * WooCommerce Category Grid - Editor Styles
  */
 
-.ab-category-grid {
+.theme-blocks-category-grid {
     margin: 0;
     padding: 20px 0;
 
-    .ab-row {
+    .theme-blocks-row {
         display: flex;
         flex-wrap: wrap;
         margin: 0 -10px;
     }
 
-    .ab-col {
+    .theme-blocks-col {
         padding: 0 10px;
         box-sizing: border-box;
     }
 
     // Column layouts
-    &.ab-columns-1 .ab-col { width: 100%; }
-    &.ab-columns-2 .ab-col { width: 50%; }
-    &.ab-columns-3 .ab-col { width: 33.333%; }
-    &.ab-columns-4 .ab-col { width: 25%; }
-    &.ab-columns-5 .ab-col { width: 20%; }
-    &.ab-columns-6 .ab-col { width: 16.666%; }
+    &.theme-blocks-columns-1 .theme-blocks-col { width: 100%; }
+    &.theme-blocks-columns-2 .theme-blocks-col { width: 50%; }
+    &.theme-blocks-columns-3 .theme-blocks-col { width: 33.333%; }
+    &.theme-blocks-columns-4 .theme-blocks-col { width: 25%; }
+    &.theme-blocks-columns-5 .theme-blocks-col { width: 20%; }
+    &.theme-blocks-columns-6 .theme-blocks-col { width: 16.666%; }
 
     @media (max-width: 1024px) {
-        &.ab-columns-4 .ab-col,
-        &.ab-columns-5 .ab-col,
-        &.ab-columns-6 .ab-col {
+        &.theme-blocks-columns-4 .theme-blocks-col,
+        &.theme-blocks-columns-5 .theme-blocks-col,
+        &.theme-blocks-columns-6 .theme-blocks-col {
             width: 33.333%;
         }
     }
 
     @media (max-width: 768px) {
-        &.ab-columns-2 .ab-col,
-        &.ab-columns-3 .ab-col,
-        &.ab-columns-4 .ab-col,
-        &.ab-columns-5 .ab-col,
-        &.ab-columns-6 .ab-col {
+        &.theme-blocks-columns-2 .theme-blocks-col,
+        &.theme-blocks-columns-3 .theme-blocks-col,
+        &.theme-blocks-columns-4 .theme-blocks-col,
+        &.theme-blocks-columns-5 .theme-blocks-col,
+        &.theme-blocks-columns-6 .theme-blocks-col {
             width: 50%;
         }
     }
 
     @media (max-width: 480px) {
-        .ab-col {
+        .theme-blocks-col {
             width: 100% !important;
         }
     }
 
-    .ab-category-card {
+    .theme-blocks-category-card {
         background: #ffffff;
         border: 1px solid #e0e0e0;
         border-radius: 8px;
@@ -63,12 +63,12 @@
         }
     }
 
-    .ab-category-image-wrapper {
+    .theme-blocks-category-image-wrapper {
         position: relative;
         overflow: hidden;
         background: #f9f9f9;
 
-        .ab-category-image {
+        .theme-blocks-category-image {
             display: block;
             width: 100%;
             height: 200px;
@@ -86,12 +86,12 @@
         }
     }
 
-    .ab-category-details {
+    .theme-blocks-category-details {
         padding: 20px;
         text-align: center;
     }
 
-    .ab-category-title {
+    .theme-blocks-category-title {
         margin: 0 0 10px 0;
         font-size: 18px;
         font-weight: 600;
@@ -108,7 +108,7 @@
         }
     }
 
-    .ab-category-count {
+    .theme-blocks-category-count {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -116,7 +116,7 @@
         font-size: 14px;
         color: #666666;
 
-        .ab-count-number {
+        .theme-blocks-count-number {
             background: #f0f0f0;
             padding: 4px 10px;
             border-radius: 12px;
@@ -124,7 +124,7 @@
             color: #333333;
         }
 
-        .ab-count-label {
+        .theme-blocks-count-label {
             text-transform: lowercase;
         }
     }
@@ -132,14 +132,14 @@
 
 // Responsive adjustments for editor
 @media (max-width: 782px) {
-    .ab-category-grid {
+    .theme-blocks-category-grid {
         padding: 10px 0;
 
-        .ab-row {
+        .theme-blocks-row {
             margin: 0 -5px;
         }
 
-        .ab-col {
+        .theme-blocks-col {
             padding: 0 5px;
         }
     }

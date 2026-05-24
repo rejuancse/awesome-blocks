@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
-        'name' => 'thebitcraft/awesome-blocks',
+        'name' => 'thebitcraft/themeblocks',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'dddafa352a1026db67d2f9340feab5d136ac8383',
+        'reference' => '9f195ca47f45479d6ee1bb287fd6846aeddf52b2',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -107,7 +107,7 @@
         'phpunit/phpunit' => array(
             'pretty_version' => '9.6.x-dev',
             'version' => '9.6.9999999.9999999-dev',
-            'reference' => 'ab76d93efcc2d008cc2a4875c05777cecd58d81b',
+            'reference' => 'f8f1f3ee132b38f2f9c05fcb0efa84bff52e2067',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpunit/phpunit',
             'aliases' => array(),
@@ -259,10 +259,10 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
-        'thebitcraft/awesome-blocks' => array(
+        'thebitcraft/themeblocks' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'dddafa352a1026db67d2f9340feab5d136ac8383',
+            'reference' => '9f195ca47f45479d6ee1bb287fd6846aeddf52b2',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

@@ -2,10 +2,10 @@
 /**
  * Product REST API
  *
- * @package AwesomeBlocks
+ * @package ThemeBlocks
  */
 
-namespace Awesome_Block;
+namespace ThemeBlocks;
 
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly

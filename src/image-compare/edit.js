@@ -4,7 +4,7 @@
 import { __ } from '@wordpress/i18n';
 import { useBlockProps, MediaUploadCheck, MediaUpload, InspectorControls } from '@wordpress/block-editor';
 import { PanelBody, PanelRow, Button, Dashicon } from '@wordpress/components';
-import { useEffect } from '@wordpress/element';
+import { useEffect, useRef } from '@wordpress/element';
 
 /**
  * Edit Component
@@ -18,6 +18,9 @@ export default function Edit({ attributes, setAttributes }) {
     } = attributes;
 
     const blockProps = useBlockProps();
+    const sliderRef = useRef(null);
+    const handleRef = useRef(null);
+    const divisorRef = useRef(null);
 
     const onSelectBeforeImage = (media) => {
         setAttributes({
@@ -48,36 +51,26 @@ export default function Edit({ attributes, setAttributes }) {
     };
 
     // Handle slider functionality in editor
-    useEffect(() => {
-        const moveDivisor = () => {
-            const slider = document.getElementById('awesome-image-slider');
-            const handle = document.getElementById('awesome-image-handle');
-            const divisor = document.getElementById('awesome-image-divisor');
-
-            if (slider && handle && divisor) {
-                handle.style.left = slider.value + '%';
-                divisor.style.width = slider.value + '%';
-            }
-        };
-
-        moveDivisor();
-
-        const slider = document.getElementById('awesome-image-slider');
-        if (slider) {
-            slider.addEventListener('input', moveDivisor);
+    const handleSliderInput = (e) => {
+        const value = e.target.value;
+        if (handleRef.current && divisorRef.current) {
+            handleRef.current.style.left = value + '%';
+            divisorRef.current.style.width = value + '%';
         }
+    };
 
-        return () => {
-            if (slider) {
-                slider.removeEventListener('input', moveDivisor);
-            }
-        };
+    useEffect(() => {
+        if (sliderRef.current && handleRef.current && divisorRef.current) {
+            const initialValue = sliderRef.current.value;
+            handleRef.current.style.left = initialValue + '%';
+            divisorRef.current.style.width = initialValue + '%';
+        }
     }, [beforeImageUrl, afterImageUrl]);
 
     return (
         <>
             <InspectorControls>
-                <PanelBody title={__('Before Image', 'awesome-blocks')} initialOpen={true}>
+                <PanelBody title={__('Before Image', 'theme-blocks' )} initialOpen={true}>
                     <PanelRow>
                         <MediaUploadCheck>
                             <MediaUpload
@@ -85,20 +78,20 @@ export default function Edit({ attributes, setAttributes }) {
                                 allowedTypes={['image']}
                                 value={beforeImageId}
                                 render={({ open }) => (
-                                    <div className="ab-media-upload-wrapper">
+                                    <div className="theme-blocks-media-upload-wrapper">
                                         {!beforeImageUrl ? (
                                             <Button
                                                 onClick={open}
                                                 variant="secondary"
-                                                className="ab-media-upload-button"
+                                                className="theme-blocks-media-upload-button"
                                             >
                                                 <Dashicon icon="format-image" />
-                                                {__('Upload Before Image', 'awesome-blocks')}
+                                                {__('Upload Before Image', 'theme-blocks' )}
                                             </Button>
                                         ) : (
-                                            <div className="ab-media-preview">
-                                                <img src={beforeImageUrl} alt={__('Before Image', 'awesome-blocks')} />
-                                                <div className="ab-media-actions">
+                                            <div className="theme-blocks-media-preview">
+                                                <img src={beforeImageUrl} alt={__('Before Image', 'theme-blocks' )} />
+                                                <div className="theme-blocks-media-actions">
                                                     <Button
                                                         onClick={open}
                                                         variant="secondary"
@@ -124,7 +117,7 @@ export default function Edit({ attributes, setAttributes }) {
                     </PanelRow>
                 </PanelBody>
 
-                <PanelBody title={__('After Image', 'awesome-blocks')} initialOpen={true}>
+                <PanelBody title={__('After Image', 'theme-blocks' )} initialOpen={true}>
                     <PanelRow>
                         <MediaUploadCheck>
                             <MediaUpload
@@ -132,20 +125,20 @@ export default function Edit({ attributes, setAttributes }) {
                                 allowedTypes={['image']}
                                 value={afterImageId}
                                 render={({ open }) => (
-                                    <div className="ab-media-upload-wrapper">
+                                    <div className="theme-blocks-media-upload-wrapper">
                                         {!afterImageUrl ? (
                                             <Button
                                                 onClick={open}
                                                 variant="secondary"
-                                                className="ab-media-upload-button"
+                                                className="theme-blocks-media-upload-button"
                                             >
                                                 <Dashicon icon="format-image" />
-                                                {__('Upload After Image', 'awesome-blocks')}
+                                                {__('Upload After Image', 'theme-blocks' )}
                                             </Button>
                                         ) : (
-                                            <div className="ab-media-preview">
-                                                <img src={afterImageUrl} alt={__('After Image', 'awesome-blocks')} />
-                                                <div className="ab-media-actions">
+                                            <div className="theme-blocks-media-preview">
+                                                <img src={afterImageUrl} alt={__('After Image', 'theme-blocks' )} />
+                                                <div className="theme-blocks-media-actions">
                                                     <Button
                                                         onClick={open}
                                                         variant="secondary"
@@ -173,36 +166,37 @@ export default function Edit({ attributes, setAttributes }) {
             </InspectorControls>
 
             <div {...blockProps}>
-                <div className="awesome-image-wrap">
+                <div className="tblock-image-wrap">
                     {!beforeImageUrl || !afterImageUrl ? (
-                        <div className="awesome-image-placeholder">
+                        <div className="tblock-image-placeholder">
                             <Dashicon icon="format-image" size={40} />
-                            <p>{__('Please upload both images to see the comparison slider', 'awesome-blocks')}</p>
+                            <p>{__('Please upload both images to see the comparison slider', 'theme-blocks' )}</p>
                         </div>
                     ) : (
-                        <div className="awesome-image-container">
+                        <div className="tblock-image-container">
                             <span className="label before-label button">Before</span>
                             <span className="label after-label button">After</span>
 
-                            <div className="awesome-image-comparison">
+                            <div className="tblock-image-comparison">
                                 <figure
-                                    className="awesome-image-figure"
+                                    className="tblock-image-figure"
                                     style={{ backgroundImage: `url(${beforeImageUrl})` }}
                                 >
-                                    <div id="awesome-image-handle" className="awesome-image-handle"></div>
+                                    <div ref={handleRef} className="tblock-image-handle"></div>
                                     <div
-                                        id="awesome-image-divisor"
-                                        className="awesome-image-divisor"
+                                        ref={divisorRef}
+                                        className="tblock-image-divisor"
                                         style={{ backgroundImage: `url(${afterImageUrl})` }}
                                     ></div>
                                 </figure>
                                 <input
-                                    id="awesome-image-slider"
+                                    ref={sliderRef}
                                     type="range"
                                     min="0"
                                     max="100"
                                     value="50"
-                                    className="awesome-image-slider"
+                                    className="tblock-image-slider"
+                                    onInput={handleSliderInput}
                                 />
                             </div>
                         </div>

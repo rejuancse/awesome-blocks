@@ -1,8 +1,8 @@
 {
-  "apiVersion": 2,
-  "name": "awesome/hero-video",
+  "apiVersion": 3,
+  "name": "tblock/hero-video",
   "title": "Hero Video",
-  "category": "awesome-block",
+  "category": "tblock-block",
   "icon": "format-video",
   "description": "Display a hero video with overlay content",
   "keywords": [

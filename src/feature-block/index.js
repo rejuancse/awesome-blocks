@@ -22,8 +22,8 @@ import './editor.scss';
  */
 registerBlockType( metadata.name, {
     ...metadata,
-    title: __('Awesome Feature Block', 'awesome-blocks'),
-    description: __('Display features/services with icon, title and description', 'awesome-blocks'),
+    title: __('TBlock Feature Block', 'theme-blocks' ),
+    description: __('Display features/services with icon, title and description', 'theme-blocks' ),
     edit,
     save,
 });

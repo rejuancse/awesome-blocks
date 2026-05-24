@@ -5,7 +5,7 @@
  * Base class for all test cases.
  */
 
-namespace Awesome_Block\Tests;
+namespace ThemeBlocks\Tests;
 
 use PHPUnit\Framework\TestCase as PHPUnitTestCase;
 

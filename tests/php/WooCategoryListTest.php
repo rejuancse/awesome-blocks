@@ -5,9 +5,9 @@
  * Tests for the Woo_Category_List class.
  */
 
-namespace Awesome_Block\Tests;
+namespace ThemeBlocks\Tests;
 
-use Awesome_Block\Woo_Category_List;
+use ThemeBlocks\Woo_Category_List;
 
 class WooCategoryListTest extends TestCase {
 
@@ -15,7 +15,7 @@ class WooCategoryListTest extends TestCase {
      * Test Woo_Category_List class has render method
      */
     public function test_woo_category_list_has_render_method() {
-        $this->assertTrue( method_exists( 'Awesome_Block\Woo_Category_List', 'render' ), 'Woo_Category_List should have a render method' );
+        $this->assertTrue( method_exists( 'ThemeBlocks\Woo_Category_List', 'render' ), 'Woo_Category_List should have a render method' );
     }
 
     /**
@@ -42,7 +42,7 @@ class WooCategoryListTest extends TestCase {
      * Test render_content method exists
      */
     public function test_render_content_method_exists() {
-        $this->assertTrue( method_exists( 'Awesome_Block\Woo_Category_List', 'render_content' ), 'Woo_Category_List should have a render_content method' );
+        $this->assertTrue( method_exists( 'ThemeBlocks\Woo_Category_List', 'render_content' ), 'Woo_Category_List should have a render_content method' );
     }
 
     /**
@@ -256,7 +256,7 @@ class WooCategoryListTest extends TestCase {
      * Test woo category list namespace
      */
     public function test_woo_category_list_namespace() {
-        $this->assertEquals( 'Awesome_Block\Woo_Category_List', Woo_Category_List::class );
+        $this->assertEquals( 'ThemeBlocks\Woo_Category_List', Woo_Category_List::class );
     }
 
     /**

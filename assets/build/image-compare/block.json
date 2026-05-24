@@ -1,8 +1,8 @@
 {
-  "apiVersion": 2,
-  "name": "awesome/image-compare",
+  "apiVersion": 3,
+  "name": "tblock/image-compare",
   "title": "Image Compare",
-  "category": "awesome-block",
+  "category": "tblock-block",
   "icon": "format-image",
   "description": "Compare two images with an interactive slider",
   "keywords": [

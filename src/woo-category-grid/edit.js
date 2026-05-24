@@ -117,82 +117,82 @@ export default function Edit({ attributes, setAttributes }) {
     return (
         <>
             <InspectorControls>
-                <PanelBody title={__('Layout Settings', 'awesome-blocks')} initialOpen={true}>
+                <PanelBody title={__('Layout Settings', 'theme-blocks' )} initialOpen={true}>
                     <RangeControl
-                        label={__('Columns', 'awesome-blocks')}
+                        label={__('Columns', 'theme-blocks' )}
                         value={columns}
                         onChange={(value) => setAttributes({ columns: value })}
                         min={1} max={6} step={1}
                     />
                     <RangeControl
-                        label={__('Categories per Page', 'awesome-blocks')}
+                        label={__('Categories per Page', 'theme-blocks' )}
                         value={categoriesPerPage}
                         onChange={(value) => setAttributes({ categoriesPerPage: value })}
                         min={1} max={50} step={1}
                     />
                 </PanelBody>
 
-                <PanelBody title={__('Category Query', 'awesome-blocks')} initialOpen={false}>
+                <PanelBody title={__('Category Query', 'theme-blocks' )} initialOpen={false}>
                     <PanelRow>
                         <SelectControl
-                            label={__('Order By', 'awesome-blocks')}
+                            label={__('Order By', 'theme-blocks' )}
                             value={orderBy}
                             options={[
-                                { label: __('Name', 'awesome-blocks'), value: 'name' },
-                                { label: __('Slug', 'awesome-blocks'), value: 'slug' },
-                                { label: __('Category ID', 'awesome-blocks'), value: 'id' },
-                                { label: __('Count', 'awesome-blocks'), value: 'count' },
+                                { label: __('Name', 'theme-blocks' ), value: 'name' },
+                                { label: __('Slug', 'theme-blocks' ), value: 'slug' },
+                                { label: __('Category ID', 'theme-blocks' ), value: 'id' },
+                                { label: __('Count', 'theme-blocks' ), value: 'count' },
                             ]}
                             onChange={(value) => setAttributes({ orderBy: value })}
                         />
                     </PanelRow>
                     <PanelRow>
                         <SelectControl
-                            label={__('Order', 'awesome-blocks')}
+                            label={__('Order', 'theme-blocks' )}
                             value={order}
                             options={[
-                                { label: __('Ascending', 'awesome-blocks'), value: 'ASC' },
-                                { label: __('Descending', 'awesome-blocks'), value: 'DESC' },
+                                { label: __('Ascending', 'theme-blocks' ), value: 'ASC' },
+                                { label: __('Descending', 'theme-blocks' ), value: 'DESC' },
                             ]}
                             onChange={(value) => setAttributes({ order: value })}
                         />
                     </PanelRow>
                     <ToggleControl
-                        label={__('Hide Empty Categories', 'awesome-blocks')}
+                        label={__('Hide Empty Categories', 'theme-blocks' )}
                         checked={hideEmpty}
                         onChange={() => setAttributes({ hideEmpty: !hideEmpty })}
                     />
                 </PanelBody>
 
-                <PanelBody title={__('Display Options', 'awesome-blocks')} initialOpen={false}>
+                <PanelBody title={__('Display Options', 'theme-blocks' )} initialOpen={false}>
                     <ToggleControl
-                        label={__('Show Category Image', 'awesome-blocks')}
+                        label={__('Show Category Image', 'theme-blocks' )}
                         checked={showImage}
                         onChange={() => setAttributes({ showImage: !showImage })}
                     />
                     {showImage && (
                         <SelectControl
-                            label={__('Image Size', 'awesome-blocks')}
+                            label={__('Image Size', 'theme-blocks' )}
                             value={imageSize}
                             options={[
-                                { label: __('Thumbnail', 'awesome-blocks'), value: 'thumbnail' },
-                                { label: __('Medium', 'awesome-blocks'), value: 'medium' },
-                                { label: __('Large', 'awesome-blocks'), value: 'large' },
-                                { label: __('Full', 'awesome-blocks'), value: 'full' },
+                                { label: __('Thumbnail', 'theme-blocks' ), value: 'thumbnail' },
+                                { label: __('Medium', 'theme-blocks' ), value: 'medium' },
+                                { label: __('Large', 'theme-blocks' ), value: 'large' },
+                                { label: __('Full', 'theme-blocks' ), value: 'full' },
                             ]}
                             onChange={(value) => setAttributes({ imageSize: value })}
                         />
                     )}
                     <ToggleControl
-                        label={__('Show Product Count', 'awesome-blocks')}
+                        label={__('Show Product Count', 'theme-blocks' )}
                         checked={showCount}
                         onChange={() => setAttributes({ showCount: !showCount })}
                     />
                 </PanelBody>
 
-                <PanelBody title={__('Exclude Categories', 'awesome-blocks')} initialOpen={false}>
+                <PanelBody title={__('Exclude Categories', 'theme-blocks' )} initialOpen={false}>
                     {allCategories.length === 0 ? (
-                        <p>{__('Loading categories...', 'awesome-blocks')}</p>
+                        <p>{__('Loading categories...', 'theme-blocks' )}</p>
                     ) : (
                         <>
                             {allCategories.map(cat => (
@@ -212,7 +212,7 @@ export default function Edit({ attributes, setAttributes }) {
                                 >
                                     <span>{cat.name}</span>
                                     <span style={{ fontSize: '12px', color: '#666' }}>
-                                        {excludeCategories.includes(cat.id) ? __('Excluded', 'awesome-blocks') : __('Included', 'awesome-blocks')}
+                                        {excludeCategories.includes(cat.id) ? __('Excluded', 'theme-blocks' ) : __('Included', 'theme-blocks' )}
                                     </span>
                                 </div>
                             ))}
@@ -221,7 +221,7 @@ export default function Edit({ attributes, setAttributes }) {
                                     style={{ marginTop: '10px', padding: '8px 12px', cursor: 'pointer' }}
                                     onClick={() => setAttributes({ excludeCategories: [] })}
                                 >
-                                    {__('Clear All Exclusions', 'awesome-blocks')}
+                                    {__('Clear All Exclusions', 'theme-blocks' )}
                                 </button>
                             )}
                         </>
@@ -236,18 +236,18 @@ export default function Edit({ attributes, setAttributes }) {
                     </div>
                 ) : categories.length === 0 ? (
                     <div style={{ padding: '40px', textAlign: 'center', background: '#f9f9f9', borderRadius: '8px' }}>
-                        <p>{__('No categories found. Add some WooCommerce product categories first.', 'awesome-blocks')}</p>
+                        <p>{__('No categories found. Add some WooCommerce product categories first.', 'theme-blocks' )}</p>
                     </div>
                 ) : (
-                    <div className="ab-product-category">
-                        <div className="ab-row cats">
+                    <div className="theme-blocks-product-category">
+                        <div className="theme-blocks-row cats">
                             {categories.map((category) => {
                                 const imageUrl = showImage ? (getImageUrl(category) || PLACEHOLDER) : null;
                                 const categoryLink = getCategoryLink(category);
                                 const productCount = category.count || 0;
 
                                 return (
-                                    <div key={category.id} className={`ab-col-${12 / columns}`}>
+                                    <div key={category.id} className={`theme-blocks-col-${12 / columns}`}>
                                         <div className="item">
                                             <a href={categoryLink}>
                                                 <div className="iconbox">
@@ -256,19 +256,19 @@ export default function Edit({ attributes, setAttributes }) {
                                                             <img
                                                                 className='category-thumbnail'
                                                                 src={imageUrl}
-                                                                alt={category.name || __('Category Image', 'awesome-blocks')}
+                                                                alt={category.name || __('Category Image', 'theme-blocks' )}
                                                             />
                                                         </div>
                                                     )}
 
                                                     <div className="details">
-                                                        <h5 className="title">{category.name || __('Untitled Category', 'awesome-blocks')}</h5>
+                                                        <h5 className="title">{category.name || __('Untitled Category', 'theme-blocks' )}</h5>
                                                         {showCount && productCount > 0 && (
                                                             <p>
                                                                 {productCount}
                                                                 {productCount === 1
-                                                                    ? __(' product', 'awesome-blocks')
-                                                                    : __(' products', 'awesome-blocks')}
+                                                                    ? __(' product', 'theme-blocks' )
+                                                                    : __(' products', 'theme-blocks' )}
                                                             </p>
                                                         )}
                                                     </div>

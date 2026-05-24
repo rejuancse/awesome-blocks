@@ -5,9 +5,9 @@
  * Tests for the Fragment_Cache class.
  */
 
-namespace Awesome_Block\Tests;
+namespace ThemeBlocks\Tests;
 
-use Awesome_Block\Fragment_Cache;
+use ThemeBlocks\Fragment_Cache;
 
 class FragmentCacheTest extends TestCase {
 
@@ -15,7 +15,7 @@ class FragmentCacheTest extends TestCase {
      * Test cache key prefix constant
      */
     public function test_cache_prefix_constant() {
-        $this->assertEquals( 'ab_fragment_', Fragment_Cache::PREFIX );
+        $this->assertEquals( 'theme_blocks_fragment_', Fragment_Cache::PREFIX );
         $this->assertIsString( Fragment_Cache::PREFIX );
     }
 

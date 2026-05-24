@@ -5,7 +5,7 @@
  * Example test case demonstrating basic testing patterns.
  */
 
-namespace Awesome_Block\Tests;
+namespace ThemeBlocks\Tests;
 
 class SampleTest extends TestCase {
     /**

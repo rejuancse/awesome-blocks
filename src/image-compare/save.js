@@ -16,31 +16,31 @@ export default function Save({ attributes }) {
 
     return (
         <div {...blockProps}>
-            <div className="awesome-image-wrap">
+            <div className="tblock-image-wrap">
                 {beforeImageUrl && afterImageUrl && (
-                    <div className="awesome-image-container">
+                    <div className="tblock-image-container">
                         <span class="label before-label button" style="visibility: visible;">Before</span>
                         <span class="label after-label button" style="visibility: visible;">After</span>
 
-                        <div className="awesome-image-comparison">
+                        <div className="tblock-image-comparison">
                             <figure
-                                className="awesome-image-figure"
+                                className="tblock-image-figure"
                                 style={{ backgroundImage: `url(${beforeImageUrl})` }}
                             >
-                                <div id="awesome-image-handle" className="awesome-image-handle"></div>
+                                <div id="tblock-image-handle" className="tblock-image-handle"></div>
                                 <div
-                                    id="awesome-image-divisor"
-                                    className="awesome-image-divisor"
+                                    id="tblock-image-divisor"
+                                    className="tblock-image-divisor"
                                     style={{ backgroundImage: `url(${afterImageUrl})` }}
                                 ></div>
                             </figure>
                             <input
-                                id="awesome-image-slider"
+                                id="tblock-image-slider"
                                 type="range"
                                 min="0"
                                 max="100"
                                 value="50"
-                                className="awesome-image-slider"
+                                className="tblock-image-slider"
                             />
                         </div>
                     </div>

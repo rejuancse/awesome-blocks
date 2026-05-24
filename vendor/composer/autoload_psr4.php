@@ -6,9 +6,9 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'ThemeBlocks\\Tests\\' => array($baseDir . '/tests/php'),
+    'ThemeBlocks\\' => array($baseDir . '/includes'),
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
-    'Awesome_Block\\Tests\\' => array($baseDir . '/tests/php'),
-    'Awesome_Block\\' => array($baseDir . '/includes'),
 );

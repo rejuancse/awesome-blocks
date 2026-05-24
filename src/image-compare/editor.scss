@@ -1,5 +1,5 @@
-.wp-block-awesome-image-compare {
-	.awesome-image-placeholder {
+.wp-block-tblock-image-compare {
+	.tblock-image-placeholder {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -23,19 +23,19 @@
 	}
 
 	// Reuse styles from main stylesheet
-	.awesome-image-wrap {
+	.tblock-image-wrap {
 		max-width: 800px;
 		margin: 0 auto;
 	}
 
-	.awesome-image-comparison {
+	.tblock-image-comparison {
 		width: 100%;
 		padding-bottom: 100%;
 		overflow: hidden;
 		position: relative;
 	}
 
-	.awesome-image-figure {
+	.tblock-image-figure {
 		position: absolute;
 		background-size: cover;
 		font-size: 0;
@@ -44,7 +44,7 @@
 		margin: 0;
 	}
 
-	.awesome-image-divisor {
+	.tblock-image-divisor {
 		background-size: cover;
 		position: absolute;
 		width: 50%;
@@ -74,7 +74,7 @@
 		}
 	}
 
-	.awesome-image-handle {
+	.tblock-image-handle {
 		position: absolute;
 		height: 50px;
 		width: 50px;
@@ -109,7 +109,7 @@
 		}
 	}
 
-	.awesome-image-slider {
+	.tblock-image-slider {
 		-webkit-appearance: none;
 		-moz-appearance: none;
 		position: absolute;
@@ -130,7 +130,7 @@
 		}
 	}
 
-	.awesome-image-slider::-webkit-slider-thumb {
+	.tblock-image-slider::-webkit-slider-thumb {
 		-webkit-appearance: none;
 		width: 60px;
 		height: 60px;
@@ -148,14 +148,14 @@
 		}
 	}
 
-	.awesome-image-slider::-webkit-slider-runnable-track {
+	.tblock-image-slider::-webkit-slider-runnable-track {
 		width: 100%;
 		height: 100%;
 		background: transparent;
 		cursor: ew-resize;
 	}
 
-	.awesome-image-slider::-moz-range-thumb {
+	.tblock-image-slider::-moz-range-thumb {
 		width: 60px;
 		height: 60px;
 		border-radius: 50%;
@@ -171,7 +171,7 @@
 		}
 	}
 
-	.awesome-image-slider::-moz-range-track {
+	.tblock-image-slider::-moz-range-track {
 		width: 100%;
 		height: 100%;
 		background: transparent;
@@ -180,8 +180,8 @@
 }
 
 // Media upload preview styles
-.ab-media-upload-wrapper {
-	.ab-media-upload-button {
+.theme-blocks-media-upload-wrapper {
+	.theme-blocks-media-upload-button {
 		display: flex;
 		align-items: center;
 		gap: 8px;
@@ -192,7 +192,7 @@
 		}
 	}
 
-	.ab-media-preview {
+	.theme-blocks-media-preview {
 		position: relative;
 		display: inline-block;
 
@@ -204,7 +204,7 @@
 			border-radius: 4px;
 		}
 
-		.ab-media-actions {
+		.theme-blocks-media-actions {
 			position: absolute;
 			top: 8px;
 			right: 8px;
@@ -214,7 +214,7 @@
 			transition: opacity 0.2s;
 		}
 
-		&:hover .ab-media-actions {
+		&:hover .theme-blocks-media-actions {
 			opacity: 1;
 		}
 	}

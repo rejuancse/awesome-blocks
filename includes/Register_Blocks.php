@@ -1,29 +1,29 @@
 <?php
-namespace Awesome_Block;
+namespace ThemeBlocks;
 
 defined( 'ABSPATH' ) || exit;
 
 class Register_Blocks {
 
     public function __construct() {
-        add_action( 'block_categories_all', array( $this, 'awesome_block_register_category' ) );
-        add_action( 'init', array( $this, 'awesome_block_register_blocks' ) );
+        add_action( 'block_categories_all', array( $this, 'theme_block_register_category' ) );
+        add_action( 'init', array( $this, 'theme_block_register_blocks' ) );
     }
 
     /**
      * Register block category
      */
-    public function awesome_block_register_category( $block_categories ) {
+    public function theme_block_register_category( $block_categories ) {
         $category_slugs = wp_list_pluck( $block_categories, 'slug' );
 
-        return in_array( 'awesome-block', $category_slugs, true ) ?
+        return in_array( 'tblock-block', $category_slugs, true ) ?
             $block_categories :
             array_merge(
                 $block_categories,
                 [
                     [
-                        'slug'  => 'awesome-block',
-                        'title' => __( 'Awesome Blocks', 'awesome-blocks' ),
+                        'slug'  => 'tblock-block',
+                        'title' => __( 'Theme Blocks', 'theme-blocks'  ),
                         'icon'  => null,
                     ],
                 ]
@@ -33,11 +33,11 @@ class Register_Blocks {
     /**
      * Register Blocks server-side with automatic asset loading
      */
-    public function awesome_block_register_blocks() {
+    public function theme_block_register_blocks() {
         if ( function_exists( 'register_block_type_from_metadata' ) ) {
             // Register Post Block
             register_block_type_from_metadata(
-                AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/post-block',
+                THEMEBLOCKS_PLUGIN_PATH . 'assets/build/post-block',
                 array(
                     'render_callback' => array( __NAMESPACE__ . '\\Post_Block', 'render' ),
                 )
@@ -45,7 +45,7 @@ class Register_Blocks {
 
             // Register WooCommerce Product List Block
             register_block_type_from_metadata(
-                AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/woo-product-list',
+                THEMEBLOCKS_PLUGIN_PATH . 'assets/build/woo-product-list',
                 array(
                     'render_callback' => array( __NAMESPACE__ . '\\Woo_Product_List', 'render' ),
                 )
@@ -53,37 +53,37 @@ class Register_Blocks {
 
             // Register Card Block - No render callback needed as it's static
             register_block_type_from_metadata(
-                AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/card-block'
+                THEMEBLOCKS_PLUGIN_PATH . 'assets/build/card-block'
             );
 
             // Register Feature Block - No render callback needed as it's static
             register_block_type_from_metadata(
-                AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/feature-block'
+                THEMEBLOCKS_PLUGIN_PATH . 'assets/build/feature-block'
             );
 
             // Register Grid Block - No render callback needed as it uses InnerBlocks
             register_block_type_from_metadata(
-                AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/grid-block'
+                THEMEBLOCKS_PLUGIN_PATH . 'assets/build/grid-block'
             );
 
-            // Register Awesome Slider Block - No render callback needed as it's static
+            // Register TBlock Slider Block - No render callback needed as it's static
             register_block_type_from_metadata(
-                AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/awesome-slider'
+                THEMEBLOCKS_PLUGIN_PATH . 'assets/build/tblock-slider'
             );
 
-            // Register Awesome Timeline Block - No render callback needed as it's static
+            // Register TBlock Timeline Block - No render callback needed as it's static
             register_block_type_from_metadata(
-                AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/awesome-timeline'
+                THEMEBLOCKS_PLUGIN_PATH . 'assets/build/tblock-timeline'
             );
 
             // Register Photo Gallery Block - No render callback needed as it's static
             register_block_type_from_metadata(
-                AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/photo-gallery'
+                THEMEBLOCKS_PLUGIN_PATH . 'assets/build/photo-gallery'
             );
 
             // Register WooCommerce Category Grid Block
             register_block_type_from_metadata(
-                AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/woo-category-grid',
+                THEMEBLOCKS_PLUGIN_PATH . 'assets/build/woo-category-grid',
                 array(
                     'render_callback' => array( __NAMESPACE__ . '\\Woo_Category_List', 'render' ),
                 )
@@ -91,12 +91,12 @@ class Register_Blocks {
 
             // Register Hero Video Block - No render callback needed as it uses render.php
             register_block_type_from_metadata(
-                AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/hero-video'
+                THEMEBLOCKS_PLUGIN_PATH . 'assets/build/hero-video'
             );
 
             // Register Image Compare Block - No render callback needed as it uses render.php
             register_block_type_from_metadata(
-                AWESOME_BLOCK_PLUGIN_PATH . 'assets/build/image-compare'
+                THEMEBLOCKS_PLUGIN_PATH . 'assets/build/image-compare'
             );
         }
     }

@@ -1,1 +1,104 @@
-.wp-block-awesome-post-block{padding:0}.wp-block-awesome-post-block .ab-posts-grid{min-height:200px}.wp-block-awesome-post-block .components-placeholder{margin:0}.wp-block-awesome-post-block .ab-style-control-row{align-items:center;display:flex;justify-content:space-between;margin-bottom:12px}.wp-block-awesome-post-block .ab-style-control-row label{font-size:13px;font-weight:500;margin-bottom:0}.wp-block-awesome-post-block .ab-style-control-row .components-color-picker{margin-left:auto}.wp-block-awesome-post-block .ab-style-control-row .components-button{margin-left:8px}.wp-block-awesome-post-block .ab-color-input-wrapper{align-items:center;display:flex;gap:10px;margin-bottom:12px}.wp-block-awesome-post-block .ab-color-input-wrapper .ab-color-input{background:#fff;border:1px solid #ddd;border-radius:4px;cursor:pointer;flex-shrink:0;height:40px;padding:2px;width:50px}.wp-block-awesome-post-block .ab-color-input-wrapper .ab-color-input::-webkit-color-swatch-wrapper{padding:0}.wp-block-awesome-post-block .ab-color-input-wrapper .ab-color-input::-webkit-color-swatch{border:none;border-radius:2px}.wp-block-awesome-post-block .ab-color-input-wrapper .ab-color-input::-moz-color-swatch{border:none;border-radius:2px}.wp-block-awesome-post-block .ab-color-input-wrapper .ab-color-input:hover{border-color:#0073aa}.wp-block-awesome-post-block .ab-color-input-wrapper .ab-color-input:focus{border-color:#0073aa;box-shadow:0 0 0 1px #0073aa;outline:none}.wp-block-awesome-post-block .ab-color-input-wrapper .ab-color-text-input{border:1px solid #ddd;border-radius:4px;flex:1;font-family:monospace;font-size:13px;padding:8px 12px;text-transform:uppercase}.wp-block-awesome-post-block .ab-color-input-wrapper .ab-color-text-input:focus{border-color:#0073aa;box-shadow:0 0 0 1px #0073aa;outline:none}.wp-block-awesome-post-block .ab-color-input-wrapper .ab-color-text-input::-moz-placeholder{text-transform:none}.wp-block-awesome-post-block .ab-color-input-wrapper .ab-color-text-input::placeholder{text-transform:none}.wp-block-awesome-post-block .ab-post-item a{transition:color .2s ease}.wp-block-awesome-post-block .ab-post-item a:hover{color:var(--ab-link-hover-color,#005177)}.wp-block-awesome-post-block .components-select-control__input:focus{border-color:#0073aa;box-shadow:0 0 0 1px #0073aa}.interface-complementary-area .meta-style{border-top:1px solid #e32;padding-top:15px}
+/*!***************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/post-block/editor.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************/
+/**
+ * Editor Styles
+ */
+.wp-block-tblock-post-block {
+  padding: 0;
+}
+.wp-block-tblock-post-block .theme-blocks-posts-grid {
+  min-height: 200px;
+}
+.wp-block-tblock-post-block .components-placeholder {
+  margin: 0;
+}
+.wp-block-tblock-post-block .theme-blocks-style-control-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.wp-block-tblock-post-block .theme-blocks-style-control-row label {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.wp-block-tblock-post-block .theme-blocks-style-control-row .components-color-picker {
+  margin-left: auto;
+}
+.wp-block-tblock-post-block .theme-blocks-style-control-row .components-button {
+  margin-left: 8px;
+}
+.wp-block-tblock-post-block .theme-blocks-color-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.wp-block-tblock-post-block .theme-blocks-color-input-wrapper .theme-blocks-color-input {
+  width: 50px;
+  height: 40px;
+  padding: 2px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #fff;
+  flex-shrink: 0;
+}
+.wp-block-tblock-post-block .theme-blocks-color-input-wrapper .theme-blocks-color-input::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+.wp-block-tblock-post-block .theme-blocks-color-input-wrapper .theme-blocks-color-input::-webkit-color-swatch {
+  border: none;
+  border-radius: 2px;
+}
+.wp-block-tblock-post-block .theme-blocks-color-input-wrapper .theme-blocks-color-input::-moz-color-swatch {
+  border: none;
+  border-radius: 2px;
+}
+.wp-block-tblock-post-block .theme-blocks-color-input-wrapper .theme-blocks-color-input:hover {
+  border-color: #0073aa;
+}
+.wp-block-tblock-post-block .theme-blocks-color-input-wrapper .theme-blocks-color-input:focus {
+  outline: none;
+  border-color: #0073aa;
+  box-shadow: 0 0 0 1px #0073aa;
+}
+.wp-block-tblock-post-block .theme-blocks-color-input-wrapper .theme-blocks-color-text-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+.wp-block-tblock-post-block .theme-blocks-color-input-wrapper .theme-blocks-color-text-input:focus {
+  outline: none;
+  border-color: #0073aa;
+  box-shadow: 0 0 0 1px #0073aa;
+}
+.wp-block-tblock-post-block .theme-blocks-color-input-wrapper .theme-blocks-color-text-input::-moz-placeholder {
+  text-transform: none;
+}
+.wp-block-tblock-post-block .theme-blocks-color-input-wrapper .theme-blocks-color-text-input::placeholder {
+  text-transform: none;
+}
+.wp-block-tblock-post-block .theme-blocks-post-item a {
+  transition: color 0.2s ease;
+}
+.wp-block-tblock-post-block .theme-blocks-post-item a:hover {
+  color: var(--theme-blocks-link-hover-color, #005177);
+}
+.wp-block-tblock-post-block .components-select-control__input:focus {
+  border-color: #0073aa;
+  box-shadow: 0 0 0 1px #0073aa;
+}
+
+.interface-complementary-area .meta-style {
+  border-top: 1px solid #e32;
+  padding-top: 15px;
+}
+
+/*# sourceMappingURL=index.css.map*/

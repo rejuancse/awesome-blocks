@@ -1,5 +1,5 @@
 {
-    "name": "thebitcraft/awesome-blocks",
+    "name": "thebitcraft/themeblocks",
     "description": "Collection of custom Gutenberg blocks.",
     "type": "wordpress-plugin",
     "license": "GPLv2",
@@ -11,12 +11,12 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Awesome_Block\\": "includes/"
+            "ThemeBlocks\\": "includes/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Awesome_Block\\Tests\\": "tests/php/"
+            "ThemeBlocks\\Tests\\": "tests/php/"
         }
     },
     "require-dev": {

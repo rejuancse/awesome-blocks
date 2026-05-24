@@ -57,7 +57,7 @@ const DEFAULTS = {
 };
 
 /**
- * Edit component for the Awesome Hero Video block.
+ * Edit component for the TBlock Hero Video block.
  *
  * @param {Object}   props
  * @param {Object}   props.attributes    Block attributes.
@@ -142,7 +142,7 @@ export default function Edit( { attributes, setAttributes } ) {
             <InspectorControls>
 
                 { /* ── Content Settings ── */ }
-                <PanelBody title={ __( 'Content Settings', 'awesome-blocks' ) }>
+                <PanelBody title={ __( 'Content Settings', 'theme-blocks'  ) }>
                     <MediaUploadCheck>
                         <MediaUpload
                             onSelect={ ( media ) => setAttributes( { videoUrl: media.url } ) }
@@ -155,7 +155,7 @@ export default function Edit( { attributes, setAttributes } ) {
                                             onClick={ open }
                                             className="components-button is-secondary"
                                         >
-                                            { __( 'Select Video', 'awesome-blocks' ) }
+                                            { __( 'Select Video', 'theme-blocks'  ) }
                                         </button>
                                     ) }
                                     { videoUrl && (
@@ -170,7 +170,7 @@ export default function Edit( { attributes, setAttributes } ) {
                                                 className="components-button is-secondary"
                                                 style={ { marginTop: '10px' } }
                                             >
-                                                { __( 'Remove Video', 'awesome-blocks' ) }
+                                                { __( 'Remove Video', 'theme-blocks'  ) }
                                             </button>
                                         </div>
                                     ) }
@@ -186,20 +186,20 @@ export default function Edit( { attributes, setAttributes } ) {
                             value={ posterUrl }
                             render={ ( { open } ) => (
                                 <div style={ { marginTop: '15px' } }>
-                                    <label>{ __( 'Poster Image', 'awesome-blocks' ) }</label>
+                                    <label>{ __( 'Poster Image', 'theme-blocks'  ) }</label>
                                     { ! posterUrl && (
                                         <button
                                             onClick={ open }
                                             className="components-button is-secondary"
                                         >
-                                            { __( 'Select Poster Image', 'awesome-blocks' ) }
+                                            { __( 'Select Poster Image', 'theme-blocks'  ) }
                                         </button>
                                     ) }
                                     { posterUrl && (
                                         <div>
                                             <img
                                                 src={ posterUrl }
-                                                alt={ __( 'Poster', 'awesome-blocks' ) }
+                                                alt={ __( 'Poster', 'theme-blocks'  ) }
                                                 style={ { width: '100%', maxHeight: '200px', objectFit: 'cover' } }
                                             />
                                             <button
@@ -207,7 +207,7 @@ export default function Edit( { attributes, setAttributes } ) {
                                                 className="components-button is-secondary"
                                                 style={ { marginTop: '10px' } }
                                             >
-                                                { __( 'Remove Poster', 'awesome-blocks' ) }
+                                                { __( 'Remove Poster', 'theme-blocks'  ) }
                                             </button>
                                         </div>
                                     ) }
@@ -217,205 +217,205 @@ export default function Edit( { attributes, setAttributes } ) {
                     </MediaUploadCheck>
 
                     <TextControl
-                        label={ __( 'Title', 'awesome-blocks' ) }
+                        label={ __( 'Title', 'theme-blocks'  ) }
                         value={ title }
                         onChange={ ( value ) => setAttributes( { title: value } ) }
-                        placeholder={ __( 'Enter hero title', 'awesome-blocks' ) }
+                        placeholder={ __( 'Enter hero title', 'theme-blocks'  ) }
                     />
 
                     <TextControl
-                        label={ __( 'Description', 'awesome-blocks' ) }
+                        label={ __( 'Description', 'theme-blocks'  ) }
                         value={ description }
                         onChange={ ( value ) => setAttributes( { description: value } ) }
-                        placeholder={ __( 'Enter hero description', 'awesome-blocks' ) }
+                        placeholder={ __( 'Enter hero description', 'theme-blocks'  ) }
                     />
 
                     <TextControl
-                        label={ __( 'Button Text', 'awesome-blocks' ) }
+                        label={ __( 'Button Text', 'theme-blocks'  ) }
                         value={ buttonText }
                         onChange={ ( value ) => setAttributes( { buttonText: value } ) }
-                        placeholder={ __( 'Enter button text', 'awesome-blocks' ) }
+                        placeholder={ __( 'Enter button text', 'theme-blocks'  ) }
                     />
 
                     <TextControl
-                        label={ __( 'Button URL', 'awesome-blocks' ) }
+                        label={ __( 'Button URL', 'theme-blocks'  ) }
                         value={ buttonUrl }
                         onChange={ ( value ) => setAttributes( { buttonUrl: value } ) }
-                        placeholder={ __( 'https://example.com', 'awesome-blocks' ) }
+                        placeholder={ __( 'https://example.com', 'theme-blocks'  ) }
                     />
 
                     <SelectControl
-                        label={ __( 'Content Alignment', 'awesome-blocks' ) }
+                        label={ __( 'Content Alignment', 'theme-blocks'  ) }
                         value={ contentAlign }
                         options={ [
-                            { label: __( 'Left', 'awesome-blocks' ), value: 'left' },
-                            { label: __( 'Center', 'awesome-blocks' ), value: 'center' },
-                            { label: __( 'Right', 'awesome-blocks' ), value: 'right' },
+                            { label: __( 'Left', 'theme-blocks'  ), value: 'left' },
+                            { label: __( 'Center', 'theme-blocks'  ), value: 'center' },
+                            { label: __( 'Right', 'theme-blocks'  ), value: 'right' },
                         ] }
                         onChange={ ( value ) => setAttributes( { contentAlign: value } ) }
                     />
                 </PanelBody>
 
                 { /* ── Video Settings ── */ }
-                <PanelBody title={ __( 'Video Settings', 'awesome-blocks' ) } initialOpen={ false }>
+                <PanelBody title={ __( 'Video Settings', 'theme-blocks'  ) } initialOpen={ false }>
                     <RangeControl
-                        label={ __( 'Video Height (px)', 'awesome-blocks' ) }
+                        label={ __( 'Video Height (px)', 'theme-blocks'  ) }
                         value={ videoHeight }
                         onChange={ ( value ) => setAttributes( { videoHeight: value } ) }
                         min={ 200 }
                         max={ 1200 }
-                        help={ __( 'Set the height of the video section', 'awesome-blocks' ) }
+                        help={ __( 'Set the height of the video section', 'theme-blocks'  ) }
                     />
                     <ToggleControl
-                        label={ __( 'Muted', 'awesome-blocks' ) }
+                        label={ __( 'Muted', 'theme-blocks'  ) }
                         checked={ muted }
                         onChange={ ( value ) => setAttributes( { muted: value } ) }
                     />
                     <ToggleControl
-                        label={ __( 'Autoplay', 'awesome-blocks' ) }
+                        label={ __( 'Autoplay', 'theme-blocks'  ) }
                         checked={ autoplay }
                         onChange={ ( value ) => setAttributes( { autoplay: value } ) }
                     />
                     <ToggleControl
-                        label={ __( 'Loop', 'awesome-blocks' ) }
+                        label={ __( 'Loop', 'theme-blocks'  ) }
                         checked={ loop }
                         onChange={ ( value ) => setAttributes( { loop: value } ) }
                     />
                 </PanelBody>
 
                 { /* ── Style Settings ── */ }
-                <PanelBody title={ __( 'Style Settings', 'awesome-blocks' ) } initialOpen={ false }>
+                <PanelBody title={ __( 'Style Settings', 'theme-blocks'  ) } initialOpen={ false }>
 
                     { /* Title */ }
-                    <h3>{ __( 'Title Style', 'awesome-blocks' ) }</h3>
+                    <h3>{ __( 'Title Style', 'theme-blocks'  ) }</h3>
                     <ColorControl
-                        label={ __( 'Title Color', 'awesome-blocks' ) }
+                        label={ __( 'Title Color', 'theme-blocks'  ) }
                         value={ titleColor }
                         onChange={ ( value ) => setAttributes( { titleColor: value } ) }
                         placeholder="#ffffff"
                     />
                     <RangeControl
-                        label={ __( 'Title Font Size', 'awesome-blocks' ) }
+                        label={ __( 'Title Font Size', 'theme-blocks'  ) }
                         value={ titleFontSize }
                         onChange={ ( value ) => setAttributes( { titleFontSize: value } ) }
                         min={ 12 }
                         max={ 100 }
                     />
                     <SelectControl
-                        label={ __( 'Title Font Weight', 'awesome-blocks' ) }
+                        label={ __( 'Title Font Weight', 'theme-blocks'  ) }
                         value={ titleFontWeight }
                         options={ FONT_WEIGHTS }
                         onChange={ ( value ) => setAttributes( { titleFontWeight: value } ) }
                     />
                     <SelectControl
-                        label={ __( 'Title Font Family', 'awesome-blocks' ) }
+                        label={ __( 'Title Font Family', 'theme-blocks'  ) }
                         value={ titleFontFamily }
                         options={ GOOGLE_FONTS }
                         onChange={ ( value ) => setAttributes( { titleFontFamily: value } ) }
-                        help={ __( 'Select a Google Font for the title', 'awesome-blocks' ) }
+                        help={ __( 'Select a Google Font for the title', 'theme-blocks'  ) }
                     />
 
                     { /* Description */ }
-                    <h3>{ __( 'Description Style', 'awesome-blocks' ) }</h3>
+                    <h3>{ __( 'Description Style', 'theme-blocks'  ) }</h3>
                     <ColorControl
-                        label={ __( 'Description Color', 'awesome-blocks' ) }
+                        label={ __( 'Description Color', 'theme-blocks'  ) }
                         value={ descriptionColor }
                         onChange={ ( value ) => setAttributes( { descriptionColor: value } ) }
                         placeholder="#ffffff"
                     />
                     <RangeControl
-                        label={ __( 'Description Font Size', 'awesome-blocks' ) }
+                        label={ __( 'Description Font Size', 'theme-blocks'  ) }
                         value={ descriptionFontSize }
                         onChange={ ( value ) => setAttributes( { descriptionFontSize: value } ) }
                         min={ 12 }
                         max={ 40 }
                     />
                     <SelectControl
-                        label={ __( 'Description Font Weight', 'awesome-blocks' ) }
+                        label={ __( 'Description Font Weight', 'theme-blocks'  ) }
                         value={ descriptionFontWeight }
                         options={ FONT_WEIGHTS }
                         onChange={ ( value ) => setAttributes( { descriptionFontWeight: value } ) }
                     />
                     <SelectControl
-                        label={ __( 'Description Font Family', 'awesome-blocks' ) }
+                        label={ __( 'Description Font Family', 'theme-blocks'  ) }
                         value={ descriptionFontFamily }
                         options={ GOOGLE_FONTS }
                         onChange={ ( value ) => setAttributes( { descriptionFontFamily: value } ) }
-                        help={ __( 'Select a Google Font for the description', 'awesome-blocks' ) }
+                        help={ __( 'Select a Google Font for the description', 'theme-blocks'  ) }
                     />
 
                     { /* Button */ }
-                    <h3>{ __( 'Button Style', 'awesome-blocks' ) }</h3>
+                    <h3>{ __( 'Button Style', 'theme-blocks'  ) }</h3>
                     <ColorControl
-                        label={ __( 'Button Background Color', 'awesome-blocks' ) }
+                        label={ __( 'Button Background Color', 'theme-blocks'  ) }
                         value={ buttonBgColor }
                         onChange={ ( value ) => setAttributes( { buttonBgColor: value } ) }
                         placeholder="#ffffff"
                     />
                     <ColorControl
-                        label={ __( 'Button Text Color', 'awesome-blocks' ) }
+                        label={ __( 'Button Text Color', 'theme-blocks'  ) }
                         value={ buttonTextColor }
                         onChange={ ( value ) => setAttributes( { buttonTextColor: value } ) }
                         placeholder="#333333"
                     />
                     <ColorControl
-                        label={ __( 'Button Hover Background Color', 'awesome-blocks' ) }
+                        label={ __( 'Button Hover Background Color', 'theme-blocks'  ) }
                         value={ buttonHoverBgColor }
                         onChange={ ( value ) => setAttributes( { buttonHoverBgColor: value } ) }
                         placeholder="#f0f0f0"
                     />
                     <ColorControl
-                        label={ __( 'Button Hover Text Color', 'awesome-blocks' ) }
+                        label={ __( 'Button Hover Text Color', 'theme-blocks'  ) }
                         value={ buttonHoverTextColor }
                         onChange={ ( value ) => setAttributes( { buttonHoverTextColor: value } ) }
                         placeholder="#333333"
                     />
                     <RangeControl
-                        label={ __( 'Button Font Size', 'awesome-blocks' ) }
+                        label={ __( 'Button Font Size', 'theme-blocks'  ) }
                         value={ buttonFontSize }
                         onChange={ ( value ) => setAttributes( { buttonFontSize: value } ) }
                         min={ 10 }
                         max={ 30 }
                     />
                     <SelectControl
-                        label={ __( 'Button Font Weight', 'awesome-blocks' ) }
+                        label={ __( 'Button Font Weight', 'theme-blocks'  ) }
                         value={ buttonFontWeight }
                         options={ FONT_WEIGHTS }
                         onChange={ ( value ) => setAttributes( { buttonFontWeight: value } ) }
                     />
                     <SelectControl
-                        label={ __( 'Button Font Family', 'awesome-blocks' ) }
+                        label={ __( 'Button Font Family', 'theme-blocks'  ) }
                         value={ buttonFontFamily }
                         options={ GOOGLE_FONTS }
                         onChange={ ( value ) => setAttributes( { buttonFontFamily: value } ) }
-                        help={ __( 'Select a Google Font for the button', 'awesome-blocks' ) }
+                        help={ __( 'Select a Google Font for the button', 'theme-blocks'  ) }
                     />
 
                     { /* Layout */ }
-                    <h3>{ __( 'Layout', 'awesome-blocks' ) }</h3>
+                    <h3>{ __( 'Layout', 'theme-blocks'  ) }</h3>
                     <ColorControl
-                        label={ __( 'Overlay Color', 'awesome-blocks' ) }
+                        label={ __( 'Overlay Color', 'theme-blocks'  ) }
                         value={ overlayColor }
                         onChange={ ( value ) => setAttributes( { overlayColor: value } ) }
                         placeholder="#000000"
                     />
                     <RangeControl
-                        label={ __( 'Overlay Opacity', 'awesome-blocks' ) }
+                        label={ __( 'Overlay Opacity', 'theme-blocks'  ) }
                         value={ overlayOpacity }
                         onChange={ ( value ) => setAttributes( { overlayOpacity: value } ) }
                         min={ 0 }
                         max={ 100 }
-                        help={ __( 'Set overlay opacity (0 = transparent, 100 = solid)', 'awesome-blocks' ) }
+                        help={ __( 'Set overlay opacity (0 = transparent, 100 = solid)', 'theme-blocks'  ) }
                     />
                     <RangeControl
-                        label={ __( 'Padding', 'awesome-blocks' ) }
+                        label={ __( 'Padding', 'theme-blocks'  ) }
                         value={ padding }
                         onChange={ ( value ) => setAttributes( { padding: value } ) }
                         min={ 0 }
                         max={ 200 }
                     />
                     <RangeControl
-                        label={ __( 'Border Radius', 'awesome-blocks' ) }
+                        label={ __( 'Border Radius', 'theme-blocks'  ) }
                         value={ borderRadius }
                         onChange={ ( value ) => setAttributes( { borderRadius: value } ) }
                         min={ 0 }
@@ -428,14 +428,14 @@ export default function Edit( { attributes, setAttributes } ) {
             <div { ...blockProps }>
                 <style>
                     {`
-                        .wp-block-awesome-hero-video .villa-hero-video .hero-video-button {
+                        .wp-block-tblock-hero-video .villa-hero-video .hero-video-button {
                             background-color: ${ buttonBgColor || '#ffffff' };
                             color: ${ buttonTextColor || '#333333' };
                             font-size: ${ buttonFontSize || 16 }px;
                             font-weight: ${ buttonFontWeight || '600' };
                             font-family: ${ buttonFontFamily || 'inherit' };
                         }
-                        .wp-block-awesome-hero-video .villa-hero-video .hero-video-button:hover {
+                        .wp-block-tblock-hero-video .villa-hero-video .hero-video-button:hover {
                             background-color: ${ buttonHoverBgColor || '#f0f0f0' };
                             color: ${ buttonHoverTextColor || '#333333' };
                         }
@@ -490,7 +490,7 @@ export default function Edit( { attributes, setAttributes } ) {
                                     fontSize: '16px',
                                 } }
                             >
-                                { __( 'Please select a video from the sidebar settings', 'awesome-blocks' ) }
+                                { __( 'Please select a video from the sidebar settings', 'theme-blocks'  ) }
                             </div>
                         ) }
                     </div>

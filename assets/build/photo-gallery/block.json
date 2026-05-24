@@ -1,8 +1,8 @@
 {
-  "apiVersion": 2,
-  "name": "awesome/photo-gallery",
+  "apiVersion": 3,
+  "name": "tblock/photo-gallery",
   "title": "Photo Gallery",
-  "category": "awesome-block",
+  "category": "tblock-block",
   "icon": "format-gallery",
   "description": "Beautiful responsive photo gallery with lightbox popup and navigation",
   "keywords": [

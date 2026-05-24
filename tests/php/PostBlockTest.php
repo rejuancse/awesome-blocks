@@ -5,9 +5,9 @@
  * Tests for the Post_Block class.
  */
 
-namespace Awesome_Block\Tests;
+namespace ThemeBlocks\Tests;
 
-use Awesome_Block\Post_Block;
+use ThemeBlocks\Post_Block;
 
 class PostBlockTest extends TestCase {
 
@@ -15,7 +15,7 @@ class PostBlockTest extends TestCase {
      * Test Post_Block class has render method
      */
     public function test_post_block_has_render_method() {
-        $this->assertTrue( method_exists( 'Awesome_Block\Post_Block', 'render' ), 'Post_Block should have a render method' );
+        $this->assertTrue( method_exists( 'ThemeBlocks\Post_Block', 'render' ), 'Post_Block should have a render method' );
     }
 
     /**
@@ -42,7 +42,7 @@ class PostBlockTest extends TestCase {
      * Test render_content method exists
      */
     public function test_render_content_method_exists() {
-        $this->assertTrue( method_exists( 'Awesome_Block\Post_Block', 'render_content' ), 'Post_Block should have a render_content method' );
+        $this->assertTrue( method_exists( 'ThemeBlocks\Post_Block', 'render_content' ), 'Post_Block should have a render_content method' );
     }
 
     /**
@@ -249,7 +249,7 @@ class PostBlockTest extends TestCase {
      */
     public function test_post_block_css_classes() {
         $expected_classes = array(
-            'wp-block-awesome-post-block',
+            'wp-block-tblock-post-block',
             'ab-posts-grid',
             'columns-3',
         );
@@ -321,6 +321,6 @@ class PostBlockTest extends TestCase {
      * Test post block namespace
      */
     public function test_post_block_namespace() {
-        $this->assertEquals( 'Awesome_Block\Post_Block', Post_Block::class );
+        $this->assertEquals( 'ThemeBlocks\Post_Block', Post_Block::class );
     }
 }

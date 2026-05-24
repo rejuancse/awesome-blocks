@@ -1,8 +1,8 @@
 {
-    "apiVersion": 2,
-    "name": "awesome/woo-product-list",
-    "title": "WooCommerce Product List",
-    "category": "awesome-block",
+    "apiVersion": 3,
+    "name": "tblock/woo-product-list",
+    "title": "TBlock Product List",
+    "category": "tblock-block",
     "icon": "products",
     "description": "Display WooCommerce products in a beautiful grid layout",
     "keywords": ["woocommerce", "products", "product list", "shop"],

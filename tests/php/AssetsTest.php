@@ -5,9 +5,9 @@
  * Tests for the Assets class.
  */
 
-namespace Awesome_Block\Tests;
+namespace ThemeBlocks\Tests;
 
-use Awesome_Block\Assets;
+use ThemeBlocks\Assets;
 
 class AssetsTest extends TestCase {
 
@@ -26,17 +26,17 @@ class AssetsTest extends TestCase {
      */
     public function test_common_css_is_enqueued() {
         // Mock WordPress functions
-        if ( ! function_exists( 'Awesome_Block\has_block' ) ) {
-            eval( 'namespace Awesome_Block; function has_block( $block_type ) { return false; }' );
+        if ( ! function_exists( 'ThemeBlocks\has_block' ) ) {
+            eval( 'namespace ThemeBlocks; function has_block( $block_type ) { return false; }' );
         }
-        if ( ! function_exists( 'Awesome_Block\is_admin' ) ) {
-            eval( 'namespace Awesome_Block; function is_admin() { return false; }' );
+        if ( ! function_exists( 'ThemeBlocks\is_admin' ) ) {
+            eval( 'namespace ThemeBlocks; function is_admin() { return false; }' );
         }
-        if ( ! function_exists( 'Awesome_Block\wp_enqueue_style' ) ) {
-            eval( 'namespace Awesome_Block; function wp_enqueue_style( $handle, $src = "", $deps = array(), $ver = false, $media = "all" ) { return true; }' );
+        if ( ! function_exists( 'ThemeBlocks\wp_enqueue_style' ) ) {
+            eval( 'namespace ThemeBlocks; function wp_enqueue_style( $handle, $src = "", $deps = array(), $ver = false, $media = "all" ) { return true; }' );
         }
-        if ( ! function_exists( 'Awesome_Block\wp_enqueue_script' ) ) {
-            eval( 'namespace Awesome_Block; function wp_enqueue_script( $handle, $src = "", $deps = array(), $ver = false, $in_footer = false ) { return true; }' );
+        if ( ! function_exists( 'ThemeBlocks\wp_enqueue_script' ) ) {
+            eval( 'namespace ThemeBlocks; function wp_enqueue_script( $handle, $src = "", $deps = array(), $ver = false, $in_footer = false ) { return true; }' );
         }
 
         $assets = new Assets();
@@ -78,15 +78,15 @@ class AssetsTest extends TestCase {
      * Test assets version constant is used
      */
     public function test_assets_version_constant_exists() {
-        $this->assertTrue( defined( 'AWESOME_BLOCK_VERSION' ), 'AWESOME_BLOCK_VERSION constant should be defined' );
-        $this->assertIsString( AWESOME_BLOCK_VERSION, 'AWESOME_BLOCK_VERSION should be a string' );
+        $this->assertTrue( defined( 'THEMEBLOCKS_VERSION' ), 'THEMEBLOCKS_VERSION constant should be defined' );
+        $this->assertIsString( THEMEBLOCKS_VERSION, 'THEMEBLOCKS_VERSION should be a string' );
     }
 
     /**
      * Test assets URL constant is used
      */
     public function test_assets_url_constant_exists() {
-        $this->assertTrue( defined( 'AWESOME_BLOCK_ASSETS' ), 'AWESOME_BLOCK_ASSETS constant should be defined' );
-        $this->assertIsString( AWESOME_BLOCK_ASSETS, 'AWESOME_BLOCK_ASSETS should be a string' );
+        $this->assertTrue( defined( 'THEMEBLOCKS_ASSETS' ), 'THEMEBLOCKS_ASSETS constant should be defined' );
+        $this->assertIsString( THEMEBLOCKS_ASSETS, 'THEMEBLOCKS_ASSETS should be a string' );
     }
 }

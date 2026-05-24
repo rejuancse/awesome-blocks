@@ -1,8 +1,8 @@
 {
-  "apiVersion": 2,
-  "name": "awesome/woo-category-grid",
-  "title": "WooCommerce Category Grid",
-  "category": "awesome-block",
+  "apiVersion": 3,
+  "name": "tblock/woo-category-grid",
+  "title": "Woo Category Grid",
+  "category": "tblock-block",
   "icon": "category",
   "description": "Display WooCommerce product categories in a beautiful grid layout",
   "keywords": [

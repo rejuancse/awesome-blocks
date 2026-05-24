@@ -1,0 +1,63 @@
+{
+  "apiVersion": 3,
+  "name": "tblock/tblock-slider",
+  "title": "TBlock Slider",
+  "category": "tblock-block",
+  "icon": "slides",
+  "description": "A beautiful slider block with animations and slick slider",
+  "keywords": [
+    "slider",
+    "carousel",
+    "slick",
+    "banner"
+  ],
+  "attributes": {
+    "slides": {
+      "type": "array",
+      "default": [
+        {
+          "id": 1,
+          "title": "Welcome to Our Site",
+          "topTitle": "Discover More",
+          "buttonText": "Get Started",
+          "buttonUrl": "#",
+          "buttonStyle": "success",
+          "contentPosition": "center",
+          "imageUrl": "",
+          "imageId": 0,
+          "imageAlt": ""
+        }
+      ]
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoplaySpeed": {
+      "type": "number",
+      "default": 5000
+    },
+    "animationSpeed": {
+      "type": "number",
+      "default": 800
+    },
+    "showArrow": {
+      "type": "boolean",
+      "default": true
+    },
+    "showDots": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "html": false
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

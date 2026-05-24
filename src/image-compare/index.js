@@ -22,8 +22,8 @@ import './editor.scss';
  */
 registerBlockType( metadata.name, {
     ...metadata,
-    title: __('Awesome Image Compare', 'awesome-blocks'),
-    description: __('Compare two images with an interactive slider', 'awesome-blocks'),
+    title: __('TBlock Image Compare', 'theme-blocks' ),
+    description: __('Compare two images with an interactive slider', 'theme-blocks' ),
     edit,
     save,
 });
