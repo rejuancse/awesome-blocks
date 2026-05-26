@@ -14,7 +14,7 @@ describe('Sample Tests', () => {
 
         test('wp.i18n__() should return the same text', () => {
             const text = 'Hello World';
-            const translated = wp.i18n.__(text, 'theme-blocks' );
+            const translated = wp.i18n.__(text, 'zepblocks' );
             expect(translated).toBe(text);
         });
 
@@ -49,9 +49,9 @@ describe('Sample Tests', () => {
         });
 
         test('string operations', () => {
-            const str = 'ThemeBlocks';
+            const str = 'ZepBlocks';
             expect(str).toMatch(/Blocks/);
-            expect(str.toLowerCase()).toBe('tblock blocks');
+            expect(str.toLowerCase()).toBe('zepblock blocks');
         });
     });
 

@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Test Setup Script for ThemeBlocks Plugin
+# Test Setup Script for ZepBlocks Plugin
 # This script installs dependencies and sets up the testing environment
 
 set -e
 
 echo "=========================================="
-echo "ThemeBlocks - Test Setup Script"
+echo "ZepBlocks - Test Setup Script"
 echo "=========================================="
 echo ""
 

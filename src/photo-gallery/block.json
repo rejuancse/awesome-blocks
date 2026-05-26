@@ -1,8 +1,8 @@
 {
     "apiVersion": 3,
-    "name": "tblock/photo-gallery",
+    "name": "zepblock/photo-gallery",
     "title": "Photo Gallery",
-    "category": "tblock-block",
+    "category": "zepblock-block",
     "icon": "format-gallery",
     "description": "Beautiful responsive photo gallery with lightbox popup and navigation",
     "keywords": ["gallery", "images", "photos", "lightbox", "portfolio"],

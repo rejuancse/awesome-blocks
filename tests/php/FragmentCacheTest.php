@@ -5,9 +5,9 @@
  * Tests for the Fragment_Cache class.
  */
 
-namespace ThemeBlocks\Tests;
+namespace ZepBlocks\Tests;
 
-use ThemeBlocks\Fragment_Cache;
+use ZepBlocks\Fragment_Cache;
 
 class FragmentCacheTest extends TestCase {
 
@@ -15,7 +15,7 @@ class FragmentCacheTest extends TestCase {
      * Test cache key prefix constant
      */
     public function test_cache_prefix_constant() {
-        $this->assertEquals( 'theme_blocks_fragment_', Fragment_Cache::PREFIX );
+        $this->assertEquals( 'zepblocks_fragment_', Fragment_Cache::PREFIX );
         $this->assertIsString( Fragment_Cache::PREFIX );
     }
 

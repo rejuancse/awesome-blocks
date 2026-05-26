@@ -22,8 +22,8 @@ import './editor.scss';
  */
 registerBlockType( metadata.name, {
     ...metadata,
-    title: __('Photo Gallery', 'theme-blocks' ),
-    description: __('Beautiful responsive photo gallery with lightbox popup and navigation', 'theme-blocks' ),
+    title: __('Photo Gallery', 'zepblocks' ),
+    description: __('Beautiful responsive photo gallery with lightbox popup and navigation', 'zepblocks' ),
     edit,
     save,
 });

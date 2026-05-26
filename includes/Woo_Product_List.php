@@ -2,10 +2,10 @@
 /**
  * WooCommerce Product List Block Renderer
  *
- * @package ThemeBlocks
+ * @package ZepBlocks
  */
 
-namespace ThemeBlocks;
+namespace ZepBlocks;
 
 defined( 'ABSPATH' ) || exit;
 
@@ -28,7 +28,7 @@ class Woo_Product_List {
 
 		// Generate cache key from block attributes
 		ksort( $attributes );
-		$cache_key = 'theme_blocks_woo_product_list_' . md5( wp_json_encode( $attributes ) );
+		$cache_key = 'zepblocks_woo_product_list_' . md5( wp_json_encode( $attributes ) );
 
 		// Try to get from cache
 		$cached = get_transient( $cache_key );
@@ -54,11 +54,11 @@ class Woo_Product_List {
 	private static function render_content( $attributes ) {
 		// Check if WooCommerce is active
 		if ( ! class_exists( 'WooCommerce' ) ) {
-			return '<div class="theme-blocks-woo-notice">' .
-				'<div class="theme-blocks-woo-notice-icon">🛒</div>' .
-				'<div class="theme-blocks-woo-notice-content">' .
-				'<h3>' . esc_html__( 'WooCommerce Required', 'theme-blocks' ) . '</h3>' .
-				'<p>' . esc_html__( 'Please activate the WooCommerce plugin to use this block.', 'theme-blocks' ) . '</p>' .
+			return '<div class="zepblocks-woo-notice">' .
+				'<div class="zepblocks-woo-notice-icon">🛒</div>' .
+				'<div class="zepblocks-woo-notice-content">' .
+				'<h3>' . esc_html__( 'WooCommerce Required', 'zepblocks' ) . '</h3>' .
+				'<p>' . esc_html__( 'Please activate the WooCommerce plugin to use this block.', 'zepblocks' ) . '</p>' .
 				'</div>' .
 				'</div>';
 		}
@@ -112,17 +112,17 @@ class Woo_Product_List {
 		$products = new \WP_Query( $query_args );
 
 		if ( ! $products->have_posts() ) {
-			return '<div class="wpl-no-products">' . esc_html__( 'No products found.', 'theme-blocks' ) . '</div>';
+			return '<div class="wpl-no-products">' . esc_html__( 'No products found.', 'zepblocks' ) . '</div>';
 		}
 
 		$column_class = 12 / $columns;
-		$badge_class  = 'theme-blocks-badge-' . $badge_position;
+		$badge_class  = 'zepblocks-badge-' . $badge_position;
 
 		ob_start();
 
 		?>
-		<div class="theme-blocks-products-list">
-			<div class="theme-blocks-row">
+		<div class="zepblocks-products-list">
+			<div class="zepblocks-row">
 				<?php
 				while ( $products->have_posts() ) :
 					$products->the_post();
@@ -162,17 +162,17 @@ class Woo_Product_List {
 						$width        = ( $rating / 5 ) * 100;
 
 						/* translators: %s: Rating value */
-						$rating_title = sprintf( __( 'Rated %s out of 5', 'theme-blocks' ), $rating );
+						$rating_title = sprintf( __( 'Rated %s out of 5', 'zepblocks' ), $rating );
 
 						$rating_output = '
-							<div class="theme-blocks-product-rating">
+							<div class="zepblocks-product-rating">
 								<div class="star-rating" title="' . esc_attr( $rating_title ) . '">
 									<span style="width:' . esc_attr( $width ) . '%">
 										<strong class="rating">' . esc_html( $rating ) . '</strong>
-										' . esc_html__( 'out of', 'theme-blocks' ) . ' <span>5</span>
+										' . esc_html__( 'out of', 'zepblocks' ) . ' <span>5</span>
 									</span>
 								</div>
-								<div class="theme-blocks-review-count">(' . esc_html( $rating_count ) . ')</div>
+								<div class="zepblocks-review-count">(' . esc_html( $rating_count ) . ')</div>
 							</div>
 						';
 					}
@@ -180,7 +180,7 @@ class Woo_Product_List {
 					// Price
 					$price_output = '';
 					if ( $show_price ) {
-						$price_output = '<div class="theme-blocks-product-price">' . $product->get_price_html() . '</div>';
+						$price_output = '<div class="zepblocks-product-price">' . $product->get_price_html() . '</div>';
 					}
 
 					// Add to cart
@@ -188,7 +188,7 @@ class Woo_Product_List {
 					if ( $show_add_to_cart ) {
 						$add_to_cart_url    = esc_url( $product->add_to_cart_url() );
 						$add_to_cart_text   = esc_html( $product->add_to_cart_text() );
-						$add_to_cart_output = '<a href="' . $add_to_cart_url . '" class="theme-blocks-add-to-cart button" data-product_id="' . esc_attr( $product_id ) . '">' . $add_to_cart_text . '</a>';
+						$add_to_cart_output = '<a href="' . $add_to_cart_url . '" class="zepblocks-add-to-cart button" data-product_id="' . esc_attr( $product_id ) . '">' . $add_to_cart_text . '</a>';
 					}
 
 					// Badges (Sale/New)
@@ -200,18 +200,18 @@ class Woo_Product_List {
 							$sale_price    = $product->get_sale_price();
 							if ( $regular_price && $sale_price ) {
 								$percentage = round( ( ( $regular_price - $sale_price ) / $regular_price ) * 100 );
-								$badges[]   = '<span class="theme-blocks-discount-badge">-' . $percentage . '%</span>';
+								$badges[]   = '<span class="zepblocks-discount-badge">-' . $percentage . '%</span>';
 							}
 						}
 						if ( ! empty( $badges ) ) {
-							$badges_output = '<div class="theme-blocks-product-badges ' . esc_attr( $badge_class ) . '">' . implode( '', $badges ) . '</div>';
+							$badges_output = '<div class="zepblocks-product-badges ' . esc_attr( $badge_class ) . '">' . implode( '', $badges ) . '</div>';
 						}
 					}
 					?>
-					<div class="theme-blocks-col-<?php echo esc_attr( $column_class ); ?>">
-						<div class="theme-blocks-product-card">
-							<div class="theme-blocks-product-image-wrapper">
-								<a href="<?php echo esc_url( $product_link ); ?>" class="theme-blocks-product-image">
+					<div class="zepblocks-col-<?php echo esc_attr( $column_class ); ?>">
+						<div class="zepblocks-product-card">
+							<div class="zepblocks-product-image-wrapper">
+								<a href="<?php echo esc_url( $product_link ); ?>" class="zepblocks-product-image">
 									<img
 										src="<?php echo esc_url( $product_image ); ?>"
 										alt="<?php echo esc_attr( $product_image_alt ?: $product_title ); ?>"
@@ -221,14 +221,14 @@ class Woo_Product_List {
 								<?php echo wp_kses_post( $badges_output ); ?>
 							</div>
 
-							<div class="theme-blocks-product-details">
+							<div class="zepblocks-product-details">
 								<?php if ( $category_output ) : ?>
-									<div class="theme-blocks-product-category">
+									<div class="zepblocks-product-category">
 										<?php echo wp_kses_post( $category_output ); ?>
 									</div>
 								<?php endif; ?>
 
-								<h3 class="theme-blocks-product-title">
+								<h3 class="zepblocks-product-title">
 									<a href="<?php echo esc_url( $product_link ); ?>">
 										<?php echo esc_html( $product_title ); ?>
 									</a>

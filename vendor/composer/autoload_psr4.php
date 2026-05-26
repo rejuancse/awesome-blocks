@@ -6,8 +6,8 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'ThemeBlocks\\Tests\\' => array($baseDir . '/tests/php'),
-    'ThemeBlocks\\' => array($baseDir . '/includes'),
+    'ZepBlocks\\Tests\\' => array($baseDir . '/tests/php'),
+    'ZepBlocks\\' => array($baseDir . '/includes'),
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),

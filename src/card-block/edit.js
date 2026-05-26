@@ -99,11 +99,11 @@ export default function Edit({ attributes, setAttributes }) {
     return (
         <>
             <InspectorControls>
-                <PanelBody title={__('Card Content', 'theme-blocks' )} initialOpen={true}>
+                <PanelBody title={__('Card Content', 'zepblocks' )} initialOpen={true}>
                     {/* Image Section */}
                     <PanelRow>
                         <label className="components-base-control__label">
-                            {__('Card Image', 'theme-blocks' )}
+                            {__('Card Image', 'zepblocks' )}
                         </label>
                     </PanelRow>
                     <PanelRow>
@@ -113,20 +113,20 @@ export default function Edit({ attributes, setAttributes }) {
                                 allowedTypes={['image']}
                                 value={imageId}
                                 render={({ open }) => (
-                                    <div className="theme-blocks-media-upload-wrapper">
+                                    <div className="zepblocks-media-upload-wrapper">
                                         {!imageUrl ? (
                                             <Button
                                                 onClick={open}
                                                 variant="secondary"
-                                                className="theme-blocks-media-upload-button"
+                                                className="zepblocks-media-upload-button"
                                             >
                                                 <Dashicon icon="format-image" />
-                                                {__('Upload Image', 'theme-blocks' )}
+                                                {__('Upload Image', 'zepblocks' )}
                                             </Button>
                                         ) : (
-                                            <div className="theme-blocks-media-preview">
-                                                <img src={imageUrl} alt={__('Preview', 'theme-blocks' )} />
-                                                <div className="theme-blocks-media-actions">
+                                            <div className="zepblocks-media-preview">
+                                                <img src={imageUrl} alt={__('Preview', 'zepblocks' )} />
+                                                <div className="zepblocks-media-actions">
                                                     <Button
                                                         onClick={open}
                                                         variant="secondary"
@@ -153,7 +153,7 @@ export default function Edit({ attributes, setAttributes }) {
                     {imageUrl && (
                         <PanelRow>
                             <TextControl
-                                label={__('Image Alt Text', 'theme-blocks' )}
+                                label={__('Image Alt Text', 'zepblocks' )}
                                 value={imageAlt}
                                 onChange={(value) => setAttributes({ imageAlt: value })}
                             />
@@ -165,7 +165,7 @@ export default function Edit({ attributes, setAttributes }) {
                     {/* Text Content */}
                     <PanelRow>
                         <TextControl
-                            label={__('Tag', 'theme-blocks' )}
+                            label={__('Tag', 'zepblocks' )}
                             value={tag}
                             onChange={(value) => setAttributes({ tag: value })}
                         />
@@ -173,7 +173,7 @@ export default function Edit({ attributes, setAttributes }) {
                     <PanelRow>
                         <div style={{ width: '100%' }} ref={datePickerRef}>
                             <label className="components-base-control__label">
-                                {__('Date', 'theme-blocks' )}
+                                {__('Date', 'zepblocks' )}
                             </label>
                             <div style={{ position: 'relative' }}>
                                 <input
@@ -190,7 +190,7 @@ export default function Edit({ attributes, setAttributes }) {
                                         fontSize: '14px',
                                         background: '#fff'
                                     }}
-                                    placeholder={__('Select a date', 'theme-blocks' )}
+                                    placeholder={__('Select a date', 'zepblocks' )}
                                 />
                                 {isDatePickerOpen && (
                                     <Popover
@@ -219,14 +219,14 @@ export default function Edit({ attributes, setAttributes }) {
                     </PanelRow>
                     <PanelRow>
                         <TextControl
-                            label={__('Title', 'theme-blocks' )}
+                            label={__('Title', 'zepblocks' )}
                             value={title}
                             onChange={(value) => setAttributes({ title: value })}
                         />
                     </PanelRow>
                     <PanelRow>
                         <TextareaControl
-                            label={__('Excerpt', 'theme-blocks' )}
+                            label={__('Excerpt', 'zepblocks' )}
                             value={excerpt}
                             onChange={(value) => setAttributes({ excerpt: value })}
                             rows={3}
@@ -238,7 +238,7 @@ export default function Edit({ attributes, setAttributes }) {
                     {/* Author Section */}
                     <PanelRow>
                         <label className="components-base-control__label">
-                            {__('Author Info', 'theme-blocks' )}
+                            {__('Author Info', 'zepblocks' )}
                         </label>
                     </PanelRow>
                     <PanelRow>
@@ -248,7 +248,7 @@ export default function Edit({ attributes, setAttributes }) {
                                 allowedTypes={['image']}
                                 value={authorAvatar}
                                 render={({ open }) => (
-                                    <div className="theme-blocks-media-upload-wrapper">
+                                    <div className="zepblocks-media-upload-wrapper">
                                         {!authorAvatar ? (
                                             <Button
                                                 onClick={open}
@@ -256,12 +256,12 @@ export default function Edit({ attributes, setAttributes }) {
                                                 isSmall
                                             >
                                                 <Dashicon icon="format-image" />
-                                                {__('Upload Avatar', 'theme-blocks' )}
+                                                {__('Upload Avatar', 'zepblocks' )}
                                             </Button>
                                         ) : (
-                                            <div className="theme-blocks-media-preview theme-blocks-avatar-preview">
-                                                <img src={authorAvatar} alt={__('Avatar', 'theme-blocks' )} />
-                                                <div className="theme-blocks-media-actions">
+                                            <div className="zepblocks-media-preview zepblocks-avatar-preview">
+                                                <img src={authorAvatar} alt={__('Avatar', 'zepblocks' )} />
+                                                <div className="zepblocks-media-actions">
                                                     <Button
                                                         onClick={open}
                                                         variant="secondary"
@@ -287,7 +287,7 @@ export default function Edit({ attributes, setAttributes }) {
                     </PanelRow>
                     <PanelRow>
                         <TextControl
-                            label={__('Author Name', 'theme-blocks' )}
+                            label={__('Author Name', 'zepblocks' )}
                             value={authorName}
                             onChange={(value) => setAttributes({ authorName: value })}
                         />
@@ -298,63 +298,63 @@ export default function Edit({ attributes, setAttributes }) {
                     {/* Button Section */}
                     <PanelRow>
                         <TextControl
-                            label={__('Button Text', 'theme-blocks' )}
+                            label={__('Button Text', 'zepblocks' )}
                             value={buttonText}
                             onChange={(value) => setAttributes({ buttonText: value })}
                         />
                     </PanelRow>
                     <PanelRow>
                         <TextControl
-                            label={__('Button Link', 'theme-blocks' )}
+                            label={__('Button Link', 'zepblocks' )}
                             value={buttonLink}
                             onChange={(value) => setAttributes({ buttonLink: value })}
                         />
                     </PanelRow>
                     <PanelRow>
                         <ToggleControl
-                            label={__('Open in New Tab', 'theme-blocks' )}
+                            label={__('Open in New Tab', 'zepblocks' )}
                             checked={openInNewTab}
                             onChange={() => setAttributes({ openInNewTab: !openInNewTab })}
                         />
                     </PanelRow>
                 </PanelBody>
 
-                <PanelBody title={__('Display Options', 'theme-blocks' )} initialOpen={false}>
+                <PanelBody title={__('Display Options', 'zepblocks' )} initialOpen={false}>
                     <ToggleControl
-                        label={__('Show Tag', 'theme-blocks' )}
+                        label={__('Show Tag', 'zepblocks' )}
                         checked={showTag}
                         onChange={() => setAttributes({ showTag: !showTag })}
                     />
                     <ToggleControl
-                        label={__('Show Date', 'theme-blocks' )}
+                        label={__('Show Date', 'zepblocks' )}
                         checked={showDate}
                         onChange={() => setAttributes({ showDate: !showDate })}
                     />
                     <ToggleControl
-                        label={__('Show Excerpt', 'theme-blocks' )}
+                        label={__('Show Excerpt', 'zepblocks' )}
                         checked={showExcerpt}
                         onChange={() => setAttributes({ showExcerpt: !showExcerpt })}
                     />
                     <ToggleControl
-                        label={__('Show Author', 'theme-blocks' )}
+                        label={__('Show Author', 'zepblocks' )}
                         checked={showAuthor}
                         onChange={() => setAttributes({ showAuthor: !showAuthor })}
                     />
                     <ToggleControl
-                        label={__('Show Button', 'theme-blocks' )}
+                        label={__('Show Button', 'zepblocks' )}
                         checked={showButton}
                         onChange={() => setAttributes({ showButton: !showButton })}
                     />
                 </PanelBody>
 
-                <PanelBody title={__('Card Alignment', 'theme-blocks' )} initialOpen={false}>
+                <PanelBody title={__('Card Alignment', 'zepblocks' )} initialOpen={false}>
                     <SelectControl
-                        label={__('Alignment', 'theme-blocks' )}
+                        label={__('Alignment', 'zepblocks' )}
                         value={cardAlignment}
                         options={[
-                            { label: __('Left', 'theme-blocks' ), value: 'left' },
-                            { label: __('Center', 'theme-blocks' ), value: 'center' },
-                            { label: __('Right', 'theme-blocks' ), value: 'right' },
+                            { label: __('Left', 'zepblocks' ), value: 'left' },
+                            { label: __('Center', 'zepblocks' ), value: 'center' },
+                            { label: __('Right', 'zepblocks' ), value: 'right' },
                         ]}
                         onChange={(value) => setAttributes({ cardAlignment: value })}
                     />

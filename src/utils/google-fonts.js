@@ -11,7 +11,7 @@ import { __ } from '@wordpress/i18n';
  * @type {Array.<{label: string, value: string}>}
  */
 export const GOOGLE_FONTS = [
-	{ label: __( 'Default', 'theme-blocks'  ), value: '' },
+	{ label: __( 'Default', 'zepblocks'  ), value: '' },
 	{ label: 'Roboto',       value: "'Roboto', sans-serif" },
 	{ label: 'Open Sans',    value: "'Open Sans', sans-serif" },
 	{ label: 'Lato',         value: "'Lato', sans-serif" },

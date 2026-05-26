@@ -2,54 +2,54 @@
  * WooCommerce Category Grid - Editor Styles
  */
 
-.theme-blocks-category-grid {
+.zepblocks-category-grid {
     margin: 0;
     padding: 20px 0;
 
-    .theme-blocks-row {
+    .zepblocks-row {
         display: flex;
         flex-wrap: wrap;
         margin: 0 -10px;
     }
 
-    .theme-blocks-col {
+    .zepblocks-col {
         padding: 0 10px;
         box-sizing: border-box;
     }
 
     // Column layouts
-    &.theme-blocks-columns-1 .theme-blocks-col { width: 100%; }
-    &.theme-blocks-columns-2 .theme-blocks-col { width: 50%; }
-    &.theme-blocks-columns-3 .theme-blocks-col { width: 33.333%; }
-    &.theme-blocks-columns-4 .theme-blocks-col { width: 25%; }
-    &.theme-blocks-columns-5 .theme-blocks-col { width: 20%; }
-    &.theme-blocks-columns-6 .theme-blocks-col { width: 16.666%; }
+    &.zepblocks-columns-1 .zepblocks-col { width: 100%; }
+    &.zepblocks-columns-2 .zepblocks-col { width: 50%; }
+    &.zepblocks-columns-3 .zepblocks-col { width: 33.333%; }
+    &.zepblocks-columns-4 .zepblocks-col { width: 25%; }
+    &.zepblocks-columns-5 .zepblocks-col { width: 20%; }
+    &.zepblocks-columns-6 .zepblocks-col { width: 16.666%; }
 
     @media (max-width: 1024px) {
-        &.theme-blocks-columns-4 .theme-blocks-col,
-        &.theme-blocks-columns-5 .theme-blocks-col,
-        &.theme-blocks-columns-6 .theme-blocks-col {
+        &.zepblocks-columns-4 .zepblocks-col,
+        &.zepblocks-columns-5 .zepblocks-col,
+        &.zepblocks-columns-6 .zepblocks-col {
             width: 33.333%;
         }
     }
 
     @media (max-width: 768px) {
-        &.theme-blocks-columns-2 .theme-blocks-col,
-        &.theme-blocks-columns-3 .theme-blocks-col,
-        &.theme-blocks-columns-4 .theme-blocks-col,
-        &.theme-blocks-columns-5 .theme-blocks-col,
-        &.theme-blocks-columns-6 .theme-blocks-col {
+        &.zepblocks-columns-2 .zepblocks-col,
+        &.zepblocks-columns-3 .zepblocks-col,
+        &.zepblocks-columns-4 .zepblocks-col,
+        &.zepblocks-columns-5 .zepblocks-col,
+        &.zepblocks-columns-6 .zepblocks-col {
             width: 50%;
         }
     }
 
     @media (max-width: 480px) {
-        .theme-blocks-col {
+        .zepblocks-col {
             width: 100% !important;
         }
     }
 
-    .theme-blocks-category-card {
+    .zepblocks-category-card {
         background: #ffffff;
         border: 1px solid #e0e0e0;
         border-radius: 8px;
@@ -63,12 +63,12 @@
         }
     }
 
-    .theme-blocks-category-image-wrapper {
+    .zepblocks-category-image-wrapper {
         position: relative;
         overflow: hidden;
         background: #f9f9f9;
 
-        .theme-blocks-category-image {
+        .zepblocks-category-image {
             display: block;
             width: 100%;
             height: 200px;
@@ -86,12 +86,12 @@
         }
     }
 
-    .theme-blocks-category-details {
+    .zepblocks-category-details {
         padding: 20px;
         text-align: center;
     }
 
-    .theme-blocks-category-title {
+    .zepblocks-category-title {
         margin: 0 0 10px 0;
         font-size: 18px;
         font-weight: 600;
@@ -108,7 +108,7 @@
         }
     }
 
-    .theme-blocks-category-count {
+    .zepblocks-category-count {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -116,7 +116,7 @@
         font-size: 14px;
         color: #666666;
 
-        .theme-blocks-count-number {
+        .zepblocks-count-number {
             background: #f0f0f0;
             padding: 4px 10px;
             border-radius: 12px;
@@ -124,7 +124,7 @@
             color: #333333;
         }
 
-        .theme-blocks-count-label {
+        .zepblocks-count-label {
             text-transform: lowercase;
         }
     }
@@ -132,14 +132,14 @@
 
 // Responsive adjustments for editor
 @media (max-width: 782px) {
-    .theme-blocks-category-grid {
+    .zepblocks-category-grid {
         padding: 10px 0;
 
-        .theme-blocks-row {
+        .zepblocks-row {
             margin: 0 -5px;
         }
 
-        .theme-blocks-col {
+        .zepblocks-col {
             padding: 0 5px;
         }
     }

@@ -126,10 +126,10 @@ function Edit({
 
   // Render
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Layout Settings', 'theme-blocks'),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Layout Settings', 'zepblocks'),
     initialOpen: true
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.RangeControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Columns', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Columns', 'zepblocks'),
     value: columns,
     onChange: value => setAttributes({
       columns: value
@@ -138,7 +138,7 @@ function Edit({
     max: 6,
     step: 1
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.RangeControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Categories per Page', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Categories per Page', 'zepblocks'),
     value: categoriesPerPage,
     onChange: value => setAttributes({
       categoriesPerPage: value
@@ -147,84 +147,84 @@ function Edit({
     max: 50,
     step: 1
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Category Query', 'theme-blocks'),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Category Query', 'zepblocks'),
     initialOpen: false
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Order By', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Order By', 'zepblocks'),
     value: orderBy,
     options: [{
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Name', 'theme-blocks'),
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Name', 'zepblocks'),
       value: 'name'
     }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Slug', 'theme-blocks'),
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Slug', 'zepblocks'),
       value: 'slug'
     }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Category ID', 'theme-blocks'),
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Category ID', 'zepblocks'),
       value: 'id'
     }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Count', 'theme-blocks'),
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Count', 'zepblocks'),
       value: 'count'
     }],
     onChange: value => setAttributes({
       orderBy: value
     })
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Order', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Order', 'zepblocks'),
     value: order,
     options: [{
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Ascending', 'theme-blocks'),
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Ascending', 'zepblocks'),
       value: 'ASC'
     }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Descending', 'theme-blocks'),
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Descending', 'zepblocks'),
       value: 'DESC'
     }],
     onChange: value => setAttributes({
       order: value
     })
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToggleControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Hide Empty Categories', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Hide Empty Categories', 'zepblocks'),
     checked: hideEmpty,
     onChange: () => setAttributes({
       hideEmpty: !hideEmpty
     })
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Display Options', 'theme-blocks'),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Display Options', 'zepblocks'),
     initialOpen: false
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToggleControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Show Category Image', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Show Category Image', 'zepblocks'),
     checked: showImage,
     onChange: () => setAttributes({
       showImage: !showImage
     })
   }), showImage && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Image Size', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Image Size', 'zepblocks'),
     value: imageSize,
     options: [{
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Thumbnail', 'theme-blocks'),
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Thumbnail', 'zepblocks'),
       value: 'thumbnail'
     }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Medium', 'theme-blocks'),
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Medium', 'zepblocks'),
       value: 'medium'
     }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Large', 'theme-blocks'),
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Large', 'zepblocks'),
       value: 'large'
     }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Full', 'theme-blocks'),
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Full', 'zepblocks'),
       value: 'full'
     }],
     onChange: value => setAttributes({
       imageSize: value
     })
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToggleControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Show Product Count', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Show Product Count', 'zepblocks'),
     checked: showCount,
     onChange: () => setAttributes({
       showCount: !showCount
     })
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Exclude Categories', 'theme-blocks'),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Exclude Categories', 'zepblocks'),
     initialOpen: false
-  }, allCategories.length === 0 ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Loading categories...', 'theme-blocks')) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, allCategories.map(cat => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, allCategories.length === 0 ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Loading categories...', 'zepblocks')) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, allCategories.map(cat => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     key: cat.id,
     style: {
       padding: '8px',
@@ -242,7 +242,7 @@ function Edit({
       fontSize: '12px',
       color: '#666'
     }
-  }, excludeCategories.includes(cat.id) ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Excluded', 'theme-blocks') : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Included', 'theme-blocks')))), excludeCategories.length > 0 && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, excludeCategories.includes(cat.id) ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Excluded', 'zepblocks') : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Included', 'zepblocks')))), excludeCategories.length > 0 && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     style: {
       marginTop: '10px',
       padding: '8px 12px',
@@ -251,7 +251,7 @@ function Edit({
     onClick: () => setAttributes({
       excludeCategories: []
     })
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Clear All Exclusions', 'theme-blocks'))))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Clear All Exclusions', 'zepblocks'))))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...blockProps
   }, !hasResolved ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     style: {
@@ -266,17 +266,17 @@ function Edit({
       background: '#f9f9f9',
       borderRadius: '8px'
     }
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('No categories found. Add some WooCommerce product categories first.', 'theme-blocks'))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "theme-blocks-product-category"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('No categories found. Add some WooCommerce product categories first.', 'zepblocks'))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "zepblocks-product-category"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "theme-blocks-row cats"
+    className: "zepblocks-row cats"
   }, categories.map(category => {
     const imageUrl = showImage ? getImageUrl(category) || PLACEHOLDER : null;
     const categoryLink = getCategoryLink(category);
     const productCount = category.count || 0;
     return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       key: category.id,
-      className: `theme-blocks-col-${12 / columns}`
+      className: `zepblocks-col-${12 / columns}`
     }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "item"
     }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
@@ -288,12 +288,12 @@ function Edit({
     }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
       className: "category-thumbnail",
       src: imageUrl,
-      alt: category.name || (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Category Image', 'theme-blocks')
+      alt: category.name || (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Category Image', 'zepblocks')
     })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "details"
     }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", {
       className: "title"
-    }, category.name || (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Untitled Category', 'theme-blocks')), showCount && productCount > 0 && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, productCount, productCount === 1 ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(' product', 'theme-blocks') : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(' products', 'theme-blocks')))))));
+    }, category.name || (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Untitled Category', 'zepblocks')), showCount && productCount > 0 && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, productCount, productCount === 1 ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(' product', 'zepblocks') : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(' products', 'zepblocks')))))));
   })))));
 }
 
@@ -337,8 +337,8 @@ __webpack_require__.r(__webpack_exports__);
  */
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_2__.name, {
   ..._block_json__WEBPACK_IMPORTED_MODULE_2__,
-  title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Woo Category Grid', 'theme-blocks'),
-  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Display WooCommerce product categories in a beautiful grid layout', 'theme-blocks'),
+  title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Woo Category Grid', 'zepblocks'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Display WooCommerce product categories in a beautiful grid layout', 'zepblocks'),
   edit: _edit__WEBPACK_IMPORTED_MODULE_3__["default"],
   save: () => null // Dynamic block, rendered via PHP
 });
@@ -455,7 +455,7 @@ module.exports = window["wp"]["i18n"];
   \******************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/woo-category-grid","title":"Woo Category Grid","category":"tblock-block","icon":"category","description":"Display WooCommerce product categories in a beautiful grid layout","keywords":["woocommerce","categories","product categories","shop"],"attributes":{"columns":{"type":"number","default":6},"categoriesPerPage":{"type":"number","default":6},"orderBy":{"type":"string","default":"name"},"order":{"type":"string","default":"DESC"},"hideEmpty":{"type":"boolean","default":true},"showImage":{"type":"boolean","default":true},"showCount":{"type":"boolean","default":true},"imageSize":{"type":"string","default":"medium"},"excludeCategories":{"type":"array","default":[]}},"supports":{"align":["wide","full"],"html":false},"editorScript":"file:./index.js","style":"file:./style-index.css"}');
+module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/woo-category-grid","title":"Woo Category Grid","category":"zepblock-block","icon":"category","description":"Display WooCommerce product categories in a beautiful grid layout","keywords":["woocommerce","categories","product categories","shop"],"attributes":{"columns":{"type":"number","default":6},"categoriesPerPage":{"type":"number","default":6},"orderBy":{"type":"string","default":"name"},"order":{"type":"string","default":"DESC"},"hideEmpty":{"type":"boolean","default":true},"showImage":{"type":"boolean","default":true},"showCount":{"type":"boolean","default":true},"imageSize":{"type":"string","default":"medium"},"excludeCategories":{"type":"array","default":[]}},"supports":{"align":["wide","full"],"html":false},"editorScript":"file:./index.js","style":"file:./style-index.css"}');
 
 /***/ }
 
@@ -463,7 +463,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/woo-cat
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -477,7 +477,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/woo-cat
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
+/******/
 /******/ 		// Execute the module function
 /******/ 		if (!(moduleId in __webpack_modules__)) {
 /******/ 			delete __webpack_module_cache__[moduleId];
@@ -486,14 +486,14 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/woo-cat
 /******/ 			throw e;
 /******/ 		}
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = __webpack_modules__;
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/chunk loaded */
 /******/ 	(() => {
@@ -526,7 +526,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/woo-cat
 /******/ 			return result;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
@@ -538,7 +538,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/woo-cat
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -550,12 +550,12 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/woo-cat
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -566,11 +566,11 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/woo-cat
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/jsonp chunk loading */
 /******/ 	(() => {
 /******/ 		// no baseURI
-/******/ 		
+/******/
 /******/ 		// object to store loaded and loading chunks
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
@@ -578,19 +578,19 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/woo-cat
 /******/ 			"woo-category-grid/index": 0,
 /******/ 			"woo-category-grid/style-index": 0
 /******/ 		};
-/******/ 		
+/******/
 /******/ 		// no chunk on demand loading
-/******/ 		
+/******/
 /******/ 		// no prefetching
-/******/ 		
+/******/
 /******/ 		// no preloaded
-/******/ 		
+/******/
 /******/ 		// no HMR
-/******/ 		
+/******/
 /******/ 		// no HMR manifest
-/******/ 		
+/******/
 /******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
-/******/ 		
+/******/
 /******/ 		// install a JSONP callback for chunk loading
 /******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
 /******/ 			var [chunkIds, moreModules, runtime] = data;
@@ -615,20 +615,20 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/woo-cat
 /******/ 			}
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
-/******/ 		
-/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkthemeblocks"] = globalThis["webpackChunkthemeblocks"] || [];
+/******/
+/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkzepblocks"] = globalThis["webpackChunkzepblocks"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
-/******/ 	
+/******/
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
 /******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["woo-category-grid/style-index"], () => (__webpack_require__("./src/woo-category-grid/index.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
-/******/ 	
+/******/
 /******/ })()
 ;
 //# sourceMappingURL=index.js.map

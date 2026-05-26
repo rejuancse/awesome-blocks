@@ -1,6 +1,6 @@
-.wp-block-tblock-image-compare {
+.wp-block-zepblock-image-compare {
 
-	.tblock-image-container {
+	.zepblock-image-container {
 		position: relative;
 
 		.label {
@@ -25,14 +25,14 @@
 		}
 	}
 
-	.tblock-image-comparison {
+	.zepblock-image-comparison {
 		width: 100%;
 		padding-bottom: 50%;
 		overflow: hidden;
 		position: relative;
 	}
 
-	.tblock-image-figure {
+	.zepblock-image-figure {
 		position: absolute;
 		background-size: cover;
 		font-size: 0;
@@ -41,7 +41,7 @@
 		margin: 0;
 	}
 
-	.tblock-image-divisor {
+	.zepblock-image-divisor {
 		background-size: cover;
 		position: absolute;
 		width: 50%;
@@ -71,7 +71,7 @@
 		}
 	}
 
-	.tblock-image-handle {
+	.zepblock-image-handle {
 		background: #fff;
 		border-radius: 50%;
 		position: absolute;
@@ -116,7 +116,7 @@
 		}
 	}
 
-	.tblock-image-slider {
+	.zepblock-image-slider {
 		-webkit-appearance: none;
 		-moz-appearance: none;
 		position: absolute;
@@ -137,7 +137,7 @@
 		}
 	}
 
-	.tblock-image-slider::-webkit-slider-thumb {
+	.zepblock-image-slider::-webkit-slider-thumb {
 		-webkit-appearance: none;
 		width: 60px;
 		height: 60px;
@@ -146,14 +146,14 @@
 		top: 50%;
 	}
 
-	.tblock-image-slider::-webkit-slider-runnable-track {
+	.zepblock-image-slider::-webkit-slider-runnable-track {
 		width: 100%;
 		height: 100%;
 		background: transparent;
 		cursor: ew-resize;
 	}
 
-	.tblock-image-slider::-moz-range-thumb {
+	.zepblock-image-slider::-moz-range-thumb {
 		width: 60px;
 		height: 60px;
 		border-radius: 50%;
@@ -169,7 +169,7 @@
 		}
 	}
 
-	.tblock-image-slider::-moz-range-track {
+	.zepblock-image-slider::-moz-range-track {
 		width: 100%;
 		height: 100%;
 		background: transparent;

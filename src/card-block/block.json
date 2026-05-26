@@ -1,8 +1,8 @@
 {
     "apiVersion": 3,
-    "name": "tblock/card-block",
+    "name": "zepblock/card-block",
     "title": "Card Block",
-    "category": "tblock-block",
+    "category": "zepblock-block",
     "icon": "album",
     "description": "Beautiful card layout with image, tag, title, excerpt, author and button",
     "keywords": ["card", "post", "content", "featured"],

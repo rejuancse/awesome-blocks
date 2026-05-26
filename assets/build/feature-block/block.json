@@ -1,8 +1,8 @@
 {
   "apiVersion": 3,
-  "name": "tblock/feature-block",
+  "name": "zepblock/feature-block",
   "title": "Feature Block",
-  "category": "tblock-block",
+  "category": "zepblock-block",
   "icon": "star-filled",
   "description": "Display features/services with icon, title and description",
   "keywords": [

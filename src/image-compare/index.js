@@ -22,8 +22,8 @@ import './editor.scss';
  */
 registerBlockType( metadata.name, {
     ...metadata,
-    title: __('TBlock Image Compare', 'theme-blocks' ),
-    description: __('Compare two images with an interactive slider', 'theme-blocks' ),
+    title: __('Zepblock Image Compare', 'zepblocks' ),
+    description: __('Compare two images with an interactive slider', 'zepblocks' ),
     edit,
     save,
 });

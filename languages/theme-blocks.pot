@@ -2,8 +2,8 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: ThemeBlocks 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/theme-blocks\n"
+"Project-Id-Version: ZepBlocks 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/zepblocks\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -12,20 +12,20 @@ msgstr ""
 "POT-Creation-Date: 2026-05-24T04:46:50+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
-"X-Domain: theme-blocks\n"
+"X-Domain: zepblocks\n"
 
 #. Plugin Name of the plugin
-#: theme-blocks.php
-msgid "ThemeBlocks"
+#: zepblocks.php
+msgid "ZepBlocks"
 msgstr ""
 
 #. Description of the plugin
-#: theme-blocks.php
+#: zepblocks.php
 msgid "A lightweight collection of beautiful, flexible Gutenberg blocks — including sliders, galleries, timelines, and WooCommerce blocks."
 msgstr ""
 
 #. Author of the plugin
-#: theme-blocks.php
+#: zepblocks.php
 msgid "Rejuan Ahamed"
 msgstr ""
 
@@ -51,7 +51,7 @@ msgid "Read More →"
 msgstr ""
 
 #: includes/Register_Blocks.php:26
-msgid "Theme Blocks"
+msgid "ZepBlock"
 msgstr ""
 
 #: includes/Woo_Category_List.php:60
@@ -104,20 +104,20 @@ msgid "Card Image"
 msgstr ""
 
 #: assets/build/card-block/index.js:126
-#: assets/build/tblock-slider/index.js:210
+#: assets/build/zepblock-slider/index.js:210
 #: src/card-block/edit.js:124
-#: src/tblock-slider/edit.js:188
+#: src/zepblock-slider/edit.js:188
 #: assets/build/card-block/index.js:124
-#: assets/build/tblock-slider/index.js:188
+#: assets/build/zepblock-slider/index.js:188
 msgid "Upload Image"
 msgstr ""
 
 #: assets/build/card-block/index.js:130
-#: assets/build/tblock-slider/index.js:217
+#: assets/build/zepblock-slider/index.js:217
 #: src/card-block/edit.js:128
-#: src/tblock-slider/edit.js:194
+#: src/zepblock-slider/edit.js:194
 #: assets/build/card-block/index.js:128
-#: assets/build/tblock-slider/index.js:194
+#: assets/build/zepblock-slider/index.js:194
 msgid "Preview"
 msgstr ""
 
@@ -135,15 +135,15 @@ msgstr ""
 
 #: assets/build/card-block/index.js:166
 #: assets/build/post-block/index.js:249
-#: assets/build/tblock-timeline/index.js:109
+#: assets/build/zepblock-timeline/index.js:109
 #: assets/build/woo-product-list/index.js:228
 #: src/card-block/edit.js:176
 #: src/post-block/edit.js:228
-#: src/tblock-timeline/edit.js:93
+#: src/zepblock-timeline/edit.js:93
 #: src/woo-product-list/edit.js:217
 #: assets/build/card-block/index.js:176
 #: assets/build/post-block/index.js:228
-#: assets/build/tblock-timeline/index.js:93
+#: assets/build/zepblock-timeline/index.js:93
 #: assets/build/woo-product-list/index.js:217
 msgid "Date"
 msgstr ""
@@ -158,22 +158,22 @@ msgstr ""
 #: assets/build/feature-block/index.js:70
 #: assets/build/hero-video/index.js:223
 #: assets/build/post-block/index.js:252
-#: assets/build/tblock-slider/index.js:245
-#: assets/build/tblock-timeline/index.js:100
+#: assets/build/zepblock-slider/index.js:245
+#: assets/build/zepblock-timeline/index.js:100
 #: assets/build/woo-product-list/index.js:240
 #: src/card-block/edit.js:222
 #: src/feature-block/edit.js:66
 #: src/hero-video/edit.js:220
 #: src/post-block/edit.js:229
-#: src/tblock-slider/edit.js:224
-#: src/tblock-timeline/edit.js:82
+#: src/zepblock-slider/edit.js:224
+#: src/zepblock-timeline/edit.js:82
 #: src/woo-product-list/edit.js:221
 #: assets/build/card-block/index.js:222
 #: assets/build/feature-block/index.js:66
 #: assets/build/hero-video/index.js:220
 #: assets/build/post-block/index.js:229
-#: assets/build/tblock-slider/index.js:224
-#: assets/build/tblock-timeline/index.js:82
+#: assets/build/zepblock-slider/index.js:224
+#: assets/build/zepblock-timeline/index.js:82
 #: assets/build/woo-product-list/index.js:221
 msgid "Title"
 msgstr ""
@@ -210,13 +210,13 @@ msgstr ""
 
 #: assets/build/card-block/index.js:261
 #: assets/build/hero-video/index.js:237
-#: assets/build/tblock-slider/index.js:249
+#: assets/build/zepblock-slider/index.js:249
 #: src/card-block/edit.js:301
 #: src/hero-video/edit.js:234
-#: src/tblock-slider/edit.js:229
+#: src/zepblock-slider/edit.js:229
 #: assets/build/card-block/index.js:301
 #: assets/build/hero-video/index.js:234
-#: assets/build/tblock-slider/index.js:229
+#: assets/build/zepblock-slider/index.js:229
 msgid "Button Text"
 msgstr ""
 
@@ -300,52 +300,52 @@ msgstr ""
 #: assets/build/card-block/index.js:318
 #: assets/build/feature-block/index.js:132
 #: assets/build/hero-video/index.js:254
-#: assets/build/tblock-slider/index.js:271
+#: assets/build/zepblock-slider/index.js:271
 #: src/card-block/edit.js:355
 #: src/feature-block/edit.js:133
 #: src/hero-video/edit.js:251
-#: src/tblock-slider/edit.js:251
+#: src/zepblock-slider/edit.js:251
 #: assets/build/card-block/index.js:355
 #: assets/build/feature-block/index.js:133
 #: assets/build/hero-video/index.js:251
-#: assets/build/tblock-slider/index.js:251
+#: assets/build/zepblock-slider/index.js:251
 msgid "Left"
 msgstr ""
 
 #: assets/build/card-block/index.js:321
 #: assets/build/feature-block/index.js:135
 #: assets/build/hero-video/index.js:257
-#: assets/build/tblock-slider/index.js:274
+#: assets/build/zepblock-slider/index.js:274
 #: src/card-block/edit.js:356
 #: src/feature-block/edit.js:134
 #: src/hero-video/edit.js:252
-#: src/tblock-slider/edit.js:252
+#: src/zepblock-slider/edit.js:252
 #: assets/build/card-block/index.js:356
 #: assets/build/feature-block/index.js:134
 #: assets/build/hero-video/index.js:252
-#: assets/build/tblock-slider/index.js:252
+#: assets/build/zepblock-slider/index.js:252
 msgid "Center"
 msgstr ""
 
 #: assets/build/card-block/index.js:324
 #: assets/build/feature-block/index.js:138
 #: assets/build/hero-video/index.js:260
-#: assets/build/tblock-slider/index.js:277
+#: assets/build/zepblock-slider/index.js:277
 #: src/card-block/edit.js:357
 #: src/feature-block/edit.js:135
 #: src/hero-video/edit.js:253
-#: src/tblock-slider/edit.js:253
+#: src/zepblock-slider/edit.js:253
 #: assets/build/card-block/index.js:357
 #: assets/build/feature-block/index.js:135
 #: assets/build/hero-video/index.js:253
-#: assets/build/tblock-slider/index.js:253
+#: assets/build/zepblock-slider/index.js:253
 msgid "Right"
 msgstr ""
 
 #: assets/build/card-block/index.js:413
 #: src/card-block/index.js:25
 #: assets/build/card-block/index.js:430
-msgid "TBlock Card Block"
+msgid "Zepblock Card Block"
 msgstr ""
 
 #: assets/build/card-block/index.js:414
@@ -368,13 +368,13 @@ msgstr ""
 
 #: assets/build/feature-block/index.js:76
 #: assets/build/hero-video/index.js:230
-#: assets/build/tblock-timeline/index.js:104
+#: assets/build/zepblock-timeline/index.js:104
 #: src/feature-block/edit.js:73
 #: src/hero-video/edit.js:227
-#: src/tblock-timeline/edit.js:87
+#: src/zepblock-timeline/edit.js:87
 #: assets/build/feature-block/index.js:73
 #: assets/build/hero-video/index.js:227
-#: assets/build/tblock-timeline/index.js:87
+#: assets/build/zepblock-timeline/index.js:87
 msgid "Description"
 msgstr ""
 
@@ -431,7 +431,7 @@ msgstr ""
 #: assets/build/feature-block/index.js:217
 #: src/feature-block/index.js:25
 #: assets/build/feature-block/index.js:198
-msgid "TBlock Feature Block"
+msgid "Zepblock Feature Block"
 msgstr ""
 
 #: assets/build/feature-block/index.js:218
@@ -501,11 +501,11 @@ msgid "Enter button text"
 msgstr ""
 
 #: assets/build/hero-video/index.js:244
-#: assets/build/tblock-slider/index.js:253
+#: assets/build/zepblock-slider/index.js:253
 #: src/hero-video/edit.js:241
-#: src/tblock-slider/edit.js:234
+#: src/zepblock-slider/edit.js:234
 #: assets/build/hero-video/index.js:241
-#: assets/build/tblock-slider/index.js:234
+#: assets/build/zepblock-slider/index.js:234
 msgid "Button URL"
 msgstr ""
 
@@ -546,11 +546,11 @@ msgid "Muted"
 msgstr ""
 
 #: assets/build/hero-video/index.js:285
-#: assets/build/tblock-slider/index.js:142
+#: assets/build/zepblock-slider/index.js:142
 #: src/hero-video/edit.js:275
-#: src/tblock-slider/edit.js:121
+#: src/zepblock-slider/edit.js:121
 #: assets/build/hero-video/index.js:275
-#: assets/build/tblock-slider/index.js:121
+#: assets/build/zepblock-slider/index.js:121
 msgid "Autoplay"
 msgstr ""
 
@@ -660,11 +660,11 @@ msgid "Select a Google Font for the description"
 msgstr ""
 
 #: assets/build/hero-video/index.js:359
-#: assets/build/tblock-slider/index.js:257
+#: assets/build/zepblock-slider/index.js:257
 #: src/hero-video/edit.js:348
-#: src/tblock-slider/edit.js:239
+#: src/zepblock-slider/edit.js:239
 #: assets/build/hero-video/index.js:348
-#: assets/build/tblock-slider/index.js:239
+#: assets/build/zepblock-slider/index.js:239
 msgid "Button Style"
 msgstr ""
 
@@ -764,7 +764,7 @@ msgstr ""
 #: assets/build/hero-video/index.js:581
 #: src/hero-video/index.js:25
 #: assets/build/hero-video/index.js:578
-msgid "TBlock Hero Video"
+msgid "Zepblock Hero Video"
 msgstr ""
 
 #: assets/build/hero-video/index.js:582
@@ -820,7 +820,7 @@ msgstr ""
 #: assets/build/image-compare/index.js:251
 #: src/image-compare/index.js:25
 #: assets/build/image-compare/index.js:234
-msgid "TBlock Image Compare"
+msgid "Zepblock Image Compare"
 msgstr ""
 
 #: assets/build/image-compare/index.js:252
@@ -977,11 +977,11 @@ msgid "Fade"
 msgstr ""
 
 #: assets/build/photo-gallery/index.js:171
-#: assets/build/tblock-slider/index.js:191
+#: assets/build/zepblock-slider/index.js:191
 #: src/photo-gallery/edit.js:130
-#: src/tblock-slider/edit.js:164
+#: src/zepblock-slider/edit.js:164
 #: assets/build/photo-gallery/index.js:130
-#: assets/build/tblock-slider/index.js:164
+#: assets/build/zepblock-slider/index.js:164
 msgid "Slide"
 msgstr ""
 
@@ -1402,7 +1402,7 @@ msgstr ""
 #: assets/build/post-block/index.js:679
 #: src/post-block/index.js:25
 #: assets/build/post-block/index.js:666
-msgid "TBlock Post Block"
+msgid "Zepblock Post Block"
 msgstr ""
 
 #: assets/build/post-block/index.js:680
@@ -1411,129 +1411,129 @@ msgstr ""
 msgid "Display posts with customizable layout"
 msgstr ""
 
-#: assets/build/tblock-slider/index.js:139
-#: src/tblock-slider/edit.js:118
-#: assets/build/tblock-slider/index.js:118
+#: assets/build/zepblock-slider/index.js:139
+#: src/zepblock-slider/edit.js:118
+#: assets/build/zepblock-slider/index.js:118
 msgid "Slider Settings"
 msgstr ""
 
-#: assets/build/tblock-slider/index.js:148
-#: src/tblock-slider/edit.js:129
-#: assets/build/tblock-slider/index.js:129
+#: assets/build/zepblock-slider/index.js:148
+#: src/zepblock-slider/edit.js:129
+#: assets/build/zepblock-slider/index.js:129
 msgid "Autoplay Speed (ms)"
 msgstr ""
 
-#: assets/build/tblock-slider/index.js:155
-#: src/tblock-slider/edit.js:138
-#: assets/build/tblock-slider/index.js:138
+#: assets/build/zepblock-slider/index.js:155
+#: src/zepblock-slider/edit.js:138
+#: assets/build/zepblock-slider/index.js:138
 msgid "Animation Speed (ms)"
 msgstr ""
 
-#: assets/build/tblock-slider/index.js:162
-#: src/tblock-slider/edit.js:146
-#: assets/build/tblock-slider/index.js:146
+#: assets/build/zepblock-slider/index.js:162
+#: src/zepblock-slider/edit.js:146
+#: assets/build/zepblock-slider/index.js:146
 msgid "Show Arrows"
 msgstr ""
 
-#: assets/build/tblock-slider/index.js:168
-#: src/tblock-slider/edit.js:153
-#: assets/build/tblock-slider/index.js:153
+#: assets/build/zepblock-slider/index.js:168
+#: src/zepblock-slider/edit.js:153
+#: assets/build/zepblock-slider/index.js:153
 msgid "Show Dots"
 msgstr ""
 
-#: assets/build/tblock-slider/index.js:174
-#: src/tblock-slider/edit.js:160
-#: assets/build/tblock-slider/index.js:160
+#: assets/build/zepblock-slider/index.js:174
+#: src/zepblock-slider/edit.js:160
+#: assets/build/zepblock-slider/index.js:160
 msgid "Manage Slides"
 msgstr ""
 
-#: assets/build/tblock-slider/index.js:241
-#: src/tblock-slider/edit.js:219
-#: assets/build/tblock-slider/index.js:219
+#: assets/build/zepblock-slider/index.js:241
+#: src/zepblock-slider/edit.js:219
+#: assets/build/zepblock-slider/index.js:219
 msgid "Top Title"
 msgstr ""
 
-#: assets/build/tblock-slider/index.js:260
-#: src/tblock-slider/edit.js:242
-#: assets/build/tblock-slider/index.js:242
+#: assets/build/zepblock-slider/index.js:260
+#: src/zepblock-slider/edit.js:242
+#: assets/build/zepblock-slider/index.js:242
 msgid "Success (Green)"
 msgstr ""
 
-#: assets/build/tblock-slider/index.js:263
-#: src/tblock-slider/edit.js:243
-#: assets/build/tblock-slider/index.js:243
+#: assets/build/zepblock-slider/index.js:263
+#: src/zepblock-slider/edit.js:243
+#: assets/build/zepblock-slider/index.js:243
 msgid "Light (White)"
 msgstr ""
 
-#: assets/build/tblock-slider/index.js:268
-#: src/tblock-slider/edit.js:248
-#: assets/build/tblock-slider/index.js:248
+#: assets/build/zepblock-slider/index.js:268
+#: src/zepblock-slider/edit.js:248
+#: assets/build/zepblock-slider/index.js:248
 msgid "Content Position"
 msgstr ""
 
-#: assets/build/tblock-slider/index.js:291
-#: src/tblock-slider/edit.js:266
-#: assets/build/tblock-slider/index.js:266
+#: assets/build/zepblock-slider/index.js:291
+#: src/zepblock-slider/edit.js:266
+#: assets/build/zepblock-slider/index.js:266
 msgid "Add Slide"
 msgstr ""
 
-#: assets/build/tblock-slider/index.js:302
-#: src/tblock-slider/edit.js:275
-#: assets/build/tblock-slider/index.js:275
+#: assets/build/zepblock-slider/index.js:302
+#: src/zepblock-slider/edit.js:275
+#: assets/build/zepblock-slider/index.js:275
 msgid "No slides yet. Add slides from the sidebar settings."
 msgstr ""
 
-#: assets/build/tblock-slider/index.js:334
-#: src/tblock-slider/edit.js:309
-#: assets/build/tblock-slider/index.js:309
+#: assets/build/zepblock-slider/index.js:334
+#: src/zepblock-slider/edit.js:309
+#: assets/build/zepblock-slider/index.js:309
 msgid "No Image"
 msgstr ""
 
-#: assets/build/tblock-slider/index.js:391
-#: src/tblock-slider/index.js:25
-#: assets/build/tblock-slider/index.js:363
-msgid "TBlock Slider"
+#: assets/build/zepblock-slider/index.js:391
+#: src/zepblock-slider/index.js:25
+#: assets/build/zepblock-slider/index.js:363
+msgid "Zepblock Slider"
 msgstr ""
 
-#: assets/build/tblock-slider/index.js:392
-#: src/tblock-slider/index.js:26
-#: assets/build/tblock-slider/index.js:364
+#: assets/build/zepblock-slider/index.js:392
+#: src/zepblock-slider/index.js:26
+#: assets/build/zepblock-slider/index.js:364
 msgid "A beautiful slider block with animations and slick slider"
 msgstr ""
 
-#: assets/build/tblock-timeline/index.js:74
-#: src/tblock-timeline/edit.js:53
-#: assets/build/tblock-timeline/index.js:53
+#: assets/build/zepblock-timeline/index.js:74
+#: src/zepblock-timeline/edit.js:53
+#: assets/build/zepblock-timeline/index.js:53
 msgid "Timeline Items"
 msgstr ""
 
-#: assets/build/tblock-timeline/index.js:92
-#: src/tblock-timeline/edit.js:68
-#: assets/build/tblock-timeline/index.js:68
+#: assets/build/zepblock-timeline/index.js:92
+#: src/zepblock-timeline/edit.js:68
+#: assets/build/zepblock-timeline/index.js:68
 msgid "Event"
 msgstr ""
 
-#: assets/build/tblock-timeline/index.js:122
-#: src/tblock-timeline/edit.js:106
-#: assets/build/tblock-timeline/index.js:106
+#: assets/build/zepblock-timeline/index.js:122
+#: src/zepblock-timeline/edit.js:106
+#: assets/build/zepblock-timeline/index.js:106
 msgid "Add Event"
 msgstr ""
 
-#: assets/build/tblock-timeline/index.js:132
-#: src/tblock-timeline/edit.js:120
-#: assets/build/tblock-timeline/index.js:120
+#: assets/build/zepblock-timeline/index.js:132
+#: src/zepblock-timeline/edit.js:120
+#: assets/build/zepblock-timeline/index.js:120
 msgid "No events yet. Add events from the sidebar settings."
 msgstr ""
 
-#: assets/build/tblock-timeline/index.js:234
-#: src/tblock-timeline/index.js:25
-#: assets/build/tblock-timeline/index.js:218
-msgid "TBlock Timeline"
+#: assets/build/zepblock-timeline/index.js:234
+#: src/zepblock-timeline/index.js:25
+#: assets/build/zepblock-timeline/index.js:218
+msgid "Zepblock Timeline"
 msgstr ""
 
-#: assets/build/tblock-timeline/index.js:235
-#: src/tblock-timeline/index.js:26
-#: assets/build/tblock-timeline/index.js:219
+#: assets/build/zepblock-timeline/index.js:235
+#: src/zepblock-timeline/index.js:26
+#: assets/build/zepblock-timeline/index.js:219
 msgid "A beautiful vertical timeline block with alternating left/right items"
 msgstr ""
 
@@ -1807,7 +1807,7 @@ msgstr ""
 #: assets/build/woo-product-list/index.js:484
 #: src/woo-product-list/index.js:24
 #: assets/build/woo-product-list/index.js:420
-msgid "TBlock Product List"
+msgid "Zepblock Product List"
 msgstr ""
 
 #: assets/build/woo-product-list/index.js:485
@@ -1915,9 +1915,9 @@ msgid "video"
 msgstr ""
 
 #: assets/build/hero-video/block.json
-#: assets/build/tblock-slider/block.json
+#: assets/build/zepblock-slider/block.json
 #: src/hero-video/block.json
-#: src/tblock-slider/block.json
+#: src/zepblock-slider/block.json
 msgctxt "block keyword"
 msgid "banner"
 msgstr ""
@@ -1959,9 +1959,9 @@ msgid "after"
 msgstr ""
 
 #: assets/build/image-compare/block.json
-#: assets/build/tblock-slider/block.json
+#: assets/build/zepblock-slider/block.json
 #: src/image-compare/block.json
-#: src/tblock-slider/block.json
+#: src/zepblock-slider/block.json
 msgctxt "block keyword"
 msgid "slider"
 msgstr ""
@@ -2032,62 +2032,62 @@ msgctxt "block keyword"
 msgid "news"
 msgstr ""
 
-#: assets/build/tblock-slider/block.json
-#: src/tblock-slider/block.json
+#: assets/build/zepblock-slider/block.json
+#: src/zepblock-slider/block.json
 msgctxt "block title"
-msgid "TBlock Slider"
+msgid "Zepblock Slider"
 msgstr ""
 
-#: assets/build/tblock-slider/block.json
-#: src/tblock-slider/block.json
+#: assets/build/zepblock-slider/block.json
+#: src/zepblock-slider/block.json
 msgctxt "block description"
 msgid "A beautiful slider block with animations and slick slider"
 msgstr ""
 
-#: assets/build/tblock-slider/block.json
-#: src/tblock-slider/block.json
+#: assets/build/zepblock-slider/block.json
+#: src/zepblock-slider/block.json
 msgctxt "block keyword"
 msgid "carousel"
 msgstr ""
 
-#: assets/build/tblock-slider/block.json
-#: src/tblock-slider/block.json
+#: assets/build/zepblock-slider/block.json
+#: src/zepblock-slider/block.json
 msgctxt "block keyword"
 msgid "slick"
 msgstr ""
 
-#: assets/build/tblock-timeline/block.json
-#: src/tblock-timeline/block.json
+#: assets/build/zepblock-timeline/block.json
+#: src/zepblock-timeline/block.json
 msgctxt "block title"
-msgid "TBlock Timeline"
+msgid "Zepblock Timeline"
 msgstr ""
 
-#: assets/build/tblock-timeline/block.json
-#: src/tblock-timeline/block.json
+#: assets/build/zepblock-timeline/block.json
+#: src/zepblock-timeline/block.json
 msgctxt "block description"
 msgid "A beautiful vertical timeline block with alternating left/right items"
 msgstr ""
 
-#: assets/build/tblock-timeline/block.json
-#: src/tblock-timeline/block.json
+#: assets/build/zepblock-timeline/block.json
+#: src/zepblock-timeline/block.json
 msgctxt "block keyword"
 msgid "timeline"
 msgstr ""
 
-#: assets/build/tblock-timeline/block.json
-#: src/tblock-timeline/block.json
+#: assets/build/zepblock-timeline/block.json
+#: src/zepblock-timeline/block.json
 msgctxt "block keyword"
 msgid "history"
 msgstr ""
 
-#: assets/build/tblock-timeline/block.json
-#: src/tblock-timeline/block.json
+#: assets/build/zepblock-timeline/block.json
+#: src/zepblock-timeline/block.json
 msgctxt "block keyword"
 msgid "events"
 msgstr ""
 
-#: assets/build/tblock-timeline/block.json
-#: src/tblock-timeline/block.json
+#: assets/build/zepblock-timeline/block.json
+#: src/zepblock-timeline/block.json
 msgctxt "block keyword"
 msgid "schedule"
 msgstr ""
@@ -2135,7 +2135,7 @@ msgstr ""
 #: assets/build/woo-product-list/block.json
 #: src/woo-product-list/block.json
 msgctxt "block title"
-msgid "TBlock Product List"
+msgid "Zepblock Product List"
 msgstr ""
 
 #: assets/build/woo-product-list/block.json

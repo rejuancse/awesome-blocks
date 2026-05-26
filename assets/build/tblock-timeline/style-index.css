@@ -1,8 +1,8 @@
 /*!*******************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/tblock-timeline/style.scss ***!
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/zepblock-timeline/style.scss ***!
   \*******************************************************************************************************************************************************************************************************************************************************/
 /**
- * TBlock Timeline - Frontend Styles
+ * Zepblock Timeline - Frontend Styles
  */
 .timeline-row:before,
 .timeline-row:after {

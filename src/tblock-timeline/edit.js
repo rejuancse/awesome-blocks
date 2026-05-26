@@ -50,7 +50,7 @@ export default function Edit({ attributes, setAttributes }) {
     return (
         <>
             <InspectorControls>
-                <PanelBody title={__('Timeline Items', 'theme-blocks' )} initialOpen={true}>
+                <PanelBody title={__('Timeline Items', 'zepblocks' )} initialOpen={true}>
                     {timelineItems.map((item, index) => (
                         <div key={item.id} style={{
                             marginBottom: '20px',
@@ -65,7 +65,7 @@ export default function Edit({ attributes, setAttributes }) {
                                 alignItems: 'center',
                                 marginBottom: '10px'
                             }}>
-                                <strong>{__('Event', 'theme-blocks' )} {index + 1}</strong>
+                                <strong>{__('Event', 'zepblocks' )} {index + 1}</strong>
                                 {timelineItems.length > 1 && (
                                     <Button
                                         onClick={() => removeItem(index)}
@@ -79,18 +79,18 @@ export default function Edit({ attributes, setAttributes }) {
                             </div>
 
                             <TextControl
-                                label={__('Title', 'theme-blocks' )}
+                                label={__('Title', 'zepblocks' )}
                                 value={item.title}
                                 onChange={(value) => updateItem(index, 'title', value)}
                             />
                             <TextareaControl
-                                label={__('Description', 'theme-blocks' )}
+                                label={__('Description', 'zepblocks' )}
                                 value={item.description}
                                 onChange={(value) => updateItem(index, 'description', value)}
                                 rows={3}
                             />
                             <TextControl
-                                label={__('Date', 'theme-blocks' )}
+                                label={__('Date', 'zepblocks' )}
                                 value={item.date}
                                 onChange={(value) => updateItem(index, 'date', value)}
                             />
@@ -103,7 +103,7 @@ export default function Edit({ attributes, setAttributes }) {
                         style={{ width: '100%', justifyContent: 'center', gap: '8px' }}
                     >
                         <Dashicon icon="plus" />
-                        {__('Add Event', 'theme-blocks' )}
+                        {__('Add Event', 'zepblocks' )}
                     </Button>
                 </PanelBody>
             </InspectorControls>
@@ -117,7 +117,7 @@ export default function Edit({ attributes, setAttributes }) {
                         borderRadius: '4px',
                         border: '2px dashed #ccc'
                     }}>
-                        <p>{__('No events yet. Add events from the sidebar settings.', 'theme-blocks' )}</p>
+                        <p>{__('No events yet. Add events from the sidebar settings.', 'zepblocks' )}</p>
                     </div>
                 ) : (
                     <div className="at-preview">

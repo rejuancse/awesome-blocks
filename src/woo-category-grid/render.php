@@ -5,7 +5,7 @@
  * This file is used for server-side rendering if needed.
  * However, we'll use the Woo_Category_List class instead.
  *
- * @package ThemeBlocks
+ * @package ZepBlocks
  */
 
 // This file is kept for compatibility but actual rendering happens in Woo_Category_List class

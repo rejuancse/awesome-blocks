@@ -82,7 +82,7 @@ function getFeaturedImageUrl( post, thumbnailSize ) {
 }
 
 /**
- * Edit component for the TBlock Posts block.
+ * Edit component for the Zepblock Posts block.
  *
  * @param {Object}   props
  * @param {Object}   props.attributes    Block attributes.
@@ -178,7 +178,7 @@ export default function Edit( { attributes, setAttributes } ) {
 	// ── Derived values ───────────────────────────────────────────────────────
 
 	const categoryOptions = [
-		{ label: __( 'All Categories', 'theme-blocks'  ), value: '' },
+		{ label: __( 'All Categories', 'zepblocks'  ), value: '' },
 		...( allCategories || [] ).map( ( cat ) => ( {
 			label: cat.name,
 			value: cat.id,
@@ -205,47 +205,47 @@ export default function Edit( { attributes, setAttributes } ) {
 			<InspectorControls>
 
 				{ /* ── Query Settings ── */ }
-				<PanelBody title={ __( 'Settings', 'theme-blocks'  ) }>
+				<PanelBody title={ __( 'Settings', 'zepblocks'  ) }>
 					<SelectControl
-						label={ __( 'Posts to Show', 'theme-blocks'  ) }
+						label={ __( 'Posts to Show', 'zepblocks'  ) }
 						value={ postsToShow }
 						options={ [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ].map( ( n ) => ( { label: String( n ), value: n } ) ) }
 						onChange={ ( value ) => setAttributes( { postsToShow: value } ) }
 					/>
 
 					<SelectControl
-						label={ __( 'Category', 'theme-blocks'  ) }
+						label={ __( 'Category', 'zepblocks'  ) }
 						value={ ( Array.isArray( categories ) ? categories[ 0 ] : '' ) || '' }
 						options={ categoryOptions }
 						onChange={ onChangeCategory }
-						help={ __( 'Select a category to filter posts', 'theme-blocks'  ) }
+						help={ __( 'Select a category to filter posts', 'zepblocks'  ) }
 					/>
 
 					<SelectControl
-						label={ __( 'Order By', 'theme-blocks'  ) }
+						label={ __( 'Order By', 'zepblocks'  ) }
 						value={ orderBy }
 						options={ [
-							{ label: __( 'Date',     'theme-blocks'  ), value: 'date'     },
-							{ label: __( 'Title',    'theme-blocks'  ), value: 'title'    },
-							{ label: __( 'Modified', 'theme-blocks'  ), value: 'modified' },
-							{ label: __( 'Author',   'theme-blocks'  ), value: 'author'   },
-							{ label: __( 'Random',   'theme-blocks'  ), value: 'rand'     },
+							{ label: __( 'Date',     'zepblocks'  ), value: 'date'     },
+							{ label: __( 'Title',    'zepblocks'  ), value: 'title'    },
+							{ label: __( 'Modified', 'zepblocks'  ), value: 'modified' },
+							{ label: __( 'Author',   'zepblocks'  ), value: 'author'   },
+							{ label: __( 'Random',   'zepblocks'  ), value: 'rand'     },
 						] }
 						onChange={ ( value ) => setAttributes( { orderBy: value } ) }
 					/>
 
 					<SelectControl
-						label={ __( 'Order', 'theme-blocks'  ) }
+						label={ __( 'Order', 'zepblocks'  ) }
 						value={ order }
 						options={ [
-							{ label: __( 'Descending', 'theme-blocks'  ), value: 'desc' },
-							{ label: __( 'Ascending',  'theme-blocks'  ), value: 'asc'  },
+							{ label: __( 'Descending', 'zepblocks'  ), value: 'desc' },
+							{ label: __( 'Ascending',  'zepblocks'  ), value: 'asc'  },
 						] }
 						onChange={ ( value ) => setAttributes( { order: value } ) }
 					/>
 
 					<RangeControl
-						label={ __( 'Columns', 'theme-blocks'  ) }
+						label={ __( 'Columns', 'zepblocks'  ) }
 						value={ columns }
 						onChange={ ( value ) => setAttributes( { columns: value } ) }
 						min={ 1 }
@@ -253,205 +253,205 @@ export default function Edit( { attributes, setAttributes } ) {
 					/>
 
 					<SelectControl
-						label={ __( 'Thumbnail Size', 'theme-blocks'  ) }
+						label={ __( 'Thumbnail Size', 'zepblocks'  ) }
 						value={ thumbnailSize }
 						options={ [
-							{ label: __( 'Thumbnail',    'theme-blocks'  ), value: 'thumbnail'    },
-							{ label: __( 'Medium',       'theme-blocks'  ), value: 'medium'       },
-							{ label: __( 'Medium Large', 'theme-blocks'  ), value: 'medium_large' },
-							{ label: __( 'Large',        'theme-blocks'  ), value: 'large'        },
-							{ label: __( 'Full',         'theme-blocks'  ), value: 'full'         },
+							{ label: __( 'Thumbnail',    'zepblocks'  ), value: 'thumbnail'    },
+							{ label: __( 'Medium',       'zepblocks'  ), value: 'medium'       },
+							{ label: __( 'Medium Large', 'zepblocks'  ), value: 'medium_large' },
+							{ label: __( 'Large',        'zepblocks'  ), value: 'large'        },
+							{ label: __( 'Full',         'zepblocks'  ), value: 'full'         },
 						] }
 						onChange={ ( value ) => setAttributes( { thumbnailSize: value } ) }
 					/>
 				</PanelBody>
 
 				{ /* ── Display Options ── */ }
-				<PanelBody title={ __( 'Display Options', 'theme-blocks'  ) } initialOpen={ false }>
+				<PanelBody title={ __( 'Display Options', 'zepblocks'  ) } initialOpen={ false }>
 					<ToggleControl
-						label={ __( 'Display Title', 'theme-blocks'  ) }
+						label={ __( 'Display Title', 'zepblocks'  ) }
 						checked={ displayTitle }
 						onChange={ onToggleDisplayTitle }
 					/>
 					<ToggleControl
-						label={ __( 'Display Excerpt', 'theme-blocks'  ) }
+						label={ __( 'Display Excerpt', 'zepblocks'  ) }
 						checked={ displayExcerpt }
 						onChange={ onToggleDisplayExcerpt }
 					/>
 					<ToggleControl
-						label={ __( 'Display Date', 'theme-blocks'  ) }
+						label={ __( 'Display Date', 'zepblocks'  ) }
 						checked={ displayDate }
 						onChange={ onToggleDisplayDate }
 					/>
 					<ToggleControl
-						label={ __( 'Display Author', 'theme-blocks'  ) }
+						label={ __( 'Display Author', 'zepblocks'  ) }
 						checked={ displayAuthor }
 						onChange={ onToggleDisplayAuthor }
 					/>
 					<ToggleControl
-						label={ __( 'Display Thumbnail', 'theme-blocks'  ) }
+						label={ __( 'Display Thumbnail', 'zepblocks'  ) }
 						checked={ displayThumbnail }
 						onChange={ onToggleDisplayThumbnail }
 					/>
 				</PanelBody>
 
 				{ /* ── Style Settings ── */ }
-				<PanelBody title={ __( 'Style Settings', 'theme-blocks'  ) } initialOpen={ false }>
+				<PanelBody title={ __( 'Style Settings', 'zepblocks'  ) } initialOpen={ false }>
 
 					{ /* Title */ }
-					<h3>{ __( 'Title Style', 'theme-blocks'  ) }</h3>
+					<h3>{ __( 'Title Style', 'zepblocks'  ) }</h3>
 					<ColorControl
-						label={ __( 'Title Color', 'theme-blocks'  ) }
+						label={ __( 'Title Color', 'zepblocks'  ) }
 						value={ titleColor }
 						onChange={ ( value ) => setAttributes( { titleColor: value } ) }
 						placeholder="#333333"
 					/>
 					<RangeControl
-						label={ __( 'Title Font Size', 'theme-blocks'  ) }
+						label={ __( 'Title Font Size', 'zepblocks'  ) }
 						value={ titleFontSize }
 						onChange={ ( value ) => setAttributes( { titleFontSize: value } ) }
 						min={ 12 }
 						max={ 60 }
 					/>
 					<SelectControl
-						label={ __( 'Title Font Weight', 'theme-blocks'  ) }
+						label={ __( 'Title Font Weight', 'zepblocks'  ) }
 						value={ titleFontWeight }
 						options={ FONT_WEIGHTS }
 						onChange={ ( value ) => setAttributes( { titleFontWeight: value } ) }
 					/>
 					<SelectControl
-						label={ __( 'Title Font Family', 'theme-blocks'  ) }
+						label={ __( 'Title Font Family', 'zepblocks'  ) }
 						value={ titleFontFamily }
 						options={ GOOGLE_FONTS }
 						onChange={ ( value ) => setAttributes( { titleFontFamily: value } ) }
-						help={ __( 'Select a Google Font for the title', 'theme-blocks'  ) }
+						help={ __( 'Select a Google Font for the title', 'zepblocks'  ) }
 					/>
 
 					{ /* Excerpt */ }
-					<h3>{ __( 'Excerpt Style', 'theme-blocks'  ) }</h3>
+					<h3>{ __( 'Excerpt Style', 'zepblocks'  ) }</h3>
 					<ColorControl
-						label={ __( 'Excerpt Color', 'theme-blocks'  ) }
+						label={ __( 'Excerpt Color', 'zepblocks'  ) }
 						value={ excerptColor }
 						onChange={ ( value ) => setAttributes( { excerptColor: value } ) }
 						placeholder="#555555"
 					/>
 					<RangeControl
-						label={ __( 'Excerpt Font Size', 'theme-blocks'  ) }
+						label={ __( 'Excerpt Font Size', 'zepblocks'  ) }
 						value={ excerptFontSize }
 						onChange={ ( value ) => setAttributes( { excerptFontSize: value } ) }
 						min={ 12 }
 						max={ 30 }
 					/>
 					<SelectControl
-						label={ __( 'Excerpt Font Weight', 'theme-blocks'  ) }
+						label={ __( 'Excerpt Font Weight', 'zepblocks'  ) }
 						value={ excerptFontWeight }
 						options={ FONT_WEIGHTS }
 						onChange={ ( value ) => setAttributes( { excerptFontWeight: value } ) }
 					/>
 					<SelectControl
-						label={ __( 'Excerpt Font Family', 'theme-blocks'  ) }
+						label={ __( 'Excerpt Font Family', 'zepblocks'  ) }
 						value={ excerptFontFamily }
 						options={ GOOGLE_FONTS }
 						onChange={ ( value ) => setAttributes( { excerptFontFamily: value } ) }
-						help={ __( 'Select a Google Font for the excerpt', 'theme-blocks'  ) }
+						help={ __( 'Select a Google Font for the excerpt', 'zepblocks'  ) }
 					/>
 					<RangeControl
-						label={ __( 'Excerpt Max Characters', 'theme-blocks'  ) }
+						label={ __( 'Excerpt Max Characters', 'zepblocks'  ) }
 						value={ excerptMaxChars }
 						onChange={ ( value ) => setAttributes( { excerptMaxChars: value } ) }
 						min={ 0 }
 						max={ 500 }
-						help={ __( 'Set 0 to show full excerpt', 'theme-blocks'  ) }
+						help={ __( 'Set 0 to show full excerpt', 'zepblocks'  ) }
 					/>
 
 					{ /* Meta */ }
-					<h3 className="meta-style">{ __( 'Meta Style', 'theme-blocks'  ) }</h3>
+					<h3 className="meta-style">{ __( 'Meta Style', 'zepblocks'  ) }</h3>
 					<ColorControl
-						label={ __( 'Meta Color', 'theme-blocks'  ) }
+						label={ __( 'Meta Color', 'zepblocks'  ) }
 						value={ metaColor }
 						onChange={ ( value ) => setAttributes( { metaColor: value } ) }
 						placeholder="#666666"
 					/>
 					<RangeControl
-						label={ __( 'Meta Font Size', 'theme-blocks'  ) }
+						label={ __( 'Meta Font Size', 'zepblocks'  ) }
 						value={ metaFontSize }
 						onChange={ ( value ) => setAttributes( { metaFontSize: value } ) }
 						min={ 10 }
 						max={ 24 }
 					/>
 					<SelectControl
-						label={ __( 'Meta Font Weight', 'theme-blocks'  ) }
+						label={ __( 'Meta Font Weight', 'zepblocks'  ) }
 						value={ metaFontWeight }
 						options={ FONT_WEIGHTS }
 						onChange={ ( value ) => setAttributes( { metaFontWeight: value } ) }
 					/>
 					<SelectControl
-						label={ __( 'Meta Font Family', 'theme-blocks'  ) }
+						label={ __( 'Meta Font Family', 'zepblocks'  ) }
 						value={ metaFontFamily }
 						options={ GOOGLE_FONTS }
 						onChange={ ( value ) => setAttributes( { metaFontFamily: value } ) }
-						help={ __( 'Select a Google Font for meta info', 'theme-blocks'  ) }
+						help={ __( 'Select a Google Font for meta info', 'zepblocks'  ) }
 					/>
 
 					{ /* Links */ }
-					<h3 className="meta-style">{ __( 'Link Style', 'theme-blocks'  ) }</h3>
+					<h3 className="meta-style">{ __( 'Link Style', 'zepblocks'  ) }</h3>
 					<ColorControl
-						label={ __( 'Link Color', 'theme-blocks'  ) }
+						label={ __( 'Link Color', 'zepblocks'  ) }
 						value={ linkColor }
 						onChange={ ( value ) => setAttributes( { linkColor: value } ) }
 						placeholder="#0073aa"
 					/>
 					<ColorControl
-						label={ __( 'Link Hover Color', 'theme-blocks'  ) }
+						label={ __( 'Link Hover Color', 'zepblocks'  ) }
 						value={ linkHoverColor }
 						onChange={ ( value ) => setAttributes( { linkHoverColor: value } ) }
 						placeholder="#005177"
 					/>
 					<RangeControl
-						label={ __( 'Link Font Size', 'theme-blocks'  ) }
+						label={ __( 'Link Font Size', 'zepblocks'  ) }
 						value={ linkFontSize }
 						onChange={ ( value ) => setAttributes( { linkFontSize: value } ) }
 						min={ 10 }
 						max={ 30 }
 					/>
 					<SelectControl
-						label={ __( 'Link Font Weight', 'theme-blocks'  ) }
+						label={ __( 'Link Font Weight', 'zepblocks'  ) }
 						value={ linkFontWeight }
 						options={ FONT_WEIGHTS }
 						onChange={ ( value ) => setAttributes( { linkFontWeight: value } ) }
 					/>
 					<SelectControl
-						label={ __( 'Link Font Family', 'theme-blocks'  ) }
+						label={ __( 'Link Font Family', 'zepblocks'  ) }
 						value={ linkFontFamily }
 						options={ GOOGLE_FONTS }
 						onChange={ ( value ) => setAttributes( { linkFontFamily: value } ) }
-						help={ __( 'Select a Google Font for links', 'theme-blocks'  ) }
+						help={ __( 'Select a Google Font for links', 'zepblocks'  ) }
 					/>
 
 					{ /* Card */ }
-					<h3 className="meta-style">{ __( 'Card Style', 'theme-blocks'  ) }</h3>
+					<h3 className="meta-style">{ __( 'Card Style', 'zepblocks'  ) }</h3>
 					<ColorControl
-						label={ __( 'Card Background Color', 'theme-blocks'  ) }
+						label={ __( 'Card Background Color', 'zepblocks'  ) }
 						value={ cardBgColor }
 						onChange={ ( value ) => setAttributes( { cardBgColor: value } ) }
 						placeholder="#ffffff"
 					/>
 					<TextControl
-						label={ __( 'Card Border', 'theme-blocks'  ) }
+						label={ __( 'Card Border', 'zepblocks'  ) }
 						value={ cardBorder }
 						onChange={ ( value ) => setAttributes( { cardBorder: value } ) }
-						placeholder={ __( 'e.g., 1px solid #ddd', 'theme-blocks'  ) }
-						help={ __( 'CSS border property (e.g., 1px solid #ddd)', 'theme-blocks'  ) }
+						placeholder={ __( 'e.g., 1px solid #ddd', 'zepblocks'  ) }
+						help={ __( 'CSS border property (e.g., 1px solid #ddd)', 'zepblocks'  ) }
 					/>
 					<RangeControl
-						label={ __( 'Card Border Radius', 'theme-blocks'  ) }
+						label={ __( 'Card Border Radius', 'zepblocks'  ) }
 						value={ cardBorderRadius }
 						onChange={ ( value ) => setAttributes( { cardBorderRadius: value } ) }
 						min={ 0 }
 						max={ 50 }
 					/>
 					<RangeControl
-						label={ __( 'Card Padding', 'theme-blocks'  ) }
+						label={ __( 'Card Padding', 'zepblocks'  ) }
 						value={ cardPadding }
 						onChange={ ( value ) => setAttributes( { cardPadding: value } ) }
 						min={ 0 }
@@ -459,27 +459,27 @@ export default function Edit( { attributes, setAttributes } ) {
 					/>
 
 					{ /* Thumbnail */ }
-					<h3>{ __( 'Thumbnail Style', 'theme-blocks'  ) }</h3>
+					<h3>{ __( 'Thumbnail Style', 'zepblocks'  ) }</h3>
 					<RangeControl
-						label={ __( 'Thumbnail Border Radius', 'theme-blocks'  ) }
+						label={ __( 'Thumbnail Border Radius', 'zepblocks'  ) }
 						value={ thumbnailBorderRadius }
 						onChange={ ( value ) => setAttributes( { thumbnailBorderRadius: value } ) }
 						min={ 0 }
 						max={ 50 }
 					/>
 					<RangeControl
-						label={ __( 'Thumbnail Height (px)', 'theme-blocks'  ) }
+						label={ __( 'Thumbnail Height (px)', 'zepblocks'  ) }
 						value={ thumbnailHeight }
 						onChange={ ( value ) => setAttributes( { thumbnailHeight: value } ) }
 						min={ 0 }
 						max={ 600 }
-						help={ __( 'Set 0 for auto height', 'theme-blocks'  ) }
+						help={ __( 'Set 0 for auto height', 'zepblocks'  ) }
 					/>
 
 					{ /* Layout */ }
-					<h3 className="meta-style">{ __( 'Layout', 'theme-blocks'  ) }</h3>
+					<h3 className="meta-style">{ __( 'Layout', 'zepblocks'  ) }</h3>
 					<RangeControl
-						label={ __( 'Gap Between Cards', 'theme-blocks'  ) }
+						label={ __( 'Gap Between Cards', 'zepblocks'  ) }
 						value={ gap }
 						onChange={ ( value ) => setAttributes( { gap: value } ) }
 						min={ 0 }
@@ -492,35 +492,35 @@ export default function Edit( { attributes, setAttributes } ) {
 			<div { ...blockProps }>
 				<style>
 					{`
-						.wp-block-tblock-post-block .theme-blocks-post-read-more {
+						.wp-block-zepblock-post-block .zepblocks-post-read-more {
 							color: ${ linkColor || '#0073aa' };
 							font-size: ${ linkFontSize || 14 }px;
 							font-weight: ${ linkFontWeight || '600' };
 							font-family: ${ linkFontFamily || 'inherit' };
 						}
-						.wp-block-tblock-post-block .theme-blocks-post-read-more:hover,
-						.wp-block-tblock-post-block .theme-blocks-post-title a:hover {
+						.wp-block-zepblock-post-block .zepblocks-post-read-more:hover,
+						.wp-block-zepblock-post-block .zepblocks-post-title a:hover {
 							color: ${ linkHoverColor || '#005177' } !important;
 						}
 					`}
 				</style>
 
 				{ null === posts && (
-					<div className="theme-blocks-loading">
+					<div className="zepblocks-loading">
 						<Spinner />
-						<p>{ __( 'Loading posts…', 'theme-blocks'  ) }</p>
+						<p>{ __( 'Loading posts…', 'zepblocks'  ) }</p>
 					</div>
 				) }
 
 				{ null !== posts && posts.length === 0 && (
-					<div className="theme-blocks-no-posts">
-						<p>{ __( 'No posts found.', 'theme-blocks'  ) }</p>
+					<div className="zepblocks-no-posts">
+						<p>{ __( 'No posts found.', 'zepblocks'  ) }</p>
 					</div>
 				) }
 
 				{ null !== posts && posts.length > 0 && (
 					<ul
-						className={ `theme-blocks-posts-grid columns-${ columns }` }
+						className={ `zepblocks-posts-grid columns-${ columns }` }
 						style={ { gap: `${ gap }px` } }
 					>
 						{ posts.map( ( post ) => {
@@ -531,7 +531,7 @@ export default function Edit( { attributes, setAttributes } ) {
 							return (
 								<li
 									key={ post.id }
-									className="theme-blocks-post-item"
+									className="zepblocks-post-item"
 									style={ {
 										backgroundColor: cardBgColor,
 										border:          cardBorder,
@@ -539,7 +539,7 @@ export default function Edit( { attributes, setAttributes } ) {
 									} }
 								>
 									{ imageUrl && (
-										<div className="theme-blocks-post-thumbnail">
+										<div className="zepblocks-post-thumbnail">
 											<a href={ post.link }>
 												<img
 													src={ imageUrl }
@@ -554,12 +554,12 @@ export default function Edit( { attributes, setAttributes } ) {
 									) }
 
 									<div
-										className="theme-blocks-post-content"
+										className="zepblocks-post-content"
 										style={ { padding: `${ cardPadding }px` } }
 									>
 										{ ( displayDate || displayAuthor ) && (
 											<div
-												className="theme-blocks-post-meta"
+												className="zepblocks-post-meta"
 												style={ {
 													color:      metaColor,
 													fontSize:   `${ metaFontSize }px`,
@@ -568,14 +568,14 @@ export default function Edit( { attributes, setAttributes } ) {
 												} }
 											>
 												{ displayDate && (
-													<span className="theme-blocks-post-date">
+													<span className="zepblocks-post-date">
 														{ new Date( post.date ).toLocaleDateString() }
 													</span>
 												) }
 												{ displayAuthor && (
-													<span className="theme-blocks-post-author">
-														{ __( 'By ', 'theme-blocks'  ) }
-														{ post._embedded?.author?.[0]?.name || __( 'Unknown', 'theme-blocks'  ) }
+													<span className="zepblocks-post-author">
+														{ __( 'By ', 'zepblocks'  ) }
+														{ post._embedded?.author?.[0]?.name || __( 'Unknown', 'zepblocks'  ) }
 													</span>
 												) }
 											</div>
@@ -583,7 +583,7 @@ export default function Edit( { attributes, setAttributes } ) {
 
 										{ displayTitle && (
 											<h3
-												className="theme-blocks-post-title"
+												className="zepblocks-post-title"
 												style={ {
 													color:      titleColor,
 													fontSize:   `${ titleFontSize }px`,
@@ -608,7 +608,7 @@ export default function Edit( { attributes, setAttributes } ) {
 
 											return (
 												<div
-													className="theme-blocks-post-excerpt"
+													className="zepblocks-post-excerpt"
 													{ ...( useHtml
 														? { dangerouslySetInnerHTML: { __html: content } }
 														: { children: content }
@@ -625,9 +625,9 @@ export default function Edit( { attributes, setAttributes } ) {
 
 										<a
 											href={ post.link }
-											className="theme-blocks-post-read-more"
+											className="zepblocks-post-read-more"
 										>
-											{ __( 'Read More →', 'theme-blocks'  ) }
+											{ __( 'Read More →', 'zepblocks'  ) }
 										</a>
 									</div>
 								</li>

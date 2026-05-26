@@ -7,7 +7,7 @@
 
 // Define test constants
 define( 'TESTS_PLUGIN_DIR', dirname( dirname( __DIR__ ) ) );
-define( 'TESTS_PLUGIN_FILE', TESTS_PLUGIN_DIR . '/theme-blocks.php' );
+define( 'TESTS_PLUGIN_FILE', TESTS_PLUGIN_DIR . '/zepblocks.php' );
 
 // Check if we're running in a WordPress test environment
 if ( ! defined( 'WP_TESTS_DIR' ) ) {

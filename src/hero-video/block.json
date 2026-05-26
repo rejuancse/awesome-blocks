@@ -1,8 +1,8 @@
 {
     "apiVersion": 3,
-    "name": "tblock/hero-video",
+    "name": "zepblock/hero-video",
     "title": "Hero Video",
-    "category": "tblock-block",
+    "category": "zepblock-block",
     "icon": "format-video",
     "description": "Display a hero video with overlay content",
     "keywords": ["hero", "video", "banner"],

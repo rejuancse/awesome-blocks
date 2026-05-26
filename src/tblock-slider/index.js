@@ -22,8 +22,8 @@ import './editor.scss';
  */
 registerBlockType( metadata.name, {
     ...metadata,
-    title: __('TBlock Slider', 'theme-blocks' ),
-    description: __('A beautiful slider block with animations and slick slider', 'theme-blocks' ),
+    title: __('Zepblock Slider', 'zepblocks' ),
+    description: __('A beautiful slider block with animations and slick slider', 'zepblocks' ),
     edit,
     save,
 });

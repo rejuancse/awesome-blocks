@@ -1,6 +1,6 @@
 # Testing - Quick Start
 
-PHPUnit and Jest testing setup for the ThemeBlocks plugin is complete.
+PHPUnit and Jest testing setup for the ZepBlocks plugin is complete.
 
 ## 🚀 Quick Start
 

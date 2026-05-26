@@ -2,10 +2,10 @@
 /**
  * Product REST API
  *
- * @package ThemeBlocks
+ * @package ZepBlocks
  */
 
-namespace ThemeBlocks;
+namespace ZepBlocks;
 
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly

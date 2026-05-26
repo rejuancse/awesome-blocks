@@ -2,10 +2,10 @@
 /**
  * Fragment Cache Helper Class
  *
- * @package ThemeBlocks
+ * @package ZepBlocks
  */
 
-namespace ThemeBlocks;
+namespace ZepBlocks;
 
 defined( 'ABSPATH' ) || exit;
 
@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
  */
 class Fragment_Cache {
 
-	const PREFIX     = 'theme_blocks_fragment_';
+	const PREFIX     = 'zepblocks_fragment_';
 	const EXPIRATION = 3600; // 1 Hour
 
 	/**

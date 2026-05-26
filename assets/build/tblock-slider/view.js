@@ -1,9 +1,9 @@
 /******/ (() => { // webpackBootstrap
 /*!***********************************!*\
-  !*** ./src/tblock-slider/view.js ***!
+  !*** ./src/zepblock-slider/view.js ***!
   \***********************************/
 /**
- * TBlock Slider - Frontend JavaScript
+ * Zepblock Slider - Frontend JavaScript
  * Initializes Slick Slider with animations
  */
 
@@ -11,23 +11,23 @@
   'use strict';
 
   // Wait for DOM to be ready
-  function initTBlockSlider() {
+  function initZepblockSlider() {
     // Check if jQuery is available
     if (typeof jQuery === 'undefined') {
-      console.warn('TBlock Slider: jQuery is not loaded');
+      console.warn('Zepblock Slider: jQuery is not loaded');
       return;
     }
 
     // Check if Slick is available
     if (typeof jQuery.fn.slick === 'undefined') {
-      console.warn('TBlock Slider: Slick Slider is not loaded');
+      console.warn('Zepblock Slider: Slick Slider is not loaded');
       return;
     }
     var $ = jQuery;
 
-    // ThemeBlocks Slider
-    function initThemeBlocksSliders() {
-      $('.theme_block_banner__slider .slider:not(.slick-initialized)').each(function () {
+    // ZepBlocks Slider
+    function initZepBlocksSliders() {
+      $('.zepblock_banner__slider .slider:not(.slick-initialized)').each(function () {
         var $this = $(this);
 
         // Destroy any existing instance first
@@ -149,34 +149,34 @@
     }
 
     // Initial initialization
-    initThemeBlocksSliders();
+    initZepBlocksSliders();
 
     // Re-init on window resize
     $(window).on('resize', function () {
-      setTimeout(initThemeBlocksSliders, 300);
+      setTimeout(initZepBlocksSliders, 300);
     });
   }
 
   // Initialize when DOM is ready
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initTBlockSlider);
+    document.addEventListener('DOMContentLoaded', initZepblockSlider);
   } else {
-    initTBlockSlider();
+    initZepblockSlider();
   }
 
   // Also initialize for Elementor live preview
   if (typeof elementor !== 'undefined') {
-    elementor.hooks.addAction('panel/open_editor/widget/tblock-slider', function () {
-      setTimeout(initTBlockSlider, 300);
+    elementor.hooks.addAction('panel/open_editor/widget/zepblock-slider', function () {
+      setTimeout(initZepblockSlider, 300);
     });
     elementor.channels.editor.on('change', function () {
-      setTimeout(initTBlockSlider, 300);
+      setTimeout(initZepblockSlider, 300);
     });
     elementor.on('preview:loaded', function () {
-      setTimeout(initTBlockSlider, 300);
+      setTimeout(initZepblockSlider, 300);
     });
     elementor.channels.editor.on('section:activated', function () {
-      setTimeout(initTBlockSlider, 300);
+      setTimeout(initZepblockSlider, 300);
     });
   }
 })();

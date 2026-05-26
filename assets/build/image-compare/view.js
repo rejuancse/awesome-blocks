@@ -6,12 +6,12 @@
  * Frontend functionality for image comparison slider
  */
 function initImageCompare() {
-  const sliders = document.querySelectorAll('.tblock-image-slider');
+  const sliders = document.querySelectorAll('.zepblock-image-slider');
   sliders.forEach(slider => {
-    const wrapper = slider.closest('.tblock-image-comparison');
+    const wrapper = slider.closest('.zepblock-image-comparison');
     if (!wrapper) return;
-    const handle = wrapper.querySelector('.tblock-image-handle');
-    const divisor = wrapper.querySelector('.tblock-image-divisor');
+    const handle = wrapper.querySelector('.zepblock-image-handle');
+    const divisor = wrapper.querySelector('.zepblock-image-divisor');
     if (!handle || !divisor) return;
     const moveDivisor = () => {
       handle.style.left = slider.value + '%';

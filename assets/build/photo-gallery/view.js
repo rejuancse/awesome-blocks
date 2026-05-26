@@ -194,7 +194,7 @@ class PhotoGalleryLightbox {
 
 // Initialize all galleries on the page
 function initPhotoGalleries() {
-  const galleries = document.querySelectorAll('.wp-block-tblock-photo-gallery');
+  const galleries = document.querySelectorAll('.wp-block-zepblock-photo-gallery');
   galleries.forEach(gallery => {
     // Store instance on the element for later reference
     if (!gallery.pgLightboxInstance) {
@@ -212,7 +212,7 @@ if (document.readyState === 'loading') {
 
 // Re-initialize when block is updated (for WordPress editor preview)
 if (window.wp) {
-  window.wp.hooks.addAction('wp.block.library.updateBlock', 'tblock/photo-gallery', initPhotoGalleries);
+  window.wp.hooks.addAction('wp.block.library.updateBlock', 'zepblock/photo-gallery', initPhotoGalleries);
 }
 /******/ })()
 ;

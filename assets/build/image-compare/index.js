@@ -89,7 +89,7 @@ function Edit({
     }
   }, [beforeImageUrl, afterImageUrl]);
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Before Image', 'theme-blocks'),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Before Image', 'zepblocks'),
     initialOpen: true
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
     onSelect: onSelectBeforeImage,
@@ -98,20 +98,20 @@ function Edit({
     render: ({
       open
     }) => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "theme-blocks-media-upload-wrapper"
+      className: "zepblocks-media-upload-wrapper"
     }, !beforeImageUrl ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Button, {
       onClick: open,
       variant: "secondary",
-      className: "theme-blocks-media-upload-button"
+      className: "zepblocks-media-upload-button"
     }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Dashicon, {
       icon: "format-image"
-    }), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Upload Before Image', 'theme-blocks')) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "theme-blocks-media-preview"
+    }), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Upload Before Image', 'zepblocks')) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "zepblocks-media-preview"
     }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
       src: beforeImageUrl,
-      alt: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Before Image', 'theme-blocks')
+      alt: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Before Image', 'zepblocks')
     }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "theme-blocks-media-actions"
+      className: "zepblocks-media-actions"
     }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Button, {
       onClick: open,
       variant: "secondary",
@@ -127,7 +127,7 @@ function Edit({
       icon: "trash"
     })))))
   })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('After Image', 'theme-blocks'),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('After Image', 'zepblocks'),
     initialOpen: true
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
     onSelect: onSelectAfterImage,
@@ -136,20 +136,20 @@ function Edit({
     render: ({
       open
     }) => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "theme-blocks-media-upload-wrapper"
+      className: "zepblocks-media-upload-wrapper"
     }, !afterImageUrl ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Button, {
       onClick: open,
       variant: "secondary",
-      className: "theme-blocks-media-upload-button"
+      className: "zepblocks-media-upload-button"
     }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Dashicon, {
       icon: "format-image"
-    }), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Upload After Image', 'theme-blocks')) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "theme-blocks-media-preview"
+    }), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Upload After Image', 'zepblocks')) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "zepblocks-media-preview"
     }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
       src: afterImageUrl,
-      alt: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('After Image', 'theme-blocks')
+      alt: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('After Image', 'zepblocks')
     }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "theme-blocks-media-actions"
+      className: "zepblocks-media-actions"
     }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Button, {
       onClick: open,
       variant: "secondary",
@@ -167,31 +167,31 @@ function Edit({
   }))))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...blockProps
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tblock-image-wrap"
+    className: "zepblock-image-wrap"
   }, !beforeImageUrl || !afterImageUrl ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tblock-image-placeholder"
+    className: "zepblock-image-placeholder"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Dashicon, {
     icon: "format-image",
     size: 40
-  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Please upload both images to see the comparison slider', 'theme-blocks'))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tblock-image-container"
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Please upload both images to see the comparison slider', 'zepblocks'))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "zepblock-image-container"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "label before-label button"
   }, "Before"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "label after-label button"
   }, "After"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tblock-image-comparison"
+    className: "zepblock-image-comparison"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("figure", {
-    className: "tblock-image-figure",
+    className: "zepblock-image-figure",
     style: {
       backgroundImage: `url(${beforeImageUrl})`
     }
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ref: handleRef,
-    className: "tblock-image-handle"
+    className: "zepblock-image-handle"
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ref: divisorRef,
-    className: "tblock-image-divisor",
+    className: "zepblock-image-divisor",
     style: {
       backgroundImage: `url(${afterImageUrl})`
     }
@@ -201,7 +201,7 @@ function Edit({
     min: "0",
     max: "100",
     value: "50",
-    className: "tblock-image-slider",
+    className: "zepblock-image-slider",
     onInput: handleSliderInput
   }))))));
 }
@@ -248,8 +248,8 @@ __webpack_require__.r(__webpack_exports__);
  */
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_2__.name, {
   ..._block_json__WEBPACK_IMPORTED_MODULE_2__,
-  title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('TBlock Image Compare', 'theme-blocks'),
-  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Compare two images with an interactive slider', 'theme-blocks'),
+  title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Zepblock Image Compare', 'zepblocks'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Compare two images with an interactive slider', 'zepblocks'),
   edit: _edit__WEBPACK_IMPORTED_MODULE_3__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_4__["default"]
 });
@@ -290,9 +290,9 @@ function Save({
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...blockProps
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tblock-image-wrap"
+    className: "zepblock-image-wrap"
   }, beforeImageUrl && afterImageUrl && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tblock-image-container"
+    className: "zepblock-image-container"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     class: "label before-label button",
     style: "visibility: visible;"
@@ -300,28 +300,28 @@ function Save({
     class: "label after-label button",
     style: "visibility: visible;"
   }, "After"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tblock-image-comparison"
+    className: "zepblock-image-comparison"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("figure", {
-    className: "tblock-image-figure",
+    className: "zepblock-image-figure",
     style: {
       backgroundImage: `url(${beforeImageUrl})`
     }
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    id: "tblock-image-handle",
-    className: "tblock-image-handle"
+    id: "zepblock-image-handle",
+    className: "zepblock-image-handle"
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    id: "tblock-image-divisor",
-    className: "tblock-image-divisor",
+    id: "zepblock-image-divisor",
+    className: "zepblock-image-divisor",
     style: {
       backgroundImage: `url(${afterImageUrl})`
     }
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
-    id: "tblock-image-slider",
+    id: "zepblock-image-slider",
     type: "range",
     min: "0",
     max: "100",
     value: "50",
-    className: "tblock-image-slider"
+    className: "zepblock-image-slider"
   })))));
 }
 
@@ -417,7 +417,7 @@ module.exports = window["wp"]["i18n"];
   \**************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/image-compare","title":"Image Compare","category":"tblock-block","icon":"format-image","description":"Compare two images with an interactive slider","keywords":["image","compare","before","after","slider"],"attributes":{"beforeImageUrl":{"type":"string","default":""},"beforeImageId":{"type":"number","default":0},"afterImageUrl":{"type":"string","default":""},"afterImageId":{"type":"number","default":0}},"supports":{"align":["wide","full"],"html":false},"editorScript":"file:./index.js","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/image-compare","title":"Image Compare","category":"zepblock-block","icon":"format-image","description":"Compare two images with an interactive slider","keywords":["image","compare","before","after","slider"],"attributes":{"beforeImageUrl":{"type":"string","default":""},"beforeImageId":{"type":"number","default":0},"afterImageUrl":{"type":"string","default":""},"afterImageId":{"type":"number","default":0}},"supports":{"align":["wide","full"],"html":false},"editorScript":"file:./index.js","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ }
 
@@ -425,7 +425,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/image-c
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -439,7 +439,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/image-c
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
+/******/
 /******/ 		// Execute the module function
 /******/ 		if (!(moduleId in __webpack_modules__)) {
 /******/ 			delete __webpack_module_cache__[moduleId];
@@ -448,14 +448,14 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/image-c
 /******/ 			throw e;
 /******/ 		}
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = __webpack_modules__;
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/chunk loaded */
 /******/ 	(() => {
@@ -488,7 +488,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/image-c
 /******/ 			return result;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
@@ -500,7 +500,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/image-c
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -512,12 +512,12 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/image-c
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -528,11 +528,11 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/image-c
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/jsonp chunk loading */
 /******/ 	(() => {
 /******/ 		// no baseURI
-/******/ 		
+/******/
 /******/ 		// object to store loaded and loading chunks
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
@@ -540,19 +540,19 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/image-c
 /******/ 			"image-compare/index": 0,
 /******/ 			"image-compare/style-index": 0
 /******/ 		};
-/******/ 		
+/******/
 /******/ 		// no chunk on demand loading
-/******/ 		
+/******/
 /******/ 		// no prefetching
-/******/ 		
+/******/
 /******/ 		// no preloaded
-/******/ 		
+/******/
 /******/ 		// no HMR
-/******/ 		
+/******/
 /******/ 		// no HMR manifest
-/******/ 		
+/******/
 /******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
-/******/ 		
+/******/
 /******/ 		// install a JSONP callback for chunk loading
 /******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
 /******/ 			var [chunkIds, moreModules, runtime] = data;
@@ -577,20 +577,20 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/image-c
 /******/ 			}
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
-/******/ 		
-/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkthemeblocks"] = globalThis["webpackChunkthemeblocks"] || [];
+/******/
+/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkzepblocks"] = globalThis["webpackChunkzepblocks"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
-/******/ 	
+/******/
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
 /******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["image-compare/style-index"], () => (__webpack_require__("./src/image-compare/index.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
-/******/ 	
+/******/
 /******/ })()
 ;
 //# sourceMappingURL=index.js.map

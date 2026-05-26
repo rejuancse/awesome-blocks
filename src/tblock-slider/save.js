@@ -20,7 +20,7 @@ export default function Save({ attributes }) {
 
     return (
         <div {...blockProps}>
-            <section className="theme_block_banner__slider">
+            <section className="zepblock_banner__slider">
                 <div className="slider"
                     data-autoplay={autoplay ? 'yes' : 'no'}
                     data-autoplay-speed={autoplaySpeed}

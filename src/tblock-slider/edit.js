@@ -115,10 +115,10 @@ export default function Edit({ attributes, setAttributes }) {
     return (
         <>
             <InspectorControls>
-                <PanelBody title={__('Slider Settings', 'theme-blocks' )} initialOpen={true}>
+                <PanelBody title={__('Slider Settings', 'zepblocks' )} initialOpen={true}>
                     <PanelRow>
                         <ToggleControl
-                            label={__('Autoplay', 'theme-blocks' )}
+                            label={__('Autoplay', 'zepblocks' )}
                             checked={autoplay}
                             onChange={() => setAttributes({ autoplay: !autoplay })}
                         />
@@ -126,7 +126,7 @@ export default function Edit({ attributes, setAttributes }) {
                     {autoplay && (
                         <PanelRow>
                             <TextControl
-                                label={__('Autoplay Speed (ms)', 'theme-blocks' )}
+                                label={__('Autoplay Speed (ms)', 'zepblocks' )}
                                 type="number"
                                 value={autoplaySpeed}
                                 onChange={(value) => setAttributes({ autoplaySpeed: parseInt(value) })}
@@ -135,7 +135,7 @@ export default function Edit({ attributes, setAttributes }) {
                     )}
                     <PanelRow>
                         <TextControl
-                            label={__('Animation Speed (ms)', 'theme-blocks' )}
+                            label={__('Animation Speed (ms)', 'zepblocks' )}
                             type="number"
                             value={animationSpeed}
                             onChange={(value) => setAttributes({ animationSpeed: parseInt(value) })}
@@ -143,25 +143,25 @@ export default function Edit({ attributes, setAttributes }) {
                     </PanelRow>
                     <PanelRow>
                         <ToggleControl
-                            label={__('Show Arrows', 'theme-blocks' )}
+                            label={__('Show Arrows', 'zepblocks' )}
                             checked={showArrow}
                             onChange={() => setAttributes({ showArrow: !showArrow })}
                         />
                     </PanelRow>
                     <PanelRow>
                         <ToggleControl
-                            label={__('Show Dots', 'theme-blocks' )}
+                            label={__('Show Dots', 'zepblocks' )}
                             checked={showDots}
                             onChange={() => setAttributes({ showDots: !showDots })}
                         />
                     </PanelRow>
                 </PanelBody>
 
-                <PanelBody title={__('Manage Slides', 'theme-blocks' )} initialOpen={false}>
+                <PanelBody title={__('Manage Slides', 'zepblocks' )} initialOpen={false}>
                     {slides.map((slide, index) => (
                         <div key={slide.id} style={{ marginBottom: '20px', padding: '15px', background: '#f0f0f0', borderRadius: '4px' }}>
                             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
-                                <strong>{__('Slide', 'theme-blocks' )} {index + 1}</strong>
+                                <strong>{__('Slide', 'zepblocks' )} {index + 1}</strong>
                                 {slides.length > 1 && (
                                     <Button
                                         onClick={() => removeSlide(index)}
@@ -185,13 +185,13 @@ export default function Edit({ attributes, setAttributes }) {
                                                 {!slide.imageUrl ? (
                                                     <Button onClick={open} variant="secondary" isSmall>
                                                         <Dashicon icon="format-image" />
-                                                        {__('Upload Image', 'theme-blocks' )}
+                                                        {__('Upload Image', 'zepblocks' )}
                                                     </Button>
                                                 ) : (
                                                     <div style={{ position: 'relative', display: 'inline-block' }}>
                                                         <img
                                                             src={slide.imageUrl}
-                                                            alt={__('Preview', 'theme-blocks' )}
+                                                            alt={__('Preview', 'zepblocks' )}
                                                             style={{ maxWidth: '100px', borderRadius: '4px' }}
                                                         />
                                                         <div style={{ marginTop: '5px' }}>
@@ -216,41 +216,41 @@ export default function Edit({ attributes, setAttributes }) {
                             </PanelRow>
 
                             <TextControl
-                                label={__('Top Title', 'theme-blocks' )}
+                                label={__('Top Title', 'zepblocks' )}
                                 value={slide.topTitle}
                                 onChange={(value) => updateSlide(index, 'topTitle', value)}
                             />
                             <TextControl
-                                label={__('Title', 'theme-blocks' )}
+                                label={__('Title', 'zepblocks' )}
                                 value={slide.title}
                                 onChange={(value) => updateSlide(index, 'title', value)}
                             />
                             <TextControl
-                                label={__('Button Text', 'theme-blocks' )}
+                                label={__('Button Text', 'zepblocks' )}
                                 value={slide.buttonText}
                                 onChange={(value) => updateSlide(index, 'buttonText', value)}
                             />
                             <TextControl
-                                label={__('Button URL', 'theme-blocks' )}
+                                label={__('Button URL', 'zepblocks' )}
                                 value={slide.buttonUrl}
                                 onChange={(value) => updateSlide(index, 'buttonUrl', value)}
                             />
                             <SelectControl
-                                label={__('Button Style', 'theme-blocks' )}
+                                label={__('Button Style', 'zepblocks' )}
                                 value={slide.buttonStyle}
                                 options={[
-                                    { label: __('Success (Green)', 'theme-blocks' ), value: 'success' },
-                                    { label: __('Light (White)', 'theme-blocks' ), value: 'light' },
+                                    { label: __('Success (Green)', 'zepblocks' ), value: 'success' },
+                                    { label: __('Light (White)', 'zepblocks' ), value: 'light' },
                                 ]}
                                 onChange={(value) => updateSlide(index, 'buttonStyle', value)}
                             />
                             <SelectControl
-                                label={__('Content Position', 'theme-blocks' )}
+                                label={__('Content Position', 'zepblocks' )}
                                 value={slide.contentPosition}
                                 options={[
-                                    { label: __('Left', 'theme-blocks' ), value: 'left' },
-                                    { label: __('Center', 'theme-blocks' ), value: 'center' },
-                                    { label: __('Right', 'theme-blocks' ), value: 'right' },
+                                    { label: __('Left', 'zepblocks' ), value: 'left' },
+                                    { label: __('Center', 'zepblocks' ), value: 'center' },
+                                    { label: __('Right', 'zepblocks' ), value: 'right' },
                                 ]}
                                 onChange={(value) => updateSlide(index, 'contentPosition', value)}
                             />
@@ -263,7 +263,7 @@ export default function Edit({ attributes, setAttributes }) {
                         style={{ width: '100%', justifyContent: 'center', gap: '8px' }}
                     >
                         <Dashicon icon="plus" />
-                        {__('Add Slide', 'theme-blocks' )}
+                        {__('Add Slide', 'zepblocks' )}
                     </Button>
                 </PanelBody>
             </InspectorControls>
@@ -272,11 +272,11 @@ export default function Edit({ attributes, setAttributes }) {
                 {slides.length === 0 ? (
                     <div className="as-placeholder">
                         <p style={{ textAlign: 'center', padding: '40px', background: '#f9f9f9', borderRadius: '4px' }}>
-                            {__('No slides yet. Add slides from the sidebar settings.', 'theme-blocks' )}
+                            {__('No slides yet. Add slides from the sidebar settings.', 'zepblocks' )}
                         </p>
                     </div>
                 ) : (
-                    <section className="theme_block_banner__slider as-editor-preview">
+                    <section className="zepblock_banner__slider as-editor-preview">
                         <div
                             ref={sliderRef}
                             className="slider"
@@ -306,7 +306,7 @@ export default function Edit({ attributes, setAttributes }) {
                                                     justifyContent: 'center',
                                                     color: '#999'
                                                 }}>
-                                                    {__('No Image', 'theme-blocks' )}
+                                                    {__('No Image', 'zepblocks' )}
                                                 </div>
                                             )}
                                         </div>

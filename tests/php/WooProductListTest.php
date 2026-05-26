@@ -5,9 +5,9 @@
  * Tests for the Woo_Product_List class.
  */
 
-namespace ThemeBlocks\Tests;
+namespace ZepBlocks\Tests;
 
-use ThemeBlocks\Woo_Product_List;
+use ZepBlocks\Woo_Product_List;
 
 class WooProductListTest extends TestCase {
 
@@ -15,7 +15,7 @@ class WooProductListTest extends TestCase {
      * Test Woo_Product_List class has render method
      */
     public function test_woo_product_list_has_render_method() {
-        $this->assertTrue( method_exists( 'ThemeBlocks\Woo_Product_List', 'render' ), 'Woo_Product_List should have a render method' );
+        $this->assertTrue( method_exists( 'ZepBlocks\Woo_Product_List', 'render' ), 'Woo_Product_List should have a render method' );
     }
 
     /**
@@ -42,7 +42,7 @@ class WooProductListTest extends TestCase {
      * Test render_content method exists
      */
     public function test_render_content_method_exists() {
-        $this->assertTrue( method_exists( 'ThemeBlocks\Woo_Product_List', 'render_content' ), 'Woo_Product_List should have a render_content method' );
+        $this->assertTrue( method_exists( 'ZepBlocks\Woo_Product_List', 'render_content' ), 'Woo_Product_List should have a render_content method' );
     }
 
     /**
@@ -420,7 +420,7 @@ class WooProductListTest extends TestCase {
      * Test woo product list namespace
      */
     public function test_woo_product_list_namespace() {
-        $this->assertEquals( 'ThemeBlocks\Woo_Product_List', Woo_Product_List::class );
+        $this->assertEquals( 'ZepBlocks\Woo_Product_List', Woo_Product_List::class );
     }
 
     /**

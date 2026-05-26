@@ -5,7 +5,7 @@
  * Base class for all test cases.
  */
 
-namespace ThemeBlocks\Tests;
+namespace ZepBlocks\Tests;
 
 use PHPUnit\Framework\TestCase as PHPUnitTestCase;
 

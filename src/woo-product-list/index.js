@@ -21,8 +21,8 @@ import './editor.scss';
  */
 registerBlockType( metadata.name, {
     ...metadata,
-    title: __('TBlock Product List', 'theme-blocks' ),
-    description: __('Display WooCommerce products in a beautiful grid layout', 'theme-blocks' ),
+    title: __('Zepblock Product List', 'zepblocks' ),
+    description: __('Display WooCommerce products in a beautiful grid layout', 'zepblocks' ),
     edit,
     save: () => null, // Dynamic block, rendered via PHP
 });

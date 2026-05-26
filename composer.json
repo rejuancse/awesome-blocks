@@ -1,5 +1,5 @@
 {
-    "name": "thebitcraft/themeblocks",
+    "name": "thebitcraft/zepblocks",
     "description": "Collection of custom Gutenberg blocks.",
     "type": "wordpress-plugin",
     "license": "GPLv2",
@@ -11,12 +11,12 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "ThemeBlocks\\": "includes/"
+            "ZepBlocks\\": "includes/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ThemeBlocks\\Tests\\": "tests/php/"
+            "ZepBlocks\\Tests\\": "tests/php/"
         }
     },
     "require-dev": {

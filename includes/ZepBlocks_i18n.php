@@ -1,6 +1,6 @@
 <?php
 
-namespace ThemeBlocks;
+namespace ZepBlocks;
 
 defined( 'ABSPATH' ) || exit;
 
@@ -9,7 +9,7 @@ defined( 'ABSPATH' ) || exit;
  *
  * @since    1.0.0
  */
-class ThemeBlocks_i18n {
+class ZepBlocks_i18n {
 
 	/**
 	 * Call language method
@@ -32,6 +32,6 @@ class ThemeBlocks_i18n {
 	 * @return	void
 	 */
 	public function load_plugin_textdomain() {
-		load_plugin_textdomain( 'tblock-block', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+		load_plugin_textdomain( 'zepblock-block', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 	}
 }

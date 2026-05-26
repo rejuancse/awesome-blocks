@@ -1,8 +1,8 @@
 {
   "apiVersion": 3,
-  "name": "tblock/tblock-slider",
-  "title": "TBlock Slider",
-  "category": "tblock-block",
+  "name": "zepblock/zepblock-slider",
+  "title": "Zepblock Slider",
+  "category": "zepblock-block",
   "icon": "slides",
   "description": "A beautiful slider block with animations and slick slider",
   "keywords": [

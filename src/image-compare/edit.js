@@ -70,7 +70,7 @@ export default function Edit({ attributes, setAttributes }) {
     return (
         <>
             <InspectorControls>
-                <PanelBody title={__('Before Image', 'theme-blocks' )} initialOpen={true}>
+                <PanelBody title={__('Before Image', 'zepblocks' )} initialOpen={true}>
                     <PanelRow>
                         <MediaUploadCheck>
                             <MediaUpload
@@ -78,20 +78,20 @@ export default function Edit({ attributes, setAttributes }) {
                                 allowedTypes={['image']}
                                 value={beforeImageId}
                                 render={({ open }) => (
-                                    <div className="theme-blocks-media-upload-wrapper">
+                                    <div className="zepblocks-media-upload-wrapper">
                                         {!beforeImageUrl ? (
                                             <Button
                                                 onClick={open}
                                                 variant="secondary"
-                                                className="theme-blocks-media-upload-button"
+                                                className="zepblocks-media-upload-button"
                                             >
                                                 <Dashicon icon="format-image" />
-                                                {__('Upload Before Image', 'theme-blocks' )}
+                                                {__('Upload Before Image', 'zepblocks' )}
                                             </Button>
                                         ) : (
-                                            <div className="theme-blocks-media-preview">
-                                                <img src={beforeImageUrl} alt={__('Before Image', 'theme-blocks' )} />
-                                                <div className="theme-blocks-media-actions">
+                                            <div className="zepblocks-media-preview">
+                                                <img src={beforeImageUrl} alt={__('Before Image', 'zepblocks' )} />
+                                                <div className="zepblocks-media-actions">
                                                     <Button
                                                         onClick={open}
                                                         variant="secondary"
@@ -117,7 +117,7 @@ export default function Edit({ attributes, setAttributes }) {
                     </PanelRow>
                 </PanelBody>
 
-                <PanelBody title={__('After Image', 'theme-blocks' )} initialOpen={true}>
+                <PanelBody title={__('After Image', 'zepblocks' )} initialOpen={true}>
                     <PanelRow>
                         <MediaUploadCheck>
                             <MediaUpload
@@ -125,20 +125,20 @@ export default function Edit({ attributes, setAttributes }) {
                                 allowedTypes={['image']}
                                 value={afterImageId}
                                 render={({ open }) => (
-                                    <div className="theme-blocks-media-upload-wrapper">
+                                    <div className="zepblocks-media-upload-wrapper">
                                         {!afterImageUrl ? (
                                             <Button
                                                 onClick={open}
                                                 variant="secondary"
-                                                className="theme-blocks-media-upload-button"
+                                                className="zepblocks-media-upload-button"
                                             >
                                                 <Dashicon icon="format-image" />
-                                                {__('Upload After Image', 'theme-blocks' )}
+                                                {__('Upload After Image', 'zepblocks' )}
                                             </Button>
                                         ) : (
-                                            <div className="theme-blocks-media-preview">
-                                                <img src={afterImageUrl} alt={__('After Image', 'theme-blocks' )} />
-                                                <div className="theme-blocks-media-actions">
+                                            <div className="zepblocks-media-preview">
+                                                <img src={afterImageUrl} alt={__('After Image', 'zepblocks' )} />
+                                                <div className="zepblocks-media-actions">
                                                     <Button
                                                         onClick={open}
                                                         variant="secondary"
@@ -166,26 +166,26 @@ export default function Edit({ attributes, setAttributes }) {
             </InspectorControls>
 
             <div {...blockProps}>
-                <div className="tblock-image-wrap">
+                <div className="zepblock-image-wrap">
                     {!beforeImageUrl || !afterImageUrl ? (
-                        <div className="tblock-image-placeholder">
+                        <div className="zepblock-image-placeholder">
                             <Dashicon icon="format-image" size={40} />
-                            <p>{__('Please upload both images to see the comparison slider', 'theme-blocks' )}</p>
+                            <p>{__('Please upload both images to see the comparison slider', 'zepblocks' )}</p>
                         </div>
                     ) : (
-                        <div className="tblock-image-container">
+                        <div className="zepblock-image-container">
                             <span className="label before-label button">Before</span>
                             <span className="label after-label button">After</span>
 
-                            <div className="tblock-image-comparison">
+                            <div className="zepblock-image-comparison">
                                 <figure
-                                    className="tblock-image-figure"
+                                    className="zepblock-image-figure"
                                     style={{ backgroundImage: `url(${beforeImageUrl})` }}
                                 >
-                                    <div ref={handleRef} className="tblock-image-handle"></div>
+                                    <div ref={handleRef} className="zepblock-image-handle"></div>
                                     <div
                                         ref={divisorRef}
-                                        className="tblock-image-divisor"
+                                        className="zepblock-image-divisor"
                                         style={{ backgroundImage: `url(${afterImageUrl})` }}
                                     ></div>
                                 </figure>
@@ -195,7 +195,7 @@ export default function Edit({ attributes, setAttributes }) {
                                     min="0"
                                     max="100"
                                     value="50"
-                                    className="tblock-image-slider"
+                                    className="zepblock-image-slider"
                                     onInput={handleSliderInput}
                                 />
                             </div>

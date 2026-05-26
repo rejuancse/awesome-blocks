@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
-        'name' => 'thebitcraft/themeblocks',
+        'name' => 'thebitcraft/zepblocks',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '9f195ca47f45479d6ee1bb287fd6846aeddf52b2',
+        'reference' => '3b94af783efff702b32837a2096a5206b87bc23b',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -259,10 +259,10 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
-        'thebitcraft/themeblocks' => array(
+        'thebitcraft/zepblocks' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '9f195ca47f45479d6ee1bb287fd6846aeddf52b2',
+            'reference' => '3b94af783efff702b32837a2096a5206b87bc23b',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

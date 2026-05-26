@@ -16,31 +16,31 @@ export default function Save({ attributes }) {
 
     return (
         <div {...blockProps}>
-            <div className="tblock-image-wrap">
+            <div className="zepblock-image-wrap">
                 {beforeImageUrl && afterImageUrl && (
-                    <div className="tblock-image-container">
+                    <div className="zepblock-image-container">
                         <span class="label before-label button" style="visibility: visible;">Before</span>
                         <span class="label after-label button" style="visibility: visible;">After</span>
 
-                        <div className="tblock-image-comparison">
+                        <div className="zepblock-image-comparison">
                             <figure
-                                className="tblock-image-figure"
+                                className="zepblock-image-figure"
                                 style={{ backgroundImage: `url(${beforeImageUrl})` }}
                             >
-                                <div id="tblock-image-handle" className="tblock-image-handle"></div>
+                                <div id="zepblock-image-handle" className="zepblock-image-handle"></div>
                                 <div
-                                    id="tblock-image-divisor"
-                                    className="tblock-image-divisor"
+                                    id="zepblock-image-divisor"
+                                    className="zepblock-image-divisor"
                                     style={{ backgroundImage: `url(${afterImageUrl})` }}
                                 ></div>
                             </figure>
                             <input
-                                id="tblock-image-slider"
+                                id="zepblock-image-slider"
                                 type="range"
                                 min="0"
                                 max="100"
                                 value="50"
-                                className="tblock-image-slider"
+                                className="zepblock-image-slider"
                             />
                         </div>
                     </div>

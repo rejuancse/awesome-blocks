@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       ThemeBlocks
+ * Plugin Name:       ZepBlocks
  * Description:       A lightweight collection of beautiful, flexible Gutenberg blocks — including sliders, galleries, timelines, and WooCommerce blocks.
  * Requires at least: 5.9
  * Requires PHP:      7.4
@@ -8,7 +8,7 @@
  * Author:            Rejuan Ahamed
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       theme-blocks
+ * Text Domain:       zepblocks
  *
  * @package           create-block
  */
@@ -20,7 +20,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 /**
  * The main plugin class
  */
-final class ThemeBlocks {
+final class ZepBlocks {
 
     /**
      * Plugin version
@@ -40,7 +40,7 @@ final class ThemeBlocks {
     /**
      * Initialize a singleton instance
      *
-     * @return \ThemeBlocks
+     * @return \ZepBlocks
      */
     public static function init() {
         static $instance = false;
@@ -58,11 +58,11 @@ final class ThemeBlocks {
      * @return void
      */
     public function define_constants() {
-        define( 'THEMEBLOCKS_VERSION', self::version );
-        define( 'THEMEBLOCKS_FILE', __FILE__ );
-        define( 'THEMEBLOCKS_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
-        define( 'THEMEBLOCKS_URL', plugins_url( '', THEMEBLOCKS_FILE ) );
-        define( 'THEMEBLOCKS_ASSETS', THEMEBLOCKS_URL . '/assets' );
+        define( 'ZEPBLOCKS_VERSION', self::version );
+        define( 'ZEPBLOCKS_FILE', __FILE__ );
+        define( 'ZEPBLOCKS_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
+        define( 'ZEPBLOCKS_URL', plugins_url( '', ZEPBLOCKS_FILE ) );
+        define( 'ZEPBLOCKS_ASSETS', ZEPBLOCKS_URL . '/assets' );
     }
 
     /**
@@ -71,15 +71,15 @@ final class ThemeBlocks {
      * @return void
      */
     public function init_plugin() {
-        new ThemeBlocks\Assets();
-        new ThemeBlocks\Register_Blocks();
-        new ThemeBlocks\ThemeBlocks_i18n();
-        new ThemeBlocks\Product_REST_API();
+        new ZepBlocks\Assets();
+        new ZepBlocks\Register_Blocks();
+        new ZepBlocks\ZepBlocks_i18n();
+        new ZepBlocks\Product_REST_API();
 
         // Initialize Fragment Cache hooks
-        ThemeBlocks\Fragment_Cache::init_hooks();
+        ZepBlocks\Fragment_Cache::init_hooks();
     }
 }
 
 // Kick-off the plugin
-ThemeBlocks::init();
+ZepBlocks::init();

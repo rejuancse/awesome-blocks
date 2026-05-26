@@ -4,11 +4,11 @@
 /**
  * Card Block - Editor Styles
  */
-.theme-blocks-media-upload-wrapper {
+.zepblocks-media-upload-wrapper {
   width: 100%;
 }
 
-.theme-blocks-media-upload-button {
+.zepblocks-media-upload-button {
   width: 100%;
   display: flex;
   align-items: center;
@@ -17,39 +17,39 @@
   padding: 12px;
   height: auto;
 }
-.theme-blocks-media-upload-button .dashicon {
+.zepblocks-media-upload-button .dashicon {
   font-size: 18px;
   width: 18px;
   height: 18px;
 }
 
-.theme-blocks-media-preview {
+.zepblocks-media-preview {
   position: relative;
   width: 100%;
   border: 2px solid #e0e0e0;
   border-radius: 8px;
   overflow: hidden;
 }
-.theme-blocks-media-preview img {
+.zepblocks-media-preview img {
   width: 100%;
   height: auto;
   display: block;
 }
-.theme-blocks-media-preview.theme-blocks-avatar-preview {
+.zepblocks-media-preview.zepblocks-avatar-preview {
   max-width: 200px;
 }
-.theme-blocks-media-preview.theme-blocks-avatar-preview img {
+.zepblocks-media-preview.zepblocks-avatar-preview img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.theme-blocks-media-preview:hover .theme-blocks-media-actions {
+.zepblocks-media-preview:hover .zepblocks-media-actions {
   opacity: 1;
 }
 
-.theme-blocks-media-actions {
+.zepblocks-media-actions {
   position: absolute;
   top: 0;
   left: 0;

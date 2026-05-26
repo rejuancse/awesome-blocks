@@ -55,7 +55,7 @@ export default function Save({ attributes }) {
                                 target={openInNewTab ? '_blank' : undefined}
                                 rel={openInNewTab ? 'noopener noreferrer' : undefined}
                             >
-                                {__('Learn More →', 'theme-blocks' )}
+                                {__('Learn More →', 'zepblocks' )}
                             </a>
                         )}
                     </div>

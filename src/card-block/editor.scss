@@ -2,11 +2,11 @@
  * Card Block - Editor Styles
  */
 
-.theme-blocks-media-upload-wrapper {
+.zepblocks-media-upload-wrapper {
     width: 100%;
 }
 
-.theme-blocks-media-upload-button {
+.zepblocks-media-upload-button {
     width: 100%;
     display: flex;
     align-items: center;
@@ -22,7 +22,7 @@
     }
 }
 
-.theme-blocks-media-preview {
+.zepblocks-media-preview {
     position: relative;
     width: 100%;
     border: 2px solid #e0e0e0;
@@ -35,7 +35,7 @@
         display: block;
     }
 
-    &.theme-blocks-avatar-preview {
+    &.zepblocks-avatar-preview {
         max-width: 200px;
 
         img {
@@ -46,12 +46,12 @@
         }
     }
 
-    &:hover .theme-blocks-media-actions {
+    &:hover .zepblocks-media-actions {
         opacity: 1;
     }
 }
 
-.theme-blocks-media-actions {
+.zepblocks-media-actions {
     position: absolute;
     top: 0;
     left: 0;

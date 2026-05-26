@@ -1,8 +1,8 @@
 {
   "apiVersion": 3,
-  "name": "tblock/post-block",
+  "name": "zepblock/post-block",
   "title": "Post Block",
-  "category": "tblock-block",
+  "category": "zepblock-block",
   "icon": "embed-post",
   "description": "Display posts with customizable layout",
   "keywords": [

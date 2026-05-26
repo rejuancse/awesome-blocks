@@ -22,8 +22,8 @@ import './editor.scss';
  */
 registerBlockType( metadata.name, {
     ...metadata,
-    title: __('TBlock Hero Video', 'theme-blocks' ),
-    description: __('Display a hero video with overlay content', 'theme-blocks' ),
+    title: __('Zepblock Hero Video', 'zepblocks' ),
+    description: __('Display a hero video with overlay content', 'zepblocks' ),
     edit,
     save,
 });

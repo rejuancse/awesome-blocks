@@ -1,8 +1,8 @@
 <?php
 /**
- * Server-side rendering for TBlock Hero Video Block
+ * Server-side rendering for Zepblock Hero Video Block
  *
- * @package ThemeBlocks
+ * @package ZepBlocks
  */
 defined( 'ABSPATH' ) || exit;
 
@@ -92,11 +92,11 @@ call_user_func(
 		);
 
 		// Generate unique ID for CSS variables
-		$unique_id = 'theme-blocks-hero-' . uniqid();
+		$unique_id = 'zepblocks-hero-' . uniqid();
 
 		// Build CSS variables
 		$css_vars = sprintf(
-			'--theme-blocks-button-hover-bg-color: %s; --theme-blocks-button-hover-text-color: %s;',
+			'--zepblocks-button-hover-bg-color: %s; --zepblocks-button-hover-text-color: %s;',
 			esc_attr( $button_hover_bg_color ),
 			esc_attr( $button_hover_text_color )
 		);

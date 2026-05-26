@@ -71,9 +71,9 @@ export default function Edit({ attributes, setAttributes }) {
     return (
         <>
             <InspectorControls>
-                <PanelBody title={__('Gallery Settings', 'theme-blocks' )} initialOpen={true}>
+                <PanelBody title={__('Gallery Settings', 'zepblocks' )} initialOpen={true}>
                     <RangeControl
-                        label={__('Columns', 'theme-blocks' )}
+                        label={__('Columns', 'zepblocks' )}
                         value={columns}
                         onChange={(value) => setAttributes({ columns: value })}
                         min={1}
@@ -81,7 +81,7 @@ export default function Edit({ attributes, setAttributes }) {
                     />
 
                     <RangeControl
-                        label={__('Gutter Spacing (px)', 'theme-blocks' )}
+                        label={__('Gutter Spacing (px)', 'zepblocks' )}
                         value={gutter}
                         onChange={(value) => setAttributes({ gutter: value })}
                         min={0}
@@ -89,7 +89,7 @@ export default function Edit({ attributes, setAttributes }) {
                     />
 
                     <RangeControl
-                        label={__('Border Radius (px)', 'theme-blocks' )}
+                        label={__('Border Radius (px)', 'zepblocks' )}
                         value={borderRadius}
                         onChange={(value) => setAttributes({ borderRadius: value })}
                         min={0}
@@ -97,50 +97,50 @@ export default function Edit({ attributes, setAttributes }) {
                     />
 
                     <SelectControl
-                        label={__('Image Size', 'theme-blocks' )}
+                        label={__('Image Size', 'zepblocks' )}
                         value={imageSize}
                         options={[
-                            { label: __('Thumbnail', 'theme-blocks' ), value: 'thumbnail' },
-                            { label: __('Medium', 'theme-blocks' ), value: 'medium' },
-                            { label: __('Medium Large', 'theme-blocks' ), value: 'medium_large' },
-                            { label: __('Large', 'theme-blocks' ), value: 'large' },
-                            { label: __('Full', 'theme-blocks' ), value: 'full' },
+                            { label: __('Thumbnail', 'zepblocks' ), value: 'thumbnail' },
+                            { label: __('Medium', 'zepblocks' ), value: 'medium' },
+                            { label: __('Medium Large', 'zepblocks' ), value: 'medium_large' },
+                            { label: __('Large', 'zepblocks' ), value: 'large' },
+                            { label: __('Full', 'zepblocks' ), value: 'full' },
                         ]}
                         onChange={(value) => setAttributes({ imageSize: value })}
                     />
 
                     <SelectControl
-                        label={__('Aspect Ratio', 'theme-blocks' )}
+                        label={__('Aspect Ratio', 'zepblocks' )}
                         value={aspectRatio}
                         options={[
-                            { label: __('Landscape (4:3)', 'theme-blocks' ), value: 'landscape' },
-                            { label: __('Portrait (3:4)', 'theme-blocks' ), value: 'portrait' },
-                            { label: __('Square (1:1)', 'theme-blocks' ), value: 'square' },
-                            { label: __('Original', 'theme-blocks' ), value: 'original' },
+                            { label: __('Landscape (4:3)', 'zepblocks' ), value: 'landscape' },
+                            { label: __('Portrait (3:4)', 'zepblocks' ), value: 'portrait' },
+                            { label: __('Square (1:1)', 'zepblocks' ), value: 'square' },
+                            { label: __('Original', 'zepblocks' ), value: 'original' },
                         ]}
                         onChange={(value) => setAttributes({ aspectRatio: value })}
                     />
 
                     <SelectControl
-                        label={__('Hover Effect', 'theme-blocks' )}
+                        label={__('Hover Effect', 'zepblocks' )}
                         value={hoverEffect}
                         options={[
-                            { label: __('Zoom', 'theme-blocks' ), value: 'zoom' },
-                            { label: __('Fade', 'theme-blocks' ), value: 'fade' },
-                            { label: __('Slide', 'theme-blocks' ), value: 'slide' },
-                            { label: __('None', 'theme-blocks' ), value: 'none' },
+                            { label: __('Zoom', 'zepblocks' ), value: 'zoom' },
+                            { label: __('Fade', 'zepblocks' ), value: 'fade' },
+                            { label: __('Slide', 'zepblocks' ), value: 'slide' },
+                            { label: __('None', 'zepblocks' ), value: 'none' },
                         ]}
                         onChange={(value) => setAttributes({ hoverEffect: value })}
                     />
 
                     <ToggleControl
-                        label={__('Enable Lightbox', 'theme-blocks' )}
+                        label={__('Enable Lightbox', 'zepblocks' )}
                         checked={enableLightbox}
                         onChange={() => setAttributes({ enableLightbox: !enableLightbox })}
                     />
 
                     <ToggleControl
-                        label={__('Show Captions', 'theme-blocks' )}
+                        label={__('Show Captions', 'zepblocks' )}
                         checked={enableCaptions}
                         onChange={() => setAttributes({ enableCaptions: !enableCaptions })}
                     />
@@ -152,7 +152,7 @@ export default function Edit({ attributes, setAttributes }) {
                     {images.length === 0 ? (
                         <div className="pg-empty-state">
                             <Dashicon icon="format-gallery" size={60} />
-                            <p>{__('No images added yet.', 'theme-blocks' )}</p>
+                            <p>{__('No images added yet.', 'zepblocks' )}</p>
                             <MediaUploadCheck>
                                 <MediaUpload
                                     onSelect={onAddImages}
@@ -163,7 +163,7 @@ export default function Edit({ attributes, setAttributes }) {
                                     render={({ open }) => (
                                         <Button onClick={open} variant="primary" className="pg-upload-btn">
                                             <Dashicon icon="upload" />
-                                            {__('Add Images', 'theme-blocks' )}
+                                            {__('Add Images', 'zepblocks' )}
                                         </Button>
                                     )}
                                 />
@@ -211,7 +211,7 @@ export default function Edit({ attributes, setAttributes }) {
                                                     disabled={index === 0}
                                                     isSmall
                                                     showTooltip
-                                                    label={__('Move Left', 'theme-blocks' )}
+                                                    label={__('Move Left', 'zepblocks' )}
                                                 >
                                                     <Dashicon icon="arrow-left" />
                                                 </Button>
@@ -220,7 +220,7 @@ export default function Edit({ attributes, setAttributes }) {
                                                     disabled={index === images.length - 1}
                                                     isSmall
                                                     showTooltip
-                                                    label={__('Move Right', 'theme-blocks' )}
+                                                    label={__('Move Right', 'zepblocks' )}
                                                 >
                                                     <Dashicon icon="arrow-right" />
                                                 </Button>
@@ -229,7 +229,7 @@ export default function Edit({ attributes, setAttributes }) {
                                                     isDestructive
                                                     isSmall
                                                     showTooltip
-                                                    label={__('Remove', 'theme-blocks' )}
+                                                    label={__('Remove', 'zepblocks' )}
                                                 >
                                                     <Dashicon icon="trash" />
                                                 </Button>
@@ -254,7 +254,7 @@ export default function Edit({ attributes, setAttributes }) {
                                         render={({ open }) => (
                                             <Button onClick={open} variant="secondary">
                                                 <Dashicon icon="plus" />
-                                                {__('Add More Images', 'theme-blocks' )}
+                                                {__('Add More Images', 'zepblocks' )}
                                             </Button>
                                         )}
                                     />

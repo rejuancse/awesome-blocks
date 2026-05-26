@@ -22,8 +22,8 @@ import './editor.scss';
  */
 registerBlockType( metadata.name, {
     ...metadata,
-    title: __('TBlock Card Block', 'theme-blocks' ),
-    description: __('Beautiful card layout with image, tag, title, excerpt, author and button', 'theme-blocks' ),
+    title: __('Zepblock Card Block', 'zepblocks' ),
+    description: __('Beautiful card layout with image, tag, title, excerpt, author and button', 'zepblocks' ),
     edit,
     save,
 });

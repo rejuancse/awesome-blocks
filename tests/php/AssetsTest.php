@@ -5,9 +5,9 @@
  * Tests for the Assets class.
  */
 
-namespace ThemeBlocks\Tests;
+namespace ZepBlocks\Tests;
 
-use ThemeBlocks\Assets;
+use ZepBlocks\Assets;
 
 class AssetsTest extends TestCase {
 
@@ -26,17 +26,17 @@ class AssetsTest extends TestCase {
      */
     public function test_common_css_is_enqueued() {
         // Mock WordPress functions
-        if ( ! function_exists( 'ThemeBlocks\has_block' ) ) {
-            eval( 'namespace ThemeBlocks; function has_block( $block_type ) { return false; }' );
+        if ( ! function_exists( 'ZepBlocks\has_block' ) ) {
+            eval( 'namespace ZepBlocks; function has_block( $block_type ) { return false; }' );
         }
-        if ( ! function_exists( 'ThemeBlocks\is_admin' ) ) {
-            eval( 'namespace ThemeBlocks; function is_admin() { return false; }' );
+        if ( ! function_exists( 'ZepBlocks\is_admin' ) ) {
+            eval( 'namespace ZepBlocks; function is_admin() { return false; }' );
         }
-        if ( ! function_exists( 'ThemeBlocks\wp_enqueue_style' ) ) {
-            eval( 'namespace ThemeBlocks; function wp_enqueue_style( $handle, $src = "", $deps = array(), $ver = false, $media = "all" ) { return true; }' );
+        if ( ! function_exists( 'ZepBlocks\wp_enqueue_style' ) ) {
+            eval( 'namespace ZepBlocks; function wp_enqueue_style( $handle, $src = "", $deps = array(), $ver = false, $media = "all" ) { return true; }' );
         }
-        if ( ! function_exists( 'ThemeBlocks\wp_enqueue_script' ) ) {
-            eval( 'namespace ThemeBlocks; function wp_enqueue_script( $handle, $src = "", $deps = array(), $ver = false, $in_footer = false ) { return true; }' );
+        if ( ! function_exists( 'ZepBlocks\wp_enqueue_script' ) ) {
+            eval( 'namespace ZepBlocks; function wp_enqueue_script( $handle, $src = "", $deps = array(), $ver = false, $in_footer = false ) { return true; }' );
         }
 
         $assets = new Assets();
@@ -78,15 +78,15 @@ class AssetsTest extends TestCase {
      * Test assets version constant is used
      */
     public function test_assets_version_constant_exists() {
-        $this->assertTrue( defined( 'THEMEBLOCKS_VERSION' ), 'THEMEBLOCKS_VERSION constant should be defined' );
-        $this->assertIsString( THEMEBLOCKS_VERSION, 'THEMEBLOCKS_VERSION should be a string' );
+        $this->assertTrue( defined( 'ZEPBLOCKS_VERSION' ), 'ZEPBLOCKS_VERSION constant should be defined' );
+        $this->assertIsString( ZEPBLOCKS_VERSION, 'ZEPBLOCKS_VERSION should be a string' );
     }
 
     /**
      * Test assets URL constant is used
      */
     public function test_assets_url_constant_exists() {
-        $this->assertTrue( defined( 'THEMEBLOCKS_ASSETS' ), 'THEMEBLOCKS_ASSETS constant should be defined' );
-        $this->assertIsString( THEMEBLOCKS_ASSETS, 'THEMEBLOCKS_ASSETS should be a string' );
+        $this->assertTrue( defined( 'ZEPBLOCKS_ASSETS' ), 'ZEPBLOCKS_ASSETS constant should be defined' );
+        $this->assertIsString( ZEPBLOCKS_ASSETS, 'ZEPBLOCKS_ASSETS should be a string' );
     }
 }

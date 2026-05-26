@@ -22,8 +22,8 @@ import './editor.scss';
  */
 registerBlockType( metadata.name, {
     ...metadata,
-    title: __('TBlock Post Block', 'theme-blocks' ),
-    description: __('Display posts with customizable layout', 'theme-blocks' ),
+    title: __('Zepblock Post Block', 'zepblocks' ),
+    description: __('Display posts with customizable layout', 'zepblocks' ),
     edit,
     save,
 });

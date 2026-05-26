@@ -5,7 +5,7 @@
  * Example test case demonstrating basic testing patterns.
  */
 
-namespace ThemeBlocks\Tests;
+namespace ZepBlocks\Tests;
 
 class SampleTest extends TestCase {
     /**

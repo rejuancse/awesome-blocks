@@ -22,8 +22,8 @@ import './editor.scss';
  */
 registerBlockType( metadata.name, {
     ...metadata,
-    title: __('TBlock Timeline', 'theme-blocks' ),
-    description: __('A beautiful vertical timeline block with alternating left/right items', 'theme-blocks' ),
+    title: __('Zepblock Timeline', 'zepblocks' ),
+    description: __('A beautiful vertical timeline block with alternating left/right items', 'zepblocks' ),
     edit,
     save,
 });

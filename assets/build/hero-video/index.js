@@ -78,7 +78,7 @@ const DEFAULTS = {
 };
 
 /**
- * Edit component for the TBlock Hero Video block.
+ * Edit component for the Zepblock Hero Video block.
  *
  * @param {Object}   props
  * @param {Object}   props.attributes    Block attributes.
@@ -159,7 +159,7 @@ function Edit({
   // ── Render ───────────────────────────────────────────────────────────────
 
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Content Settings', 'theme-blocks')
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Content Settings', 'zepblocks')
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
     onSelect: media => setAttributes({
       videoUrl: media.url
@@ -171,7 +171,7 @@ function Edit({
     }) => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, !videoUrl && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
       onClick: open,
       className: "components-button is-secondary"
-    }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Select Video', 'theme-blocks')), videoUrl && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("video", {
+    }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Select Video', 'zepblocks')), videoUrl && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("video", {
       src: videoUrl,
       style: {
         width: '100%',
@@ -186,7 +186,7 @@ function Edit({
       style: {
         marginTop: '10px'
       }
-    }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Remove Video', 'theme-blocks'))))
+    }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Remove Video', 'zepblocks'))))
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
     onSelect: media => setAttributes({
       posterUrl: media.url
@@ -199,12 +199,12 @@ function Edit({
       style: {
         marginTop: '15px'
       }
-    }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("label", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Poster Image', 'theme-blocks')), !posterUrl && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("label", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Poster Image', 'zepblocks')), !posterUrl && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
       onClick: open,
       className: "components-button is-secondary"
-    }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Select Poster Image', 'theme-blocks')), posterUrl && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+    }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Select Poster Image', 'zepblocks')), posterUrl && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
       src: posterUrl,
-      alt: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Poster', 'theme-blocks'),
+      alt: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Poster', 'zepblocks'),
       style: {
         width: '100%',
         maxHeight: '200px',
@@ -218,93 +218,93 @@ function Edit({
       style: {
         marginTop: '10px'
       }
-    }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Remove Poster', 'theme-blocks'))))
+    }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Remove Poster', 'zepblocks'))))
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.TextControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title', 'zepblocks'),
     value: title,
     onChange: value => setAttributes({
       title: value
     }),
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Enter hero title', 'theme-blocks')
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Enter hero title', 'zepblocks')
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.TextControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Description', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Description', 'zepblocks'),
     value: description,
     onChange: value => setAttributes({
       description: value
     }),
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Enter hero description', 'theme-blocks')
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Enter hero description', 'zepblocks')
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.TextControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Text', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Text', 'zepblocks'),
     value: buttonText,
     onChange: value => setAttributes({
       buttonText: value
     }),
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Enter button text', 'theme-blocks')
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Enter button text', 'zepblocks')
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.TextControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button URL', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button URL', 'zepblocks'),
     value: buttonUrl,
     onChange: value => setAttributes({
       buttonUrl: value
     }),
-    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('https://example.com', 'theme-blocks')
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('https://example.com', 'zepblocks')
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.SelectControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Content Alignment', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Content Alignment', 'zepblocks'),
     value: contentAlign,
     options: [{
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Left', 'theme-blocks'),
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Left', 'zepblocks'),
       value: 'left'
     }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Center', 'theme-blocks'),
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Center', 'zepblocks'),
       value: 'center'
     }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Right', 'theme-blocks'),
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Right', 'zepblocks'),
       value: 'right'
     }],
     onChange: value => setAttributes({
       contentAlign: value
     })
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Video Settings', 'theme-blocks'),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Video Settings', 'zepblocks'),
     initialOpen: false
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.RangeControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Video Height (px)', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Video Height (px)', 'zepblocks'),
     value: videoHeight,
     onChange: value => setAttributes({
       videoHeight: value
     }),
     min: 200,
     max: 1200,
-    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Set the height of the video section', 'theme-blocks')
+    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Set the height of the video section', 'zepblocks')
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Muted', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Muted', 'zepblocks'),
     checked: muted,
     onChange: value => setAttributes({
       muted: value
     })
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Autoplay', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Autoplay', 'zepblocks'),
     checked: autoplay,
     onChange: value => setAttributes({
       autoplay: value
     })
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.ToggleControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Loop', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Loop', 'zepblocks'),
     checked: loop,
     onChange: value => setAttributes({
       loop: value
     })
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Style Settings', 'theme-blocks'),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Style Settings', 'zepblocks'),
     initialOpen: false
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title Style', 'theme-blocks')), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_utils_components__WEBPACK_IMPORTED_MODULE_6__.ColorControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title Color', 'theme-blocks'),
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title Style', 'zepblocks')), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_utils_components__WEBPACK_IMPORTED_MODULE_6__.ColorControl, {
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title Color', 'zepblocks'),
     value: titleColor,
     onChange: value => setAttributes({
       titleColor: value
     }),
     placeholder: "#ffffff"
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.RangeControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title Font Size', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title Font Size', 'zepblocks'),
     value: titleFontSize,
     onChange: value => setAttributes({
       titleFontSize: value
@@ -312,29 +312,29 @@ function Edit({
     min: 12,
     max: 100
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.SelectControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title Font Weight', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title Font Weight', 'zepblocks'),
     value: titleFontWeight,
     options: _utils_google_fonts__WEBPACK_IMPORTED_MODULE_5__.FONT_WEIGHTS,
     onChange: value => setAttributes({
       titleFontWeight: value
     })
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.SelectControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title Font Family', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title Font Family', 'zepblocks'),
     value: titleFontFamily,
     options: _utils_google_fonts__WEBPACK_IMPORTED_MODULE_5__.GOOGLE_FONTS,
     onChange: value => setAttributes({
       titleFontFamily: value
     }),
-    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Select a Google Font for the title', 'theme-blocks')
-  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Description Style', 'theme-blocks')), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_utils_components__WEBPACK_IMPORTED_MODULE_6__.ColorControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Description Color', 'theme-blocks'),
+    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Select a Google Font for the title', 'zepblocks')
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Description Style', 'zepblocks')), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_utils_components__WEBPACK_IMPORTED_MODULE_6__.ColorControl, {
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Description Color', 'zepblocks'),
     value: descriptionColor,
     onChange: value => setAttributes({
       descriptionColor: value
     }),
     placeholder: "#ffffff"
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.RangeControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Description Font Size', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Description Font Size', 'zepblocks'),
     value: descriptionFontSize,
     onChange: value => setAttributes({
       descriptionFontSize: value
@@ -342,50 +342,50 @@ function Edit({
     min: 12,
     max: 40
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.SelectControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Description Font Weight', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Description Font Weight', 'zepblocks'),
     value: descriptionFontWeight,
     options: _utils_google_fonts__WEBPACK_IMPORTED_MODULE_5__.FONT_WEIGHTS,
     onChange: value => setAttributes({
       descriptionFontWeight: value
     })
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.SelectControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Description Font Family', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Description Font Family', 'zepblocks'),
     value: descriptionFontFamily,
     options: _utils_google_fonts__WEBPACK_IMPORTED_MODULE_5__.GOOGLE_FONTS,
     onChange: value => setAttributes({
       descriptionFontFamily: value
     }),
-    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Select a Google Font for the description', 'theme-blocks')
-  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Style', 'theme-blocks')), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_utils_components__WEBPACK_IMPORTED_MODULE_6__.ColorControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Background Color', 'theme-blocks'),
+    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Select a Google Font for the description', 'zepblocks')
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Style', 'zepblocks')), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_utils_components__WEBPACK_IMPORTED_MODULE_6__.ColorControl, {
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Background Color', 'zepblocks'),
     value: buttonBgColor,
     onChange: value => setAttributes({
       buttonBgColor: value
     }),
     placeholder: "#ffffff"
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_utils_components__WEBPACK_IMPORTED_MODULE_6__.ColorControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Text Color', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Text Color', 'zepblocks'),
     value: buttonTextColor,
     onChange: value => setAttributes({
       buttonTextColor: value
     }),
     placeholder: "#333333"
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_utils_components__WEBPACK_IMPORTED_MODULE_6__.ColorControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Hover Background Color', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Hover Background Color', 'zepblocks'),
     value: buttonHoverBgColor,
     onChange: value => setAttributes({
       buttonHoverBgColor: value
     }),
     placeholder: "#f0f0f0"
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_utils_components__WEBPACK_IMPORTED_MODULE_6__.ColorControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Hover Text Color', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Hover Text Color', 'zepblocks'),
     value: buttonHoverTextColor,
     onChange: value => setAttributes({
       buttonHoverTextColor: value
     }),
     placeholder: "#333333"
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.RangeControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Font Size', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Font Size', 'zepblocks'),
     value: buttonFontSize,
     onChange: value => setAttributes({
       buttonFontSize: value
@@ -393,38 +393,38 @@ function Edit({
     min: 10,
     max: 30
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.SelectControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Font Weight', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Font Weight', 'zepblocks'),
     value: buttonFontWeight,
     options: _utils_google_fonts__WEBPACK_IMPORTED_MODULE_5__.FONT_WEIGHTS,
     onChange: value => setAttributes({
       buttonFontWeight: value
     })
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.SelectControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Font Family', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Button Font Family', 'zepblocks'),
     value: buttonFontFamily,
     options: _utils_google_fonts__WEBPACK_IMPORTED_MODULE_5__.GOOGLE_FONTS,
     onChange: value => setAttributes({
       buttonFontFamily: value
     }),
-    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Select a Google Font for the button', 'theme-blocks')
-  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Layout', 'theme-blocks')), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_utils_components__WEBPACK_IMPORTED_MODULE_6__.ColorControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Overlay Color', 'theme-blocks'),
+    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Select a Google Font for the button', 'zepblocks')
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Layout', 'zepblocks')), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_utils_components__WEBPACK_IMPORTED_MODULE_6__.ColorControl, {
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Overlay Color', 'zepblocks'),
     value: overlayColor,
     onChange: value => setAttributes({
       overlayColor: value
     }),
     placeholder: "#000000"
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.RangeControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Overlay Opacity', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Overlay Opacity', 'zepblocks'),
     value: overlayOpacity,
     onChange: value => setAttributes({
       overlayOpacity: value
     }),
     min: 0,
     max: 100,
-    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Set overlay opacity (0 = transparent, 100 = solid)', 'theme-blocks')
+    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Set overlay opacity (0 = transparent, 100 = solid)', 'zepblocks')
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.RangeControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Padding', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Padding', 'zepblocks'),
     value: padding,
     onChange: value => setAttributes({
       padding: value
@@ -432,7 +432,7 @@ function Edit({
     min: 0,
     max: 200
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__.RangeControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Border Radius', 'theme-blocks'),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Border Radius', 'zepblocks'),
     value: borderRadius,
     onChange: value => setAttributes({
       borderRadius: value
@@ -442,14 +442,14 @@ function Edit({
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...blockProps
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("style", null, `
-                        .wp-block-tblock-hero-video .villa-hero-video .hero-video-button {
+                        .wp-block-zepblock-hero-video .villa-hero-video .hero-video-button {
                             background-color: ${buttonBgColor || '#ffffff'};
                             color: ${buttonTextColor || '#333333'};
                             font-size: ${buttonFontSize || 16}px;
                             font-weight: ${buttonFontWeight || '600'};
                             font-family: ${buttonFontFamily || 'inherit'};
                         }
-                        .wp-block-tblock-hero-video .villa-hero-video .hero-video-button:hover {
+                        .wp-block-zepblock-hero-video .villa-hero-video .hero-video-button:hover {
                             background-color: ${buttonHoverBgColor || '#f0f0f0'};
                             color: ${buttonHoverTextColor || '#333333'};
                         }
@@ -498,7 +498,7 @@ function Edit({
       color: '#666',
       fontSize: '16px'
     }
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Please select a video from the sidebar settings', 'theme-blocks'))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Please select a video from the sidebar settings', 'zepblocks'))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "content-info",
     style: {
       textAlign: contentAlign,
@@ -578,8 +578,8 @@ __webpack_require__.r(__webpack_exports__);
  */
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_2__.name, {
   ..._block_json__WEBPACK_IMPORTED_MODULE_2__,
-  title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('TBlock Hero Video', 'theme-blocks'),
-  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Display a hero video with overlay content', 'theme-blocks'),
+  title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Zepblock Hero Video', 'zepblocks'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Display a hero video with overlay content', 'zepblocks'),
   edit: _edit__WEBPACK_IMPORTED_MODULE_3__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_4__["default"]
 });
@@ -644,17 +644,17 @@ function ColorControl({
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.BaseControl, {
     label: label
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "theme-blocks-color-input-wrapper"
+    className: "zepblocks-color-input-wrapper"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     type: "color",
     value: value,
     onChange: event => onChange(event.target.value),
-    className: "theme-blocks-color-input"
+    className: "zepblocks-color-input"
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     type: "text",
     value: value,
     onChange: event => onChange(event.target.value),
-    className: "theme-blocks-color-text-input",
+    className: "zepblocks-color-text-input",
     placeholder: placeholder
   })));
 }
@@ -688,7 +688,7 @@ __webpack_require__.r(__webpack_exports__);
  * @type {Array.<{label: string, value: string}>}
  */
 const GOOGLE_FONTS = [{
-  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Default', 'theme-blocks'),
+  label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Default', 'zepblocks'),
   value: ''
 }, {
   label: 'Roboto',
@@ -879,7 +879,7 @@ module.exports = window["wp"]["i18n"];
   \***********************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/hero-video","title":"Hero Video","category":"tblock-block","icon":"format-video","description":"Display a hero video with overlay content","keywords":["hero","video","banner"],"attributes":{"videoUrl":{"type":"string","default":""},"posterUrl":{"type":"string","default":""},"title":{"type":"string","default":"A Beachfront Luxury Vacation Rental Awaits"},"description":{"type":"string","default":"Nestled along the resplendent beaches of Santa Teresa sits Casa Teresa and Casa Teresa Grande, both Costa Rica beachfront villas offering the ultimate luxury vacation rental experience."},"buttonText":{"type":"string","default":"Learn More"},"buttonUrl":{"type":"string","default":"#"},"titleColor":{"type":"string","default":"#ffffff"},"titleFontSize":{"type":"number","default":48},"titleFontWeight":{"type":"string","default":"700"},"titleFontFamily":{"type":"string","default":""},"descriptionColor":{"type":"string","default":"#ffffff"},"descriptionFontSize":{"type":"number","default":18},"descriptionFontWeight":{"type":"string","default":"400"},"descriptionFontFamily":{"type":"string","default":""},"buttonBgColor":{"type":"string","default":"#ffffff"},"buttonTextColor":{"type":"string","default":"#333333"},"buttonHoverBgColor":{"type":"string","default":"#f0f0f0"},"buttonHoverTextColor":{"type":"string","default":"#333333"},"buttonFontSize":{"type":"number","default":16},"buttonFontWeight":{"type":"string","default":"600"},"buttonFontFamily":{"type":"string","default":""},"overlayColor":{"type":"string","default":"#000000"},"overlayOpacity":{"type":"number","default":40},"videoHeight":{"type":"number","default":600},"contentAlign":{"type":"string","default":"center"},"padding":{"type":"number","default":80},"borderRadius":{"type":"number","default":0},"muted":{"type":"boolean","default":true},"autoplay":{"type":"boolean","default":true},"loop":{"type":"boolean","default":true}},"supports":{"align":["wide","full"],"html":false},"editorScript":"file:./index.js","style":"file:./style-index.css","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/hero-video","title":"Hero Video","category":"zepblock-block","icon":"format-video","description":"Display a hero video with overlay content","keywords":["hero","video","banner"],"attributes":{"videoUrl":{"type":"string","default":""},"posterUrl":{"type":"string","default":""},"title":{"type":"string","default":"A Beachfront Luxury Vacation Rental Awaits"},"description":{"type":"string","default":"Nestled along the resplendent beaches of Santa Teresa sits Casa Teresa and Casa Teresa Grande, both Costa Rica beachfront villas offering the ultimate luxury vacation rental experience."},"buttonText":{"type":"string","default":"Learn More"},"buttonUrl":{"type":"string","default":"#"},"titleColor":{"type":"string","default":"#ffffff"},"titleFontSize":{"type":"number","default":48},"titleFontWeight":{"type":"string","default":"700"},"titleFontFamily":{"type":"string","default":""},"descriptionColor":{"type":"string","default":"#ffffff"},"descriptionFontSize":{"type":"number","default":18},"descriptionFontWeight":{"type":"string","default":"400"},"descriptionFontFamily":{"type":"string","default":""},"buttonBgColor":{"type":"string","default":"#ffffff"},"buttonTextColor":{"type":"string","default":"#333333"},"buttonHoverBgColor":{"type":"string","default":"#f0f0f0"},"buttonHoverTextColor":{"type":"string","default":"#333333"},"buttonFontSize":{"type":"number","default":16},"buttonFontWeight":{"type":"string","default":"600"},"buttonFontFamily":{"type":"string","default":""},"overlayColor":{"type":"string","default":"#000000"},"overlayOpacity":{"type":"number","default":40},"videoHeight":{"type":"number","default":600},"contentAlign":{"type":"string","default":"center"},"padding":{"type":"number","default":80},"borderRadius":{"type":"number","default":0},"muted":{"type":"boolean","default":true},"autoplay":{"type":"boolean","default":true},"loop":{"type":"boolean","default":true}},"supports":{"align":["wide","full"],"html":false},"editorScript":"file:./index.js","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ }
 
@@ -887,7 +887,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/hero-vi
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -901,7 +901,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/hero-vi
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
+/******/
 /******/ 		// Execute the module function
 /******/ 		if (!(moduleId in __webpack_modules__)) {
 /******/ 			delete __webpack_module_cache__[moduleId];
@@ -910,14 +910,14 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/hero-vi
 /******/ 			throw e;
 /******/ 		}
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = __webpack_modules__;
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/chunk loaded */
 /******/ 	(() => {
@@ -950,7 +950,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/hero-vi
 /******/ 			return result;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
@@ -962,7 +962,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/hero-vi
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -974,12 +974,12 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/hero-vi
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -990,11 +990,11 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/hero-vi
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/jsonp chunk loading */
 /******/ 	(() => {
 /******/ 		// no baseURI
-/******/ 		
+/******/
 /******/ 		// object to store loaded and loading chunks
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
@@ -1002,19 +1002,19 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/hero-vi
 /******/ 			"hero-video/index": 0,
 /******/ 			"hero-video/style-index": 0
 /******/ 		};
-/******/ 		
+/******/
 /******/ 		// no chunk on demand loading
-/******/ 		
+/******/
 /******/ 		// no prefetching
-/******/ 		
+/******/
 /******/ 		// no preloaded
-/******/ 		
+/******/
 /******/ 		// no HMR
-/******/ 		
+/******/
 /******/ 		// no HMR manifest
-/******/ 		
+/******/
 /******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
-/******/ 		
+/******/
 /******/ 		// install a JSONP callback for chunk loading
 /******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
 /******/ 			var [chunkIds, moreModules, runtime] = data;
@@ -1039,20 +1039,20 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"tblock/hero-vi
 /******/ 			}
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
-/******/ 		
-/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkthemeblocks"] = globalThis["webpackChunkthemeblocks"] || [];
+/******/
+/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkzepblocks"] = globalThis["webpackChunkzepblocks"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
-/******/ 	
+/******/
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
 /******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["hero-video/style-index"], () => (__webpack_require__("./src/hero-video/index.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
-/******/ 	
+/******/
 /******/ })()
 ;
 //# sourceMappingURL=index.js.map

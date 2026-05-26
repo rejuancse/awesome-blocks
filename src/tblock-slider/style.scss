@@ -1,5 +1,5 @@
 /**
- * TBlock Slider - Frontend Styles
+ * Zepblock Slider - Frontend Styles
  */
 // Variables
 $slick-dot-width: 20px;
@@ -12,7 +12,7 @@ $slick-opacity-not-active: 0.25;
 
 // Editor styles
 .elementor-editor-active {
-    .theme_block_banner__slider {
+    .zepblock_banner__slider {
         .slide {
             position: inherit !important;
         }
@@ -31,7 +31,7 @@ $slick-opacity-not-active: 0.25;
     }
 }
 
-.theme_block_banner__slider {
+.zepblock_banner__slider {
     overflow: hidden;
     position: relative;
 
