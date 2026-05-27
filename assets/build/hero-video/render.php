@@ -12,7 +12,7 @@ call_user_func(
 		$video_url              = $attributes['videoUrl'] ?? '';
 		$poster_url             = $attributes['posterUrl'] ?? '';
 		$title                  = $attributes['title'] ?? 'A Beachfront Luxury Vacation Rental Awaits';
-		$description            = $attributes['description'] ?? 'Nestled along the resplendent beaches of Santa Teresa sits Casa Teresa and Casa Teresa Grande, both Costa Rica beachfront villas offering the ultimate luxury vacation rental experience.';
+		$description            = $attributes['description'] ?? 'Nestled along the resplendent beaches of Santa Teresa sits Casa Teresa and Casa Teresa Grande, both Costa Rica beachfront zepblocks offering the ultimate luxury vacation rental experience.';
 		$button_text            = $attributes['buttonText'] ?? 'Learn More';
 		$button_url             = $attributes['buttonUrl'] ?? '#';
 		$title_color            = $attributes['titleColor'] ?? '#ffffff';
@@ -102,11 +102,7 @@ call_user_func(
 		);
 		?>
 
-		<div class="villa-hero-video" style="<?php echo esc_attr( $wrapper_style ); ?>" data-id="<?php echo esc_attr( $unique_id ); ?>">
-			<style>
-				#<?php echo esc_attr( $unique_id ); ?> { <?php echo $css_vars; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- CSS vars are already escaped above. ?> }
-			</style>
-
+		<div class="zepblock-hero-video" style="<?php echo esc_attr( $wrapper_style ); ?>" data-css-vars="<?php echo esc_attr( $css_vars ); ?>">
 			<div class="hero-video">
 				<?php if ( ! empty( $video_url ) ) : ?>
 					<video class="video-bg"

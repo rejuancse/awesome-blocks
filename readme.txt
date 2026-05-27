@@ -17,7 +17,7 @@ A lightweight collection of beautiful, flexible Gutenberg blocks — including s
 
 Every block is built with performance and flexibility in mind. No bloat, no unnecessary dependencies — just clean, fast blocks that work seamlessly with any WordPress theme.
 
-= 🧱 Included Blocks =
+= Included Blocks =
 
 * **Zepblock Slider** – A smooth, fully customizable image slider to showcase your content beautifully
 * **Zepblock Timeline** – Present events, milestones, or processes in a stunning vertical or horizontal timeline
@@ -30,7 +30,7 @@ Every block is built with performance and flexibility in mind. No bloat, no unne
 * **WooCommerce Category Grid** – Showcase your WooCommerce product categories in an elegant grid
 * **WooCommerce Product List** – Display WooCommerce products in a flexible, filterable list or grid
 
-= ✨ Why ZepBlocks? =
+= Why ZepBlocks? =
 
 * **Beginner-friendly** – Drag, drop, and customize without any coding knowledge
 * **Developer-friendly** – Clean, well-structured code that's easy to extend
@@ -52,7 +52,7 @@ Every block is built with performance and flexibility in mind. No bloat, no unne
 
 ZepBlocks is built using the `@wordpress/scripts` toolchain with React and modern JavaScript. All blocks follow WordPress coding standards and are fully compatible with the block editor's extensibility APIs.
 
-Found a bug or want to contribute? Visit our [GitHub repository](https://github.com/yourname/zepblocks).
+Found a bug or want to contribute? Visit our [GitHub repository](https://github.com/rejuancse/zepblocks).
 
 == Installation ==
 

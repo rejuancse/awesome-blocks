@@ -1,7 +1,7 @@
 /******/ (() => { // webpackBootstrap
-/*!***********************************!*\
+/*!*************************************!*\
   !*** ./src/zepblock-slider/view.js ***!
-  \***********************************/
+  \*************************************/
 /**
  * Zepblock Slider - Frontend JavaScript
  * Initializes Slick Slider with animations

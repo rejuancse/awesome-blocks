@@ -48,7 +48,7 @@ const DEFAULTS = {
   videoUrl: '',
   posterUrl: '',
   title: 'A Beachfront Luxury Vacation Rental Awaits',
-  description: 'Nestled along the resplendent beaches of Santa Teresa sits Casa Teresa and Casa Teresa Grande, both Costa Rica beachfront villas offering the ultimate luxury vacation rental experience.',
+  description: 'Nestled along the resplendent beaches of Santa Teresa sits Casa Teresa and Casa Teresa Grande, both Costa Rica beachfront zepblocks offering the ultimate luxury vacation rental experience.',
   buttonText: 'Learn More',
   buttonUrl: '#',
   titleColor: '#ffffff',
@@ -442,19 +442,19 @@ function Edit({
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...blockProps
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("style", null, `
-                        .wp-block-zepblock-hero-video .villa-hero-video .hero-video-button {
+                        .wp-block-zepblock-hero-video .zepblock-hero-video .hero-video-button {
                             background-color: ${buttonBgColor || '#ffffff'};
                             color: ${buttonTextColor || '#333333'};
                             font-size: ${buttonFontSize || 16}px;
                             font-weight: ${buttonFontWeight || '600'};
                             font-family: ${buttonFontFamily || 'inherit'};
                         }
-                        .wp-block-zepblock-hero-video .villa-hero-video .hero-video-button:hover {
+                        .wp-block-zepblock-hero-video .zepblock-hero-video .hero-video-button:hover {
                             background-color: ${buttonHoverBgColor || '#f0f0f0'};
                             color: ${buttonHoverTextColor || '#333333'};
                         }
                     `), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "villa-hero-video",
+    className: "zepblock-hero-video",
     style: {
       borderRadius: `${borderRadius}px`,
       overflow: 'hidden'
@@ -879,7 +879,7 @@ module.exports = window["wp"]["i18n"];
   \***********************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/hero-video","title":"Hero Video","category":"zepblock-block","icon":"format-video","description":"Display a hero video with overlay content","keywords":["hero","video","banner"],"attributes":{"videoUrl":{"type":"string","default":""},"posterUrl":{"type":"string","default":""},"title":{"type":"string","default":"A Beachfront Luxury Vacation Rental Awaits"},"description":{"type":"string","default":"Nestled along the resplendent beaches of Santa Teresa sits Casa Teresa and Casa Teresa Grande, both Costa Rica beachfront villas offering the ultimate luxury vacation rental experience."},"buttonText":{"type":"string","default":"Learn More"},"buttonUrl":{"type":"string","default":"#"},"titleColor":{"type":"string","default":"#ffffff"},"titleFontSize":{"type":"number","default":48},"titleFontWeight":{"type":"string","default":"700"},"titleFontFamily":{"type":"string","default":""},"descriptionColor":{"type":"string","default":"#ffffff"},"descriptionFontSize":{"type":"number","default":18},"descriptionFontWeight":{"type":"string","default":"400"},"descriptionFontFamily":{"type":"string","default":""},"buttonBgColor":{"type":"string","default":"#ffffff"},"buttonTextColor":{"type":"string","default":"#333333"},"buttonHoverBgColor":{"type":"string","default":"#f0f0f0"},"buttonHoverTextColor":{"type":"string","default":"#333333"},"buttonFontSize":{"type":"number","default":16},"buttonFontWeight":{"type":"string","default":"600"},"buttonFontFamily":{"type":"string","default":""},"overlayColor":{"type":"string","default":"#000000"},"overlayOpacity":{"type":"number","default":40},"videoHeight":{"type":"number","default":600},"contentAlign":{"type":"string","default":"center"},"padding":{"type":"number","default":80},"borderRadius":{"type":"number","default":0},"muted":{"type":"boolean","default":true},"autoplay":{"type":"boolean","default":true},"loop":{"type":"boolean","default":true}},"supports":{"align":["wide","full"],"html":false},"editorScript":"file:./index.js","style":"file:./style-index.css","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/hero-video","title":"Hero Video","category":"zepblock-block","icon":"format-video","description":"Display a hero video with overlay content","keywords":["hero","video","banner"],"attributes":{"videoUrl":{"type":"string","default":""},"posterUrl":{"type":"string","default":""},"title":{"type":"string","default":"A Beachfront Luxury Vacation Rental Awaits"},"description":{"type":"string","default":"Nestled along the resplendent beaches of Santa Teresa sits Casa Teresa and Casa Teresa Grande, both Costa Rica beachfront zepblocks offering the ultimate luxury vacation rental experience."},"buttonText":{"type":"string","default":"Learn More"},"buttonUrl":{"type":"string","default":"#"},"titleColor":{"type":"string","default":"#ffffff"},"titleFontSize":{"type":"number","default":48},"titleFontWeight":{"type":"string","default":"700"},"titleFontFamily":{"type":"string","default":""},"descriptionColor":{"type":"string","default":"#ffffff"},"descriptionFontSize":{"type":"number","default":18},"descriptionFontWeight":{"type":"string","default":"400"},"descriptionFontFamily":{"type":"string","default":""},"buttonBgColor":{"type":"string","default":"#ffffff"},"buttonTextColor":{"type":"string","default":"#333333"},"buttonHoverBgColor":{"type":"string","default":"#f0f0f0"},"buttonHoverTextColor":{"type":"string","default":"#333333"},"buttonFontSize":{"type":"number","default":16},"buttonFontWeight":{"type":"string","default":"600"},"buttonFontFamily":{"type":"string","default":""},"overlayColor":{"type":"string","default":"#000000"},"overlayOpacity":{"type":"number","default":40},"videoHeight":{"type":"number","default":600},"contentAlign":{"type":"string","default":"center"},"padding":{"type":"number","default":80},"borderRadius":{"type":"number","default":0},"muted":{"type":"boolean","default":true},"autoplay":{"type":"boolean","default":true},"loop":{"type":"boolean","default":true}},"supports":{"align":["wide","full"],"html":false},"editorScript":"file:./index.js","style":"file:./style-index.css","viewScript":"file:./view.js","render":"file:./render.php"}');
 
 /***/ }
 
@@ -887,7 +887,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/hero-
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/
+/******/ 	
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -901,7 +901,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/hero-
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
-/******/
+/******/ 	
 /******/ 		// Execute the module function
 /******/ 		if (!(moduleId in __webpack_modules__)) {
 /******/ 			delete __webpack_module_cache__[moduleId];
@@ -910,14 +910,14 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/hero-
 /******/ 			throw e;
 /******/ 		}
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/
+/******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/
+/******/ 	
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = __webpack_modules__;
-/******/
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/chunk loaded */
 /******/ 	(() => {
@@ -950,7 +950,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/hero-
 /******/ 			return result;
 /******/ 		};
 /******/ 	})();
-/******/
+/******/ 	
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
@@ -962,7 +962,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/hero-
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
-/******/
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -974,12 +974,12 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/hero-
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -990,11 +990,11 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/hero-
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/
+/******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
 /******/ 	(() => {
 /******/ 		// no baseURI
-/******/
+/******/ 		
 /******/ 		// object to store loaded and loading chunks
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
@@ -1002,19 +1002,19 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/hero-
 /******/ 			"hero-video/index": 0,
 /******/ 			"hero-video/style-index": 0
 /******/ 		};
-/******/
+/******/ 		
 /******/ 		// no chunk on demand loading
-/******/
+/******/ 		
 /******/ 		// no prefetching
-/******/
+/******/ 		
 /******/ 		// no preloaded
-/******/
+/******/ 		
 /******/ 		// no HMR
-/******/
+/******/ 		
 /******/ 		// no HMR manifest
-/******/
+/******/ 		
 /******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
-/******/
+/******/ 		
 /******/ 		// install a JSONP callback for chunk loading
 /******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
 /******/ 			var [chunkIds, moreModules, runtime] = data;
@@ -1039,20 +1039,20 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/hero-
 /******/ 			}
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
-/******/
+/******/ 		
 /******/ 		var chunkLoadingGlobal = globalThis["webpackChunkzepblocks"] = globalThis["webpackChunkzepblocks"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();
-/******/
+/******/ 	
 /************************************************************************/
-/******/
+/******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
 /******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["hero-video/style-index"], () => (__webpack_require__("./src/hero-video/index.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
-/******/
+/******/ 	
 /******/ })()
 ;
 //# sourceMappingURL=index.js.map

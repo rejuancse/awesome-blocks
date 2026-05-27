@@ -27,7 +27,7 @@ const DEFAULTS = {
     videoUrl:              '',
     posterUrl:             '',
     title:                 'A Beachfront Luxury Vacation Rental Awaits',
-    description:           'Nestled along the resplendent beaches of Santa Teresa sits Casa Teresa and Casa Teresa Grande, both Costa Rica beachfront villas offering the ultimate luxury vacation rental experience.',
+    description:           'Nestled along the resplendent beaches of Santa Teresa sits Casa Teresa and Casa Teresa Grande, both Costa Rica beachfront zepblocks offering the ultimate luxury vacation rental experience.',
     buttonText:            'Learn More',
     buttonUrl:             '#',
     titleColor:            '#ffffff',
@@ -428,14 +428,14 @@ export default function Edit( { attributes, setAttributes } ) {
             <div { ...blockProps }>
                 <style>
                     {`
-                        .wp-block-zepblock-hero-video .villa-hero-video .hero-video-button {
+                        .wp-block-zepblock-hero-video .zepblock-hero-video .hero-video-button {
                             background-color: ${ buttonBgColor || '#ffffff' };
                             color: ${ buttonTextColor || '#333333' };
                             font-size: ${ buttonFontSize || 16 }px;
                             font-weight: ${ buttonFontWeight || '600' };
                             font-family: ${ buttonFontFamily || 'inherit' };
                         }
-                        .wp-block-zepblock-hero-video .villa-hero-video .hero-video-button:hover {
+                        .wp-block-zepblock-hero-video .zepblock-hero-video .hero-video-button:hover {
                             background-color: ${ buttonHoverBgColor || '#f0f0f0' };
                             color: ${ buttonHoverTextColor || '#333333' };
                         }
@@ -443,7 +443,7 @@ export default function Edit( { attributes, setAttributes } ) {
                 </style>
 
                 <div
-                    className="villa-hero-video"
+                    className="zepblock-hero-video"
                     style={ {
                         borderRadius: `${ borderRadius }px`,
                         overflow: 'hidden',

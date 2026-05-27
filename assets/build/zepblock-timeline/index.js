@@ -3,9 +3,9 @@
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/zepblock-timeline/edit.js"
-/*!*************************************!*\
+/*!***************************************!*\
   !*** ./src/zepblock-timeline/edit.js ***!
-  \*************************************/
+  \***************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -192,9 +192,9 @@ function Edit({
 /***/ },
 
 /***/ "./src/zepblock-timeline/index.js"
-/*!**************************************!*\
+/*!****************************************!*\
   !*** ./src/zepblock-timeline/index.js ***!
-  \**************************************/
+  \****************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -240,9 +240,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ },
 
 /***/ "./src/zepblock-timeline/save.js"
-/*!*************************************!*\
+/*!***************************************!*\
   !*** ./src/zepblock-timeline/save.js ***!
-  \*************************************/
+  \***************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -332,9 +332,9 @@ function Save({
 /***/ },
 
 /***/ "./src/zepblock-timeline/editor.scss"
-/*!*****************************************!*\
+/*!*******************************************!*\
   !*** ./src/zepblock-timeline/editor.scss ***!
-  \*****************************************/
+  \*******************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -344,9 +344,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ },
 
 /***/ "./src/zepblock-timeline/style.scss"
-/*!****************************************!*\
+/*!******************************************!*\
   !*** ./src/zepblock-timeline/style.scss ***!
-  \****************************************/
+  \******************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -406,9 +406,9 @@ module.exports = window["wp"]["i18n"];
 /***/ },
 
 /***/ "./src/zepblock-timeline/block.json"
-/*!****************************************!*\
+/*!******************************************!*\
   !*** ./src/zepblock-timeline/block.json ***!
-  \****************************************/
+  \******************************************/
 (module) {
 
 module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/zepblock-timeline","title":"Zepblock Timeline","category":"zepblock-block","icon":"clock","description":"A beautiful vertical timeline block with alternating left/right items","keywords":["timeline","history","events","schedule"],"attributes":{"timelineItems":{"type":"array","default":[{"id":1,"title":"Project Started","description":"We began our journey with a vision to create something amazing.","date":"January 2026"},{"id":2,"title":"First Milestone","description":"Successfully completed our first major milestone.","date":"March 2026"}]}},"supports":{"align":["wide","full"],"html":false},"editorScript":"file:./index.js","style":"file:./style-index.css"}');
@@ -419,7 +419,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/zepbl
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/
+/******/ 	
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -433,7 +433,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/zepbl
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
-/******/
+/******/ 	
 /******/ 		// Execute the module function
 /******/ 		if (!(moduleId in __webpack_modules__)) {
 /******/ 			delete __webpack_module_cache__[moduleId];
@@ -442,14 +442,14 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/zepbl
 /******/ 			throw e;
 /******/ 		}
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/
+/******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/
+/******/ 	
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = __webpack_modules__;
-/******/
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/chunk loaded */
 /******/ 	(() => {
@@ -482,7 +482,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/zepbl
 /******/ 			return result;
 /******/ 		};
 /******/ 	})();
-/******/
+/******/ 	
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
@@ -494,7 +494,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/zepbl
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
-/******/
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -506,12 +506,12 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/zepbl
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -522,11 +522,11 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/zepbl
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/
+/******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
 /******/ 	(() => {
 /******/ 		// no baseURI
-/******/
+/******/ 		
 /******/ 		// object to store loaded and loading chunks
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
@@ -534,19 +534,19 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/zepbl
 /******/ 			"zepblock-timeline/index": 0,
 /******/ 			"zepblock-timeline/style-index": 0
 /******/ 		};
-/******/
+/******/ 		
 /******/ 		// no chunk on demand loading
-/******/
+/******/ 		
 /******/ 		// no prefetching
-/******/
+/******/ 		
 /******/ 		// no preloaded
-/******/
+/******/ 		
 /******/ 		// no HMR
-/******/
+/******/ 		
 /******/ 		// no HMR manifest
-/******/
+/******/ 		
 /******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
-/******/
+/******/ 		
 /******/ 		// install a JSONP callback for chunk loading
 /******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
 /******/ 			var [chunkIds, moreModules, runtime] = data;
@@ -571,20 +571,20 @@ module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":3,"name":"zepblock/zepbl
 /******/ 			}
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
-/******/
+/******/ 		
 /******/ 		var chunkLoadingGlobal = globalThis["webpackChunkzepblocks"] = globalThis["webpackChunkzepblocks"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();
-/******/
+/******/ 	
 /************************************************************************/
-/******/
+/******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
 /******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["zepblock-timeline/style-index"], () => (__webpack_require__("./src/zepblock-timeline/index.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
-/******/
+/******/ 	
 /******/ })()
 ;
 //# sourceMappingURL=index.js.map

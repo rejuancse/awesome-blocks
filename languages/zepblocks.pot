@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-05-24T04:46:50+00:00\n"
+"POT-Creation-Date: 2026-05-27T10:21:05+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: zepblocks\n"
@@ -29,21 +29,21 @@ msgstr ""
 msgid "Rejuan Ahamed"
 msgstr ""
 
-#: includes/Post_Block.php:167
+#: includes/Post_Block.php:213
 #: assets/build/post-block/index.js:553
 #: src/post-block/edit.js:517
 #: assets/build/post-block/index.js:517
 msgid "No posts found."
 msgstr ""
 
-#: includes/Post_Block.php:257
+#: includes/Post_Block.php:311
 #: assets/build/post-block/index.js:596
 #: src/post-block/edit.js:577
 #: assets/build/post-block/index.js:577
 msgid "By "
 msgstr ""
 
-#: includes/Post_Block.php:336
+#: includes/Post_Block.php:390
 #: assets/build/post-block/index.js:633
 #: src/post-block/edit.js:630
 #: assets/build/post-block/index.js:630
@@ -135,16 +135,16 @@ msgstr ""
 
 #: assets/build/card-block/index.js:166
 #: assets/build/post-block/index.js:249
-#: assets/build/zepblock-timeline/index.js:109
 #: assets/build/woo-product-list/index.js:228
+#: assets/build/zepblock-timeline/index.js:109
 #: src/card-block/edit.js:176
 #: src/post-block/edit.js:228
-#: src/zepblock-timeline/edit.js:93
 #: src/woo-product-list/edit.js:217
+#: src/zepblock-timeline/edit.js:93
 #: assets/build/card-block/index.js:176
 #: assets/build/post-block/index.js:228
-#: assets/build/zepblock-timeline/index.js:93
 #: assets/build/woo-product-list/index.js:217
+#: assets/build/zepblock-timeline/index.js:93
 msgid "Date"
 msgstr ""
 
@@ -158,23 +158,23 @@ msgstr ""
 #: assets/build/feature-block/index.js:70
 #: assets/build/hero-video/index.js:223
 #: assets/build/post-block/index.js:252
+#: assets/build/woo-product-list/index.js:240
 #: assets/build/zepblock-slider/index.js:245
 #: assets/build/zepblock-timeline/index.js:100
-#: assets/build/woo-product-list/index.js:240
 #: src/card-block/edit.js:222
 #: src/feature-block/edit.js:66
 #: src/hero-video/edit.js:220
 #: src/post-block/edit.js:229
+#: src/woo-product-list/edit.js:221
 #: src/zepblock-slider/edit.js:224
 #: src/zepblock-timeline/edit.js:82
-#: src/woo-product-list/edit.js:221
 #: assets/build/card-block/index.js:222
 #: assets/build/feature-block/index.js:66
 #: assets/build/hero-video/index.js:220
 #: assets/build/post-block/index.js:229
+#: assets/build/woo-product-list/index.js:221
 #: assets/build/zepblock-slider/index.js:224
 #: assets/build/zepblock-timeline/index.js:82
-#: assets/build/woo-product-list/index.js:221
 msgid "Title"
 msgstr ""
 
@@ -1411,132 +1411,6 @@ msgstr ""
 msgid "Display posts with customizable layout"
 msgstr ""
 
-#: assets/build/zepblock-slider/index.js:139
-#: src/zepblock-slider/edit.js:118
-#: assets/build/zepblock-slider/index.js:118
-msgid "Slider Settings"
-msgstr ""
-
-#: assets/build/zepblock-slider/index.js:148
-#: src/zepblock-slider/edit.js:129
-#: assets/build/zepblock-slider/index.js:129
-msgid "Autoplay Speed (ms)"
-msgstr ""
-
-#: assets/build/zepblock-slider/index.js:155
-#: src/zepblock-slider/edit.js:138
-#: assets/build/zepblock-slider/index.js:138
-msgid "Animation Speed (ms)"
-msgstr ""
-
-#: assets/build/zepblock-slider/index.js:162
-#: src/zepblock-slider/edit.js:146
-#: assets/build/zepblock-slider/index.js:146
-msgid "Show Arrows"
-msgstr ""
-
-#: assets/build/zepblock-slider/index.js:168
-#: src/zepblock-slider/edit.js:153
-#: assets/build/zepblock-slider/index.js:153
-msgid "Show Dots"
-msgstr ""
-
-#: assets/build/zepblock-slider/index.js:174
-#: src/zepblock-slider/edit.js:160
-#: assets/build/zepblock-slider/index.js:160
-msgid "Manage Slides"
-msgstr ""
-
-#: assets/build/zepblock-slider/index.js:241
-#: src/zepblock-slider/edit.js:219
-#: assets/build/zepblock-slider/index.js:219
-msgid "Top Title"
-msgstr ""
-
-#: assets/build/zepblock-slider/index.js:260
-#: src/zepblock-slider/edit.js:242
-#: assets/build/zepblock-slider/index.js:242
-msgid "Success (Green)"
-msgstr ""
-
-#: assets/build/zepblock-slider/index.js:263
-#: src/zepblock-slider/edit.js:243
-#: assets/build/zepblock-slider/index.js:243
-msgid "Light (White)"
-msgstr ""
-
-#: assets/build/zepblock-slider/index.js:268
-#: src/zepblock-slider/edit.js:248
-#: assets/build/zepblock-slider/index.js:248
-msgid "Content Position"
-msgstr ""
-
-#: assets/build/zepblock-slider/index.js:291
-#: src/zepblock-slider/edit.js:266
-#: assets/build/zepblock-slider/index.js:266
-msgid "Add Slide"
-msgstr ""
-
-#: assets/build/zepblock-slider/index.js:302
-#: src/zepblock-slider/edit.js:275
-#: assets/build/zepblock-slider/index.js:275
-msgid "No slides yet. Add slides from the sidebar settings."
-msgstr ""
-
-#: assets/build/zepblock-slider/index.js:334
-#: src/zepblock-slider/edit.js:309
-#: assets/build/zepblock-slider/index.js:309
-msgid "No Image"
-msgstr ""
-
-#: assets/build/zepblock-slider/index.js:391
-#: src/zepblock-slider/index.js:25
-#: assets/build/zepblock-slider/index.js:363
-msgid "Zepblock Slider"
-msgstr ""
-
-#: assets/build/zepblock-slider/index.js:392
-#: src/zepblock-slider/index.js:26
-#: assets/build/zepblock-slider/index.js:364
-msgid "A beautiful slider block with animations and slick slider"
-msgstr ""
-
-#: assets/build/zepblock-timeline/index.js:74
-#: src/zepblock-timeline/edit.js:53
-#: assets/build/zepblock-timeline/index.js:53
-msgid "Timeline Items"
-msgstr ""
-
-#: assets/build/zepblock-timeline/index.js:92
-#: src/zepblock-timeline/edit.js:68
-#: assets/build/zepblock-timeline/index.js:68
-msgid "Event"
-msgstr ""
-
-#: assets/build/zepblock-timeline/index.js:122
-#: src/zepblock-timeline/edit.js:106
-#: assets/build/zepblock-timeline/index.js:106
-msgid "Add Event"
-msgstr ""
-
-#: assets/build/zepblock-timeline/index.js:132
-#: src/zepblock-timeline/edit.js:120
-#: assets/build/zepblock-timeline/index.js:120
-msgid "No events yet. Add events from the sidebar settings."
-msgstr ""
-
-#: assets/build/zepblock-timeline/index.js:234
-#: src/zepblock-timeline/index.js:25
-#: assets/build/zepblock-timeline/index.js:218
-msgid "Zepblock Timeline"
-msgstr ""
-
-#: assets/build/zepblock-timeline/index.js:235
-#: src/zepblock-timeline/index.js:26
-#: assets/build/zepblock-timeline/index.js:219
-msgid "A beautiful vertical timeline block with alternating left/right items"
-msgstr ""
-
 #: assets/build/woo-category-grid/index.js:129
 #: assets/build/woo-product-list/index.js:201
 #: src/woo-category-grid/edit.js:120
@@ -1816,6 +1690,132 @@ msgstr ""
 msgid "Display WooCommerce products in a beautiful grid layout"
 msgstr ""
 
+#: assets/build/zepblock-slider/index.js:139
+#: src/zepblock-slider/edit.js:118
+#: assets/build/zepblock-slider/index.js:118
+msgid "Slider Settings"
+msgstr ""
+
+#: assets/build/zepblock-slider/index.js:148
+#: src/zepblock-slider/edit.js:129
+#: assets/build/zepblock-slider/index.js:129
+msgid "Autoplay Speed (ms)"
+msgstr ""
+
+#: assets/build/zepblock-slider/index.js:155
+#: src/zepblock-slider/edit.js:138
+#: assets/build/zepblock-slider/index.js:138
+msgid "Animation Speed (ms)"
+msgstr ""
+
+#: assets/build/zepblock-slider/index.js:162
+#: src/zepblock-slider/edit.js:146
+#: assets/build/zepblock-slider/index.js:146
+msgid "Show Arrows"
+msgstr ""
+
+#: assets/build/zepblock-slider/index.js:168
+#: src/zepblock-slider/edit.js:153
+#: assets/build/zepblock-slider/index.js:153
+msgid "Show Dots"
+msgstr ""
+
+#: assets/build/zepblock-slider/index.js:174
+#: src/zepblock-slider/edit.js:160
+#: assets/build/zepblock-slider/index.js:160
+msgid "Manage Slides"
+msgstr ""
+
+#: assets/build/zepblock-slider/index.js:241
+#: src/zepblock-slider/edit.js:219
+#: assets/build/zepblock-slider/index.js:219
+msgid "Top Title"
+msgstr ""
+
+#: assets/build/zepblock-slider/index.js:260
+#: src/zepblock-slider/edit.js:242
+#: assets/build/zepblock-slider/index.js:242
+msgid "Success (Green)"
+msgstr ""
+
+#: assets/build/zepblock-slider/index.js:263
+#: src/zepblock-slider/edit.js:243
+#: assets/build/zepblock-slider/index.js:243
+msgid "Light (White)"
+msgstr ""
+
+#: assets/build/zepblock-slider/index.js:268
+#: src/zepblock-slider/edit.js:248
+#: assets/build/zepblock-slider/index.js:248
+msgid "Content Position"
+msgstr ""
+
+#: assets/build/zepblock-slider/index.js:291
+#: src/zepblock-slider/edit.js:266
+#: assets/build/zepblock-slider/index.js:266
+msgid "Add Slide"
+msgstr ""
+
+#: assets/build/zepblock-slider/index.js:302
+#: src/zepblock-slider/edit.js:275
+#: assets/build/zepblock-slider/index.js:275
+msgid "No slides yet. Add slides from the sidebar settings."
+msgstr ""
+
+#: assets/build/zepblock-slider/index.js:334
+#: src/zepblock-slider/edit.js:309
+#: assets/build/zepblock-slider/index.js:309
+msgid "No Image"
+msgstr ""
+
+#: assets/build/zepblock-slider/index.js:391
+#: src/zepblock-slider/index.js:25
+#: assets/build/zepblock-slider/index.js:363
+msgid "Zepblock Slider"
+msgstr ""
+
+#: assets/build/zepblock-slider/index.js:392
+#: src/zepblock-slider/index.js:26
+#: assets/build/zepblock-slider/index.js:364
+msgid "A beautiful slider block with animations and slick slider"
+msgstr ""
+
+#: assets/build/zepblock-timeline/index.js:74
+#: src/zepblock-timeline/edit.js:53
+#: assets/build/zepblock-timeline/index.js:53
+msgid "Timeline Items"
+msgstr ""
+
+#: assets/build/zepblock-timeline/index.js:92
+#: src/zepblock-timeline/edit.js:68
+#: assets/build/zepblock-timeline/index.js:68
+msgid "Event"
+msgstr ""
+
+#: assets/build/zepblock-timeline/index.js:122
+#: src/zepblock-timeline/edit.js:106
+#: assets/build/zepblock-timeline/index.js:106
+msgid "Add Event"
+msgstr ""
+
+#: assets/build/zepblock-timeline/index.js:132
+#: src/zepblock-timeline/edit.js:120
+#: assets/build/zepblock-timeline/index.js:120
+msgid "No events yet. Add events from the sidebar settings."
+msgstr ""
+
+#: assets/build/zepblock-timeline/index.js:234
+#: src/zepblock-timeline/index.js:25
+#: assets/build/zepblock-timeline/index.js:218
+msgid "Zepblock Timeline"
+msgstr ""
+
+#: assets/build/zepblock-timeline/index.js:235
+#: src/zepblock-timeline/index.js:26
+#: assets/build/zepblock-timeline/index.js:219
+msgid "A beautiful vertical timeline block with alternating left/right items"
+msgstr ""
+
 #: assets/build/card-block/block.json
 #: src/card-block/block.json
 msgctxt "block title"
@@ -2032,66 +2032,6 @@ msgctxt "block keyword"
 msgid "news"
 msgstr ""
 
-#: assets/build/zepblock-slider/block.json
-#: src/zepblock-slider/block.json
-msgctxt "block title"
-msgid "Zepblock Slider"
-msgstr ""
-
-#: assets/build/zepblock-slider/block.json
-#: src/zepblock-slider/block.json
-msgctxt "block description"
-msgid "A beautiful slider block with animations and slick slider"
-msgstr ""
-
-#: assets/build/zepblock-slider/block.json
-#: src/zepblock-slider/block.json
-msgctxt "block keyword"
-msgid "carousel"
-msgstr ""
-
-#: assets/build/zepblock-slider/block.json
-#: src/zepblock-slider/block.json
-msgctxt "block keyword"
-msgid "slick"
-msgstr ""
-
-#: assets/build/zepblock-timeline/block.json
-#: src/zepblock-timeline/block.json
-msgctxt "block title"
-msgid "Zepblock Timeline"
-msgstr ""
-
-#: assets/build/zepblock-timeline/block.json
-#: src/zepblock-timeline/block.json
-msgctxt "block description"
-msgid "A beautiful vertical timeline block with alternating left/right items"
-msgstr ""
-
-#: assets/build/zepblock-timeline/block.json
-#: src/zepblock-timeline/block.json
-msgctxt "block keyword"
-msgid "timeline"
-msgstr ""
-
-#: assets/build/zepblock-timeline/block.json
-#: src/zepblock-timeline/block.json
-msgctxt "block keyword"
-msgid "history"
-msgstr ""
-
-#: assets/build/zepblock-timeline/block.json
-#: src/zepblock-timeline/block.json
-msgctxt "block keyword"
-msgid "events"
-msgstr ""
-
-#: assets/build/zepblock-timeline/block.json
-#: src/zepblock-timeline/block.json
-msgctxt "block keyword"
-msgid "schedule"
-msgstr ""
-
 #: assets/build/woo-category-grid/block.json
 #: src/woo-category-grid/block.json
 msgctxt "block title"
@@ -2154,4 +2094,64 @@ msgstr ""
 #: src/woo-product-list/block.json
 msgctxt "block keyword"
 msgid "product list"
+msgstr ""
+
+#: assets/build/zepblock-slider/block.json
+#: src/zepblock-slider/block.json
+msgctxt "block title"
+msgid "Zepblock Slider"
+msgstr ""
+
+#: assets/build/zepblock-slider/block.json
+#: src/zepblock-slider/block.json
+msgctxt "block description"
+msgid "A beautiful slider block with animations and slick slider"
+msgstr ""
+
+#: assets/build/zepblock-slider/block.json
+#: src/zepblock-slider/block.json
+msgctxt "block keyword"
+msgid "carousel"
+msgstr ""
+
+#: assets/build/zepblock-slider/block.json
+#: src/zepblock-slider/block.json
+msgctxt "block keyword"
+msgid "slick"
+msgstr ""
+
+#: assets/build/zepblock-timeline/block.json
+#: src/zepblock-timeline/block.json
+msgctxt "block title"
+msgid "Zepblock Timeline"
+msgstr ""
+
+#: assets/build/zepblock-timeline/block.json
+#: src/zepblock-timeline/block.json
+msgctxt "block description"
+msgid "A beautiful vertical timeline block with alternating left/right items"
+msgstr ""
+
+#: assets/build/zepblock-timeline/block.json
+#: src/zepblock-timeline/block.json
+msgctxt "block keyword"
+msgid "timeline"
+msgstr ""
+
+#: assets/build/zepblock-timeline/block.json
+#: src/zepblock-timeline/block.json
+msgctxt "block keyword"
+msgid "history"
+msgstr ""
+
+#: assets/build/zepblock-timeline/block.json
+#: src/zepblock-timeline/block.json
+msgctxt "block keyword"
+msgid "events"
+msgstr ""
+
+#: assets/build/zepblock-timeline/block.json
+#: src/zepblock-timeline/block.json
+msgctxt "block keyword"
+msgid "schedule"
 msgstr ""

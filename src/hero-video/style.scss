@@ -1,7 +1,7 @@
 /**
  * Frontend Styles
  */
-.villa-hero-video {
+.zepblock-hero-video {
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -92,7 +92,7 @@
 }
 
 // Content alignment variations
-&.align-left .villa-hero-video .content-info {
+&.align-left .zepblock-hero-video .content-info {
     align-items: flex-start;
     text-align: left;
 
@@ -101,7 +101,7 @@
     }
 }
 
-&.align-center .villa-hero-video .content-info {
+&.align-center .zepblock-hero-video .content-info {
     align-items: center;
     text-align: center;
 
@@ -110,7 +110,7 @@
     }
 }
 
-&.align-right .villa-hero-video .content-info {
+&.align-right .zepblock-hero-video .content-info {
     align-items: flex-end;
     text-align: right;
 
@@ -121,7 +121,7 @@
 
 // Responsive styles
 @media (max-width: 1024px) {
-    .villa-hero-video .content-info {
+    .zepblock-hero-video .content-info {
         h2 {
             font-size: 40px;
         }
@@ -133,7 +133,7 @@
 }
 
 @media (max-width: 768px) {
-    .villa-hero-video {
+    .zepblock-hero-video {
         .content-info {
             min-height: 400px;
             padding: 60px 20px;
@@ -155,7 +155,7 @@
 }
 
 @media (max-width: 480px) {
-    .villa-hero-video .content-info {
+    .zepblock-hero-video .content-info {
         h2 {
             font-size: 24px;
         }

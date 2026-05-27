@@ -32,6 +32,6 @@ class ZepBlocks_i18n {
 	 * @return	void
 	 */
 	public function load_plugin_textdomain() {
-		load_plugin_textdomain( 'zepblock-block', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+		load_plugin_textdomain( 'zepblocks', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 	}
 }
