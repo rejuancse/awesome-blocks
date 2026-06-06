@@ -1,0 +1,44 @@
+/**
+ * Breaking News Ticker Block - Editor Styles
+ */
+
+.wp-block-zepblock-breaking-news {
+    border: 1px dashed #ccc;
+    padding: 20px;
+    background: #f9f9f9;
+
+    .breaking-news-placeholder {
+        text-align: center;
+        padding: 40px 20px;
+        background: #fff;
+        border-radius: 4px;
+
+        .placeholder-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        .placeholder-text {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .placeholder-subtext {
+            font-size: 14px;
+            color: #999;
+        }
+    }
+}
+
+// Block inspector panel styles
+.breaking-news-inspector-controls {
+    .components-base-control {
+        margin-bottom: 16px;
+    }
+
+    .category-select {
+        margin-bottom: 12px;
+    }
+}

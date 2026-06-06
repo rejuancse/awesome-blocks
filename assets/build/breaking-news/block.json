@@ -1,0 +1,77 @@
+{
+  "apiVersion": 3,
+  "name": "zepblock/breaking-news",
+  "title": "Breaking News Ticker",
+  "category": "zepblock-block",
+  "icon": "megaphone",
+  "description": "Display breaking news with animated ticker",
+  "keywords": [
+    "news",
+    "ticker",
+    "breaking",
+    "headline"
+  ],
+  "attributes": {
+    "breakingNewsTitle": {
+      "type": "string",
+      "default": "Breaking News"
+    },
+    "postNumber": {
+      "type": "number",
+      "default": 5
+    },
+    "postCat": {
+      "type": "string",
+      "default": "allpost"
+    },
+    "postOrderBy": {
+      "type": "string",
+      "default": "DESC"
+    },
+    "animationSpeed": {
+      "type": "number",
+      "default": 30
+    },
+    "titleColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "titleBgColor": {
+      "type": "string",
+      "default": "#ff0000"
+    },
+    "contentBgColor": {
+      "type": "string",
+      "default": "#f5f5f5"
+    },
+    "linkColor": {
+      "type": "string",
+      "default": "#333333"
+    },
+    "linkHoverColor": {
+      "type": "string",
+      "default": "#0073aa"
+    },
+    "fontSize": {
+      "type": "number",
+      "default": 16
+    },
+    "padding": {
+      "type": "number",
+      "default": 15
+    },
+    "borderRadius": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "html": false
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

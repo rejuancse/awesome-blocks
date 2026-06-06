@@ -98,6 +98,14 @@ class Register_Blocks {
             register_block_type_from_metadata(
                 ZEPBLOCKS_PLUGIN_PATH . 'assets/build/image-compare'
             );
+
+            // Register Breaking News Block
+            register_block_type_from_metadata(
+                ZEPBLOCKS_PLUGIN_PATH . 'assets/build/breaking-news',
+                array(
+                    'render_callback' => array( __NAMESPACE__ . '\\Breaking_News', 'render' ),
+                )
+            );
         }
     }
 }

@@ -1,15 +1,15 @@
-=== ZepBlocks ===
+=== ZepBlocks - Powerful Gutenberg Block for WordPress ===
 
 Contributors: rejuancse
-Tags: gutenberg, blocks, block editor, woocommerce, photo gallery
+Tags: blocks, block-editor, dynamic content, patterns, landing page,
 Requires at least: 5.9
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A lightweight collection of beautiful, flexible Gutenberg blocks — including sliders, galleries, timelines, and WooCommerce blocks.
+ZepBlocks adds beautiful Gutenberg blocks, patterns, and templates to help you create stunning WordPress pages easily—no page builder needed.
 
 == Description ==
 

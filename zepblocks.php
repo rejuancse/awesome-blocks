@@ -1,10 +1,10 @@
 <?php
 /**
  * Plugin Name:       ZepBlocks
- * Description:       A lightweight collection of beautiful, flexible Gutenberg blocks — including sliders, galleries, timelines, and WooCommerce blocks.
+ * Description:       ZepBlocks adds beautiful Gutenberg blocks, patterns, and templates to help you create stunning WordPress pages easily—no page builder needed.
  * Requires at least: 5.9
  * Requires PHP:      7.4
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Rejuan Ahamed
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -27,7 +27,7 @@ final class ZepBlocks {
      *
      * @var string
      */
-    const version = '1.0.0';
+    const version = '1.0.1';
 
     /**
      * Class constructor

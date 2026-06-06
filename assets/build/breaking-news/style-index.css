@@ -1,0 +1,86 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/breaking-news/style.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************/
+.breaking-news-ticker {
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 0px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.breaking-news-ticker .ticker-heading {
+  display: flex;
+  align-items: center;
+  background-color: #d32f2f;
+  color: white;
+  padding: 12px 20px;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  position: relative;
+  z-index: 10;
+}
+.breaking-news-ticker .ticker-container {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+.breaking-news-ticker .ticker-container:before, .breaking-news-ticker .ticker-container:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  z-index: 5;
+  pointer-events: none;
+}
+.breaking-news-ticker .ticker-container:before {
+  left: 0;
+  background: linear-gradient(to right, #f8f8f8, rgba(248, 248, 248, 0));
+}
+.breaking-news-ticker .ticker-container:after {
+  right: 0;
+  background: linear-gradient(to left, #f8f8f8, rgba(248, 248, 248, 0));
+}
+.breaking-news-ticker .ticker-content {
+  display: flex;
+  white-space: nowrap;
+  animation-name: ticker-scroll;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.breaking-news-ticker .ticker-content:hover {
+  animation-play-state: paused;
+}
+.breaking-news-ticker .ticker-item {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  white-space: nowrap;
+}
+.breaking-news-ticker .ticker-item a {
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+.breaking-news-ticker .ticker-item a:hover {
+  color: #d32f2f;
+  text-decoration: underline;
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/
