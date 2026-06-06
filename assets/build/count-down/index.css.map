@@ -1,0 +1,1 @@
+{"version":3,"file":"count-down/index.css","mappings":";;;AAAA;;EAAA;AAIA;EACI;EACA;EACA;AAAJ,C","sources":["webpack://zepblocks/./src/count-down/editor.scss"],"sourcesContent":["/**\n * Count Down Block - Editor Styles\n */\n\n.wp-block-zepblock-count-down {\n    border: 1px dashed #ccc;\n    padding: 20px;\n    background: #f9f9f9;\n}\n"],"names":[],"sourceRoot":""}

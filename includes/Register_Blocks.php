@@ -106,6 +106,14 @@ class Register_Blocks {
                     'render_callback' => array( __NAMESPACE__ . '\\Breaking_News', 'render' ),
                 )
             );
+
+            // Register Count Down Block
+            register_block_type_from_metadata(
+                ZEPBLOCKS_PLUGIN_PATH . 'assets/build/count-down',
+                array(
+                    'render_callback' => array( __NAMESPACE__ . '\\Count_Down', 'render' ),
+                )
+            );
         }
     }
 }

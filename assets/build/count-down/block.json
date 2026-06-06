@@ -1,0 +1,62 @@
+{
+  "apiVersion": 3,
+  "name": "zepblock/count-down",
+  "title": "Count Down Timer",
+  "category": "zepblock-block",
+  "icon": "clock",
+  "description": "Beautiful countdown timer with title and date. Shows expired message when time is up.",
+  "keywords": [
+    "countdown",
+    "timer",
+    "count",
+    "date",
+    "expiry"
+  ],
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Special Offer Ends In:"
+    },
+    "targetDate": {
+      "type": "string",
+      "default": ""
+    },
+    "expiredMessage": {
+      "type": "string",
+      "default": "This offer has expired!"
+    },
+    "showTitle": {
+      "type": "boolean",
+      "default": true
+    },
+    "cardAlignment": {
+      "type": "string",
+      "default": "center"
+    },
+    "boxBgColor": {
+      "type": "string",
+      "default": "#667eea"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "labelColor": {
+      "type": "string",
+      "default": "#e0e7ff"
+    },
+    "expiredBgColor": {
+      "type": "string",
+      "default": "#ef4444"
+    }
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "html": false
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}
